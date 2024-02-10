@@ -1,0 +1,48 @@
+.bm-burger-button{
+  display: none;
+}
+
+/* footer css starts */
+
+.Mycontainer{
+  max-width: 1170px;
+  margin: auto;
+}
+.row4{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+ul{
+  list-style: none;
+}
+
+.footer{
+  background-color: #f8f8f8;
+  padding: 70px;
+}
+.footer-col{
+width: 25%;
+padding: 0 30px;
+}
+.footer-col h5{
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col ul li a{
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  color: black;
+}
+.footer-col ul li a:hover{
+  color: black;
+  padding-left: 8px;
+}
