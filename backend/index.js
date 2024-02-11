@@ -3,6 +3,7 @@ const express = require('express');
 const UserRouter = require('./router/userRouter');
 const StackRouter = require('./router/stackRouter');
 const ContactRouter = require('./router/contactRouter');
+const FeedbackRouter = require('./router/feedbackRouter');
 
 const cors = require('cors')
 
@@ -21,5 +22,7 @@ app.use(cors({
 app.use('/user', UserRouter);
 app.use('/stack', StackRouter);
 app.use('/contact', ContactRouter);
+app.use('/feedback', FeedbackRouter);
+
 
 app.listen(port, () => { console.log('server started!!'); });
