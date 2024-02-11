@@ -1,9 +1,9 @@
 const { Schema, model} = require('../connection');
 
 const myschema = new Schema({
-  name : "string",
-  email : "string",
-  message : "string"
+  name : String,
+  email : String,
+  message : String
 });
 
 module.exports = model('feedback', myschema);

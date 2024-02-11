@@ -1,6 +1,8 @@
 const express = require('express');
 
-const feedbackRouter = express.Router();
+const Model = require('../model/feedbackModel');
+
+const router = express.Router();
 
 
 router.post('/add',(req, res) => {
@@ -29,4 +31,4 @@ router.post('/add',(req, res) => {
 
 
 
-module.exports = router;
+   module.exports = router;
