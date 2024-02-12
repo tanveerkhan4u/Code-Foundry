@@ -17,7 +17,7 @@ const Home = () => {
           <p className='text-center' style={{ marginTop: "30px", color: "grey" }}>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
           <div className=' row' >
             <div className='col '>
-            <input type=" justify-content-center" className="form-control form-control-lg fs-4 mt-2 mx-5  " placeholder='Search...' />
+            <input type="text-center" className="form-control form-control-lg fs-4 mt-2 mx-5 " placeholder='Search...' />
             </div>
             <div className='col'>
             <button className='btn btn-primary mt-3 fs-5'>search</button>
