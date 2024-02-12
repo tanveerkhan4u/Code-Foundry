@@ -192,7 +192,7 @@ const Home = () => {
       </div>
       <br /><br />
 
-      <div className='container-fluid d-flex'>
+      <div className='container-fluid'>
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
@@ -209,9 +209,9 @@ const Home = () => {
             <div>
               <Link to="/Reactdetail" style={{ textDecoration: "none" }}>
 
-                <div className="card" style={{ width: "25rem", marginLeft: "40px" }}>
-                  <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Materially-Free-Reactjs-Admin-Template.webp" className="card-img-top" alt="..." />
-                  <div className="card-body">
+                <div className="card mb-3 py-2 px-2" style={{maxWidth:"25rem"}}>
+                  <img  src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Materially-Free-Reactjs-Admin-Template.webp" className="card-img-top mx-auto img-fluid" alt="..." />
+                  <div className="card-body mb-3 py-2 px-2">
                     <h5 className='text' >React</h5>
                   </div>
                 </div>
@@ -221,9 +221,9 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Angulardetail" style={{ textDecoration: "none" }}>
-                <div className="card " style={{ width: "25rem", marginLeft: "20px" }}>
-                  <img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png" className="card-img-top" alt="..." />
-                  <div className="card-body">
+                <div className="card  mb-3 py-2 px-2" style={{maxWidth:"25rem"}}>
+                  <img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png" className="card-img-top mx-auto img-fluid" alt="..." />
+                  <div className="card-body  mb-3 py-2 px-2">
                     <h5 className='text' >Angular</h5>
                   </div>
                 </div>
@@ -233,9 +233,9 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
-                <div className="card" style={{ width: "25rem", marginLeft: "20px" }}>
-                  <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Empire-Bootstrap-4-Admin-Template.webp" className="card-img-top" alt="..." />
-                  <div className="card-body">
+                <div className="card mb-3 py-2 px-2 p-2" style={{maxWidth:"25rem"}}>
+                  <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Empire-Bootstrap-4-Admin-Template.webp" className="card-img-top mx-auto img-fluid" alt="..." />
+                  <div className="card-body  mb-3 py-2 px-2">
                     <h5 className='text' >Bootstrap</h5>
                   </div>
                 </div>
@@ -245,9 +245,9 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Vuedetail" style={{ textDecoration: "none" }}>
-                <div className="card" style={{ width: "25rem", marginLeft: "20px" }}>
-                  <img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-vue.png" className="card-img-top" alt="..." />
-                  <div className="card-body">
+                <div className="card mb-3 py-2 px-2" style={{maxWidth:"25rem"}}>
+                  <img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-vue.png" className="card-img-top img-fluid mx-auto" alt="..." />
+                  <div className="card-body mb-3 py-2 px-2">
                     <h5 className='text' >Vue</h5>
                   </div>
                 </div>
@@ -257,9 +257,9 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Sveltedetail" style={{ textDecoration: "none" }}>
-                <div className="card" style={{ width: "25rem", marginLeft: "20px" }}>
-                  <img src="https://www.creative-tim.com/blog/content/images/wordpress/2020/09/svelte-admin-dashboard.jpg" className="card-img-top" alt="..." />
-                  <div className="card-body">
+                <div className="card mb-3 py-2 px-2" style={{maxWidth:"25rem"}}>
+                  <img src="https://www.creative-tim.com/blog/content/images/wordpress/2020/09/svelte-admin-dashboard.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
+                  <div className="card-body mb-3 py-2 px-2">
                     <h5 className='text' >Svelte</h5>
                   </div>
                 </div>
@@ -269,9 +269,9 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Emberdetail" style={{ textDecoration: "none" }}>
-                <div className="card" style={{ width: "25rem", marginLeft: "20px" }}>
-                  <img src="https://raw.githubusercontent.com/huxinghai1988/ember-adminlte-theme/master/preview.png" style={{ height: "300px", objectFit: 'cover' }} className="card-img-top" alt="..." />
-                  <div className="card-body">
+                <div className="card mb-3 py-2 px-2" style={{maxWidth:"25rem"}}>
+                  <img src="https://www.drupal.org/files/project-images/Screen%20Shot%202013-09-06%20at%2012.46.00%20PM.png"  className="card-img-top img-fluid mx-auto mb-3"  alt="..." />
+                  <div className="card-body mb-3 py-2 px-2">
                     <h5 className='text' >Ember</h5>
                   </div>
                 </div>
@@ -281,9 +281,9 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Solid" style={{ textDecoration: "none" }}>
-                <div className="card" style={{ width: "25rem", marginLeft: "20px" }}>
-                  <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/concept-free-admin-dashboard-panel.jpg" className="card-img-top" alt="..." />
-                  <div className="card-body">
+                <div className="card mb-3 py-2 px-2 " style={{maxWidth:"25rem"}}>
+                  <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/concept-free-admin-dashboard-panel.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
+                  <div className="card-body mb-3 py-2 px-2">
                     <h5 className='text' >Solid</h5>
                   </div>
                 </div>
@@ -293,9 +293,9 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Nextdetail" style={{ textDecoration: "none" }}>
-                <div className="card" style={{ width: "25rem", marginLeft: "20px" }}>
-                  <img src="https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357" className="card-img-top" alt="..." />
-                  <div className="card-body">
+                <div className="card mb-3 py-2 px-2" style={{maxWidth:"25rem"}}>
+                  <img src="https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357" className="card-img-top img-fluid mx-auto" alt="..." />
+                  <div className="card-body mb-3 py-2 px-2">
                     <h5 className='text' >Next.Js</h5>
                   </div>
                 </div>
