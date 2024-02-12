@@ -15,10 +15,13 @@ const Home = () => {
         <div className='container-fluid py-5'>
           <h1 className='text-center' style={{ marginTop: "20px" }}>Trending Templates</h1>
           <p className='text-center' style={{ marginTop: "30px", color: "grey" }}>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
-          <div className=' row justify-content-center ' >
-            
-            <input type=" text-center" className="form-control form-control-lg fs-4 mt-2 w-50" placeholder='Search...' />
-            <button className='btn btn-primary w-25 ' >search</button>
+          <div className=' row' >
+            <div className='col '>
+            <input type=" justify-content-center" className="form-control form-control-lg fs-4 mt-2 mx-5  " placeholder='Search...' />
+            </div>
+            <div className='col'>
+            <button className='btn btn-primary mt-3 fs-5'>search</button>
+            </div>
           </div>
           <div className='text-center'>
           <img  className='text-center img-fluid' src='https://codedthemes.com/wp-content/uploads/2022/03/main-banner-bottom-img-1.png' alt=''></img>
