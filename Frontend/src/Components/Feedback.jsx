@@ -1,22 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useFormik } from 'formik';
 import { enqueueSnackbar } from 'notistack';
 import { useNavigate } from 'react-router-dom';
+import { Rating } from 'react-simple-star-rating'
+import {IconMoodHappy, IconMoodHappyFilled} from '@tabler/icons-react';
+
+
 
 
 
 const Feedback = () => {
+  
+  const [rating, setRating] = useState(0);
 
+  const [onPointerMove, setonPointerMove] = useState(0);
 
   const FeedbackForm = useFormik({
 
     initialValues: {
-        
       name: '',
       message: '',
       email: ''
     },
-  
+
 
     onSubmit: async (values, { setSubmitting, resetForm }) => {
       console.log(values);
@@ -36,47 +42,51 @@ const Feedback = () => {
         enqueueSnackbar('Something went wrong', { variant: 'error' });
       }
     },
-    
-
-
-
-
-
   });
-  
-  
-  
+
   return (
     <div>
-<div className='container-fluid' style={{backgroundColor:"#dbedff"}}><br/><br/>
-<h1 className='text' style={{color:"red", marginLeft:"400px"}}><strong>Your Feedback Matters </strong></h1>
-<p className='text-center mt-4' style={{ color:"grey", fontSize:"23px"}}>Please provide your feedback so that we can continue to improve our service.
-</p><br/>
-<form onSubmit={FeedbackForm.handleSubmit}>
-     <div className='form-group mt-4'>
-          <label htmlFor="Name"></label>
-          <span className='ms-4 fs-6 text-danger'>{FeedbackForm.errors.name}</span>
-          <input type="text" className='form-control shadow' style={{width:"570px", height:"60px", marginLeft:"350px", marginTop:"-30px"}} placeholder='Your Name' id='name' onChange={FeedbackForm.handleChange} value={FeedbackForm.values.name} />
-          <label htmlFor="Email"></label>
-          <span className='ms-4 fs-6 text-danger'>{FeedbackForm.errors.email}</span>
-          <input type="text" className='form-control shadow' style={{width:"570px", height:"60px", marginLeft:"350px" }}  placeholder='Your Email' id='email'  onChange={FeedbackForm.handleChange} value={FeedbackForm.values.email}/>
-          <label htmlFor="Message"></label>
-          <span className='ms-4 fs-6 text-danger'>{FeedbackForm.errors.message}</span>
-          <textarea id="message" className='form-control  shadow' style={{width:"570px", height:"180px", marginLeft:"350px" }}  placeholder='Your Message'   onChange={FeedbackForm.handleChange} value={FeedbackForm.values.message}/><br/>
-          <button className='btn btn-primary shadow' style={{marginLeft:"350px", height:"60px", width:"570px", fontSize:"22px"}} type='submit'>Submit</button>
+      <div className='container-fluid' style={{ backgroundColor: "#dbedff" }}><br /><br />
+        <h1 className='text-center'><strong>Your Feedback Matters </strong></h1>
+        <p className='text-center text-muted mt-4 fs-5'>Please provide your feedback so that we can continue to improve our service.
+        </p><br />
+        <form onSubmit={FeedbackForm.handleSubmit}>
+          <div className='form-group mt-4 col-md-4 mx-auto'>
+
+          <Rating
+        onClick={r => setRating(r)}
+        iconsCount={10}
+        initialValue={10}
+        fillIcon={<IconMoodHappyFilled size={30} strokeWidth={1} color="#ffcc00" />}
+        emptyIcon={<IconMoodHappy size={30} strokeWidth={1} color="#ffcc00" />}
+        
+        onPointerMove={onPointerMove => setonPointerMove(onPointerMove)}
+      
+        
+        // onPointerEnter={onPointerEnter}
+        // onPointerLeave={onPointerLeave}
+        /* Available Props */
+      />
+            <label htmlFor="Name"></label>
+            <span className='ms-4 fs-6 text-danger'>{FeedbackForm.errors.name}</span>
+            <input type="text" className='form-control form-control-lg shadow mt-4' placeholder='Your Name' id='name' onChange={FeedbackForm.handleChange} value={FeedbackForm.values.name} />
+            <label htmlFor="Email"></label>
+            <span className='ms-4 fs-6 text-danger'>{FeedbackForm.errors.email}</span>
+            <input type="text" className='form-control form-control-lg shadow  mt-4'  placeholder='Your Email' id='email' onChange={FeedbackForm.handleChange} value={FeedbackForm.values.email} />
+            <label htmlFor="Message"></label>
+            <span className='ms-4 fs-6 text-danger'>{FeedbackForm.errors.message}</span>
+            <textarea id="message" className='form-control form-control-lg  shadow  mt-4'  placeholder='Your Message' onChange={FeedbackForm.handleChange} value={FeedbackForm.values.message} /><br />
+            <button className='btn btn-primary shadow w-100' type='submit'>Submit</button>
           </div>
-     </form>
-<br/> 
-<br/><br/><br/>
-
-</div>
-
+        </form>
+        <br />
+        <br /><br /><br />
+      </div>
     </div>
   )
 }
 
 export default Feedback
-     
 
 
 
@@ -89,4 +99,15 @@ export default Feedback
 
 
 
-      
+
+
+
+
+
+
+
+
+
+
+
+

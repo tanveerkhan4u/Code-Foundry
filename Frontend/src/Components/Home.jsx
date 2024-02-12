@@ -11,15 +11,18 @@ import { Pagination, Autoplay } from 'swiper/modules';
 const Home = () => {
   return (
     <div>
-      <header className='text-dark' style={{ backgroundColor: "#dbedff" }}>
-        <div className='container-fluid py-5' style={{ height: "650px" }}>
+      <header className='text-dark w-100' style={{ backgroundColor: "#dbedff", height:"650px" }}>
+        <div className='container-fluid py-5'>
           <h1 className='text-center' style={{ marginTop: "20px" }}>Trending Templates</h1>
           <p className='text-center' style={{ marginTop: "30px", color: "grey" }}>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
-          <div className='row' style={{ marginLeft: "400px", marginTop: "40px" }}>
-            <input type="text" className="form-control" placeholder='Search...' style={{ width: "500px", padding: "15px" }} />
-            <button className='btn btn-primary' style={{ position: "relative", width: "100px", right: "105px", height: "45px", marginTop: "5px" }}>search</button>
+          <div className=' row justify-content-center ' >
+            
+            <input type=" text-center" className="form-control form-control-lg fs-4 mt-2 w-50" placeholder='Search...' />
+            <button className='btn btn-primary w-25 ' >search</button>
           </div>
-          <img src='https://codedthemes.com/wp-content/uploads/2022/03/main-banner-bottom-img-1.png' style={{ marginLeft: "400px" }} alt=''></img>
+          <div className='text-center'>
+          <img  className='text-center img-fluid' src='https://codedthemes.com/wp-content/uploads/2022/03/main-banner-bottom-img-1.png' alt=''></img>
+          </div>
         </div>
       </header>
       <br /><br />
@@ -29,7 +32,7 @@ const Home = () => {
       </div>
 
 
-      <div className='logo d-flex'>
+      <div className='logo'>
         <Swiper slidesPerView={5}
           spaceBetween={30}
           pagination={{
@@ -44,8 +47,8 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Bootstrapdetail" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <div className='card py-5'>
-                  <img src='https://codedthemes.com/wp-content/uploads/2022/04/boostrap-logo.jpg.webp' style={{ marginLeft: "70px", height: "80px", width: "100px", objectFit: 'cover' }} alt='' />
+                <div className='card mb-3 py-5 px-2' style={{height:"220px"}}>
+                  <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/boostrap-logo.jpg.webp'  alt='' />
                   <h4 className='text-center' style={{ marginTop: "20px" }}>Bootstrap</h4>
                 </div>
               </Link>
@@ -54,8 +57,8 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Angulardetail" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <div className='card py-5'>
-                  <img src='https://codedthemes.com/wp-content/uploads/2022/04/angular-logo.jpg.webp' style={{ marginLeft: "70px", height: "80px", width: "100px" }} alt='' />
+                <div className='card mb-3 py-5 px-2' style={{height:"220px"}}>
+                  <img className='mx-auto img-fluid' src='https://codedthemes.com/wp-content/uploads/2022/04/angular-logo.jpg.webp'  alt='' />
                   <h4 className='text-center' style={{ marginTop: "20px" }}>Angular</h4>
                 </div>
               </Link>
@@ -64,8 +67,8 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Reactdetail" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <div className='card py-5'>
-                  <img src='https://codedthemes.com/wp-content/uploads/2022/04/react-logo.jpg.webp' style={{ marginLeft: "70px", height: "80px", width: "100px" }} alt='' />
+                <div className='card mb-3 py-5 px-2' style={{height:"220px"}}>
+                  <img className='mx-auto img-fluid' src='https://codedthemes.com/wp-content/uploads/2022/04/react-logo.jpg.webp'  alt='' />
                   <h4 className='text-center' style={{ marginTop: "20px" }}>React</h4>
                 </div>
               </Link>
@@ -74,9 +77,9 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Vuedetail" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <div className='card py-5'>
-                  <img src='https://masteringjs.io/assets/images/vue/vue.jpg' style={{ marginLeft: "70px", height: "80px", width: "100px" }} alt='' />
-                  <h4 className='text-center' style={{ marginTop: "20px" }}>Vue</h4>
+                <div className='card mb-3 py-5 px-2' style={{height:"220px"}} >
+                  <img  className='mx-auto img-fluid ' src='https://masteringjs.io/assets/images/vue/vue.jpg' style={{width:"100px"}} alt='' />
+                  <h4 className='text-center'>Vue</h4>
                 </div>
               </Link>
             </div>
@@ -84,8 +87,8 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Nest" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <div className='card py-5'>
-                  <img src='https://static-00.iconduck.com/assets.00/nestjs-icon-2048x2040-3rrvcej8.png' style={{ marginLeft: "80px", height: "80px", width: "80px", objectFit: "cover" }} alt='' />
+                <div className='card mb-3 py-5' style={{height:"220px"}}>
+                  <img className='mx-auto img-fluid' src='https://static-00.iconduck.com/assets.00/nestjs-icon-2048x2040-3rrvcej8.png' style={{width:"100px"}}  alt='' />
                   <h4 className='text-center' style={{ marginTop: "20px" }}>NestJS</h4>
                 </div>
               </Link>
@@ -94,8 +97,8 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Sveltedetail" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <div className='card py-5'>
-                  <img src='https://w7.pngwing.com/pngs/598/9/png-transparent-svelte-hd-logo-thumbnail.png' style={{ marginLeft: "80px", height: "80px", width: "80px" }} alt='' />
+                <div className='card mb-3 py-5' style={{height:"220px"}}>
+                  <img className='mx-auto img-fluid' src='https://w7.pngwing.com/pngs/598/9/png-transparent-svelte-hd-logo-thumbnail.png'  style={{width:"100px"}}  alt='' />
                   <h4 className='text-center' style={{ marginTop: "20px" }}>Svelte</h4>
                 </div>
               </Link>
@@ -104,8 +107,8 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Emberdetail" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <div className='card py-5'>
-                  <img src='https://emberjs.com/images/brand/ember-tomster-lockup-4c.svg' style={{ marginLeft: "60px", height: "150px", width: "120px", marginTop: "-40px" }} alt='' />
+                <div className='card mb-3 py-5' style={{height:"220px"}}>
+                  <img className='mx-auto img-fluid'   src='https://emberjs.com/images/brand/ember-tomster-lockup-4c.svg' style={{width:"100px"}}  alt='' />
                   <h4 className='text-center' style={{ marginTop: "-5px" }}>Ember</h4>
                 </div>
               </Link>
@@ -114,8 +117,8 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Nextdetail" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <div className='card py-5'>
-                  <img src='https://miro.medium.com/v2/resize:fit:650/1*Hva7hcsFWulFUPhrEWui1A.jpeg' style={{ marginLeft: "20px", height: "120px", width: "200px", marginTop: "-20px" }} alt='' />
+                <div className='card mb-3 py-5' style={{height:"220px"}}>
+                  <img className='mx-auto img-fluid' src='https://miro.medium.com/v2/resize:fit:650/1*Hva7hcsFWulFUPhrEWui1A.jpeg'  style={{width:"100px"}} alt='' />
                   <h4 className='text-center'>Next.JS</h4>
                 </div>
               </Link>
@@ -124,8 +127,8 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Solid" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <div className='card py-5'>
-                  <img src='https://avatars.githubusercontent.com/u/79226042?s=280&v=4' style={{ marginLeft: "70px", height: "100px", width: "120px" }} alt='' />
+                <div className='card mb-3 py-5' style={{height:"220px"}}>
+                  <img className='mx-auto img-fluid' src='https://avatars.githubusercontent.com/u/79226042?s=280&v=4'  style={{width:"100px"}} alt='' />
                   <h4 className='text-center' style={{ marginTop: "-2px" }}>Solid</h4>
                 </div>
               </Link>
@@ -134,8 +137,8 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Express" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <div className='card py-5'>
-                  <img src='https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png' style={{ marginLeft: "70px", height: "100px", width: "100px" }} alt='' />
+                <div className='card mb-3 py-5' style={{height:"220px"}}>
+                  <img className='mx-auto img-fluid' src='https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png' style={{width:"100px"}} alt='' />
                   <h4 className='text-center'>Express.js</h4>
                 </div>
               </Link>
@@ -144,8 +147,8 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Graphql" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <div className='card py-5'>
-                  <img src='https://cdn.iconscout.com/icon/free/png-256/free-graphql-3521468-2944912.png' style={{ marginLeft: "60px", height: "100px", width: "120px" }} alt='' />
+                <div className='card mb-3 py-5' style={{height:"220px"}}>
+                  <img className='mx-auto img-fluid' src='https://cdn.iconscout.com/icon/free/png-256/free-graphql-3521468-2944912.png'  style={{width:"100px"}} alt='' />
                   <h4 className='text-center' style={{ marginTop: "5px" }}>GraphQL</h4>
                 </div>
               </Link>
@@ -154,8 +157,8 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Nativescript" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <div className='card py-5'>
-                  <img src='https://seeklogo.com/images/N/nativescript-logo-309BDE68D3-seeklogo.com.png' style={{ marginLeft: "70px", height: "100px", width: "100px" }} alt='' />
+                <div className='card mb-2 py-5' style={{height:"220px"}}>
+                  <img className='mx-auto img-fluid' src='https://seeklogo.com/images/N/nativescript-logo-309BDE68D3-seeklogo.com.png' style={{width:"100px"}} alt='' />
                   <h4 className='text-center' style={{ marginTop: "10px" }}>Nativescript</h4>
                 </div>
               </Link>
