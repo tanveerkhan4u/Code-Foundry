@@ -206,17 +206,19 @@ const Home = () => {
           modules={[Pagination, Autoplay]}
           className="mySwiper">
           <SwiperSlide>
-            <div>
+            <motion.div  whileHover={{ scale: 1.1 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }}>
               <Link to="/Reactdetail" style={{ textDecoration: "none" }}>
 
-                <div className="card mb-3 py-2 px-2" style={{maxWidth:"25rem"}}>
+                <div className="card mb-3 py-2 px-2" style={{maxWidth:"25rem", marginLeft:"5%"}}>
                   <img  src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Materially-Free-Reactjs-Admin-Template.webp" className="card-img-top mx-auto img-fluid" alt="..." />
                   <div className="card-body mb-3 py-2 px-2">
                     <h5 className='text' >React</h5>
                   </div>
                 </div>
               </Link>
-            </div>
+            </motion.div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
@@ -312,7 +314,7 @@ const Home = () => {
         </marquee>
       </div>
       <br /><br />
-      <div className='container-fluid d-flex'>
+      <div className='container-fluid'>
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
@@ -327,11 +329,11 @@ const Home = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div>
+            <div className='col'>
               <Link to="/Express" style={{ textDecoration: "none" }}>
-                <div className="card" style={{ width: "25rem", marginLeft: "40px" }}>
-                  <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" style={{ height: "275px" }} className="card-img-top" alt="..." />
-                  <div className="card-body">
+                <div className="card d-flex flex-column mb-3 py-2 px-2 " style={{ maxWidth: "25rem", marginLeft:"5%" }}>
+                  <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg"  className="card-img-top img-fluid mx-auto" alt="..." />
+                  <div className="card-body mb-2 py-2 px-2">
                     <h5 className='text' >Express.js</h5>
                   </div>
                 </div>
@@ -339,36 +341,36 @@ const Home = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
-              <Link to="/Nest" style={{ textDecoration: "none" }}>
-                <div className="card" style={{ width: "25rem", marginLeft: "20px" }}>
-                  <img src="https://user-images.githubusercontent.com/7660346/180629352-f92216e3-7cf4-4fba-92fa-089dd96b4478.png" className="card-img-top" alt="..." />
-                  <div className="card-body">
-                    <h5 className='text' >NestJS</h5>
+            <div className='col'>
+              <Link to="/Express" style={{ textDecoration: "none" }}>
+                <div className="card d-flex flex-column mb-3 py-2 px-2 " style={{ maxWidth: "25rem", marginLeft:"5%"}}>
+                  <img src="https://user-images.githubusercontent.com/7660346/180629352-f92216e3-7cf4-4fba-92fa-089dd96b4478.png"  className="card-img-top img-fluid mx-auto" style={{objectFit:"cover"}} alt="..." />
+                  <div className="card-body mb-2 py-2 px-2">
+                    <h5 className='text' >Next.js</h5>
                   </div>
                 </div>
               </Link>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
-              <Link to="/Graphql" style={{ textDecoration: "none" }}>
-                <div className="card" style={{ width: "25rem", marginLeft: "20px" }}>
-                  <img src="https://raw.githubusercontent.com/huxinghai1988/ember-adminlte-theme/master/preview.png" style={{ height: "275px", objectFit: 'cover' }} className="card-img-top" alt="..." />
-                  <div className="card-body">
-                    <h5 className='text' >GraphQL</h5>
+            <div className='col'>
+              <Link to="/Express" style={{ textDecoration: "none" }}>
+                <div className="card d-flex flex-column mb-3 py-2 px-2 " style={{ maxWidth: "25rem", marginLeft:"5%" }}>
+                  <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg"  className="card-img-top img-fluid mx-auto" alt="..." />
+                  <div className="card-body mb-2 py-2 px-2">
+                    <h5 className='text' >Node.js</h5>
                   </div>
                 </div>
               </Link>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
-              <Link to="/Graphql" style={{ textDecoration: "none" }}>
-                <div className="card" style={{ width: "25rem", marginLeft: "20px" }}>
-                  <img src="https://codedthemes.com/wp-content/uploads/edd/2022/09/Berry-bootstrap-nodejs.png" style={{ height: "275px" }} className="card-img-top" alt="..." />
-                  <div className="card-body">
-                    <h5 className='text' >Nitro</h5>
+            <div className='col'>
+              <Link to="/Express" style={{ textDecoration: "none" }}>
+                <div className="card d-flex flex-column mb-3 py-2 px-2 " style={{ maxWidth: "25rem", marginLeft:"5%" }}>
+                  <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg"    className="card-img-top img-fluid mx-auto" alt="..." />
+                  <div className="card-body mb-2 py-2 px-2 ">
+                    <h5 className='text' >React.js</h5>
                   </div>
                 </div>
               </Link>
