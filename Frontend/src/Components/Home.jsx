@@ -10,7 +10,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 
 const Home = () => {
   return (
-    <div>
+    <div style={{ overflow: 'hidden' }}>
       <header className='text-dark w-100' style={{ backgroundColor: "#dbedff", height:"650px" }}>
         <div className='container-fluid py-5'>
           <h1 className='text-center' style={{ marginTop: "20px" }}>Trending Templates</h1>
@@ -192,7 +192,7 @@ const Home = () => {
       </div>
       <br /><br />
 
-      <div className='container-fluid'>
+      <div className='container-fluid p-4'>
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
@@ -200,7 +200,7 @@ const Home = () => {
             clickable: true,
           }}
           autoplay={{
-            delay: 1500,
+            delay: 5500,
             disableOnInteraction: false,
           }}
           modules={[Pagination, Autoplay]}
@@ -217,18 +217,21 @@ const Home = () => {
                     <h5 className='text' >React</h5>
                   </div>
                 </div>
+          
               </Link>
             </motion.div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
               <Link to="/Angulardetail" style={{ textDecoration: "none" }}>
+              
                 <div className="card  mb-3 py-2 px-2" style={{maxWidth:"25rem"}}>
                   <img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png" className="card-img-top mx-auto img-fluid" alt="..." />
                   <div className="card-body  mb-3 py-2 px-2">
                     <h5 className='text' >Angular</h5>
                   </div>
                 </div>
+                
               </Link>
             </div>
           </SwiperSlide>
@@ -343,7 +346,7 @@ const Home = () => {
           <SwiperSlide>
             <div className='col'>
               <Link to="/Express" style={{ textDecoration: "none" }}>
-                <div className="card d-flex flex-column mb-3 py-2 px-2 " style={{ maxWidth: "25rem", marginLeft:"5%"}}>
+                <div className="card  mb-3 py-2 px-2 " style={{ maxWidth: "25rem", marginLeft:"5%"}}>
                   <img src="https://user-images.githubusercontent.com/7660346/180629352-f92216e3-7cf4-4fba-92fa-089dd96b4478.png"  className="card-img-top img-fluid mx-auto" style={{objectFit:"cover"}} alt="..." />
                   <div className="card-body mb-2 py-2 px-2">
                     <h5 className='text' >Next.js</h5>
