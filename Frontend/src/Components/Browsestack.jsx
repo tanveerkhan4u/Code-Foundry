@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
 
 
 
@@ -17,39 +17,61 @@ const Browsestack = () => {
   
 
   return (
-    <div>
+    <div style={{ overflow: 'hidden' }} >
 
       <header className='text-dark' style={{ backgroundColor: "#dbedff" }}>
-        <div className='container py-5' style={{ height: "550px" }}>
-          <motion.h2 initial={{ x: 100 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='text' style={{ marginTop: "50px" }}>Templates</motion.h2>&nbsp;
-          <motion.p initial={{ x: 100 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='text'>Explore developer friendly Admin Dashboard Templates & UI Kits!</motion.p>&nbsp;
-          <motion.div initial={{ x: 100 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='container d-flex justify-content-between'>
+        <div className='container py-5'>
+          <div className='row'>
+            <div className='col-md-6'>
+          <motion.h2 initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='text' style={{ marginTop: "50px" }}>Templates</motion.h2>&nbsp;
+          <motion.p initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='text'>Explore developer friendly Admin Dashboard Templates & UI Kits!</motion.p>&nbsp;
+          <motion.div initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='container d-flex justify-content-between'>
             <div className='row' style={{ position: 'relative' }}>
               <input type="text" className="form-control" placeholder='Search...' style={{ width: "400px", padding: "15px" }} />
               <button className='btn btn-primary' style={{ position: "absolute", width: "100px", right: "10px", height: "45px", marginTop: "5px" }}>search</button>
             </div>
           </motion.div>
+          </div>
 
+      <div className='col-md-6 my-2'>
+        <motion.img animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/06/Templates-banner.svg' className='img-fluid mx-auto' alt=''></motion.img>
+      </div>
+      </div>
         </div>
       </header>
 
 
 
 
-      <div className='container-fluid'>
-        <motion.img animate={{ x: 100, y: -40 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/06/Templates-banner.svg' style={{ marginLeft: "700px", marginTop: "-550px" }} alt=''></motion.img>
-      </div>
       <br />
 
-      <div className='container-fluid d-flex'>
+      <div className='row'>
+        <div className='col-md-12'>
         <Swiper
           slidesPerView={5}
           spaceBetween={30}
           pagination={{
             clickable: true,
           }}
+          breakpoints={{
+            200: {
+              slidesPerView: 2,
+              spaceBetween: 30
+            },
+            550: {
+              slidesPerView: 4,
+              spaceBetween: 30
+            },
+            750: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            },
+
+            
+          }}
+        
           autoplay={{
-            delay: 1500,
+            delay: 2500,
             disableOnInteraction: false,
           }}
           modules={[Pagination, Autoplay]}
@@ -57,31 +79,46 @@ const Browsestack = () => {
         >
           <SwiperSlide>
             <div>
-              <motion.ul >
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", marginLeft: "100px", fontSize: "30px", textDecoration: 'none', color: "grey" }} to="/Vuedetail">Vue</Link>
+              <motion.ul whileHover={{ scale: 1.2 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }}>
+                <Link className='text' style={{ fontFamily: "Manrope, sans-serif",  fontSize: "30px", textDecoration: 'none', color: "grey" }} to="/Vuedetail">Vue</Link>
               </motion.ul>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <motion.ul >
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", marginLeft: "30px", fontSize: "30px", textDecoration: 'none', color: "grey" }} to="/Bootstrapdetail">Bootstrap</Link>
+              <motion.ul whileHover={{ scale: 1.2 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }}>
+                <Link className='text' style={{ fontFamily: "Manrope, sans-serif",  fontSize: "30px", textDecoration: 'none', color: "grey" }} to="/Bootstrapdetail">Bootstrap</Link>
               </motion.ul>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
-              <motion.ul  >
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", marginLeft: "30px", fontSize: "30px", textDecoration: 'none', color: "grey" }} to="/Reactdetail">React</Link>
+            <div >
+              <motion.ul  whileHover={{ scale: 1.2 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }}>
+                <Link className='text' style={{ fontFamily: "Manrope, sans-serif",  fontSize: "30px", textDecoration: 'none', color: "grey" }} to="/Reactdetail">React</Link>
               </motion.ul>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div >
               <motion.ul whileHover={{ scale: 1.2 }}
                 onHoverStart={e => { }}
                 onHoverEnd={e => { }} >
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", marginLeft: "30px", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Angulardetail">Angular</Link>
+                <Link className='text' style={{ fontFamily: "Manrope, sans-serif",  fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Angulardetail">Angular</Link>
+              </motion.ul>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div >
+              <motion.ul whileHover={{ scale: 1.2 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }}>
+                <Link className='text' style={{ fontFamily: "Manrope, sans-serif",  fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Emberdetail">Ember</Link>
               </motion.ul>
             </div>
           </SwiperSlide>
@@ -90,7 +127,16 @@ const Browsestack = () => {
               <motion.ul whileHover={{ scale: 1.2 }}
                 onHoverStart={e => { }}
                 onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", marginLeft: "30px", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Emberdetail">Ember</Link>
+                <Link className='text' style={{ fontFamily: "Manrope, sans-serif",  fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Solid">Solid</Link>
+              </motion.ul>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div >
+              <motion.ul whileHover={{ scale: 1.2 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }}>
+                <Link className='text' style={{ fontFamily: "Manrope, sans-serif",  fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Sveltedetail">Svelte</Link>
               </motion.ul>
             </div>
           </SwiperSlide>
@@ -99,66 +145,49 @@ const Browsestack = () => {
               <motion.ul whileHover={{ scale: 1.2 }}
                 onHoverStart={e => { }}
                 onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", marginLeft: "30px", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Solid">Solid</Link>
+                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Nextdetail">Next.js</Link>
+              </motion.ul>
+            </div >
+          </SwiperSlide>
+          <SwiperSlide>
+            <div >
+              <motion.ul whileHover={{ scale: 1.2 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }}>
+                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Nest">NestJS</Link>
               </motion.ul>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div >
               <motion.ul whileHover={{ scale: 1.2 }}
                 onHoverStart={e => { }}
                 onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", marginLeft: "30px", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Sveltedetail">Svelte</Link>
+                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Express">Express.js</Link>
               </motion.ul>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div >
               <motion.ul whileHover={{ scale: 1.2 }}
                 onHoverStart={e => { }}
                 onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", marginLeft: "30px", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Nextdetail">Next.js</Link>
+                <Link className='text' style={{ fontFamily: "Manrope, sans-serif",  fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Graphql">GraphQL</Link>
               </motion.ul>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div >
               <motion.ul whileHover={{ scale: 1.2 }}
                 onHoverStart={e => { }}
                 onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", marginLeft: "30px", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Nest">NestJS</Link>
-              </motion.ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <motion.ul whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", marginLeft: "30px", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Express">Express.js</Link>
-              </motion.ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <motion.ul whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", marginLeft: "30px", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Graphql">GraphQL</Link>
-              </motion.ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <motion.ul whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", marginLeft: "30px", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Nativescript">NativeScript</Link>
+                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Nativescript">NativeScript</Link>
               </motion.ul>
             </div>
           </SwiperSlide>
           <br /><br />
         </Swiper>
+        </div> 
       </div>
       <br />
       <br />
