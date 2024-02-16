@@ -65,7 +65,7 @@ const Login = () => {
 
     <div className='col-6 d-flex' style={{ backgroundColor: "#dbedff" }}>
 
-      <motion.img animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='img-fluid mx-auto' alt='' />
+      <img src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='img-fluid mx-auto' alt='' />
 
       <div className='container-fluid' style={{ marginLeft: "30px" }}>
         <div className=' py-5'>
