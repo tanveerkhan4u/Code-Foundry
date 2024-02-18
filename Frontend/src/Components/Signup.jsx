@@ -29,7 +29,7 @@ onSubmit: async(values,{setSubmitting, resetForm}) => {
   
   console.log(values);
   setSubmitting(true);
-  const res = await fetch('http://localhost:5000/user/add', {
+  const res = await fetch(`${import.meta.env.VITE_API_URL}/user/add`, {
     method: 'POST',
     body: JSON.stringify(values),
     headers: {
@@ -60,6 +60,7 @@ validationSchema: SignupSchema
 
 return (
   <div className='vh-100 bg-body-secondary'>
+    
     <div className='col-md-4 mx-auto py-5'>
       <div className='card'>
         <div className='card-body p-4'>
