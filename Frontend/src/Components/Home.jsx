@@ -363,7 +363,6 @@ const Home = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className='col-md-4'>
               <Link to="/Express" style={{ textDecoration: "none" }}>
                 <div className="card d-flex flex-column mb-3 py-2 px-2 ">
                   <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top w-100 mx-auto" alt="..." />
@@ -372,7 +371,6 @@ const Home = () => {
                   </div>
                 </div>
               </Link>
-            </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='col-md-4'>
@@ -521,155 +519,108 @@ const Home = () => {
       </div>
       <br />
 
-      <div className='row'>
-        <div className='col-md-4 '>
+      <div className='row justify-content-between'>
+        <div className='col-md-4 border-end'>
           
           <img className='img-fluid mx-auto ms-5 px-5' src='https://codedthemes.com/wp-content/uploads/2022/03/Phoenixcoded-logo.png.webp' alt='' />
+        
         </div>
-
-        <div className='col-md-4'>
+        <div className='col-md-4 border-end'>
           <img className='img-fluid mx-auto ms-5 px-5' src='https://codedthemes.com/wp-content/uploads/2022/03/Appseed-logo.png.webp' alt='' />
         </div>
-
         <div className='col-md-4'>
           <img className='img-fluid mx-auto ms-5 px-5 mt-3' src='https://codedthemes.com/wp-content/uploads/2022/03/rudrisha-logo.png.webp' alt='' />
         </div>
       </div>
       <br /><br />
-      <div className='row'>
+      
 
-        <div className="card" style={{ width: "18rem" }}>
-          <img src="https://www.creative-tim.com/blog/content/images/wordpress/2020/09/svelte-admin-dashboard.jpg" className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">
-              Some quick example text to build on the card title and make up the bulk of
-              the card's content.
-            </p>
-            <a href="#" className="btn btn-primary">
-              Go somewhere
-            </a>
-          </div>
-        </div>&nbsp;&nbsp;
-
-        <div className="card" style={{ width: "18rem" }}>
-          <img src="https://www.creative-tim.com/blog/content/images/wordpress/2020/09/svelte-admin-dashboard.jpg" className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">
-              Some quick example text to build on the card title and make up the bulk of
-              the card's content.
-            </p>
-            <a href="#" className="btn btn-primary">
-              Go somewhere
-            </a>
-          </div>
-        </div>&nbsp;&nbsp;
-
-        <div className="card" style={{ width: "18rem" }}>
-          <img src="https://www.drupal.org/files/project-images/Screen%20Shot%202013-09-06%20at%2012.46.00%20PM.png" className="card-img-top" style={{ objectFit: "cover", height: "200px" }} alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">
-              Some quick example text to build on the card title and make up the bulk of
-              the card's content.
-            </p>
-            <a href="#" className="btn btn-primary">
-              Go somewhere
-            </a>
-          </div>
-        </div>
-
-      </div>
-      <div className="card mb-3 py-2 px-2" style={{ maxWidth: "25rem", marginLeft: "5%" }}>
-        <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Materially-Free-Reactjs-Admin-Template.webp" className="card-img-top mx-auto img-fluid" alt="..." />
-        <div className="card-body mb-3 py-2 px-2">
-          <h5 className='text' >React</h5>
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+       
+       
 
     </div >
-
-
-  )
+)
 }
-
 export default Home
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
