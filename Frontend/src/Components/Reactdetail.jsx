@@ -1,69 +1,71 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom' 
+import { Link } from 'react-router-dom'
 
 const Reactdetail = () => {
   return (
-    <div style={{overflow:"hidden"}}>
+    <div >
 
-      <header className='row  d-flex w-100' style={{ backgroundColor: "#dbedff" }}>
-      
+      <header className= 'row d-flex background' style={{ backgroundColor: "#dbedff" }}>
+
         <div className='col-md-6'>
           <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text mt-5' ><strong className='text-primary'>React </strong> Admin Template</motion.h2>&nbsp;
-          <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text ' >Are you looking for a React Admin Template, For your next project? You are at the right place. We are one of the Best Admin Dashboard makers in the market. Our team develops the<strong className='text' style={{ color: "grey" }}> most advanced, highly customizable </strong> React Template. All our Admin Dashboards are fully responsive and tested on all retina devices. With  <strong className='text' style={{ color: "grey" }}> clean, bug-free and well comment code.</strong></motion.p>&nbsp;
+          <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text template' >Are you looking for a React Admin Template, For your next project? You are at the right place. We are one of the Best Admin Dashboard makers in the market. Our team develops the<strong className='text' style={{ color: "grey" }}> most advanced, highly customizable </strong> React Template. All our Admin Dashboards are fully responsive and tested on all retina devices. With  <strong className='text' style={{ color: "grey" }}> clean, bug-free and well comment code.</strong></motion.p>&nbsp;
           <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='container-fluid d-flex justify-content-between'>
 
-            <div className='row search'>
-              <div className='col-md-8'>
-              <input type="text " className="form-control form-control-lg fs-4 mt-2 mx-5 " placeholder='Search...' />
+            <div className='row gy-2'>
+              <div className='col-md-10'>
+                <input type="text " className="form-control search fs-4  mt-2 mx-5 " placeholder='Search...' />
               </div>
-              <div className='col'>
-              <button className='btn btn-primary button mt-3 fs-6'>search</button>
+              <div className='col-md-2 button'>
+                <button className='btn btn-primary mt-2 fs-5'>search</button>
               </div>
             </div>
-
           </motion.div>
         </div>
-      <div className='col-md-6'>
-        <motion.img animate={{ x: 50, y: -40 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/React-Banner.svg' className='w-100 mx-auto' alt=''></motion.img>
-      </div>
-      </header>
 
+
+
+        <div className='col-md-6'>
+          <motion.img animate={{ x: 50, y: -40 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/React-Banner.svg' className='w-100 mx-auto' alt=''></motion.img>
+        </div>
+      </header>
+    
       <br />
       <br />
       <div className='container-fluid'>
-      <div className='row gy-4 justify-content-between'>
-        <div className='col-md-4'>
-      <Link to="/Exportstack/react" style={{textDecoration:"none"}}>
-        <div className="card">
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Materially-Free-Reactjs-Admin-Template.webp" className="card-img-top img-fluid mx-auto" alt="..." />
-          <div className="card-body">
-            <h5 className='text' >React</h5>
+        <div className='row gy-4 justify-content-between'>
+          <div className='col-md-4'>
+            <Link to="/Exportstack/react" style={{ textDecoration: "none" }}>
+              <div className="card">
+                <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Materially-Free-Reactjs-Admin-Template.webp" className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body">
+                  <h5 className='text' >React</h5>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className='col-md-4 '>
+            <Link to="/Exportstack/react" style={{ textDecoration: "none" }}>
+              <div className="card" >
+                <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-React-Admin-Template.webp" className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body">
+                  <h5 className='text' >React</h5>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className='col-md-4'>
+            <Link to="/Exportstack/react" style={{ textDecoration: "none" }}>
+              <div className="card">
+                <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Gradient-Able-Reactjs-Admin-Dashboard.webp" className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body">
+                  <h5 className='text' >React</h5>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
-        </Link>
-        </div>
-        <div className='col-md-4 '>
-        <Link to="/Exportstack/react" style={{textDecoration:"none"}}>
-        <div className="card" >
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-React-Admin-Template.webp" className="card-img-top img-fluid mx-auto" alt="..." />
-          <div className="card-body">
-            <h5 className='text' >React</h5>
-          </div>
-        </div>
-        </Link>
-        </div>
-        <div className='col-md-4'>
-        <Link to="/Exportstack/react" style={{textDecoration:"none"}}>
-        <div className="card">
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Gradient-Able-Reactjs-Admin-Dashboard.webp" className="card-img-top img-fluid mx-auto" alt="..." />
-          <div className="card-body">
-            <h5 className='text' >React</h5>
-          </div>
-        </div>
-        </Link>
-        </div>
-      </div>
       </div>
       <br />
       <br />

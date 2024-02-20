@@ -17,9 +17,9 @@ const Home = () => {
           <p className='text-center' style={{ marginTop: "30px", color: "grey" }}>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
           
           <div className='row'>
-            <div className='col-md-10 d-flex'>
-              <input type="text" className="form-control fs-4 mt-2" placeholder='Search...' />
-              <button className='btn btn-primary fs-4 search-button' style={{ marginRight: '18px' }}>Search</button>
+            <div className='col-md-7 d-flex'>
+              <input type="text" className="form-control fs-5 mt-2 ms-5 " placeholder='Search...' />
+              <button className='btn btn-primary fs-5 search-button '>Search</button>
             </div>
           </div>
 
