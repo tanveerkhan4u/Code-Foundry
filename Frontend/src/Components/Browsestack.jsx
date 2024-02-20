@@ -17,7 +17,7 @@ const Browsestack = () => {
   
 
   return (
-    <div style={{ overflow: 'hidden' }} >
+    <div>
 
       <header className='text-dark' style={{ backgroundColor: "#dbedff" }}>
         <div className='container py-5'>
@@ -193,69 +193,80 @@ const Browsestack = () => {
       <br />
       
 
-      <div className='conatiner d-flex'>
+      <div className='conatiner-fluid'>
+        <div className='row gy-4 justify-content-center'>
+          <div className='col-md-3 ms-5'>
         <Link to="/Exportstack/vue" style={{textDecoration:"none"}}>
-        <div className="card" style={{ width: "25rem", marginLeft: "60px" }}>
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2023/12/Mantis-free.png" className="card-img-top" alt="..." />
+        <div className="card" >
+          <img src="https://codedthemes.com/wp-content/uploads/edd/2023/12/Mantis-free.png" className="card-img-top img-fluid mx-auto" alt="..." />
           <div className="card-body">
             <h5 className='text' >Vue</h5>
           </div>
         </div>
         </Link>
-            
+        </div>
           
+          <div className='col-md-3 ms-5'>
         <Link to="/Exportstack/bootstrap" style={{textDecoration:"none"}}>
-        <div className="card " style={{ width: "25rem", marginLeft: "20px" }}>
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2023/02/Mantis-pro-bootstrap5.png" className="card-img-top" alt="..." />
+        <div className="card " >
+          <img src="https://codedthemes.com/wp-content/uploads/edd/2023/02/Mantis-pro-bootstrap5.png" className="card-img-top img-fluid mx-auto" alt="..." />
           <div className="card-body">
             <h5 className='text' >Bootstrap</h5>
           </div>
         </div>
         </Link>
-          
+        </div>
             
+            <div className='col-md-3 ms-5'>
         <Link to="/Exportstack/react" style={{textDecoration:"none"}}>
-        <div className="card " style={{ width: "25rem", marginLeft: "20px" }}>
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-React-Admin-Template.webp" className="card-img-top" alt="..." />
+        <div className="card " >
+          <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-React-Admin-Template.webp" className="card-img-top img-fluid mx-auto" alt="..." />
           <div className="card-body">
             <h5 className='text' >React</h5>
           </div>
         </div>
         </Link>
+        </div>
+        </div>
       </div>
       <br />
            
            
 
       <div className='conatiner-fluid d-flex'>
+        <div className='row gy-4 justify-content-center'>
+          <div className='col-md-3 ms-5'>
         <Link to="/Exportstack/angular" style={{textDecoration:"none"}}>
-        <div className="card" style={{ width: "25rem", marginLeft: "60px" }}>
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2023/08/Mantis-Angular-16-Free-Admin-Template.png" className="card-img-top" alt="..." />
+        <div className="card" >
+          <img src="https://codedthemes.com/wp-content/uploads/edd/2023/08/Mantis-Angular-16-Free-Admin-Template.png" className="card-img-top img-fluid mx-auto" alt="..." />
           <div className="card-body">
             <h5 className='text' >Angular</h5>
           </div>
         </div>
-            
-            
         </Link>
+        </div>
+            <div className='col-md-3 ms-5'>
         <Link to="/Exportstack/django" style={{textDecoration:"none"}}>
-        <div className="card " style={{ width: "25rem", marginLeft: "20px" }}>
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2022/09/Berry-bootstrap-django.png" className="card-img-top" alt="..." />
+        <div className="card " >
+          <img src="https://codedthemes.com/wp-content/uploads/edd/2022/09/Berry-bootstrap-django.png" className="card-img-top img-fluid mx-auto" alt="..." />
           <div className="card-body">
             <h5 className='text' >Django</h5>
           </div>
         </div>
-          
-            
         </Link>
+        </div>
+            
+            <div className='col-md-3 ms-5'>
         <Link to="/Exportstack/laravel" style={{textDecoration:"none"}}>
-        <div className="card " style={{ width: "25rem", marginLeft: "20px" }}>
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-Laravel-Admin-Dashboard.webp" className="card-img-top" alt="..." />
+        <div className="card">
+          <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-Laravel-Admin-Dashboard.webp" className="card-img-top img-fluid mx-auto" alt="..." />
           <div className="card-body">
             <h5 className='text' >Laravel</h5>
           </div>
         </div>
         </Link>
+        </div>
+        </div>
       </div>
       <br />
       <br />
@@ -353,7 +364,9 @@ const Browsestack = () => {
 
 
 
+    
     </div>
+
 
 
 
