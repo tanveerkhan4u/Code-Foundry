@@ -15,7 +15,7 @@ const Home = () => {
         <div className='container-fluid py-5'>
           <h1 className='text-center' style={{ marginTop: "20px" }}>Trending Templates</h1>
           <p className='text-center' style={{ marginTop: "30px", color: "grey" }}>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
-          
+
           <div className='row'>
             <div className='col-md-7 d-flex'>
               <input type="text" className="form-control fs-5 mt-2 ms-5 " placeholder='Search...' />
@@ -192,108 +192,108 @@ const Home = () => {
 
       </div>
       <br /><br />
-          <div className='container '>
-      <div className='row gy-4 justify-content-between '>
-        <div className='col-md-3'>
-          <div whileHover={{ scale: 1.1 }}
-            onHoverStart={e => { }}
-            onHoverEnd={e => { }} className="card">
-            <img src="https://www.drupal.org/files/project-images/Screen%20Shot%202013-09-06%20at%2012.46.00%20PM.png" className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-              </p>
-              <a href="#" className="btn btn-primary">
-                Go somewhere
-              </a>
+      <div className='container '>
+        <div className='row gy-4 justify-content-between '>
+          <div className='col-md-3'>
+            <div whileHover={{ scale: 1.1 }}
+              onHoverStart={e => { }}
+              onHoverEnd={e => { }} className="card">
+              <img src="https://www.drupal.org/files/project-images/Screen%20Shot%202013-09-06%20at%2012.46.00%20PM.png" className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up the bulk of
+                  the card's content.
+                </p>
+                <a href="#" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className='col-md-3'>
+
+            {/* <Link to="/Reactdetail" style={{ textDecoration: "none" }}> */}
+            <div whileHover={{ scale: 1.1 }}
+              onHoverStart={e => { }}
+              onHoverEnd={e => { }} className="card " style={{ width: "18rem" }}>
+              <img src="https://www.drupal.org/files/project-images/Screen%20Shot%202013-09-06%20at%2012.46.00%20PM.png" className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up the bulk of
+                  the card's content.
+                </p>
+                <a href="#" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className='col-md-4' >
+            {/* <Link to="/Reactdetail" style={{ textDecoration: "none" }}> */}
+            <div whileHover={{ scale: 1.1 }}
+              onHoverStart={e => { }}
+              onHoverEnd={e => { }} className="card " >
+              <img src="https://www.drupal.org/files/project-images/Screen%20Shot%202013-09-06%20at%2012.46.00%20PM.png" className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up the bulk of
+                  the card's content.
+                </p>
+                <a href="#" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
             </div>
           </div>
         </div>
-
-        <div className='col-md-3'>
-
-          {/* <Link to="/Reactdetail" style={{ textDecoration: "none" }}> */}
-          <div whileHover={{ scale: 1.1 }}
-            onHoverStart={e => { }}
-            onHoverEnd={e => { }} className="card " style={{ width: "18rem" }}>
-            <img src="https://www.drupal.org/files/project-images/Screen%20Shot%202013-09-06%20at%2012.46.00%20PM.png" className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-              </p>
-              <a href="#" className="btn btn-primary">
-                Go somewhere
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className='col-md-4' >
-          {/* <Link to="/Reactdetail" style={{ textDecoration: "none" }}> */}
-          <div whileHover={{ scale: 1.1 }}
-            onHoverStart={e => { }}
-            onHoverEnd={e => { }} className="card " >
-            <img src="https://www.drupal.org/files/project-images/Screen%20Shot%202013-09-06%20at%2012.46.00%20PM.png" className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-              </p>
-              <a href="#" className="btn btn-primary">
-                Go somewhere
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
       </div>
       <div className='container '>
-      <div className='row gy-4 justify-content-between '>
-      <div className='col-md-3 '>
-        <Link to="/Angulardetail" style={{ textDecoration: "none" }}>
+        <div className='row gy-4 justify-content-between '>
+          <div className='col-md-3 '>
+            <Link to="/Angulardetail" style={{ textDecoration: "none" }}>
 
-          <div className="card  mb-3 py-2 px-2 h-100">
-            <img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png" className="card-img-top mx-auto img-fluid" alt="..." />
-            <div className="card-body  mb-3 py-2 px-2">
-              <h5 className='text' >Angular</h5>
-            </div>
+              <div className="card  mb-3 py-2 px-2 h-100">
+                <img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png" className="card-img-top mx-auto img-fluid" alt="..." />
+                <div className="card-body  mb-3 py-2 px-2">
+                  <h5 className='text' >Angular</h5>
+                </div>
+              </div>
+
+            </Link>
           </div>
 
-        </Link>
-      </div>
-          
 
 
 
 
 
-      <div className='col-md-3'>
-        <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
-          <div className="card mb-3 py-2 px-2 p-2 h-100" style={{ maxWidth: "25rem" }}>
-            <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Empire-Bootstrap-4-Admin-Template.webp" className="card-img-top mx-auto img-fluid" alt="..." />
-            <div className="card-body  mb-3 py-2 px-2">
-              <h5 className='text' >Bootstrap</h5>
-            </div>
+          <div className='col-md-3'>
+            <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
+              <div className="card mb-3 py-2 px-2 p-2 h-100" style={{ maxWidth: "25rem" }}>
+                <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Empire-Bootstrap-4-Admin-Template.webp" className="card-img-top mx-auto img-fluid" alt="..." />
+                <div className="card-body  mb-3 py-2 px-2">
+                  <h5 className='text' >Bootstrap</h5>
+                </div>
+              </div>
+            </Link>
           </div>
-        </Link>
-      </div>
 
-      <div className='col-md-3'>
-        <Link to="/Vuedetail" style={{ textDecoration: "none" }}>
-          <div className="card mb-3 py-2 px-2" style={{ maxWidth: "25rem" }}>
-            <img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-vue.png" className="card-img-top img-fluid mx-auto" alt="..." />
-            <div className="card-body mb-3 py-2 px-2">
-              <h5 className='text' >Vue</h5>
-            </div>
+          <div className='col-md-3'>
+            <Link to="/Vuedetail" style={{ textDecoration: "none" }}>
+              <div className="card mb-3 py-2 px-2" style={{ maxWidth: "25rem" }}>
+                <img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-vue.png" className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body mb-3 py-2 px-2">
+                  <h5 className='text' >Vue</h5>
+                </div>
+              </div>
+            </Link>
           </div>
-        </Link>
-      </div>
-      </div>
+        </div>
       </div>
 
       <div className='col-md-3'>
@@ -339,8 +339,8 @@ const Home = () => {
           </div>
         </Link>
       </div>
-    
-       <br /><br />
+
+      <br /><br />
 
       <div className='container bg-body-secondary'>
         <marquee behavior="scroll" direction="left" scrollamount="15">
@@ -349,68 +349,66 @@ const Home = () => {
       </div>
       <br /><br />
       <div className='container'>
-        <div className='row gy-2'>
-        <Swiper
-          slidesPerView={3}
-          spaceBetween={  10}
-          pagination={{
-            clickable: true,
-          }}
-          autoplay={{
-            delay: 1500,
-            disableOnInteraction: false,
-          }}
-          modules={[Pagination, Autoplay]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
+        <div className='row gy-4'>
+          {/* <Swiper
+            slidesPerView={3}
+            spaceBetween={10}
+            pagination={{
+              clickable: true,
+            }}
+            autoplay={{
+              delay: 1500,
+              disableOnInteraction: false,
+            }}
+            modules={[Pagination, Autoplay]}
+            className="mySwiper"
+          > */}
+            
+              <div className='col-md-3'>
               <Link to="/Express" style={{ textDecoration: "none" }}>
-                <div className="card d-flex flex-column mb-3 py-2 px-2 ">
+                <div className="card ">
                   <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top w-100 mx-auto" alt="..." />
                   <div className="card-body mb-2 py-2 px-2">
                     <h5 className='text' >Express.js</h5>
                   </div>
                 </div>
               </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='col-md-4'>
-              <Link to="/Express" style={{ textDecoration: "none" }}>
-                <div className="card  mb-3 py-2 px-2 ">
-                  <img src="https://user-images.githubusercontent.com/7660346/180629352-f92216e3-7cf4-4fba-92fa-089dd96b4478.png" className="card-img-top img-fluid mx-auto"  alt="..." />
-                  <div className="card-body mb-2 py-2 px-2">
-                    <h5 className='text' >Next.js</h5>
+              </div>
+            
+            
+              <div className='col-md-4'>
+                <Link to="/Express" style={{ textDecoration: "none" }}>
+                  <div className="card  mb-3 py-2 px-2 ">
+                    <img src="https://user-images.githubusercontent.com/7660346/180629352-f92216e3-7cf4-4fba-92fa-089dd96b4478.png" className="card-img-top img-fluid mx-auto" alt="..." />
+                    <div className="card-body mb-2 py-2 px-2">
+                      <h5 className='text' >Next.js</h5>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='col-md-4'>
-              <Link to="/Express" style={{ textDecoration: "none" }}>
-                <div className="card d-flex flex-column mb-3 py-2 px-2 ">
-                  <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
-                  <div className="card-body mb-2 py-2 px-2">
-                    <h5 className='text' >Node.js</h5>
+                </Link>
+              </div>
+            
+              <div className='col-md-4'>
+                <Link to="/Express" style={{ textDecoration: "none" }}>
+                  <div className="card d-flex flex-column mb-3 py-2 px-2 ">
+                    <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
+                    <div className="card-body mb-2 py-2 px-2">
+                      <h5 className='text' >Node.js</h5>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='col-md-4'>
-              <Link to="/Express" style={{ textDecoration: "none" }}>
-                <div className="card d-flex flex-column mb-3 py-2 px-2 " >
-                  <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
-                  <div className="card-body mb-2 py-2 px-2 ">
-                    <h5 className='text' >React.js</h5>
+                </Link>
+              </div>
+            
+              <div className='col-md-4'>
+                <Link to="/Express" style={{ textDecoration: "none" }}>
+                  <div className="card d-flex flex-column mb-3 py-2 px-2 " >
+                    <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
+                    <div className="card-body mb-2 py-2 px-2 ">
+                      <h5 className='text' >React.js</h5>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            </div>
-          </SwiperSlide>
-          <br /><br />
-        </Swiper>
+                </Link>
+              </div>
+            
         </div>
       </div><br /><br />
 
@@ -468,41 +466,42 @@ const Home = () => {
       </div>
       <br /><br />
 
-      <div className='row'>
-        <div className='col-md-12 d-flex '>
-          <div className='container-fluid card shadow col-md-4 justify-content-between ms-5' style={{ maxWidth: "26rem" }}>
+        <div className='container '>
+      <div className='row gy-4 justify-content-between justify-content-between'>
+          <div className=' card col-md-3  shadow '>
             <img className='img-fluid mx-auto ' src='https://codedthemes.com/wp-content/uploads/2022/04/Flexible-code-icon-1.png.webp' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center' style={{ marginTop: "20px" }}>Flexible Code</h4><br />
             <p className='text-center mb-5 mx-auto' style={{ color: "grey" }}>Easy to start your project with our easy to use code standard.</p>
-          </div>&nbsp;
-          <div className='container-fluid card shadow col-md-4 justify-content-between' style={{ maxWidth: "26rem" }}>
+          </div>
+          <div className='card col-md-3  shadow '>
             <img className='img-fluid mx-auto  ' src='https://codedthemes.com/wp-content/uploads/2022/05/quality.svg' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center mt-3' >Quality First</h4><br />
             <p className='text-center mb-5 mx-auto' style={{ color: "grey" }}>We believe in quality designs and code instead of quantity</p>
-          </div>&nbsp;
-          <div className='container-fluid card shadow col-md-4 justify-content-between' style={{ maxWidth: "26rem" }}>
-            <img className='img-fluid mx-auto ' src='https://codedthemes.com/wp-content/uploads/2022/04/Freemium-Model-icon-1.png.webp' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
+          </div>
+          <div className='card col-md-3  shadow'>
+            <img className='img-fluid mx-auto ' src='https://codedthemes.com/wp-content/uploads/2022/04/Freemium-Model-icon-1.png.webp' style={{ marginLeft: "40px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center' style={{ marginTop: "20px" }}>Freemium Model</h4><br />
             <p className='text-center px-3 mb-5' style={{ color: "grey" }}>Our belief on open-source led us to provide a free versions of most products</p>
           </div>
-        </div>
+        
+      </div>
       </div>
       <br /><br />
 
-      <div className='row'>
-        <div className='col-md-12 d-flex'>
+      <div className='container'>
+        <div className='row gy-4 justify-content-between justify-content-between'>
 
-          <div className='container-fluid card shadow col-md-4 justify-content-between ms-5' style={{ maxWidth: "26rem" }}>
+          <div className='card shadow col-md-3'>
             <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/Documentation-icon-1.png' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center' style={{ marginTop: "20px" }}>Documentation</h4><br />
             <p className='text-center px-3' style={{ marginTop: "-20px", color: "grey" }}>Detailed step by step documentation helper file for each template</p>
-          </div>&nbsp;
-          <div className='container-fluid card shadow col-md-4 justify-content-between' style={{ maxWidth: "26rem" }}>
+          </div>
+          <div className='card shadow col-md-3'>
             <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/Free-updates-icon-1.png' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center' style={{ marginTop: "20px" }}>Free Updates</h4><br />
             <p className='text-center px-3' style={{ marginTop: "-20px", color: "grey" }}>Free updates help to keep your project always up to Date</p>
-          </div>&nbsp;
-          <div className='container-fluid card shadow col-md-4 justify-content-between' style={{ maxWidth: "26rem" }}>
+          </div>
+          <div className='card shadow col-md-3'>
             <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/Support-icon-1.png' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center' style={{ marginTop: "20px" }}>Support</h4><br />
             <p className='text-center px-3' style={{ marginTop: "-20px", color: "grey" }}>Support via chat & ticket to resolve your any technical query</p>
@@ -522,9 +521,9 @@ const Home = () => {
 
       <div className='row justify-content-between'>
         <div className='col-md-4 border-end'>
-          
+
           <img className='img-fluid mx-auto ms-5 px-5' src='https://codedthemes.com/wp-content/uploads/2022/03/Phoenixcoded-logo.png.webp' alt='' />
-        
+
         </div>
         <div className='col-md-4 border-end'>
           <img className='img-fluid mx-auto ms-5 px-5' src='https://codedthemes.com/wp-content/uploads/2022/03/Appseed-logo.png.webp' alt='' />
@@ -534,19 +533,19 @@ const Home = () => {
         </div>
       </div>
       <br /><br />
-      
 
-       
-       
+
+
+
 
     </div >
-)
+  )
 }
 export default Home
 
 
 
-      
+
 
 
 
