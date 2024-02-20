@@ -1,5 +1,5 @@
 import { useFormik } from 'formik';
-import React from 'react';
+import React, { useState } from 'react';
 import * as Yup from 'yup';
 import { useAuth0 } from "@auth0/auth0-react";
 import { enqueueSnackbar } from 'notistack';
@@ -14,6 +14,9 @@ const SignupSchema = Yup.object().shape({
 });
 
 const Login = () => {
+
+
+
 
   const navigate = useNavigate();
 
@@ -65,7 +68,7 @@ const Login = () => {
 
     <div className='col-6 d-flex' style={{ backgroundColor: "#dbedff" }}>
 
-      <img src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='img-fluid mx-auto' alt='' />
+      <img src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='w-100 mx-auto' alt='' />
 
       <div className='container-fluid' style={{ marginLeft: "30px" }}>
         <div className=' py-5'>
@@ -87,15 +90,18 @@ const Login = () => {
               <input type="text" className='form-control mb-4' id='email' onChange={Loginform.handleChange} value={Loginform.values.email} />
               <label htmlFor="" style={{ fontSize: "20px" }}>Password</label>
               <span className='ms-4 fs-6 text-danger'>{Loginform.errors.password}</span>
-              <input type="password" className='form-control mb-4' id='password' onChange={Loginform.handleChange} value={Loginform.values.password} /><br />
+              <input type="password" className='form-control mb-4 ' id='password' onChange={Loginform.handleChange} value={Loginform.values.password} />
+              
+              <br />
 
               <input type='Checkbox' value='IsRemember me' className='mb-3' id='rememberme'></input>
               <label htmlFor='' style={{ marginTop: "-20px", marginLeft: "10px" }}> Remember me</label>
 
 
-              <button className='btn btn-outline-primary w-100' type='submit' onClick="Isremember me">Log In</button>;
+              <button className='btn btn-outline-primary w-100' type='submit' onClick="Isremember me">Log In</button>
+
               <p className='text-center' style={{ marginTop: "20px" }}>Don't have an account? <a href='/Signup'>Sign Up</a></p>
-              &nbsp;
+              
               <br />
             </form>
           </div>

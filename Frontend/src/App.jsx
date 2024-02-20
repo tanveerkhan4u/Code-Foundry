@@ -30,6 +30,7 @@ import Feedback from './Components/Feedback';
 
 
 
+
 function App() {
 
 
@@ -72,6 +73,7 @@ function App() {
                 <Route path='/Footer' element={<Footer />} />
                 <Route path='/Contact' element={<Contact />} />
                 <Route path='/Feedback' element={<Feedback/>} />
+            
 
               </Routes>
 

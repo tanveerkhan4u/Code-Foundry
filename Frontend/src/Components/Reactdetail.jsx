@@ -4,23 +4,23 @@ import { Link } from 'react-router-dom'
 
 const Reactdetail = () => {
   return (
-    <div>
+    <div style={{ overflow: 'hidden' }}>
 
-      <header className='text-dark' style={{ backgroundColor: "#dbedff" }}>
-        <div className='container-fluid py-5' style={{ height: "500px" }}>
-          <motion.h2 animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} className='text' style={{ marginTop: "50px" }}><strong className='text-primary'>React </strong> Admin Template</motion.h2>&nbsp;
-          <motion.p animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} className='text' style={{ marginRight: "700px", color:"grey" }}>Are you looking for a React Admin Template, For your next project? You are at the right place. We are one of the Best Admin Dashboard makers in the market. Our team develops the<strong className='text' style={{ color: "grey" }}> most advanced, highly customizable </strong> React Template. All our Admin Dashboards are fully responsive and tested on all retina devices. With  <strong className='text' style={{ color: "grey" }}> clean, bug-free and well comment code.</strong></motion.p>&nbsp;
+      <header className='row d-flex' style={{ backgroundColor: "#dbedff" }}>
+        <div className='col-md-6'>
+          <motion.h2 animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} className='text mt-5' ><strong className='text-primary'>React </strong> Admin Template</motion.h2>&nbsp;
+          <motion.p animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} className='text' >Are you looking for a React Admin Template, For your next project? You are at the right place. We are one of the Best Admin Dashboard makers in the market. Our team develops the<strong className='text' style={{ color: "grey" }}> most advanced, highly customizable </strong> React Template. All our Admin Dashboards are fully responsive and tested on all retina devices. With  <strong className='text' style={{ color: "grey" }}> clean, bug-free and well comment code.</strong></motion.p>&nbsp;
           <motion.div animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} className='container-fluid d-flex justify-content-between'>
             <div className='row'>
-              <input type="text" className="form-control" placeholder='Search...' style={{ width: "400px", padding: "15px" }} />
+              <input type="text" className="form-control form-control-lg fs-5 mx-5 w-100" placeholder='Search...' style={{ padding: "12px" }} />
               <button className='btn btn-primary' style={{ position: "absolute", width: "100px", left: "290px", height: "45px", marginTop: "5px" }}>search</button>
             </div>
           </motion.div>
         </div>
-      </header>
-      <div className='container-fluid'>
-        <motion.img animate={{ x: 100, y: -40 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/React-Banner.svg' style={{ marginLeft: "700px", marginTop: "-550px" }} alt=''></motion.img>
+      <div className='col-md-6'>
+        <motion.img animate={{ x: 100, y: -40 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/React-Banner.svg' className='w-100 mx-auto' alt=''></motion.img>
       </div>
+      </header>
       <br />
       <br />
       <div className='conatiner-fluid d-flex'>
