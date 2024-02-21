@@ -348,7 +348,7 @@ const Home = () => {
         </marquee>
       </div>
       <br /><br />
-      <div className='container'>
+      <div className='container-fluid'>
         <div className='row gy-4'>
           {/* <Swiper
             slidesPerView={3}
@@ -364,10 +364,10 @@ const Home = () => {
             className="mySwiper"
           > */}
             
-              <div className='col-md-3'>
+              <div className='col-md-4'>
               <Link to="/Express" style={{ textDecoration: "none" }}>
                 <div className="card ">
-                  <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top w-100 mx-auto" alt="..." />
+                  <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
                   <div className="card-body mb-2 py-2 px-2">
                     <h5 className='text' >Express.js</h5>
                   </div>
@@ -378,9 +378,9 @@ const Home = () => {
             
               <div className='col-md-4'>
                 <Link to="/Express" style={{ textDecoration: "none" }}>
-                  <div className="card  mb-3 py-2 px-2 ">
-                    <img src="https://user-images.githubusercontent.com/7660346/180629352-f92216e3-7cf4-4fba-92fa-089dd96b4478.png" className="card-img-top img-fluid mx-auto" alt="..." />
-                    <div className="card-body mb-2 py-2 px-2">
+                  <div className="card ">
+                    <img src="https://user-images.githubusercontent.com/7660346/180629352-f92216e3-7cf4-4fba-92fa-089dd96b4478.png" className="card-img-top img-fluid mx-auto" style={{height:"335px", objectFit:"cover"}} alt="..." />
+                    <div className="card-body">
                       <h5 className='text' >Next.js</h5>
                     </div>
                   </div>
@@ -389,7 +389,7 @@ const Home = () => {
             
               <div className='col-md-4'>
                 <Link to="/Express" style={{ textDecoration: "none" }}>
-                  <div className="card d-flex flex-column mb-3 py-2 px-2 ">
+                  <div className="card ">
                     <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
                     <div className="card-body mb-2 py-2 px-2">
                       <h5 className='text' >Node.js</h5>
@@ -400,7 +400,7 @@ const Home = () => {
             
               <div className='col-md-4'>
                 <Link to="/Express" style={{ textDecoration: "none" }}>
-                  <div className="card d-flex flex-column mb-3 py-2 px-2 " >
+                  <div className="card  " >
                     <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
                     <div className="card-body mb-2 py-2 px-2 ">
                       <h5 className='text' >React.js</h5>
@@ -418,15 +418,19 @@ const Home = () => {
         </marquee>
       </div>
       <br /><br />
-      <div className='container-fluid d-flex'>
+      <div className='container-fluid'>
+        <div className='row gy-4'>
+          <div className=' col-md-4'>
         <Link to="/Nativescript" style={{ textDecoration: "none" }}>
-          <div className="card" style={{ width: "25rem", marginLeft: "40px" }}>
-            <img src="https://img.freepik.com/free-vector/dashboard-user-panel-template_52683-29382.jpg" style={{ height: "275px", objectFit: 'cover' }} className="card-img-top" alt="..." />
+          <div className="card">
+            <img src="https://img.freepik.com/free-vector/dashboard-user-panel-template_52683-29382.jpg"  className="card-img-top img-fluid  mx-auto" alt="..." />
             <div className="card-body">
               <h5 className='text' >NativeScript</h5>
             </div>
           </div>
         </Link>
+        </div>
+        </div>
       </div><br /><br />
 
       <div className='container d-flex'>
