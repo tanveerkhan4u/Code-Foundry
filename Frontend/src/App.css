@@ -62,6 +62,15 @@ padding: 0 30px;
   .vue image{
     display: inline !important;
   }
+  .lion{
+    padding-right: 70px;
+  }
+    .nest{
+      display: inline !important;
+    }
+    .search{
+      padding-right: 70px;
+    }
 }
 
 
