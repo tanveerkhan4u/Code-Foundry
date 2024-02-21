@@ -364,7 +364,9 @@ const Home = () => {
             className="mySwiper"
           > */}
             
-              <div className='col-md-4'>
+              <motion.div  whileHover={{ scale: 1.1 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} className='col-md-4'>
               <Link to="/Express" style={{ textDecoration: "none" }}>
                 <div className="card ">
                   <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
@@ -373,10 +375,12 @@ const Home = () => {
                   </div>
                 </div>
               </Link>
-              </div>
+              </motion.div>
             
             
-              <div className='col-md-4'>
+              <motion.div  whileHover={{ scale: 1.1 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} className='col-md-4'>
                 <Link to="/Express" style={{ textDecoration: "none" }}>
                   <div className="card ">
                     <img src="https://user-images.githubusercontent.com/7660346/180629352-f92216e3-7cf4-4fba-92fa-089dd96b4478.png" className="card-img-top img-fluid mx-auto" style={{height:"335px", objectFit:"cover"}} alt="..." />
@@ -385,9 +389,11 @@ const Home = () => {
                     </div>
                   </div>
                 </Link>
-              </div>
+              </motion.div>
             
-              <div className='col-md-4'>
+              <motion.div  whileHover={{ scale: 1.1 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} className='col-md-4'>
                 <Link to="/Express" style={{ textDecoration: "none" }}>
                   <div className="card ">
                     <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
@@ -396,9 +402,11 @@ const Home = () => {
                     </div>
                   </div>
                 </Link>
-              </div>
+              </motion.div>
             
-              <div className='col-md-4'>
+              <motion.div  whileHover={{ scale: 1.1 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} className='col-md-4 '>
                 <Link to="/Express" style={{ textDecoration: "none" }}>
                   <div className="card  " >
                     <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
@@ -407,7 +415,7 @@ const Home = () => {
                     </div>
                   </div>
                 </Link>
-              </div>
+              </motion.div>
             
         </div>
       </div><br /><br />
@@ -420,7 +428,9 @@ const Home = () => {
       <br /><br />
       <div className='container-fluid'>
         <div className='row gy-4'>
-          <div className=' col-md-4'>
+          <motion.div  whileHover={{ scale: 1.2 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} className=' col-md-4 ms-5'>
         <Link to="/Nativescript" style={{ textDecoration: "none" }}>
           <div className="card">
             <img src="https://img.freepik.com/free-vector/dashboard-user-panel-template_52683-29382.jpg"  className="card-img-top img-fluid  mx-auto" alt="..." />
@@ -429,7 +439,7 @@ const Home = () => {
             </div>
           </div>
         </Link>
-        </div>
+        </motion.div>
         </div>
       </div><br /><br />
 
@@ -472,21 +482,27 @@ const Home = () => {
 
         <div className='container '>
       <div className='row gy-4 justify-content-between justify-content-between'>
-          <div className=' card col-md-3  shadow '>
+          <motion.div whileHover={{ scale: 1.2 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} className=' card col-md-3  shadow '>
             <img className='img-fluid mx-auto ' src='https://codedthemes.com/wp-content/uploads/2022/04/Flexible-code-icon-1.png.webp' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center' style={{ marginTop: "20px" }}>Flexible Code</h4><br />
             <p className='text-center mb-5 mx-auto' style={{ color: "grey" }}>Easy to start your project with our easy to use code standard.</p>
-          </div>
-          <div className='card col-md-3  shadow '>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.2 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} className='card col-md-3  shadow '>
             <img className='img-fluid mx-auto  ' src='https://codedthemes.com/wp-content/uploads/2022/05/quality.svg' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center mt-3' >Quality First</h4><br />
             <p className='text-center mb-5 mx-auto' style={{ color: "grey" }}>We believe in quality designs and code instead of quantity</p>
-          </div>
-          <div className='card col-md-3  shadow'>
+          </motion.div>
+          <motion.div  whileHover={{ scale: 1.2 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} className='card col-md-3  shadow'>
             <img className='img-fluid mx-auto ' src='https://codedthemes.com/wp-content/uploads/2022/04/Freemium-Model-icon-1.png.webp' style={{ marginLeft: "40px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center' style={{ marginTop: "20px" }}>Freemium Model</h4><br />
             <p className='text-center px-3 mb-5' style={{ color: "grey" }}>Our belief on open-source led us to provide a free versions of most products</p>
-          </div>
+          </motion.div>
         
       </div>
       </div>
@@ -495,21 +511,27 @@ const Home = () => {
       <div className='container'>
         <div className='row gy-4 justify-content-between justify-content-between'>
 
-          <div className='card shadow col-md-3'>
+          <motion.div whileHover={{ scale: 1.2 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} className='card shadow col-md-3'>
             <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/Documentation-icon-1.png' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center' style={{ marginTop: "20px" }}>Documentation</h4><br />
             <p className='text-center px-3' style={{ marginTop: "-20px", color: "grey" }}>Detailed step by step documentation helper file for each template</p>
-          </div>
-          <div className='card shadow col-md-3'>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.2 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} className='card shadow col-md-3'>
             <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/Free-updates-icon-1.png' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center' style={{ marginTop: "20px" }}>Free Updates</h4><br />
             <p className='text-center px-3' style={{ marginTop: "-20px", color: "grey" }}>Free updates help to keep your project always up to Date</p>
-          </div>
-          <div className='card shadow col-md-3'>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.2 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} className='card shadow col-md-3'>
             <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/Support-icon-1.png' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center' style={{ marginTop: "20px" }}>Support</h4><br />
             <p className='text-center px-3' style={{ marginTop: "-20px", color: "grey" }}>Support via chat & ticket to resolve your any technical query</p>
-          </div>
+          </motion.div>
 
         </div>
       </div>
