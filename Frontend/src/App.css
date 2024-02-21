@@ -46,7 +46,7 @@ padding: 0 30px;
   color: black;
   padding-left: 8px;
 }
-@media screen  and (max-width: 500px){
+@media screen  and (min-width: 100px) and (max-width: 800px){
   .template{
     display: inline !important;
   }

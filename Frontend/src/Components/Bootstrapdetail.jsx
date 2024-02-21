@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Bootstrapdetail = () => {
   return (
-    <div style={{overflow:"hidden"}}>
+    <div >
 
       <header className='row d-flex' style={{ backgroundColor: "#dbedff" }}>
         <div className='col-md-6 py-5'>
