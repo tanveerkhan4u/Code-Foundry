@@ -68,6 +68,9 @@ padding: 0 30px;
     .nest{
       display: inline !important;
     }
+    .svelte{
+      display: inline !important;
+    }
   }
   
 

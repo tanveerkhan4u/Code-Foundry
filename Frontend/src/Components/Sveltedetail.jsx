@@ -7,51 +7,59 @@ import { Link } from 'react-router-dom'
 const Uikitdetail = () => {
   return (
     <div>
-      <header className='text-dark' style={{ backgroundColor: "#dbedff" }}>
-        <div className='container-fluid py-5' style={{ height: "450px" }}>
-          <motion.h2 animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} className='text' style={{ marginTop: "50px" }}><strong className='text-primary'>Svelte</strong></motion.h2>&nbsp;
-          <motion.p animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} className='text' style={{ marginRight: "700px", color: "grey" }}>Build a Website and landing page with a powerful Svelte by CodedFoundry.com. CodeFoundry Svelte helps you to create a modern design and useful elements with the help of Advance Template.
+      <header className='row  d-flex' style={{ backgroundColor: "#dbedff" }}>
+        <div className='col-md-6 py-5'>
+          <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text'><strong className='text-primary'>Svelte</strong></motion.h2>&nbsp;
+          <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text svelte' style={{color: "grey" }}>Build a Website and landing page with a powerful Svelte by CodedFoundry.com. CodeFoundry Svelte helps you to create a modern design and useful elements with the help of Advance Template.
 
           </motion.p>&nbsp;
 
-          <motion.div animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} className='container-fluid d-flex justify-content-between'>
+          <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='container-fluid d-flex justify-content-between'>
             <div className='row'>
               <input type="text" className="form-control" placeholder='Search...' style={{ width: "400px", padding: "15px" }} />
               <button className='btn btn-primary' style={{ position: "absolute", width: "100px", left: "290px", height: "45px", marginTop: "5px" }}>search</button>
             </div>
           </motion.div>
         </div>
-      </header>
-      <div className='container-fluid d-flex'>
-        <motion.img animate={{ x: 100, y: -40 }} transition={{ ease: "easeOut", duration: 2 }} src='https://cdn.hashnode.com/res/hashnode/image/upload/v1619358925225/50e2XssdE.png' style={{height:"300px", marginLeft:"650px", marginTop:'-350px' }} alt=''></motion.img>
+      <div className='col-md-5'>
+        <motion.img animate={{ x: 50, }} transition={{ ease: "easeOut", duration: 2 }} src='https://cdn.hashnode.com/res/hashnode/image/upload/v1619358925225/50e2XssdE.png' className='img-fluid mx-auto' alt=''></motion.img>
       </div>
+      </header>
       <br />
       <br />
-      <div className='conatiner-fluid d-flex'>
+      <div className='conatiner-fluid'>
+        <div className="row gy-4">
+          <div className="col-md-4">
       <Link to="/Exportstack/svelte" style={{textDecoration:"none"}}>
-        <div className="card" style={{ width: "25rem", marginLeft: "60px" }}>
-          <img src="https://blogct.creative-tim.com/blog/content/images/wordpress/2020/09/notus-svelte-768x576.jpg" className="card-img-top" alt="..." />
+        <div className="card" >
+          <img src="https://blogct.creative-tim.com/blog/content/images/wordpress/2020/09/notus-svelte-768x576.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
           <div className="card-body">
             <h5 className='text' >Svelte</h5>
           </div>
         </div>
         </Link>
+        </div>
+        <div className="col-md-4">
         <Link to="/Exportstack/svelte" style={{textDecoration:"none"}}>
-        <div className="card" style={{ width: "25rem", marginLeft: "20px" }}>
-          <img src="https://www.creative-tim.com/blog/content/images/wordpress/2020/09/svelte-admin-dashboard.jpg" className="card-img-top" alt="..." />
+        <div className="card">
+          <img src="https://www.creative-tim.com/blog/content/images/wordpress/2020/09/svelte-admin-dashboard.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
           <div className="card-body">
             <h5 className='text' >Svelte</h5>
           </div>
         </div>
         </Link>
+        </div>
+        <div className="col-md-4">
         <Link to="/Exportstack/svelte" style={{textDecoration:"none"}}>
-        <div className="card" style={{ width: "25rem", marginLeft: "20px" }}>
-          <img src="https://www.ui-themes.com/content/images/2021/04/image-17.png" style={{height:"300px",objectFit: 'cover'}} className="card-img-top" alt="..." />
+        <div className="card">
+          <img src="https://cdn.dribbble.com/users/4559563/screenshots/15877225/media/17b5e3e81445d5de8c24dd688cd3794f.png?resize=400x300&vertical=center"  className="card-img-top img-fluid mx-auto" alt="..." />
           <div className="card-body">
             <h5 className='text' >Svelte</h5>
           </div>
         </div>
         </Link>
+        </div>
+        </div>
       </div>
       <br /><br />
       <div className='container-fluid'>
@@ -67,90 +75,90 @@ const Uikitdetail = () => {
         <strong>Reactivity :</strong> Svelte provides a reactive programming model that simplifies state management. Reactive updates are automatically handled, reducing the need for explicit state management code and making the development process more intuitive.<br/>
         <strong>Build-time Optimizations : </strong>  Svelte's compiler optimizes the code during the build process, enabling dead code elimination and other optimizations. This results in smaller bundle sizes and can lead to better performance in production.<br/></p>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
   )
 }
 
 export default Uikitdetail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
