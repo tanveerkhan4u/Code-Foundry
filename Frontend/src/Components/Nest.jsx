@@ -20,7 +20,7 @@ const Emberdetail = () => {
           </motion.div>
         </div>
       <div className='col-md-4 mt-5 lion'>
-        <motion.img animate={{ x: 60, y: -10 }} transition={{ ease: "easeOut", duration: 2 }} src='https://miro.medium.com/v2/resize:fit:1358/1*s9kgU8F1eB7Tzs7sG0YhBg.jpeg' className='img-fluid mx-auto' alt=''></motion.img>
+        <motion.img animate={{ x: 50, y: -10 }} transition={{ ease: "easeOut", duration: 2 }} src='https://miro.medium.com/v2/resize:fit:1358/1*s9kgU8F1eB7Tzs7sG0YhBg.jpeg' className='img-fluid mx-auto' alt=''></motion.img>
       </div>
       </header>
       <br />

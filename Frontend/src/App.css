@@ -71,6 +71,12 @@ padding: 0 30px;
     .svelte{
       display: inline !important;
     }
+    .ember{
+      display: inline !important;
+    }
+    .tiger{
+      padding-right: 100px;
+    }
   }
   
 
