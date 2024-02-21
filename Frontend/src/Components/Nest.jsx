@@ -13,7 +13,7 @@ const Emberdetail = () => {
           </motion.p>&nbsp;
           
           <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='container-fluid d-flex justify-content-between'>
-            <div className='row search'>
+            <div className='row '>
               <input type="text" className="form-control" placeholder='Search...' style={{ width: "400px", padding: "15px" }} />
               <button className='btn btn-primary' style={{ position: "absolute", width: "100px", left: "290px", height: "45px", marginTop: "5px" }}>search</button>
             </div>
@@ -26,31 +26,31 @@ const Emberdetail = () => {
       <br />
       <br />
       <div className='conatiner-fluid'>
-        <div className="row gy-4 justify-content-between">
+        <div className="row gy-4 ">
           <div className="col-md-4">
       <Link to="/Exportstack/nestJS" style={{textDecoration:"none"}}>
       <div className="card" >
-          <img src="https://user-images.githubusercontent.com/7660346/180629352-f92216e3-7cf4-4fba-92fa-089dd96b4478.png"  className="card-img-top img-fluid mx-auto" alt="..." />
+          <img src="https://cdn.dribbble.com/users/2562056/screenshots/6251864/uikits.net_-_dashboard_freebies_04_4x.png?resize=400x300&vertical=center"  className="card-img-top img-fluid mx-auto" alt="..." />
           <div className="card-body">
             <h5 className='text' >Nest JS</h5>
           </div>
         </div>
         </Link>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 ">
         <Link to="/Exportstack/nestJS" style={{textDecoration:"none"}}>
-        <div className="card" >
-          <img src="https://jamstackthemes.dev/capture/wrappixel-xtreme-admin-nextjs-free.png" className="card-img-top img-fluid mx-auto" alt="..." />
+        <div className="card " >
+          <img src="https://cdn.dribbble.com/users/2562056/screenshots/6230816/uikits.net_-_dashboard_freebies_02_4x.png?resize=768x576&vertical=center" className="card-img-top img-fluid mx-auto"  alt="..." />
           <div className="card-body">
             <h5 className='text' >Nest JS</h5>
           </div>
         </div>
         </Link>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 ">
         <Link to="/Exportstack/nestJS" style={{textDecoration:"none"}}>
-        <div className="card" >
-          <img src="https://miro.medium.com/v2/resize:fit:1400/1*0aOOhYjMDiMHHTf0y8dB1Q.png" className="card-img-top img-fluid mx-auto" alt="..." />
+        <div className="card " >
+          <img src="https://cdn.dribbble.com/users/243145/screenshots/3383968/media/77881d81349ffb417e3e83ab7128f294.png?resize=768x576&vertical=center" className="card-img-top img-fluid mx-auto" alt="..." />
           <div className="card-body">
             <h5 className='text' >Nest JS</h5>
           </div>
