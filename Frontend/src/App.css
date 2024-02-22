@@ -83,6 +83,13 @@ padding: 0 30px;
     .solidimage{
       padding-right: 110px;
     }
+    .next{
+      display: inline !important;
+    }
+    .nextimage{
+      padding-right: 70px;
+      margin-bottom: 20px;
+    }
   }
   
 

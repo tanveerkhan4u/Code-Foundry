@@ -6,41 +6,57 @@ const Nextdetail = () => {
   return (
     <div>
 
-      <header className='text-dark' style={{ backgroundColor: "#dbedff" }}>
-        <div className='container-fluid py-5' style={{ height: "450px" }}>
-          <motion.h2 animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} className='text' style={{ marginTop: "50px" }}><strong className='text-primary'>NEXT.JS </strong> Admin template</motion.h2>&nbsp;
-          <motion.p animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} className='text' style={{ marginRight: "700px", color: "grey" }}>Next.js is an open-source web development framework created by the private company Vercel providing React-based web applications with server-side rendering and static website generation.</motion.p>&nbsp;
+      <header className='row  d-flex' style={{ backgroundColor: "#dbedff" }}>
+        <div className='col-md-6  py-5' style={{ height: "450px" }}>
+          <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text'><strong className='text-primary'>NEXT.JS </strong> Admin template</motion.h2>&nbsp;
+          <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text next' style={{color: "grey" }}>Next.js is an open-source web development framework created by the private company Vercel providing React-based web applications with server-side rendering and static website generation.</motion.p>&nbsp;
 
-          <motion.div animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} className='container-fluid d-flex justify-content-between'>
+          <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='container-fluid d-flex justify-content-between'>
             <div className='row'>
               <input type="text" className="form-control" placeholder='Search...' style={{ width: "400px", padding: "15px" }} />
               <button className='btn btn-primary' style={{ position: "absolute", width: "100px", left: "290px", height: "45px", marginTop: "5px" }}>search</button>
             </div>
           </motion.div>
         </div>
-      </header>
-      <div className='container-fluid'>
-        <motion.img animate={{ x: 100, y: -40 }} transition={{ ease: "easeOut", duration: 2 }} src='https://images.prismic.io/turing/652ec31afbd9a45bcec81965_Top_Features_in_Next_js_13_7f9a32190f.webp?auto=format,compress' style={{ marginLeft: "700px", marginTop: "-370px", width:"500px", height:"300px"}} alt=''></motion.img>
+      <div className='col-md-4 mt-5 mx-auto nextimage'>
+        <motion.img animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} src='https://images.prismic.io/turing/652ec31afbd9a45bcec81965_Top_Features_in_Next_js_13_7f9a32190f.webp?auto=format,compress' className='img-fluid mx-auto' alt=''></motion.img>
       </div>
+      </header>
       <br />
       <br />
-      <div className='conatiner-fluid d-flex'>
+      <div className='conatiner-fluid '>
+        <div className="row gy-4">
+          <div className="col-md-4">
       <Link to="/Exportstack/next.js" style={{textDecoration:"none"}}>
-        <div className="card" style={{ width: "25rem", marginLeft: "60px" ,height:"375px"}}>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbma3XYD8DQCowKJy1l2f4IFYan6WUB6yaqw&usqp=CAU" style={{objectFit: 'cover'}}  className="card-img-top" alt="..." />
+        <div className="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbma3XYD8DQCowKJy1l2f4IFYan6WUB6yaqw&usqp=CAU"   className="card-img-top img-fluid mx-auto " alt="..." />
           <div className="card-body">
             <h5 className='text' >Next.js</h5>
           </div>
         </div>
         </Link>
+        </div>
+        <div className="col-md-4">
         <Link to="/Exportstack/next.js" style={{textDecoration:"none"}}>
-        <div className="card" style={{ width: "25rem", marginLeft: "60px",height:"375px" }}>
-          <img src="https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357"  className="card-img-top" alt="..." />
+        <div className="card" >
+          <img src="https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357"  className="card-img-top img-fluid mx-auto" alt="..." />
           <div className="card-body">
             <h5 className='text' >Next.js</h5>
           </div>
         </div>
         </Link>
+        </div>
+        <div className="col-md-4">
+        <Link to="/Exportstack/next.js" style={{textDecoration:"none"}}>
+        <div className="card" >
+          <img src="https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357"  className="card-img-top img-fluid mx-auto" alt="..." />
+          <div className="card-body">
+            <h5 className='text' >Next.js</h5>
+          </div>
+        </div>
+        </Link>
+        </div>
+        </div>
       </div>
       <br /><br />
       <div className='container-fluid'>
