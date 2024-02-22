@@ -90,6 +90,13 @@ padding: 0 30px;
       padding-right: 70px;
       margin-bottom: 20px;
     }
+    .graph{
+      display: inline !important;
+    }
+    .graphimage{
+      padding-right: 160px;
+      margin-bottom: 20px;
+    }
   }
   
 
