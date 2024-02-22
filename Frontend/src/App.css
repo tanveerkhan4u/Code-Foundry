@@ -77,6 +77,12 @@ padding: 0 30px;
     .tiger{
       padding-right: 100px;
     }
+    .solid{
+      display: inline !important;
+    }
+    .solidimage{
+      padding-right: 110px;
+    }
   }
   
 
