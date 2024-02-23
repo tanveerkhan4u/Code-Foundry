@@ -11,10 +11,10 @@ import { Pagination, Autoplay } from 'swiper/modules';
 const Home = () => {
   return (
     <div style={{ overflow: 'hidden' }}>
-      <header className='text-dark w-100' style={{ backgroundColor: "#dbedff", height: "650px" }}>
+      <header className='text-dark w-100' style={{ backgroundColor: "#dbedff"}}>
         <div className='container-fluid py-5'>
-          <h1 className='text-center' style={{ marginTop: "20px" }}>Trending Templates</h1>
-          <p className='text-center' style={{ marginTop: "30px", color: "grey" }}>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
+          <h1 className='text-center mt-2'>Trending Templates</h1>
+          <p className='text-center mt-4' style={{ color: "grey" }}>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
 
           <div className='row'>
             <div className='col-md-7 d-flex'>
