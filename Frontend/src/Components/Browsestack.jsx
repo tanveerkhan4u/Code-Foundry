@@ -14,7 +14,7 @@ import { Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
 const Browsestack = () => {
 
 
-  
+
 
   return (
     <div>
@@ -23,20 +23,20 @@ const Browsestack = () => {
         <div className='container py-5'>
           <div className='row'>
             <div className='col-md-6'>
-          <motion.h2 initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='text' style={{ marginTop: "50px" }}>Templates</motion.h2>&nbsp;
-          <motion.p initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='text'>Explore developer friendly Admin Dashboard Templates & UI Kits!</motion.p>&nbsp;
-          <motion.div initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='container d-flex justify-content-between'>
-            <div className='row' style={{ position: 'relative' }}>
-              <input type="text" className="form-control" placeholder='Search...' style={{ width: "400px", padding: "15px" }} />
-              <button className='btn btn-primary' style={{ position: "absolute", width: "100px", right: "10px", height: "45px", marginTop: "5px" }}>search</button>
+              <motion.h2 initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='text' style={{ marginTop: "50px" }}>Templates</motion.h2>&nbsp;
+              <motion.p initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='text'>Explore developer friendly Admin Dashboard Templates & UI Kits!</motion.p>&nbsp;
+              <motion.div initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='container d-flex justify-content-between'>
+                <div className='row' style={{ position: 'relative' }}>
+                  <input type="text" className="form-control" placeholder='Search...' style={{ width: "400px", padding: "15px" }} />
+                  <button className='btn btn-primary' style={{ position: "absolute", width: "100px", right: "10px", height: "45px", marginTop: "5px" }}>search</button>
+                </div>
+              </motion.div>
             </div>
-          </motion.div>
-          </div>
 
-      <div className='col-md-6 my-2'>
-        <motion.img animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/06/Templates-banner.svg' className='img-fluid mx-auto' alt=''></motion.img>
-      </div>
-      </div>
+            <div className='col-md-6 my-2'>
+              <motion.img animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/06/Templates-banner.svg' className='img-fluid mx-auto' alt=''></motion.img>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -47,231 +47,243 @@ const Browsestack = () => {
 
       <div className='row'>
         <div className='col-md-12'>
-        <Swiper
-          slidesPerView={5}
-          spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
-          breakpoints={{
-            200: {
-              slidesPerView: 2,
-              spaceBetween: 30
-            },
-            550: {
-              slidesPerView: 4,
-              spaceBetween: 30
-            },
-            750: {
-              slidesPerView: 5,
-              spaceBetween: 30
-            },
+          <Swiper
+            slidesPerView={5}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            breakpoints={{
+              200: {
+                slidesPerView: 2,
+                spaceBetween: 30
+              },
+              550: {
+                slidesPerView: 4,
+                spaceBetween: 30
+              },
+              750: {
+                slidesPerView: 5,
+                spaceBetween: 30
+              },
 
-            
-          }}
-        
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          modules={[Pagination, Autoplay]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <div>
-              <motion.ul whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif",  fontSize: "30px", textDecoration: 'none', color: "grey" }} to="/Vuedetail">Vue</Link>
-              </motion.ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <motion.ul whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif",  fontSize: "30px", textDecoration: 'none', color: "grey" }} to="/Bootstrapdetail">Bootstrap</Link>
-              </motion.ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div >
-              <motion.ul  whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif",  fontSize: "30px", textDecoration: 'none', color: "grey" }} to="/Reactdetail">React</Link>
-              </motion.ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div >
-              <motion.ul whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} >
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif",  fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Angulardetail">Angular</Link>
-              </motion.ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div >
-              <motion.ul whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif",  fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Emberdetail">Ember</Link>
-              </motion.ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <motion.ul whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif",  fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Solid">Solid</Link>
-              </motion.ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div >
-              <motion.ul whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif",  fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Sveltedetail">Svelte</Link>
-              </motion.ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <motion.ul whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Nextdetail">Next.js</Link>
-              </motion.ul>
-            </div >
-          </SwiperSlide>
-          <SwiperSlide>
-            <div >
-              <motion.ul whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Nest">NestJS</Link>
-              </motion.ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div >
-              <motion.ul whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Express">Express.js</Link>
-              </motion.ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div >
-              <motion.ul whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif",  fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Graphql">GraphQL</Link>
-              </motion.ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div >
-              <motion.ul whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }}>
-                <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Nativescript">NativeScript</Link>
-              </motion.ul>
-            </div>
-          </SwiperSlide>
-          <br /><br />
-        </Swiper>
-        </div> 
+
+            }}
+
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            modules={[Pagination, Autoplay]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div>
+                <motion.ul whileHover={{ scale: 1.2 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }}>
+                  <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: 'none', color: "grey" }} to="/Vuedetail">Vue</Link>
+                </motion.ul>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <motion.ul whileHover={{ scale: 1.2 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }}>
+                  <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: 'none', color: "grey" }} to="/Bootstrapdetail">Bootstrap</Link>
+                </motion.ul>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div >
+                <motion.ul whileHover={{ scale: 1.2 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }}>
+                  <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: 'none', color: "grey" }} to="/Reactdetail">React</Link>
+                </motion.ul>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div >
+                <motion.ul whileHover={{ scale: 1.2 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} >
+                  <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Angulardetail">Angular</Link>
+                </motion.ul>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div >
+                <motion.ul whileHover={{ scale: 1.2 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }}>
+                  <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Emberdetail">Ember</Link>
+                </motion.ul>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <motion.ul whileHover={{ scale: 1.2 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }}>
+                  <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Solid">Solid</Link>
+                </motion.ul>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div >
+                <motion.ul whileHover={{ scale: 1.2 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }}>
+                  <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Sveltedetail">Svelte</Link>
+                </motion.ul>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <motion.ul whileHover={{ scale: 1.2 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }}>
+                  <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Nextdetail">Next.js</Link>
+                </motion.ul>
+              </div >
+            </SwiperSlide>
+            <SwiperSlide>
+              <div >
+                <motion.ul whileHover={{ scale: 1.2 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }}>
+                  <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Nest">NestJS</Link>
+                </motion.ul>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div >
+                <motion.ul whileHover={{ scale: 1.2 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }}>
+                  <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Express">Express.js</Link>
+                </motion.ul>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div >
+                <motion.ul whileHover={{ scale: 1.2 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }}>
+                  <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Graphql">GraphQL</Link>
+                </motion.ul>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div >
+                <motion.ul whileHover={{ scale: 1.2 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }}>
+                  <Link className='text' style={{ fontFamily: "Manrope, sans-serif", fontSize: "30px", textDecoration: "none", color: "grey" }} to="/Nativescript">NativeScript</Link>
+                </motion.ul>
+              </div>
+            </SwiperSlide>
+            <br /><br />
+          </Swiper>
+        </div>
       </div>
       <br />
       <br />
-      
+
 
       <div className='conatiner-fluid'>
         <div className='row gy-4 justify-content-center'>
           <div className='col-md-3 ms-5'>
-        <Link to="/Exportstack/vue" style={{textDecoration:"none"}}>
-        <div className="card" >
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2023/12/Mantis-free.png" className="card-img-top img-fluid mx-auto" alt="..." />
-          <div className="card-body">
-            <h5 className='text' >Vue</h5>
+            <Link to="/Exportstack/vue" style={{ textDecoration: "none" }}>
+              <div className="card" >
+                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2023/12/Mantis-free.png" whileHover={{ scale: 1.1 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body">
+                  <h5 className='text' >Vue</h5>
+                </div>
+              </div>
+            </Link>
           </div>
-        </div>
-        </Link>
-        </div>
-          
+
           <div className='col-md-3 ms-5'>
-        <Link to="/Exportstack/bootstrap" style={{textDecoration:"none"}}>
-        <div className="card " >
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2023/02/Mantis-pro-bootstrap5.png" className="card-img-top img-fluid mx-auto" alt="..." />
-          <div className="card-body">
-            <h5 className='text' >Bootstrap</h5>
+            <Link to="/Exportstack/bootstrap" style={{ textDecoration: "none" }}>
+              <div className="card " >
+                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2023/02/Mantis-pro-bootstrap5.png" whileHover={{ scale: 1.1 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body">
+                  <h5 className='text' >Bootstrap</h5>
+                </div>
+              </div>
+            </Link>
           </div>
-        </div>
-        </Link>
-        </div>
-            
-            <div className='col-md-3 ms-5'>
-        <Link to="/Exportstack/react" style={{textDecoration:"none"}}>
-        <div className="card " >
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-React-Admin-Template.webp" className="card-img-top img-fluid mx-auto" alt="..." />
-          <div className="card-body">
-            <h5 className='text' >React</h5>
+
+          <div className='col-md-3 ms-5'>
+            <Link to="/Exportstack/react" style={{ textDecoration: "none" }}>
+              <div className="card " >
+                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-React-Admin-Template.webp" whileHover={{ scale: 1.1 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body">
+                  <h5 className='text' >React</h5>
+                </div>
+              </div>
+            </Link>
           </div>
-        </div>
-        </Link>
-        </div>
         </div>
       </div>
       <br />
-           
-           
+
+
 
       <div className='conatiner-fluid d-flex'>
         <div className='row gy-4 justify-content-center'>
           <div className='col-md-3 ms-5'>
-        <Link to="/Exportstack/angular" style={{textDecoration:"none"}}>
-        <div className="card" >
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2023/08/Mantis-Angular-16-Free-Admin-Template.png" className="card-img-top img-fluid mx-auto" alt="..." />
-          <div className="card-body">
-            <h5 className='text' >Angular</h5>
+            <Link to="/Exportstack/angular" style={{ textDecoration: "none" }}>
+              <div className="card" >
+                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2023/08/Mantis-Angular-16-Free-Admin-Template.png"  whileHover={{ scale: 1.1 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body">
+                  <h5 className='text' >Angular</h5>
+                </div>
+              </div>
+            </Link>
           </div>
-        </div>
-        </Link>
-        </div>
-            <div className='col-md-3 ms-5'>
-        <Link to="/Exportstack/django" style={{textDecoration:"none"}}>
-        <div className="card " >
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2022/09/Berry-bootstrap-django.png" className="card-img-top img-fluid mx-auto" alt="..." />
-          <div className="card-body">
-            <h5 className='text' >Django</h5>
+          <div className='col-md-3 ms-5'>
+            <Link to="/Exportstack/django" style={{ textDecoration: "none" }}>
+              <div className="card " >
+                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/09/Berry-bootstrap-django.png"  whileHover={{ scale: 1.1 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body">
+                  <h5 className='text' >Django</h5>
+                </div>
+              </div>
+            </Link>
           </div>
-        </div>
-        </Link>
-        </div>
-            
-            <div className='col-md-3 ms-5'>
-        <Link to="/Exportstack/laravel" style={{textDecoration:"none"}}>
-        <div className="card">
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-Laravel-Admin-Dashboard.webp" className="card-img-top img-fluid mx-auto" alt="..." />
-          <div className="card-body">
-            <h5 className='text' >Laravel</h5>
+
+          <div className='col-md-3 ms-5'>
+            <Link to="/Exportstack/laravel" style={{ textDecoration: "none" }}>
+              <div className="card">
+                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-Laravel-Admin-Dashboard.webp"  whileHover={{ scale: 1.1 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }}className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body">
+                  <h5 className='text' >Laravel</h5>
+                </div>
+              </div>
+            </Link>
           </div>
-        </div>
-        </Link>
-        </div>
         </div>
       </div>
       <br />
       <br />
-          
-            
+
+
       <div className='container-fluid'>
         <h2 className='text' style={{ marginLeft: "50px" }}>Admin Template</h2><br />
         <p className='text' style={{ marginLeft: "50px" }}>If you are a developer and worried about your back-end UI for your project, so here we offer a <strong>highly responsive </strong> and <strong>well-designed </strong>admin dashboard template.<br />
@@ -332,51 +344,51 @@ const Browsestack = () => {
           <li>You will get <strong> premium support, docs access, </strong>and  <strong>free updates </strong> based on the license you purchased.</li>
         </ul>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     </div>
-
-
-
-
-
-
-
-
-
-
   )
 }
-
 export default Browsestack;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
