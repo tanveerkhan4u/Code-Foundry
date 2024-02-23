@@ -253,63 +253,40 @@ const Home = () => {
 
       <div className="container-fluid">
         <div className="row gy-4">
-        <div className='col-md-4'>
-          <Link to="/Sveltedetail" style={{ textDecoration: "none" }}>
-            <div className="card mb-3 py-2 px-2 h-100">
-              <img src="https://www.creative-tim.com/blog/content/images/wordpress/2020/09/svelte-admin-dashboard.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
-              <div className="card-body mb-3 py-2 px-2">
-                <h5 className='text' >Svelte</h5>
+          <div className='col-md-4'>
+            <Link to="/Sveltedetail" style={{ textDecoration: "none" }}>
+              <div className="card mb-3 py-2 px-2 h-100">
+                <img src="https://www.creative-tim.com/blog/content/images/wordpress/2020/09/svelte-admin-dashboard.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body mb-3 py-2 px-2">
+                  <h5 className='text' >Svelte</h5>
+                </div>
               </div>
-            </div>
-          </Link>
-        </div>
-        <div className='col-md-4'>
-          <Link to="/Solid" style={{ textDecoration: "none" }}>
-            <div className="card mb-3 py-2 px-2 h-100">
-              <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/concept-free-admin-dashboard-panel.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
-              <div className="card-body mb-3 py-2 px-2">
-                <h5 className='text' >Solid</h5>
+            </Link>
+          </div>
+          <div className='col-md-4'>
+            <Link to="/Solid" style={{ textDecoration: "none" }}>
+              <div className="card mb-3 py-2 px-2 h-100">
+                <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/concept-free-admin-dashboard-panel.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body mb-3 py-2 px-2">
+                  <h5 className='text' >Solid</h5>
+                </div>
               </div>
-            </div>
-          </Link>
-        </div>
+            </Link>
+          </div>
 
-        <div className='col-md-4'>
-          <Link to="/Nextdetail" style={{ textDecoration: "none" }}>
-            <div className="card mb-3 py-2 px-2 h-100">
-              <img src="https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357" className="card-img-top img-fluid mx-auto" alt="..." />
-              <div className="card-body mb-3 py-2 px-2">
-                <h5 className='text' >Next.Js</h5>
+          <div className='col-md-4'>
+            <Link to="/Nextdetail" style={{ textDecoration: "none" }}>
+              <div className="card mb-3 py-2 px-2 h-100">
+                <img src="https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357" className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body mb-3 py-2 px-2">
+                  <h5 className='text' >Next.Js</h5>
+                </div>
               </div>
-            </div>
-          </Link>
-        </div>
+            </Link>
+          </div>
         </div>
       </div>
       <br /><br />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <div className='container bg-body-secondary'>
         <marquee behavior="scroll" direction="left" scrollamount="15">
           <h1 className='text-center'>BACK-END FRAMEWORKS</h1>
@@ -317,21 +294,12 @@ const Home = () => {
       </div>
       <br /><br />
       <div className='container-fluid'>
+        <h2 className='text' style={{ marginLeft: "40px" }}>New <strong className='text-primary'>Products</strong></h2><br />
+        <p className='text fs-5' style={{ marginLeft: "40px", color: "grey" }}>These are the new babies in the collection. Check them out as they will be mature soon!</p>
+      </div>
+      <br />
+      <div className='container-fluid'>
         <div className='row gy-4'>
-          {/* <Swiper
-            slidesPerView={3}
-            spaceBetween={10}
-            pagination={{
-              clickable: true,
-            }}
-            autoplay={{
-              delay: 1500,
-              disableOnInteraction: false,
-            }}
-            modules={[Pagination, Autoplay]}
-            className="mySwiper"
-          > */}
-
           <motion.div whileHover={{ scale: 1.1 }}
             onHoverStart={e => { }}
             onHoverEnd={e => { }} className='col-md-4'>
@@ -344,8 +312,6 @@ const Home = () => {
               </div>
             </Link>
           </motion.div>
-
-
           <motion.div whileHover={{ scale: 1.1 }}
             onHoverStart={e => { }}
             onHoverEnd={e => { }} className='col-md-4'>
@@ -358,7 +324,6 @@ const Home = () => {
               </div>
             </Link>
           </motion.div>
-
           <motion.div whileHover={{ scale: 1.1 }}
             onHoverStart={e => { }}
             onHoverEnd={e => { }} className='col-md-4'>
@@ -371,7 +336,6 @@ const Home = () => {
               </div>
             </Link>
           </motion.div>
-
           <motion.div whileHover={{ scale: 1.1 }}
             onHoverStart={e => { }}
             onHoverEnd={e => { }} className='col-md-4 '>
@@ -384,10 +348,8 @@ const Home = () => {
               </div>
             </Link>
           </motion.div>
-
         </div>
       </div><br /><br />
-
       <div className='container bg-body-secondary'>
         <marquee behavior="scroll" direction="left" scrollamount="15">
           <h1 className='text-center'>MOBILE APPLICATION</h1>
@@ -398,7 +360,7 @@ const Home = () => {
         <div className='row gy-4'>
           <motion.div whileHover={{ scale: 1.2 }}
             onHoverStart={e => { }}
-            onHoverEnd={e => { }} className=' col-md-4 ms-5'>
+            onHoverEnd={e => { }} className=' col-md-4 '>
             <Link to="/Nativescript" style={{ textDecoration: "none" }}>
               <div className="card">
                 <img src="https://img.freepik.com/free-vector/dashboard-user-panel-template_52683-29382.jpg" className="card-img-top img-fluid  mx-auto" alt="..." />
@@ -471,14 +433,11 @@ const Home = () => {
             <h4 className='text-center' style={{ marginTop: "20px" }}>Freemium Model</h4><br />
             <p className='text-center px-3 mb-5' style={{ color: "grey" }}>Our belief on open-source led us to provide a free versions of most products</p>
           </motion.div>
-
         </div>
       </div>
       <br /><br />
-
       <div className='container'>
         <div className='row gy-4 justify-content-between justify-content-between'>
-
           <motion.div whileHover={{ scale: 1.2 }}
             onHoverStart={e => { }}
             onHoverEnd={e => { }} className='card shadow col-md-3'>
@@ -504,20 +463,15 @@ const Home = () => {
         </div>
       </div>
       <br /><br />
-
-
       <div className='row '>
         <div className='col-md-12'>
           <h2 className='text-center' >Our <strong className='text-primary'>Partners</strong></h2>
         </div>
       </div>
       <br />
-
       <div className='row justify-content-between'>
         <div className='col-md-4 border-end'>
-
           <img className='img-fluid mx-auto ms-5 px-5' src='https://codedthemes.com/wp-content/uploads/2022/03/Phoenixcoded-logo.png.webp' alt='' />
-
         </div>
         <div className='col-md-4 border-end'>
           <img className='img-fluid mx-auto ms-5 px-5' src='https://codedthemes.com/wp-content/uploads/2022/03/Appseed-logo.png.webp' alt='' />
@@ -527,15 +481,54 @@ const Home = () => {
         </div>
       </div>
       <br /><br />
-
-
-
-
-
     </div >
   )
 }
 export default Home
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
