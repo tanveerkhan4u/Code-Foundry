@@ -33,7 +33,7 @@ const Browsestack = () => {
               </motion.div>
             </div>
 
-            <div className='col-md-6 my-2'>
+            <div className='col-md-6 my-2 broimg'>
               <motion.img animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/06/Templates-banner.svg' className='img-fluid mx-auto' alt=''></motion.img>
             </div>
           </div>
