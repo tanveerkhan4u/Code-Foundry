@@ -51,9 +51,9 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Bootstrapdetail" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <motion.div  whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card mb-3 py-5 px-2' style={{ height: "220px" }}>
+                <motion.div whileHover={{ scale: 1.1 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className='card mb-3 py-5 px-2' style={{ height: "220px" }}>
                   <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/boostrap-logo.jpg.webp' alt='' />
                   <h4 className='text-center' style={{ marginTop: "20px" }}>Bootstrap</h4>
                 </motion.div>
@@ -64,8 +64,8 @@ const Home = () => {
             <div>
               <Link to="/Angulardetail" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
                 <motion.div whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card mb-3 py-5 px-2' style={{ height: "220px" }}>
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className='card mb-3 py-5 px-2' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://codedthemes.com/wp-content/uploads/2022/04/angular-logo.jpg.webp' alt='' />
                   <h4 className='text-center' style={{ marginTop: "20px" }}>Angular</h4>
                 </motion.div>
@@ -76,8 +76,8 @@ const Home = () => {
             <div>
               <Link to="/Reactdetail" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
                 <motion.div whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card mb-3 py-5 px-2' style={{ height: "220px" }}>
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className='card mb-3 py-5 px-2' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://codedthemes.com/wp-content/uploads/2022/04/react-logo.jpg.webp' alt='' />
                   <h4 className='text-center' style={{ marginTop: "20px" }}>React</h4>
                 </motion.div>
@@ -88,8 +88,8 @@ const Home = () => {
             <div>
               <Link to="/Vuedetail" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
                 <motion.div whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card mb-3 py-5 px-2' style={{ height: "220px" }} >
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className='card mb-3 py-5 px-2' style={{ height: "220px" }} >
                   <img className='mx-auto img-fluid ' src='https://masteringjs.io/assets/images/vue/vue.jpg' style={{ width: "100px" }} alt='' />
                   <h4 className='text-center'>Vue</h4>
                 </motion.div>
@@ -99,9 +99,9 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Nest" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <motion.div  whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card mb-3 py-5' style={{ height: "220px" }}>
+                <motion.div whileHover={{ scale: 1.1 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className='card mb-3 py-5' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://static-00.iconduck.com/assets.00/nestjs-icon-2048x2040-3rrvcej8.png' style={{ width: "100px" }} alt='' />
                   <h4 className='text-center' style={{ marginTop: "20px" }}>NestJS</h4>
                 </motion.div>
@@ -111,9 +111,9 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Sveltedetail" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <motion.div  whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card mb-3 py-5' style={{ height: "220px" }}>
+                <motion.div whileHover={{ scale: 1.1 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className='card mb-3 py-5' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://w7.pngwing.com/pngs/598/9/png-transparent-svelte-hd-logo-thumbnail.png' style={{ width: "100px" }} alt='' />
                   <h4 className='text-center' style={{ marginTop: "20px" }}>Svelte</h4>
                 </motion.div>
@@ -123,9 +123,9 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Emberdetail" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <motion.div  whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card mb-3 py-5' style={{ height: "220px" }}>
+                <motion.div whileHover={{ scale: 1.1 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className='card mb-3 py-5' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://emberjs.com/images/brand/ember-tomster-lockup-4c.svg' style={{ width: "100px" }} alt='' />
                   <h4 className='text-center' style={{ marginTop: "-5px" }}>Ember</h4>
                 </motion.div>
@@ -136,8 +136,8 @@ const Home = () => {
             <div>
               <Link to="/Nextdetail" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
                 <motion.div whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card mb-3 py-5' style={{ height: "220px" }}>
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className='card mb-3 py-5' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://miro.medium.com/v2/resize:fit:650/1*Hva7hcsFWulFUPhrEWui1A.jpeg' style={{ width: "100px" }} alt='' />
                   <h4 className='text-center'>Next.JS</h4>
                 </motion.div>
@@ -148,8 +148,8 @@ const Home = () => {
             <div>
               <Link to="/Solid" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
                 <motion.div whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card mb-3 py-5' style={{ height: "220px" }}>
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className='card mb-3 py-5' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://avatars.githubusercontent.com/u/79226042?s=280&v=4' style={{ width: "100px" }} alt='' />
                   <h4 className='text-center' style={{ marginTop: "-2px" }}>Solid</h4>
                 </motion.div>
@@ -160,8 +160,8 @@ const Home = () => {
             <div>
               <Link to="/Express" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
                 <motion.div whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card mb-3 py-5' style={{ height: "220px" }}>
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className='card mb-3 py-5' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png' style={{ width: "100px" }} alt='' />
                   <h4 className='text-center'>Express.js</h4>
                 </motion.div>
@@ -171,9 +171,9 @@ const Home = () => {
           <SwiperSlide>
             <div>
               <Link to="/Graphql" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
-                <motion.div  whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card mb-3 py-5' style={{ height: "220px" }}>
+                <motion.div whileHover={{ scale: 1.1 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className='card mb-3 py-5' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://cdn.iconscout.com/icon/free/png-256/free-graphql-3521468-2944912.png' style={{ width: "100px" }} alt='' />
                   <h4 className='text-center' style={{ marginTop: "5px" }}>GraphQL</h4>
                 </motion.div>
@@ -184,8 +184,8 @@ const Home = () => {
             <div>
               <Link to="/Nativescript" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
                 <motion.div whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card mb-2 py-5' style={{ height: "220px" }}>
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className='card mb-2 py-5' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://seeklogo.com/images/N/nativescript-logo-309BDE68D3-seeklogo.com.png' style={{ width: "100px" }} alt='' />
                   <h4 className='text-center' style={{ marginTop: "10px" }}>Nativescript</h4>
                 </motion.div>
@@ -196,14 +196,6 @@ const Home = () => {
         </Swiper>
       </div>
       <br /><br />
-
-
-
-
-
-
-
-
       <div className='container bg-body-secondary'>
         <marquee behavior="scroll" direction="left" scrollamount="15">
           <h1 className='text-center'>FRONT-END FRAMEWORKS</h1>
@@ -216,8 +208,7 @@ const Home = () => {
 
       </div>
       <br />
-     
-      <div className='container '>
+      <div className='container-fluid '>
         <div className='row gy-4 '>
           <div className='col-md-4 '>
             <Link to="/Angulardetail" style={{ textDecoration: "none" }}>
@@ -231,12 +222,6 @@ const Home = () => {
 
             </Link>
           </div>
-
-
-
-
-
-
           <div className='col-md-4'>
             <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
               <div className="card mb-3 py-2 px-2 p-2 h-100">
@@ -247,7 +232,6 @@ const Home = () => {
               </div>
             </Link>
           </div>
-
           <div className='col-md-4'>
             <Link to="/Vuedetail" style={{ textDecoration: "none" }}>
               <div className="card mb-3 py-2 px-2 h-100">
@@ -260,52 +244,71 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      <div className='col-md-3'>
-        <Link to="/Sveltedetail" style={{ textDecoration: "none" }}>
-          <div className="card mb-3 py-2 px-2" style={{ maxWidth: "25rem" }}>
-            <img src="https://www.creative-tim.com/blog/content/images/wordpress/2020/09/svelte-admin-dashboard.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
-            <div className="card-body mb-3 py-2 px-2">
-              <h5 className='text' >Svelte</h5>
-            </div>
-          </div>
-        </Link>
-      </div>
-
-      <div className='col-md-3'>
-        <Link to="/Emberdetail" style={{ textDecoration: "none" }}>
-          <div className="card mb-3 py-2 px-2" style={{ maxWidth: "25rem" }}>
-            <img src="https://www.drupal.org/files/project-images/Screen%20Shot%202013-09-06%20at%2012.46.00%20PM.png" className="card-img-top img-fluid mx-auto mb-3" style={{ height: "270px", objectFit: 'cover' }} alt="..." />
-            <div className="card-body mb-3 py-2 px-2">
-              <h5 className='text' >Ember</h5>
-            </div>
-          </div>
-        </Link>
-      </div>
-
-      <div className='col-md-3'>
-        <Link to="/Solid" style={{ textDecoration: "none" }}>
-          <div className="card mb-3 py-2 px-2 " style={{ maxWidth: "25rem" }}>
-            <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/concept-free-admin-dashboard-panel.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
-            <div className="card-body mb-3 py-2 px-2">
-              <h5 className='text' >Solid</h5>
-            </div>
-          </div>
-        </Link>
-      </div>
-
-      <div className='col-md-3'>
-        <Link to="/Nextdetail" style={{ textDecoration: "none" }}>
-          <div className="card mb-3 py-2 px-2" style={{ maxWidth: "25rem" }}>
-            <img src="https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357" className="card-img-top img-fluid mx-auto" alt="..." />
-            <div className="card-body mb-3 py-2 px-2">
-              <h5 className='text' >Next.Js</h5>
-            </div>
-          </div>
-        </Link>
-      </div>
-
       <br /><br />
+      <div className='container-fluid'>
+        <h2 className='text' style={{ marginLeft: "40px" }}>Featured <strong className='text-primary'>Products</strong></h2><br />
+        <p className='text fs-5' style={{ marginLeft: "40px", color: "grey" }}>Checkout our featured products having top review and love by customers!</p>
+      </div>
+      <br />
+
+      <div className="container-fluid">
+        <div className="row gy-4">
+        <div className='col-md-4'>
+          <Link to="/Sveltedetail" style={{ textDecoration: "none" }}>
+            <div className="card mb-3 py-2 px-2 h-100">
+              <img src="https://www.creative-tim.com/blog/content/images/wordpress/2020/09/svelte-admin-dashboard.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
+              <div className="card-body mb-3 py-2 px-2">
+                <h5 className='text' >Svelte</h5>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className='col-md-4'>
+          <Link to="/Solid" style={{ textDecoration: "none" }}>
+            <div className="card mb-3 py-2 px-2 h-100">
+              <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/concept-free-admin-dashboard-panel.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
+              <div className="card-body mb-3 py-2 px-2">
+                <h5 className='text' >Solid</h5>
+              </div>
+            </div>
+          </Link>
+        </div>
+
+        <div className='col-md-4'>
+          <Link to="/Nextdetail" style={{ textDecoration: "none" }}>
+            <div className="card mb-3 py-2 px-2 h-100">
+              <img src="https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357" className="card-img-top img-fluid mx-auto" alt="..." />
+              <div className="card-body mb-3 py-2 px-2">
+                <h5 className='text' >Next.Js</h5>
+              </div>
+            </div>
+          </Link>
+        </div>
+        </div>
+      </div>
+      <br /><br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <div className='container bg-body-secondary'>
         <marquee behavior="scroll" direction="left" scrollamount="15">
@@ -328,60 +331,60 @@ const Home = () => {
             modules={[Pagination, Autoplay]}
             className="mySwiper"
           > */}
-            
-              <motion.div  whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='col-md-4'>
-              <Link to="/Express" style={{ textDecoration: "none" }}>
-                <div className="card ">
-                  <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
-                  <div className="card-body mb-2 py-2 px-2">
-                    <h5 className='text' >Express.js</h5>
-                  </div>
+
+          <motion.div whileHover={{ scale: 1.1 }}
+            onHoverStart={e => { }}
+            onHoverEnd={e => { }} className='col-md-4'>
+            <Link to="/Express" style={{ textDecoration: "none" }}>
+              <div className="card ">
+                <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body mb-2 py-2 px-2">
+                  <h5 className='text' >Express.js</h5>
                 </div>
-              </Link>
-              </motion.div>
-            
-            
-              <motion.div  whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='col-md-4'>
-                <Link to="/Express" style={{ textDecoration: "none" }}>
-                  <div className="card ">
-                    <img src="https://user-images.githubusercontent.com/7660346/180629352-f92216e3-7cf4-4fba-92fa-089dd96b4478.png" className="card-img-top img-fluid mx-auto" style={{height:"335px", objectFit:"cover"}} alt="..." />
-                    <div className="card-body">
-                      <h5 className='text' >Next.js</h5>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            
-              <motion.div  whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='col-md-4'>
-                <Link to="/Express" style={{ textDecoration: "none" }}>
-                  <div className="card ">
-                    <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
-                    <div className="card-body mb-2 py-2 px-2">
-                      <h5 className='text' >Node.js</h5>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            
-              <motion.div  whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='col-md-4 '>
-                <Link to="/Express" style={{ textDecoration: "none" }}>
-                  <div className="card  " >
-                    <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
-                    <div className="card-body mb-2 py-2 px-2 ">
-                      <h5 className='text' >React.js</h5>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            
+              </div>
+            </Link>
+          </motion.div>
+
+
+          <motion.div whileHover={{ scale: 1.1 }}
+            onHoverStart={e => { }}
+            onHoverEnd={e => { }} className='col-md-4'>
+            <Link to="/Express" style={{ textDecoration: "none" }}>
+              <div className="card ">
+                <img src="https://user-images.githubusercontent.com/7660346/180629352-f92216e3-7cf4-4fba-92fa-089dd96b4478.png" className="card-img-top img-fluid mx-auto" style={{ height: "335px", objectFit: "cover" }} alt="..." />
+                <div className="card-body">
+                  <h5 className='text' >Next.js</h5>
+                </div>
+              </div>
+            </Link>
+          </motion.div>
+
+          <motion.div whileHover={{ scale: 1.1 }}
+            onHoverStart={e => { }}
+            onHoverEnd={e => { }} className='col-md-4'>
+            <Link to="/Express" style={{ textDecoration: "none" }}>
+              <div className="card ">
+                <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body mb-2 py-2 px-2">
+                  <h5 className='text' >Node.js</h5>
+                </div>
+              </div>
+            </Link>
+          </motion.div>
+
+          <motion.div whileHover={{ scale: 1.1 }}
+            onHoverStart={e => { }}
+            onHoverEnd={e => { }} className='col-md-4 '>
+            <Link to="/Express" style={{ textDecoration: "none" }}>
+              <div className="card  " >
+                <img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body mb-2 py-2 px-2 ">
+                  <h5 className='text' >React.js</h5>
+                </div>
+              </div>
+            </Link>
+          </motion.div>
+
         </div>
       </div><br /><br />
 
@@ -393,18 +396,18 @@ const Home = () => {
       <br /><br />
       <div className='container-fluid'>
         <div className='row gy-4'>
-          <motion.div  whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className=' col-md-4 ms-5'>
-        <Link to="/Nativescript" style={{ textDecoration: "none" }}>
-          <div className="card">
-            <img src="https://img.freepik.com/free-vector/dashboard-user-panel-template_52683-29382.jpg"  className="card-img-top img-fluid  mx-auto" alt="..." />
-            <div className="card-body">
-              <h5 className='text' >NativeScript</h5>
-            </div>
-          </div>
-        </Link>
-        </motion.div>
+          <motion.div whileHover={{ scale: 1.2 }}
+            onHoverStart={e => { }}
+            onHoverEnd={e => { }} className=' col-md-4 ms-5'>
+            <Link to="/Nativescript" style={{ textDecoration: "none" }}>
+              <div className="card">
+                <img src="https://img.freepik.com/free-vector/dashboard-user-panel-template_52683-29382.jpg" className="card-img-top img-fluid  mx-auto" alt="..." />
+                <div className="card-body">
+                  <h5 className='text' >NativeScript</h5>
+                </div>
+              </div>
+            </Link>
+          </motion.div>
         </div>
       </div><br /><br />
 
@@ -445,31 +448,31 @@ const Home = () => {
       </div>
       <br /><br />
 
-        <div className='container '>
-      <div className='row gy-4 justify-content-between justify-content-between'>
+      <div className='container '>
+        <div className='row gy-4 justify-content-between justify-content-between'>
           <motion.div whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className=' card col-md-3  shadow '>
+            onHoverStart={e => { }}
+            onHoverEnd={e => { }} className=' card col-md-3  shadow '>
             <img className='img-fluid mx-auto ' src='https://codedthemes.com/wp-content/uploads/2022/04/Flexible-code-icon-1.png.webp' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center' style={{ marginTop: "20px" }}>Flexible Code</h4><br />
             <p className='text-center mb-5 mx-auto' style={{ color: "grey" }}>Easy to start your project with our easy to use code standard.</p>
           </motion.div>
           <motion.div whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card col-md-3  shadow '>
+            onHoverStart={e => { }}
+            onHoverEnd={e => { }} className='card col-md-3  shadow '>
             <img className='img-fluid mx-auto  ' src='https://codedthemes.com/wp-content/uploads/2022/05/quality.svg' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center mt-3' >Quality First</h4><br />
             <p className='text-center mb-5 mx-auto' style={{ color: "grey" }}>We believe in quality designs and code instead of quantity</p>
           </motion.div>
-          <motion.div  whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card col-md-3  shadow'>
+          <motion.div whileHover={{ scale: 1.2 }}
+            onHoverStart={e => { }}
+            onHoverEnd={e => { }} className='card col-md-3  shadow'>
             <img className='img-fluid mx-auto ' src='https://codedthemes.com/wp-content/uploads/2022/04/Freemium-Model-icon-1.png.webp' style={{ marginLeft: "40px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center' style={{ marginTop: "20px" }}>Freemium Model</h4><br />
             <p className='text-center px-3 mb-5' style={{ color: "grey" }}>Our belief on open-source led us to provide a free versions of most products</p>
           </motion.div>
-        
-      </div>
+
+        </div>
       </div>
       <br /><br />
 
@@ -477,22 +480,22 @@ const Home = () => {
         <div className='row gy-4 justify-content-between justify-content-between'>
 
           <motion.div whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card shadow col-md-3'>
+            onHoverStart={e => { }}
+            onHoverEnd={e => { }} className='card shadow col-md-3'>
             <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/Documentation-icon-1.png' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center' style={{ marginTop: "20px" }}>Documentation</h4><br />
             <p className='text-center px-3' style={{ marginTop: "-20px", color: "grey" }}>Detailed step by step documentation helper file for each template</p>
           </motion.div>
           <motion.div whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card shadow col-md-3'>
+            onHoverStart={e => { }}
+            onHoverEnd={e => { }} className='card shadow col-md-3'>
             <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/Free-updates-icon-1.png' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center' style={{ marginTop: "20px" }}>Free Updates</h4><br />
             <p className='text-center px-3' style={{ marginTop: "-20px", color: "grey" }}>Free updates help to keep your project always up to Date</p>
           </motion.div>
           <motion.div whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className='card shadow col-md-3'>
+            onHoverStart={e => { }}
+            onHoverEnd={e => { }} className='card shadow col-md-3'>
             <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/Support-icon-1.png' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
             <h4 className='text-center' style={{ marginTop: "20px" }}>Support</h4><br />
             <p className='text-center px-3' style={{ marginTop: "-20px", color: "grey" }}>Support via chat & ticket to resolve your any technical query</p>
