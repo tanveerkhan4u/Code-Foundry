@@ -215,70 +215,11 @@ const Home = () => {
         <p className='text' style={{ marginLeft: "40px", color: "grey" }}>Explore our best-selling templates of all time!</p>
 
       </div>
-      <br /><br />
+      <br />
+     
       <div className='container '>
-        <div className='row gy-4 justify-content-between '>
-          <div className='col-md-3'>
-            <div whileHover={{ scale: 1.1 }}
-              onHoverStart={e => { }}
-              onHoverEnd={e => { }} className="card">
-              <img src="https://www.drupal.org/files/project-images/Screen%20Shot%202013-09-06%20at%2012.46.00%20PM.png" className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
-                </p>
-                <a href="#" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className='col-md-3'>
-
-            {/* <Link to="/Reactdetail" style={{ textDecoration: "none" }}> */}
-            <div whileHover={{ scale: 1.1 }}
-              onHoverStart={e => { }}
-              onHoverEnd={e => { }} className="card " style={{ width: "18rem" }}>
-              <img src="https://www.drupal.org/files/project-images/Screen%20Shot%202013-09-06%20at%2012.46.00%20PM.png" className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
-                </p>
-                <a href="#" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className='col-md-4' >
-            {/* <Link to="/Reactdetail" style={{ textDecoration: "none" }}> */}
-            <div whileHover={{ scale: 1.1 }}
-              onHoverStart={e => { }}
-              onHoverEnd={e => { }} className="card " >
-              <img src="https://www.drupal.org/files/project-images/Screen%20Shot%202013-09-06%20at%2012.46.00%20PM.png" className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
-                </p>
-                <a href="#" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='container '>
-        <div className='row gy-4 justify-content-between '>
-          <div className='col-md-3 '>
+        <div className='row gy-4 '>
+          <div className='col-md-4 '>
             <Link to="/Angulardetail" style={{ textDecoration: "none" }}>
 
               <div className="card  mb-3 py-2 px-2 h-100">
@@ -296,9 +237,9 @@ const Home = () => {
 
 
 
-          <div className='col-md-3'>
+          <div className='col-md-4'>
             <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
-              <div className="card mb-3 py-2 px-2 p-2 h-100" style={{ maxWidth: "25rem" }}>
+              <div className="card mb-3 py-2 px-2 p-2 h-100">
                 <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Empire-Bootstrap-4-Admin-Template.webp" className="card-img-top mx-auto img-fluid" alt="..." />
                 <div className="card-body  mb-3 py-2 px-2">
                   <h5 className='text' >Bootstrap</h5>
@@ -307,9 +248,9 @@ const Home = () => {
             </Link>
           </div>
 
-          <div className='col-md-3'>
+          <div className='col-md-4'>
             <Link to="/Vuedetail" style={{ textDecoration: "none" }}>
-              <div className="card mb-3 py-2 px-2" style={{ maxWidth: "25rem" }}>
+              <div className="card mb-3 py-2 px-2 h-100">
                 <img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-vue.png" className="card-img-top img-fluid mx-auto" alt="..." />
                 <div className="card-body mb-3 py-2 px-2">
                   <h5 className='text' >Vue</h5>
