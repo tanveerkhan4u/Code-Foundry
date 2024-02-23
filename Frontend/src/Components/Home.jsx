@@ -312,7 +312,7 @@ const Home = () => {
               </div>
             </Link>
           </motion.div>
-          <motion.div whileHover={{ scale: 1.1 }}
+          {/* <motion.div whileHover={{ scale: 1.1 }}
             onHoverStart={e => { }}
             onHoverEnd={e => { }} className='col-md-4'>
             <Link to="/Express" style={{ textDecoration: "none" }}>
@@ -323,7 +323,7 @@ const Home = () => {
                 </div>
               </div>
             </Link>
-          </motion.div>
+          </motion.div> */}
           <motion.div whileHover={{ scale: 1.1 }}
             onHoverStart={e => { }}
             onHoverEnd={e => { }} className='col-md-4'>
@@ -471,13 +471,19 @@ const Home = () => {
       <br />
       <div className='row justify-content-between'>
         <div className='col-md-4 border-end'>
-          <img className='img-fluid mx-auto ms-5 px-5' src='https://codedthemes.com/wp-content/uploads/2022/03/Phoenixcoded-logo.png.webp' alt='' />
+          <motion.img  whileHover={{ scale: 1.2 }}
+            onHoverStart={e => { }}
+            onHoverEnd={e => { }} className='img-fluid mx-auto ms-5 px-5' src='https://codedthemes.com/wp-content/uploads/2022/03/Phoenixcoded-logo.png.webp' alt='' />
         </div>
         <div className='col-md-4 border-end'>
-          <img className='img-fluid mx-auto ms-5 px-5' src='https://codedthemes.com/wp-content/uploads/2022/03/Appseed-logo.png.webp' alt='' />
+          <motion.img  whileHover={{ scale: 1.2 }}
+            onHoverStart={e => { }}
+            onHoverEnd={e => { }} className='img-fluid mx-auto ms-5 px-5' src='https://codedthemes.com/wp-content/uploads/2022/03/Appseed-logo.png.webp' alt='' />
         </div>
         <div className='col-md-4'>
-          <img className='img-fluid mx-auto ms-5 px-5 mt-3' src='https://codedthemes.com/wp-content/uploads/2022/03/rudrisha-logo.png.webp' alt='' />
+          <motion.img whileHover={{ scale: 1.2 }}
+            onHoverStart={e => { }}
+            onHoverEnd={e => { }} className='img-fluid mx-auto ms-5 px-5 mt-3' src='https://codedthemes.com/wp-content/uploads/2022/03/rudrisha-logo.png.webp' alt='' />
         </div>
       </div>
       <br /><br />
