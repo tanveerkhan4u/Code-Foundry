@@ -6,20 +6,28 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 
+
 import { Pagination, Autoplay } from 'swiper/modules';
+
+
+
 
 const Home = () => {
   return (
+
+    
     <div style={{ overflow: 'hidden' }}>
-      <header className='text-dark w-100' style={{ backgroundColor: "#dbedff"}}>
+      <header className='text-dark w-100' style={{ backgroundColor: "#dbedff" }}>
         <div className='container-fluid py-5'>
           <h1 className='text-center mt-2'>Trending Templates</h1>
           <p className='text-center mt-4' style={{ color: "grey" }}>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
 
           <div className='row'>
-            <div className='col-md-7 d-flex'>
-              <input type="text" className="form-control fs-5 mt-2 ms-5 " placeholder='Search...' />
-              <button className='btn btn-primary fs-5 search-button '>Search</button>
+            <div className='col-md-7 mx-auto'>
+              <div className='input-group mt-2'>
+                <input type="text" className="form-control fs-5 " placeholder='Search...' />
+                <button className='btn btn-primary fs-5 search-button '>Search</button>
+              </div>
             </div>
           </div>
 
@@ -287,7 +295,7 @@ const Home = () => {
           <div className='col-md-4'>
             <Link to="/Nextdetail" style={{ textDecoration: "none" }}>
               <div className="card mb-3 py-2 px-2 h-100">
-                <motion.img src="https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357" className="card-img-top img-fluid mx-auto"  whileHover={{ scale: 1.1 }}
+                <motion.img src="https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357" className="card-img-top img-fluid mx-auto" whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} alt="..." />
                 <div className="card-body mb-3 py-2 px-2">
@@ -351,7 +359,7 @@ const Home = () => {
           <div className='col-md-4 '>
             <Link to="/Express" style={{ textDecoration: "none" }}>
               <div className="card  " >
-                <motion.img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto"  whileHover={{ scale: 1.1 }}
+                <motion.img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} alt="..." />
                 <div className="card-body mb-2 py-2 px-2 ">
@@ -373,7 +381,7 @@ const Home = () => {
           <div className=' col-md-4 '>
             <Link to="/Nativescript" style={{ textDecoration: "none" }}>
               <div className="card">
-                <motion.img src="https://img.freepik.com/free-vector/dashboard-user-panel-template_52683-29382.jpg" className="card-img-top img-fluid mx-auto"  whileHover={{ scale: 1.1 }}
+                <motion.img src="https://img.freepik.com/free-vector/dashboard-user-panel-template_52683-29382.jpg" className="card-img-top img-fluid mx-auto" whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} alt="..." />
                 <div className="card-body">

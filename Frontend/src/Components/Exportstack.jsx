@@ -17,7 +17,7 @@ const Exportstack = () => {
   console.log(selStack.structure);
 
   const displayStackFiles = () => {
-    return <div className='card'>
+    return <div className='card col-md-3'>
       <div className='card-header'>
         <h3>Files</h3>
       </div>
