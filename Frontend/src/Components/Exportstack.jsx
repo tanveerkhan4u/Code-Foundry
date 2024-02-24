@@ -29,6 +29,12 @@ const Exportstack = () => {
     </div>
   }
 
+      
+      
+           
+        
+
+
   const generateStack = async () => {
     const res = await fetch('http://localhost:5000/stack/generate', {
       method: 'POST',
@@ -47,18 +53,28 @@ const Exportstack = () => {
       {/* <button onClick={() => {setSidebarOpen(!sidebarOpen)}}>
         <IconMenu2 color='red' size={30}/>
       </button> */}
-      <div className='container-fluid'>
+      <div className='container-fluid '>
         <div className='col-md-3'>
-          <h2 className='text-center m-0' style={{ backgroundColor: "lightblue", padding: "20px" }}> myForm</h2>
-
-          <h5 className='text-white text-center' style={{ backgroundColor: "grey", padding: "20px" }}>Standard</h5>
+          <h2 className='text-center m-0 p-3' style={{ backgroundColor: "lightblue" }}> myForm</h2>
+          <h5 className='text-white text-center p-3' style={{ backgroundColor: "grey" }}>Standard</h5>
         </div>
-
         {
           selStack !== undefined && (
             displayStackFiles()
           )
         }
+        
+        <button onClick={generateStack} className='btn btn-primary w-25 py-2 mt-3'style={{fontSize:"20px"}}>export stack</button>
+      </div>
+       
+      
+        
+        
+        
+        
+
+
+
         {/* <Menu isOpen={sidebarOpen}>
           <a id="home" className="menu-item" href="/" style={{ marginLeft: "30px", fontSize: "25px", marginBottom: "10px", textDecoration: "none", color: "grey" }}> <i class="fa-regular fa-star"></i>&nbsp;Favorites</a>
           <a id="about" className="menu-item " href="/about" style={{ marginLeft: "30px", fontSize: "25px", marginBottom: "10px", textDecoration: "none", color: "grey" }}><i class="fa-regular fa-bell"></i>&nbsp;Alerts</a>
@@ -69,9 +85,11 @@ const Exportstack = () => {
 
           <a className="menu-item--small" href="" style={{ marginLeft: "30px", fontSize: "25px", marginBottom: "10px", textDecoration: "none", color: "grey" }}>Settings</a>
         </Menu> */}<br/><br/>
-        <button onClick={generateStack} className='btn btn-primary w-25 py-2'style={{fontSize:"20px"}}>export stack</button>
-      </div>
+        
+       
+      
     </div>
+    
   )
 }
 
