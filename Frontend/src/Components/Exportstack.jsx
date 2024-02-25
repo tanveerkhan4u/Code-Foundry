@@ -3,21 +3,26 @@ import { slide as Menu, stack } from 'react-burger-menu'
 import { IconMenu2 } from '@tabler/icons-react';
 import { useParams } from 'react-router-dom';
 import stackData from '../stacks';
+import { Link } from 'react-router-dom';
+import dependencyData from './depedency';
+
 
 
 const Exportstack = () => {
-
-
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+
+
+
+
+
+
   const { stackname } = useParams();
-
   const selStack = stackData.find(stack => stack.name === stackname);
-
   console.log(selStack.structure);
 
   const displayStackFiles = () => {
-    return <div className='card'>
+    return <div className='card '>
       <div className='card-header'>
         <h3>Files</h3>
       </div>
@@ -28,6 +33,17 @@ const Exportstack = () => {
       </div>
     </div>
   }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -55,7 +71,7 @@ const Exportstack = () => {
         <IconMenu2 color='red' size={30}/>
       </button> */}
 
-      <div className='row'>
+      <div className='row '>
 
 
 
@@ -69,22 +85,30 @@ const Exportstack = () => {
               displayStackFiles()
             )
           }
+
+
+
+
           <button onClick={generateStack} className='btn btn-primary w-100 py-2 mt-3 fs-5'>export stack</button>
         </div>
 
 
+
         <div className="col-md-9">
           <div className="card">
-            <div className="card-header">Featured</div>
+            <div className="card-header">Depedencies</div>
             <div className="card-body">
-              <h5 className="card-title">Special title treatment</h5>
               <p className="card-text">
-                With supporting text below as a natural lead-in to additional content.
+
               </p>
             </div>
-
           </div>
         </div>
+
+
+
+
+
 
 
         {/* <div className="col-md-6" style={{ float: 'right', position: 'relative' }}>
