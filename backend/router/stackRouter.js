@@ -1,5 +1,5 @@
 const express = require('express');
-const { createFile, createFolder } = require('./helper');
+const { createFile, createFolder, zipFolder } = require('./helper');
 const path = require('path');
 
 const router = express.Router();
@@ -13,12 +13,14 @@ const createStackFiles = (structure, projectName) => {
     createFolder(path.join(destDir, fileData.dirname));
     createFile(path.join(destDir,fileData.dirname, fileData.filename), fileData.content);
   });
+
+  zipFolder(structure, path.join(destDir, `${projectName}.zip`), projectName);
 }
 
 router.post('/generate', (req, res) => {
   const {name, structure} = req.body;
   const projectName = 'myproject';
-  // console.log(structure);
+  console.log(structure);
   createStackFiles(structure, projectName);
   res.send('request received!');
 });
