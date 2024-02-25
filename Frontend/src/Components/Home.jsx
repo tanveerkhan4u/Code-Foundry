@@ -4,22 +4,43 @@ import { motion } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Typewriter } from 'react-simple-typewriter'
 
 
 
 import { Pagination, Autoplay } from 'swiper/modules';
 
 
-
-
 const Home = () => {
-  return (
 
-    
+  
+  
+  return (
     <div style={{ overflow: 'hidden' }}>
       <header className='text-dark w-100' style={{ backgroundColor: "#dbedff" }}>
         <div className='container-fluid py-5'>
-          <h1 className='text-center mt-2'>Trending Templates</h1>
+          <h1 className='text-center mt-2'>
+            Trending {' '}
+            <span style={{color: '#5B84FA'}}> 
+              <Typewriter
+                words={['Bootstrap', 'Angular', 'Vue', 'React', 'Svelte', 'Ember', 'Next.js', 'Solid', 'Express.js', 'GraphQL', 'Nativescript', 'NestJS']}
+                loop={500}
+                cursor
+                cursorStyle='|'
+                typeSpeed={100}
+                deleteSpeed={50}
+                delaySpeed={500}
+                
+              />
+            </span>
+              Templates
+          </h1>
+
+
+
+
+
+
           <p className='text-center mt-4' style={{ color: "grey" }}>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
 
           <div className='row'>
