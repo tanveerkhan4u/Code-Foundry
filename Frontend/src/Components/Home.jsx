@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Typewriter } from 'react-simple-typewriter'
+import { Typewriter, Cursor } from 'react-simple-typewriter'
 
 
 
@@ -25,16 +25,16 @@ const Home = () => {
               <Typewriter
                 words={['Bootstrap', 'Angular', 'Vue', 'React', 'Svelte', 'Ember', 'Next.js', 'Solid', 'Express.js', 'GraphQL', 'Nativescript', 'NestJS']}
                 loop={500}
-                cursor
-                cursorStyle='|'
-                typeSpeed={100}
+                cursor cursorColor='black'
+                cursorStyle='|' 
+                typeSpeed={80}
                 deleteSpeed={50}
-                delaySpeed={500}
-                
-              />
+                delaySpeed={1500}
+                />
             </span>
               Templates
           </h1>
+                
 
 
 
