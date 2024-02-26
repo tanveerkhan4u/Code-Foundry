@@ -11,16 +11,40 @@ import dependencyData from './depedency';
 const Exportstack = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+  const [name, setname] = useState();
+  console.log(name);
 
 
+  // const { depname } = useParams();
+  // const seldep = dependencyData.find(dep => dep.name === depname);
+  // console.log(depname.name);
 
-
-
+  const displayDependency = () => {
+    return <div className="card">
+      <div className="card-header">Depedencies</div>
+      <div className='text'>
+        <ul>
+          {dependencyData.map(entry =><div className='d-flex align-items-start'>
+            <input type='checkbox'/>
+          <li>
+            <h4>{entry.name}</h4>
+            <p>{entry.description}</p>
+          </li>
+          </div> 
+          )}
+        </ul>
+      </div>
+    </div>
+  };
+  // {
+  //   seldep !== undefined && (
+  //     displaydepedency()
+  //   )
+  // }
 
   const { stackname } = useParams();
   const selStack = stackData.find(stack => stack.name === stackname);
   console.log(selStack.structure);
-
   const displayStackFiles = () => {
     return <div className='card '>
       <div className='card-header'>
@@ -33,22 +57,6 @@ const Exportstack = () => {
       </div>
     </div>
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -75,7 +83,7 @@ const Exportstack = () => {
 
 
 
-        <div className='col-md-3'>
+        <div className='col-md-6'>
           <h2 className='text-center p-3' style={{ backgroundColor: "lightblue" }}> myForm</h2>
           <h5 className='text-white text-center p-3' style={{ backgroundColor: "grey" }}>Standard</h5>
           <div>
@@ -88,22 +96,52 @@ const Exportstack = () => {
 
 
 
-
           <button onClick={generateStack} className='btn btn-primary w-100 py-2 mt-3 fs-5'>export stack</button>
         </div>
 
-
-
-        <div className="col-md-9">
-          <div className="card">
-            <div className="card-header">Depedencies</div>
-            <div className="card-body">
-              <p className="card-text">
-
-              </p>
-            </div>
-          </div>
+        <div className="col-md-6">
+          {displayDependency()}
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -144,3 +182,12 @@ const Exportstack = () => {
 }
 
 export default Exportstack;
+
+
+
+<div className="col-md-9">
+  <div className="card">
+    <div className="card-header">Depedencies</div>
+    <h4></h4>
+  </div>
+</div> 

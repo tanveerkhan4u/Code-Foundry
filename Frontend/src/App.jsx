@@ -1,4 +1,4 @@
-import { Auth0Provider } from '@auth0/auth0-react';
+
 import React from 'react'
 import './App.css'
 import { BrowserRouter, Link, Route, Routes, NavLink, } from 'react-router-dom';
@@ -40,13 +40,7 @@ function App() {
   return (
     <>
       <div>
-        <Auth0Provider
-          domain="dev-w3gh6c8c1isdx3z8.us.auth0.com"
-          clientId="4q3qaw8sLm3tUoPIULF5lIkwouAyVOBx"
-          authorizationParams={{
-            redirect_uri: window.location.origin
-          }}
-        >
+        
           <SnackbarProvider maxSnack={3} anchorOrigin={{ vertical: 'top', horizontal: 'center' }} iconVariant={{ success: '✔ 🎉😍', error: '👀', }}>
             <BrowserRouter>
               <Navbar></Navbar>
@@ -85,7 +79,7 @@ function App() {
 
             </BrowserRouter>
           </SnackbarProvider>
-        </Auth0Provider>
+      
 
       </div>
 

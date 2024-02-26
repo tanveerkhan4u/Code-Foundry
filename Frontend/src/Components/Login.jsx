@@ -1,7 +1,10 @@
 import { useFormik } from 'formik';
 import React, { useState } from 'react';
 import * as Yup from 'yup';
-import { useAuth0 } from "@auth0/auth0-react";
+
+import { jwtDecode } from "jwt-decode";
+import { GoogleOAuthProvider } from '@react-oauth/google';
+import { GoogleLogin } from '@react-oauth/google';
 import { enqueueSnackbar } from 'notistack';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion'
@@ -59,8 +62,6 @@ const Login = () => {
   });
 
 
-  const { user, loginWithRedirect } = useAuth0();
-  // console.log( user);
 
 
 
@@ -79,7 +80,19 @@ const Login = () => {
               <br /><br /><br />
               <form onSubmit={Loginform.handleSubmit}>
                 <div className='container d-flex'>
-                  <button className='btn btn-outline-dark shadow' onClick={(e) => loginWithRedirect()} style={{ marginTop: "-70px", marginLeft: "20px", width: "250px", height: "60px" }}><i class="fa-brands fa-google"></i> &nbsp; Sign in With Google</button><br /><br />
+                  <div className='google'>
+                  <GoogleOAuthProvider clientId="933596296606-mqbgnqrpol73pu5lr8pl06p1taahd745.apps.googleusercontent.com">
+                    <GoogleLogin
+                      onSuccess={credentialResponse => {
+                        const decoded = jwtDecode(credentialResponse.credential);
+                        console.log(decoded);
+                      }}
+                      onError={() => {
+                        console.log('Login Failed');
+                      }}
+                    />
+                  </GoogleOAuthProvider>
+                  </div>
                   <button className='btn btn-outline-primary shadow' onClick={(e) => loginWithRedirect()} style={{ marginTop: "-70px", marginLeft: "20px", width: "250px", height: "60px" }}><i class="fa-brands fa-linkedin"></i> &nbsp; Sign in With LinkedIn</button>
                 </div>
                 <h3 className='text-center' style={{ color: "grey", marginTop: "-30px" }}>OR</h3><br />
