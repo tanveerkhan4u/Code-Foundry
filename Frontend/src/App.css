@@ -133,6 +133,7 @@ padding: 0 30px;
     .reactimg{
       padding-right: 100px;
     }
+    
   }
 
   /* ui verse checkbox css start from exportstack files */
@@ -327,7 +328,7 @@ margin-top: 8px;
   transition-delay: 0.5s;
 }
 
-/* button css start from all button in projects except login */
+/* button css start from all button in projects except login and browsestack card pages*/
 
 /* From uiverse.io by @Ali-Tahmazi99 */
 button {
@@ -381,7 +382,38 @@ button {
   transition: all 0.3s ease-in;
  }
   
-      
+  /* button1 for browsestack ka saare card ke pages ke liye hai */
+
+  button1 {
+    padding: 17px 15px;
+    /* border-radius: 50px; */
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    /* text-transform: lowercase; */
+    font-size: 15px;
+    transition: all 0.5s ease;
+    
+  }
+  
+  button1:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+  }
+  
+  button1:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  
 
   
 

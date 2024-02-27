@@ -51,7 +51,7 @@ const Home = () => {
                   <span> Search
                   </span>
                 </button>
-                {/* <button className='btn btn-primary fs-5 search-button '>Search</button> */}
+              
               </div>
             </div>
           </div>

@@ -25,11 +25,18 @@ const Browsestack = () => {
             <div className='col-md-6'>
               <motion.h2 initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='text' style={{ marginTop: "50px" }}>Templates</motion.h2>&nbsp;
               <motion.p initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='text'>Explore developer friendly Admin Dashboard Templates & UI Kits!</motion.p>&nbsp;
-              <motion.div initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='container d-flex justify-content-between'>
-                <div className='row' style={{ position: 'relative' }}>
-                  <input type="text" className="form-control" placeholder='Search...' style={{ width: "400px", padding: "15px" }} />
-                  <button className='btn btn-primary' style={{ position: "absolute", width: "100px", right: "10px", height: "45px", marginTop: "5px" }}>search</button>
-                </div>
+              <motion.div initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} >
+              <div className='row'>
+            <div className='col-md- '>
+              <div className='input-group '>
+                <input type="text" className="form-control fs-5 " placeholder='Search...' />
+                <button1 >Search</button1>
+                {/* <button1  className='btn btn-primary w-5'>Search</button1> */}
+              
+              </div>
+            </div>
+          </div>
+
               </motion.div>
             </div>
 
