@@ -11,7 +11,7 @@ const Vuedetail = () => {
           <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text vue' style={{color:"grey" }}>Are you looking for a Vue Admin Template, For your next project? You are at the right place. We are one of the Best Admin Dashboard makers in the market. Our team develops the<strong className='text' style={{ color: "grey" }}> most advanced, highly customizable </strong> Vuejs Template. All our Admin Dashboards are fully responsive and tested on all retina devices. With  <strong className='text' style={{ color: "grey" }}> clean, bug-free and well comment code.</strong></motion.p>&nbsp;
           <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} >
           <div className='row'>
-            <div className='col-md-9 '>
+            <div className='col-md-9 vuesearch'>
               <div className='input-group'>
                 <input type="text" className="form-control fs-5" placeholder='Search...' />
                 <button1 >Search</button1>

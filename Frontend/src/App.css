@@ -133,7 +133,18 @@ padding: 0 30px;
     .reactimg{
       padding-right: 100px;
     }
-    
+    .angularsearch{
+      padding-right: 100px;
+    }
+    .bootsearch{
+      padding-right: 100px;
+    }
+    .vuesearch{
+      padding-right: 100px;
+    }
+    .svesearch{
+      padding-right: 100px;
+    }
   }
 
   /* ui verse checkbox css start from exportstack files */
