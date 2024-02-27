@@ -67,12 +67,12 @@ const Login = () => {
 
   return (
     <>
-      <div className='col-6 d-flex loimg' style={{ backgroundColor: "#dbedff" }}>
+      <div className='col-6  d-flex loimg' style={{ backgroundColor: "#dbedff",maxHeight:"540px" }}>
 
-        <img src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='w-100' alt='' />
+        <motion.img  animate={{ x: -50, }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='img-fluid mx-auto mb-5 px-5  ' alt='' />
 
         <div className='container-fluid' style={{ marginLeft: "30px" }}>
-          <div className=' py-5'>
+          <div className=' py-2'>
             <div className="container-fluid">
 
 
