@@ -108,6 +108,7 @@ padding: 0 30px;
     .graphimage{
       padding-right: 160px;
       margin-bottom: 20px;
+      
     }
     .expressimg{
       padding-right: 100px;
@@ -135,6 +136,7 @@ padding: 0 30px;
     }
     .angularsearch{
       padding-right: 100px;
+      
     }
     .bootsearch{
       padding-right: 100px;
@@ -144,22 +146,38 @@ padding: 0 30px;
     }
     .svesearch{
       padding-right: 100px;
+      margin-top: 50px;
     }
     .embersearch{
       padding-right: 150px;
+      margin-top: 50px; 
     }
     .solidsearch{
       padding-right: 100px;
+      margin-top: 50px;
     }
     .nextsearch{
       padding-right: 100px;
     }
     .qlsearch{
       padding-right: 100px;
+      margin-top: 50px;
+      margin-left: -50px;
     }
     .nestsearch{
       padding-right: 100px;
+      margin-top: 20px;
     }
+    .exsearch{
+      padding-right: 100px;
+      margin-top: 50px;
+      margin-left: -50px;
+    }
+    .nativesearch{
+      padding-right: 100px;
+      margin-top: 20px;
+      margin-left: -50px;
+    } 
   }
 
   /* ui verse checkbox css start from exportstack files */
