@@ -11,16 +11,16 @@ const Reactdetail = () => {
         <div className='col-md-6'>
           <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text mt-5' ><strong className='text-primary'>React </strong> Admin Template</motion.h2>&nbsp;
           <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text template' >Are you looking for a React Admin Template, For your next project? You are at the right place. We are one of the Best Admin Dashboard makers in the market. Our team develops the<strong className='text' style={{ color: "grey" }}> most advanced, highly customizable </strong> React Template. All our Admin Dashboards are fully responsive and tested on all retina devices. With  <strong className='text' style={{ color: "grey" }}> clean, bug-free and well comment code.</strong></motion.p>&nbsp;
-          <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='container-fluid d-flex justify-content-between'>
-
-            <div className='row gy-2'>
-              <div className='col-md-10'>
-                <input type="text " className="form-control search fs-4  mt-2 mx-5 " placeholder='Search...' />
-              </div>
-              <div className='col-md-2 button'>
-                <button className='btn btn-primary mt-2 fs-5'>search</button>
+          <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} >
+          <div className='row'>
+            <div className='col-md-9 '>
+              <div className='input-group'>
+                <input type="text" className="form-control fs-5" placeholder='Search...' />
+                <button1 >Search</button1>
               </div>
             </div>
+          </div>
+           
           </motion.div>
         </div>
 
