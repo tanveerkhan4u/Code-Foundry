@@ -81,17 +81,17 @@ const Login = () => {
               <form onSubmit={Loginform.handleSubmit}>
                 <div className='container d-flex'>
                   <div className='google'>
-                  <GoogleOAuthProvider clientId="933596296606-mqbgnqrpol73pu5lr8pl06p1taahd745.apps.googleusercontent.com">
-                    <GoogleLogin
-                      onSuccess={credentialResponse => {
-                        const decoded = jwtDecode(credentialResponse.credential);
-                        console.log(decoded);
-                      }}
-                      onError={() => {
-                        console.log('Login Failed');
-                      }}
-                    />
-                  </GoogleOAuthProvider>
+                    <GoogleOAuthProvider clientId="933596296606-mqbgnqrpol73pu5lr8pl06p1taahd745.apps.googleusercontent.com">
+                      <GoogleLogin
+                        onSuccess={credentialResponse => {
+                          const decoded = jwtDecode(credentialResponse.credential);
+                          console.log(decoded);
+                        }}
+                        onError={() => {
+                          console.log('Login Failed');
+                        }}
+                      />
+                    </GoogleOAuthProvider>
                   </div>
                   <button className='btn btn-outline-primary shadow' onClick={(e) => loginWithRedirect()} style={{ marginTop: "-70px", marginLeft: "20px", width: "250px", height: "60px" }}><i class="fa-brands fa-linkedin"></i> &nbsp; Sign in With LinkedIn</button>
                 </div>
@@ -110,8 +110,19 @@ const Login = () => {
                 <input type='Checkbox' value='IsRemember me' className='mb-3' id='rememberme'></input>
                 <label htmlFor='' style={{ marginTop: "-20px", marginLeft: "10px" }}> Remember me</label>
 
+                <button className="btn-53 w-100 p-2" type='submit' onClick="Isremember me">
+                  <div className="original" >Login</div>
+                  <div className="letters">
+                    <span>L</span>
+                    <span>o</span>
+                    <span>g</span>
+                    <span>i</span>
+                    <span>n</span>
+                  </div>
+                </button>
+              
 
-                <button className='btn btn-outline-primary w-100' type='submit' onClick="Isremember me">Log In</button>
+                {/* <button className='btn btn-outline-primary w-100' type='submit' onClick="Isremember me">Log In</button> */}
 
                 <p className='text-center' style={{ marginTop: "20px" }}>Don't have an account? <a href='/Signup'>Sign Up</a></p>
 
@@ -132,7 +143,7 @@ export default Login;
 
 
 
-
+//  type='submit' onClick="Isremember me"
 
 
 

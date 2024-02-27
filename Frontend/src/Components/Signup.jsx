@@ -76,7 +76,7 @@ return (
             <label htmlFor="">Password</label>
             <span className='ms-4 fs-6 text-danger'>{SignupForm.touched.password &&  SignupForm.errors.password}</span>
             <input type="text" className='form-control mb-4' id="password"  onChange={SignupForm.handleChange} value={SignupForm.values.password} />
-            <button type='submit' className='btn btn-danger w-100 mt-3 rounded-pill'>Sign up</button>
+            <button type='submit' className=' btn btn-danger w-100 mt-3 rounded-pill'>Sign up</button>
           </form>
         </div>
       </div>

@@ -13,28 +13,28 @@ import { Pagination, Autoplay } from 'swiper/modules';
 
 const Home = () => {
 
-  
-  
+
+
   return (
     <div style={{ overflow: 'hidden' }}>
       <header className='text-dark w-100' style={{ backgroundColor: "#dbedff" }}>
         <div className='container-fluid py-5'>
           <h1 className='text-center mt-2'>
             Trending {' '}
-            <span style={{color: '#5B84FA'}}> 
+            <span style={{ color: '#5B84FA' }}>
               <Typewriter
                 words={['Bootstrap', 'Angular', 'Vue', 'React', 'Svelte', 'Ember', 'Next.js', 'Solid', 'Express.js', 'GraphQL', 'Nativescript', 'NestJS']}
                 loop={500}
                 cursor cursorColor='black'
-                cursorStyle='|' 
+                cursorStyle='|'
                 typeSpeed={200}
                 deleteSpeed={50}
                 delaySpeed={1500}
-                />
+              />
             </span>
-              Templates
+            Templates
           </h1>
-                
+
 
 
 
@@ -46,8 +46,12 @@ const Home = () => {
           <div className='row'>
             <div className='col-md-7 mx-auto'>
               <div className='input-group mt-2'>
-                <input type="text" className="form-control fs-5 " placeholder='Search...' />
-                <button className='btn btn-primary fs-5 search-button '>Search</button>
+                <input type="text" className="form-control fs-5" placeholder='Search...' />
+                <button className=" text-center">
+                  <span> Search
+                  </span>
+                </button>
+                {/* <button className='btn btn-primary fs-5 search-button '>Search</button> */}
               </div>
             </div>
           </div>
