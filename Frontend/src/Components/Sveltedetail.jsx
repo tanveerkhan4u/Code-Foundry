@@ -11,16 +11,20 @@ const Uikitdetail = () => {
         <div className='col-md-6 py-5'>
           <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text'><strong className='text-primary'>Svelte</strong></motion.h2>&nbsp;
           <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text svelte' style={{color: "grey" }}>Build a Website and landing page with a powerful Svelte by CodedFoundry.com. CodeFoundry Svelte helps you to create a modern design and useful elements with the help of Advance Template.
-
           </motion.p>&nbsp;
-
-          <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='container-fluid d-flex justify-content-between'>
-            <div className='row'>
-              <input type="text" className="form-control" placeholder='Search...' style={{ width: "400px", padding: "15px" }} />
-              <button className='btn btn-primary' style={{ position: "absolute", width: "100px", left: "290px", height: "45px", marginTop: "5px" }}>search</button>
+          <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} >
+          <div className='row'>
+            <div className='col-md-9 '>
+              <div className='input-group'>
+                <input type="text" className="form-control fs-5" placeholder='Search...' />
+                <button1 >Search</button1>
+              </div>
             </div>
+          </div>
           </motion.div>
         </div>
+
+
       <div className='col-md-5'>
         <motion.img animate={{ x: 50, }} transition={{ ease: "easeOut", duration: 2 }} src='https://cdn.hashnode.com/res/hashnode/image/upload/v1619358925225/50e2XssdE.png' className='img-fluid mx-auto' alt=''></motion.img>
       </div>
