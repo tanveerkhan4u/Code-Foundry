@@ -15,7 +15,7 @@ const Emberdetail = () => {
           
           <motion.div animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} >
           <div className='row'>
-            <div className='col-md-9 '>
+            <div className='col-md-9 embersearch'>
               <div className='input-group'>
                 <input type="text" className="form-control fs-5" placeholder='Search...' />
                 <button1 >Search</button1>
@@ -25,7 +25,7 @@ const Emberdetail = () => {
           </motion.div>
         </div>
       <div className='col-md-2 p-2 mt-5 ms-5'>
-        <motion.img animate={{ x: 100, y: -20 }} transition={{ ease: "easeOut", duration: 2 }} src='https://blog.emberjs.com/images/logos/e-icon.png' className='img-fluid mx-auto tiger' alt=''></motion.img>
+        <motion.img animate={{ x: 50, y: -20 }} transition={{ ease: "easeOut", duration: 2 }} src='https://blog.emberjs.com/images/logos/e-icon.png' className='img-fluid mx-auto tiger' alt=''></motion.img>
       </div>
       </header>
       <br />

@@ -15,7 +15,7 @@ const Laraveldetail = () => {
 
           <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} >
           <div className='row'>
-            <div className='col-md-9 '>
+            <div className='col-md-9 solidsearch'>
               <div className='input-group'>
                 <input type="text" className="form-control fs-5" placeholder='Search...' />
                 <button1 >Search</button1>
