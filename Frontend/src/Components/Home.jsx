@@ -47,7 +47,7 @@ const Home = () => {
             <div className='col-md-7 mx-auto'>
               <div className='input-group mt-2'>
                 <input type="text" className="form-control fs-5" placeholder='Search...' />
-                <button className=" text-center">
+                <button className=" text-center" >
                   <span> Search
                   </span>
                 </button>

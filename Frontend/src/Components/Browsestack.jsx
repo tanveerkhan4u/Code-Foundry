@@ -27,15 +27,15 @@ const Browsestack = () => {
               <motion.p initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='text'>Explore developer friendly Admin Dashboard Templates & UI Kits!</motion.p>&nbsp;
               <motion.div initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} >
               <div className='row'>
-            <div className='col-md- '>
+            <div className='col '>
               <div className='input-group '>
                 <input type="text" className="form-control fs-5 " placeholder='Search...' />
                 <button1 >Search</button1>
-                {/* <button1  className='btn btn-primary w-5'>Search</button1> */}
-              
               </div>
             </div>
           </div>
+        
+              
 
               </motion.div>
             </div>
