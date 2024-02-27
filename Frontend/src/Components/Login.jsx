@@ -67,9 +67,9 @@ const Login = () => {
 
   return (
     <>
-      <div className='col-6  d-flex loimg' style={{ backgroundColor: "#dbedff",maxHeight:"540px" }}>
+      <div className='col-6  d-flex loimg' style={{ backgroundColor: "#dbedff", maxHeight: "540px" }}>
 
-        <motion.img  animate={{ x: -50, }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='img-fluid mx-auto mb-5 px-5  ' alt='' />
+        <motion.img animate={{ x: -50, }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='img-fluid mx-auto mb-5 px-5  ' alt='' />
 
         <div className='container-fluid' style={{ marginLeft: "30px" }}>
           <div className=' py-2'>
@@ -120,7 +120,7 @@ const Login = () => {
                     <span>n</span>
                   </div>
                 </button>
-              
+
 
                 {/* <button className='btn btn-outline-primary w-100' type='submit' onClick="Isremember me">Log In</button> */}
 
