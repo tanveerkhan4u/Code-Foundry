@@ -24,13 +24,18 @@ const Exportstack = () => {
       <div className="card-header">Depedencies</div>
       <div className='text'>
         <ul>
-          {dependencyData.map(entry =><div className='d-flex align-items-start'>
-            <input type='checkbox'/>
-          <li>
-            <h4>{entry.name}</h4>
-            <p>{entry.description}</p>
-          </li>
-          </div> 
+          {dependencyData.map(entry => <div className='d-flex align-items-start '>
+            <label className="checkbox-container">
+              <input type="checkbox" />
+              <span className="checkmark" />
+            </label>
+
+
+            <li>
+              <h4>{entry.name}</h4>
+              <p>{entry.description}</p>
+            </li>
+          </div>
           )}
         </ul>
       </div>
