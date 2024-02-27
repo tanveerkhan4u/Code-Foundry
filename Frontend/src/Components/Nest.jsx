@@ -12,15 +12,19 @@ const Emberdetail = () => {
           <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text nest' style={{ color: "grey" }}>Nest JS is a productive, battle-tested JavaScript framework for building modern web applications. It includes everything you need to build rich UIs that work on any device.NestJS Admin can be installed on a project in a matter of minutes and used straight away with your existing entities.
           </motion.p>&nbsp;
           
-          <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='container-fluid d-flex justify-content-between'>
-            <div className='row '>
-              <input type="text" className="form-control" placeholder='Search...' style={{ width: "400px", padding: "15px" }} />
-              <button className='btn btn-primary' style={{ position: "absolute", width: "100px", left: "290px", height: "45px", marginTop: "5px" }}>search</button>
+          <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} >
+          <div className='row'>
+            <div className='col-md-9 '>
+              <div className='input-group'>
+                <input type="text" className="form-control fs-5" placeholder='Search...' />
+                <button1 >Search</button1>
+              </div>
             </div>
+          </div>
           </motion.div>
         </div>
       <div className='col-md-4 mt-5 lion'>
-        <motion.img animate={{ x: 50, y: -10 }} transition={{ ease: "easeOut", duration: 2 }} src='https://miro.medium.com/v2/resize:fit:1358/1*s9kgU8F1eB7Tzs7sG0YhBg.jpeg' className='img-fluid mx-auto' alt=''></motion.img>
+        <motion.img animate={{ x: 100, y: -10 }} transition={{ ease: "easeOut", duration: 2 }} src='https://miro.medium.com/v2/resize:fit:1358/1*s9kgU8F1eB7Tzs7sG0YhBg.jpeg' className='img-fluid mx-auto' alt=''></motion.img>
       </div>
       </header>
       <br />

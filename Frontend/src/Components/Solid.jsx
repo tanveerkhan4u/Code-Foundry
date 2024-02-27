@@ -13,11 +13,15 @@ const Laraveldetail = () => {
 
             SolidJS focuses on fine-grained reactivity, meaning that it efficiently updates only the parts of the DOM that need to change rather than re-rendering the entire component. This can lead to improved performance in certain scenarios.</motion.p>&nbsp;
 
-          <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='container-fluid d-flex justify-content-between'>
-            <div className='row'>
-              <input type="text" className="form-control" placeholder='Search...' style={{ width: "400px", padding: "15px" }} />
-              <button className='btn btn-primary' style={{ position: "absolute", width: "100px", left: "290px", height: "45px", marginTop: "5px" }}>search</button>
+          <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} >
+          <div className='row'>
+            <div className='col-md-9 '>
+              <div className='input-group'>
+                <input type="text" className="form-control fs-5" placeholder='Search...' />
+                <button1 >Search</button1>
+              </div>
             </div>
+          </div>
           </motion.div>
         </div>
       <div className='col-md-4 mt-5 mx-5 solidimage'>

@@ -13,11 +13,15 @@ const Express = () => {
           GraphQL is the developer-friendly query language for the modern web. It transforms how apps fetch data from an API, enabling you to get exactly what you need with a single query—instead of wrangling responses from a patchwork of REST endpoints.
           </motion.p>&nbsp;
 
-          <motion.div animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} className='container-fluid d-flex justify-content-between'>
-            <div className='row'>
-              <input type="text" className="form-control" placeholder='Search...' style={{ width: "400px", padding: "15px" }} />
-              <button className='btn btn-primary' style={{ position: "absolute", width: "100px", left: "290px", height: "45px", marginTop: "5px" }}>search</button>
+          <motion.div animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} >
+          <div className='row'>
+            <div className='col-md-9 '>
+              <div className='input-group'>
+                <input type="text" className="form-control fs-5" placeholder='Search...' />
+                <button1 >Search</button1>
+              </div>
             </div>
+          </div>
           </motion.div>
         </div>
       <div className='col-md-4 mt-5 mx-5 graphimage'>

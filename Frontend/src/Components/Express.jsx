@@ -13,11 +13,15 @@ const Express = () => {
             Express.js is a web application framework for Node.js that simplifies the process of building web applications and APIs. It provides a set of features and tools to make it easier to handle various aspects of web development, such as routing, middleware, and HTTP request/response handling.
           </motion.p>&nbsp;
 
-          <motion.div animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} className='container-fluid d-flex justify-content-between'>
-            <div className='row'>
-              <input type="text" className="form-control" placeholder='Search...' style={{ width: "400px", padding: "15px" }} />
-              <button className='btn btn-primary' style={{ position: "absolute", width: "100px", left: "290px", height: "45px", marginTop: "5px" }}>search</button>
+          <motion.div animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} >
+          <div className='row'>
+            <div className='col-md-9 '>
+              <div className='input-group'>
+                <input type="text" className="form-control fs-5" placeholder='Search...' />
+                <button1 >Search</button1>
+              </div>
             </div>
+          </div>
           </motion.div>
         </div>
       <div className='col-md-4 mt-5 expressimg'>

@@ -13,11 +13,15 @@ const Express = () => {
           NativeScript is an open-source framework to develop mobile apps on the iOS and Android platforms. It was originally conceived and developed by Progress. At the end of 2019 responsibility for the NativeScript project was taken over by long-time Progress partner, nStudio.
           </motion.p>&nbsp;
 
-          <motion.div animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} className='container-fluid d-flex justify-content-between'>
-            <div className='row'>
-              <input type="text" className="form-control" placeholder='Search...' style={{ width: "400px", padding: "15px" }} />
-              <button className='btn btn-primary' style={{ position: "absolute", width: "100px", left: "290px", height: "45px", marginTop: "5px" }}>search</button>
+          <motion.div animate={{ x: 100 }} transition={{ ease: "easeOut", duration: 2 }} >
+          <div className='row'>
+            <div className='col-md-9 '>
+              <div className='input-group'>
+                <input type="text" className="form-control fs-5" placeholder='Search...' />
+                <button1 >Search</button1>
+              </div>
             </div>
+          </div>
           </motion.div>
         </div>
       <div className='col-md-3 ms-5 mt-3 nativeimg'>
