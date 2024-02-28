@@ -21,7 +21,7 @@ const Exportstack = () => {
 
   const displayDependency = () => {
     return <div className="card">
-      <div className="card-header">Depedencies</div>
+      {/* <div className="card-header"></div> */}
       <div className='text'>
         <ul>
           {dependencyData.map(entry => <div className='d-flex align-items-start '>
@@ -29,18 +29,19 @@ const Exportstack = () => {
               <input type="checkbox" />
               <span className="checkmark" />
             </label>
-
-
             <li>
               <h4>{entry.name}</h4>
               <p>{entry.description}</p>
             </li>
           </div>
           )}
+          <button className='btn btn-primary fs-5 w-100'>Add</button>
         </ul>
       </div>
     </div>
   };
+
+
   // {
   //   seldep !== undefined && (
   //     displaydepedency()
@@ -79,7 +80,7 @@ const Exportstack = () => {
 
 
   return (
-    <div className='container mt-2'>
+    <div className='container-fluid mt-2' style={{backgroundColor:"#dbedff"}}>
       {/* <button onClick={() => {setSidebarOpen(!sidebarOpen)}}>
         <IconMenu2 color='red' size={30}/>
       </button> */}
@@ -99,16 +100,44 @@ const Exportstack = () => {
             )
           }
 
+          
 
-
-          <button onClick={generateStack} className='btn btn-primary w-100 py-2 mt-3 fs-5'>export stack</button>
+          <button onClick={generateStack} className=' w-100 py-2 mt-3 fs-5'>Export Stack</button> 
         </div>
 
-        <div className="col-md-6">
+        {/* <div className="col-md-6">
+          {displayDependency()}
+        </div> */}
+
+
+        <div className="accordion col-md-6" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header">
+      <button30
+        className="accordion-button"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne"
+        aria-expanded="true"
+        aria-controls="collapseOne"
+      >
+        Depedencies
+      </button30>
+    </h2>
+    <div
+      id="collapseOne"
+      className="accordion-collapse collapse show"
+      data-bs-parent="#accordionExample"
+    >
+      <div className="accordion-body ">
+      <div className="dpedency">
           {displayDependency()}
         </div>
-
-
+      </div>
+    </div>
+  </div>
+  
+</div>
 
 
 

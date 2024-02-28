@@ -12,14 +12,14 @@ const Navbar = () => {
   
 
   return (
+
     <div>
       <nav 
-
-      className="navbar navbar-expand-lg shadow">
+      className="navbar  navbar-expand-lg shadow p-0 bg-body-secondary">
   <div className="container-fluid">
     <NavLink to="/Home">
     <a className="navbar-brand" href="#">
-      <img src='https://images-platform.99static.com/xhigkkx1UQyo9QC5h7cs_Q7Dy8I=/500x500/top/smart/99designs-contests-attachments/37/37621/attachment_37621809'  style={{width:'150px', height:'100px', marginLeft:"70px"}} alt=''></img>
+      <img src='https://th.bing.com/th/id/OIG2..qpctzdoHBeFrDp_BRbR?pid=ImgGn' className='img-fluid mx-auto ms-5' style={{width:"100px", maxHeight:"100px"}}  alt=''></img>
     </a>
     </NavLink>    
     
