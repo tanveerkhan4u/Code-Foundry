@@ -45,11 +45,11 @@ const Contact = () => {
 
 
   return (
-    <div className='container-fluid '>
+    <div className='container-fluid'>
     
         <div className='row d-flex'>
     
-            <div className='col-md-6 '>
+            <div className='col-md-6' style={{backgroundColor:"#dbedff"}}>
               <motion.h1 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text'><strong className='text-primary'>Contact</strong> Us</motion.h1>&nbsp;
               <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text'>Just send us your questions or concerns, We will give you the help you need.
               </motion.p>
