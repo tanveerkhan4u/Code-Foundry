@@ -47,30 +47,30 @@ const Contact = () => {
   return (
     <div className='container-fluid'>
     
-        <div className='row d-flex'>
+        <div className='row '>
     
             <div className='col-md-6' style={{backgroundColor:"#dbedff"}}>
-              <motion.h1 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text'><strong className='text-primary'>Contact</strong> Us</motion.h1>&nbsp;
-              <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text'>Just send us your questions or concerns, We will give you the help you need.
+              <motion.h1 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text mt-5 ms-5 '><strong className='text-primary'>Contact</strong> Us</motion.h1>&nbsp;
+              <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text ms-5   cont'>Just send us your questions or concerns, We will give you the help you need.
               </motion.p>
               
-              <motion.img animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='img-fluid mx-auto ' src='https://codedthemes.com/wp-content/uploads/2022/04/contact-us-banner-img.png.webp' alt=''></motion.img>
+              <motion.img animate={{ x: 50, y: -20 }} transition={{ ease: "easeOut", duration: 2 }} className='img-fluid mx-auto cont' src='https://codedthemes.com/wp-content/uploads/2022/04/contact-us-banner-img.png.webp' alt=''></motion.img>
           
 
               
       
               </div>
               <div className='col-md-6'>
-          <p className='text-center'>Please use the form below to contact us if you have any questions or feedback regarding our products or services.</p>
+          <p className='text-center mt-5'>Please use the form below to contact us if you have any questions or feedback regarding our products or services.</p>
           <p className='text-center'>For any Technical Product Related Support. Use our Support Panel</p>
           
-          <form onSubmit={ContactForm.handleSubmit}>
+          <form   onSubmit={ContactForm.handleSubmit}>
             <div className="form-group ">
               {/* <label htmlFor="name">Name</label> */}
-              <span className='ms-4 fs-6 text-danger'>{ContactForm.errors.name}</span>
+              <span className='ms-4 fs-6 text-danger '>{ContactForm.errors.name}</span>
               <input
                 type="text"
-                className="form-control"
+                className="form-control fs-5 shadow "
                 id="name"
                 placeholder="Your Name" onChange={ContactForm.handleChange} value={ContactForm.values.name}
               />
@@ -78,24 +78,36 @@ const Contact = () => {
             <div className="form-group">
               {/* <label htmlFor="email">Email </label> */}
               <span className='ms-4 fs-6 text-danger'>{ContactForm.errors.email}</span>
-              <input type='text' className='form-control' id='email' placeholder='Your Email' onChange={ContactForm.handleChange} value={ContactForm.values.email} />
+              <input type='text' className='form-control fs-5 shadow ' id='email' placeholder='Your Email' onChange={ContactForm.handleChange} value={ContactForm.values.email} />
             </div>
             <div className="form-group">
               {/* <label htmlFor="subject">Subject</label> */}
               <span className='ms-4 fs-6 text-danger'>{ContactForm.errors.subject}</span>
-              <input type='text' className='form-control' id='subject' placeholder= 'Your Subject'  onChange={ContactForm.handleChange} value={ContactForm.values.subject} />
+              <input type='text' className='form-control fs-5  shadow' id='subject' placeholder= 'Your Subject'  onChange={ContactForm.handleChange} value={ContactForm.values.subject} />
             </div><br/>
             <div className="form-group">
               {/* <label htmlFor="message">Your Message</label> */}
               <textarea
-                className="form-control"
+                className="form-control  fs-5  shadow "
                 id="message"
                 placeholder='your message here...' onChange={ContactForm.handleChange} value={ContactForm.values.message}
                 rows={3}
                 defaultValue={""}
               />
             </div>
-            <button className='btn btn-primary mt-4 w-100 fs-5' type='submit'>Submit</button><br/><br/>
+            <button className='btn-53 mt-4 w-100 p-2 fs-5' type='submit'>
+            <div className="original" >SUBMIT</div>
+                  <div className="letters">
+                    <span>S</span>
+                    <span>U</span>
+                    <span>B</span>
+                    <span>M</span>
+                    <span>I</span>
+                    <span>T</span>
+                  </div>
+              
+              
+              </button><br/><br/>
           </form>
         </div>
             </div>

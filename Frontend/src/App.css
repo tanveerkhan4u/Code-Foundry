@@ -128,7 +128,9 @@ padding: 0 30px;
     .loimg{
       display: inline !important;
     }
-    
+    .cont{
+      padding-right: 100px;
+    }
       
     .broimg{
       padding-right: 100px;
