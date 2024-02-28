@@ -19,7 +19,7 @@ const Navbar = () => {
   <div className="container-fluid">
     <NavLink to="/Home">
     <a className="navbar-brand" href="#">
-      <img src='https://th.bing.com/th/id/OIG2..qpctzdoHBeFrDp_BRbR?pid=ImgGn' className='img-fluid mx-auto ms-5' style={{width:"100px", maxHeight:"100px"}}  alt=''></img>
+      <img src='https://th.bing.com/th/id/OIG2..qpctzdoHBeFrDp_BRbR?pid=ImgGn' className='img-fluid mx-auto ms-5' style={{width:"100px", maxHeight:"90px"}}  alt=''></img>
     </a>
     </NavLink>    
     
