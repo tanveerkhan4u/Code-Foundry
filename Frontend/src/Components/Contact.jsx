@@ -45,37 +45,28 @@ const Contact = () => {
 
 
   return (
-    <div style={{ overflow: 'hidden' }}>
-      <header className='text-dark' style={{ backgroundColor: "#dbedff" }}>
-        <div className='container-fluid py-5 '>
-          <div className='row'>
-            <div className='col-md-8 my-2'>
-              <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text'><strong className='text-primary '>Contact</strong> Us</motion.h2>&nbsp;
+    <div className='container-fluid '>
+    
+        <div className='row d-flex'>
+    
+            <div className='col-md-6 '>
+              <motion.h1 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text'><strong className='text-primary'>Contact</strong> Us</motion.h1>&nbsp;
               <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text'>Just send us your questions or concerns, We will give you the help you need.
-              </motion.p>&nbsp;
-            </div>
-            <div className='col-md-3 '>
+              </motion.p>
+              
               <motion.img animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='img-fluid mx-auto ' src='https://codedthemes.com/wp-content/uploads/2022/04/contact-us-banner-img.png.webp' alt=''></motion.img>
-            </div>
-          </div>
-        </div>
-      </header>
-      <br />
-      <br />
+          
 
-
-      <div className='row'>
-        <div className='col-md-2'>
-
-        </div>
-        <div className='col-md-8 '>
-          <h3 className='text-center'>Send us your message</h3><br />
-          <p className='text-center'>Please use the form below to contact us if you have any questions or feedback regarding our products or services.</p><br />
-          <p className='text-center'>For any Technical Product Related Support. Use our Support Panel</p><br />
+              
+      
+              </div>
+              <div className='col-md-6'>
+          <p className='text-center'>Please use the form below to contact us if you have any questions or feedback regarding our products or services.</p>
+          <p className='text-center'>For any Technical Product Related Support. Use our Support Panel</p>
           
           <form onSubmit={ContactForm.handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="name">Name</label>
+            <div className="form-group ">
+              {/* <label htmlFor="name">Name</label> */}
               <span className='ms-4 fs-6 text-danger'>{ContactForm.errors.name}</span>
               <input
                 type="text"
@@ -85,33 +76,48 @@ const Contact = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="email">Email </label>
+              {/* <label htmlFor="email">Email </label> */}
               <span className='ms-4 fs-6 text-danger'>{ContactForm.errors.email}</span>
               <input type='text' className='form-control' id='email' placeholder='Your Email' onChange={ContactForm.handleChange} value={ContactForm.values.email} />
             </div>
             <div className="form-group">
-              <label htmlFor="subject">Subject</label>
+              {/* <label htmlFor="subject">Subject</label> */}
               <span className='ms-4 fs-6 text-danger'>{ContactForm.errors.subject}</span>
-              <input type='text' className='form-control' id='subject'  onChange={ContactForm.handleChange} value={ContactForm.values.subject} />
-            </div>
+              <input type='text' className='form-control' id='subject' placeholder= 'Your Subject'  onChange={ContactForm.handleChange} value={ContactForm.values.subject} />
+            </div><br/>
             <div className="form-group">
-              <label htmlFor="message">Your Message</label>
+              {/* <label htmlFor="message">Your Message</label> */}
               <textarea
                 className="form-control"
                 id="message"
-                placeholder='Enter your message here...' onChange={ContactForm.handleChange} value={ContactForm.values.message}
+                placeholder='your message here...' onChange={ContactForm.handleChange} value={ContactForm.values.message}
                 rows={3}
                 defaultValue={""}
               />
             </div>
-            <button className='btn btn-primary mt-4 w-100' type='submit'>Submit</button>
+            <button className='btn btn-primary mt-4 w-100 fs-5' type='submit'>Submit</button><br/><br/>
           </form>
-
         </div>
-      </div>
-      <br /><br />
+            </div>
+          
+           
+              
+              
+        
+            
+         
+              
+              
+  
+        
+        
+      
+
+    
+     
 
     </div>
+
   )
 }
 
