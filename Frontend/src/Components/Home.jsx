@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Typewriter, Cursor } from 'react-simple-typewriter'
+import { IconStar , IconShoppingCart} from '@tabler/icons-react'
 
 
 
@@ -259,7 +260,7 @@ const Home = () => {
                   onHoverEnd={e => { }} className="card-img-top mx-auto img-fluid" alt="..." />
                 <div className="card-body">
                   <p className='fs-6'>Mantis Angular 17 Admin Template <strong className='text fs-5 float-end'style={{color:"#5B84FA"}}>FREE</strong></p>
-                  <h5 className='text' style={{color:"grey"}} >Angular<p className='float-end'><i class="fa-regular fa-star"></i></p></h5>
+                  <h5 className='text' style={{color:"grey"}} >Angular<p className='float-end'><IconStar></IconStar> </p><IconShoppingCart></IconShoppingCart></h5>
           
                   
               
