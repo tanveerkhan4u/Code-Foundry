@@ -47,21 +47,21 @@ const Contact = () => {
   return (
     <div className='container-fluid'>
     
-        <div className='row '>
+        <div className='row'>
     
-            <div className='col-md-6' style={{backgroundColor:"#dbedff"}}>
+            <div className='col-md-6' style={{backgroundColor:"#dbedff" , maxHeight: "540px" }}>
               <motion.h1 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text mt-5 ms-5 '><strong className='text-primary'>Contact</strong> Us</motion.h1>&nbsp;
               <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text ms-5   cont'>Just send us your questions or concerns, We will give you the help you need.
               </motion.p>
               
-              <motion.img animate={{ x: 50, y: -20 }} transition={{ ease: "easeOut", duration: 2 }} className='img-fluid mx-auto cont' src='https://codedthemes.com/wp-content/uploads/2022/04/contact-us-banner-img.png.webp' alt=''></motion.img>
+              <motion.img animate={{ x: -20, y: -20 }} transition={{ ease: "easeOut", duration: 2 }} className='img-fluid mx-auto cont' src='https://codedthemes.com/wp-content/uploads/2022/04/contact-us-banner-img.png.webp' alt=''></motion.img>
           
 
               
       
               </div>
               <div className='col-md-6'>
-          <p className='text-center mt-5'>Please use the form below to contact us if you have any questions or feedback regarding our products or services.</p>
+          <p className='text-center mt-4'>Please use the form below to contact us if you have any questions or feedback regarding our products or services.</p>
           <p className='text-center'>For any Technical Product Related Support. Use our Support Panel</p>
           
           <form   onSubmit={ContactForm.handleSubmit}>
