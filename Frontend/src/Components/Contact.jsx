@@ -60,7 +60,7 @@ const Contact = () => {
               
       
               </div>
-              <div className='col-md-6'>
+              <div className='col-md-5 ms-5'>
           <p className='text-center mt-4'>Please use the form below to contact us if you have any questions or feedback regarding our products or services.</p>
           <p className='text-center'>For any Technical Product Related Support. Use our Support Panel</p>
           
