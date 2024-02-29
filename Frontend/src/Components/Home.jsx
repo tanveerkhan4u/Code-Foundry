@@ -46,7 +46,7 @@ const Home = () => {
           <div className='row'>
             <div className='col-md-7 mx-auto'>
               <div className='input-group mt-2'>
-                <input type="text" className="form-control fs-5" placeholder='Search...' />
+                <input type="text" className="form-control fs-5" style={{border:"1px solid black"}} placeholder='Search...' />
                 <button className=" btn-53 p-2" >
                 <div className="original" >Search</div>
                   <div className="letters">
@@ -253,17 +253,23 @@ const Home = () => {
           <div className='col-md-4 '>
             <Link to="/Angulardetail" style={{ textDecoration: "none" }}>
 
-              <div className="card  mb-3 py-2 px-2 h-100">
+              <div className="card" style={{maxHeight:"410px"}}>
                 <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png" whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className="card-img-top mx-auto img-fluid" alt="..." />
-                <div className="card-body  mb-3 py-2 px-2">
-                  <h5 className='text' >Angular</h5>
+                <div className="card-body">
+                  <p className='fs-6'>Mantis Angular 17 Admin Template <strong className='text fs-5 float-end'style={{color:"#5B84FA"}}>FREE</strong></p>
+                  <h5 className='text' style={{color:"grey"}} >Angular<p className='float-end'><i class="fa-regular fa-star"></i></p></h5>
+          
+                  
+              
                 </div>
               </div>
-
             </Link>
           </div>
+                
+          
+
           <div className='col-md-4'>
             <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
               <div className="card mb-3 py-2 px-2 p-2 h-100">
