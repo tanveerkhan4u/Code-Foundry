@@ -6,20 +6,20 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Typewriter, Cursor } from 'react-simple-typewriter'
 import { IconStar, IconShoppingCart } from '@tabler/icons-react'
-import productData from './dummydata';
+
 import { Pagination, Autoplay } from 'swiper/modules';
 
 
 
 const Home = () => {
 
-  const [productList, setProductList] = useState(productData);
+  // const [productList, setProductList] = useState(productData);
 
   const searchRef = useRef(null);
 
 
   // const name = ['REACT', 'BOOTSTRAP', 'VUE', 'ANGULAR', 'NESTJS', 'EXPRESS.JS', 'SVELTE', 'EMBER', 'NEXT.JS', 'SOLID', 'GRAPHQL', 'NATIVESCRIPT'];
-  // const [selName, setSelName] = useState([]);
+  //  const [selName, setSelName] = useState([]);
 
 
 
@@ -286,8 +286,8 @@ const Home = () => {
 
 
 
-          {productList.map((product) => {
-            return <div className='col-md-4'>
+    
+        <div className='col-md-4'>
               <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
                 <div className="card mb-3 py-2 px-2 p-2 h-100">
                   <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Empire-Bootstrap-4-Admin-Template.webp" whileHover={{ scale: 1.1 }}
@@ -299,9 +299,8 @@ const Home = () => {
                 </div>
               </Link>
             </div>
-          })};
-          {productList.map((product) => {
-            return <div className='col-md-4'>
+          
+          <div className='col-md-4'>
               <Link to="/Vuedetail" style={{ textDecoration: "none" }}>
                 <div className="card mb-3 py-2 px-2 h-100">
                   <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-vue.png" whileHover={{ scale: 1.1 }}
@@ -313,7 +312,7 @@ const Home = () => {
                 </div>
               </Link>
             </div>
-          })};
+        
         </div>
 
       </div>

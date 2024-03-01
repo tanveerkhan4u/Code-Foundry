@@ -1,19 +1,27 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import productData from './dummydata';
 
 
 import { Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
 
-
-
-
 const Browsestack = () => {
 
+  const [productList, setProductList] = useState(productData);
 
+  const searchRef = useRef(null);
+  
+
+  const searchProduct = () => {
+    const filteredData = productData.filter((product) => {
+      return product.name.toLowerCase().includes(searchRef.current.value.toLowerCase())
+    });
+    setProductList(filteredData);
+  }
 
 
   return (
@@ -29,8 +37,8 @@ const Browsestack = () => {
               <div className='row'>
             <div className='col '>
               <div className='input-group '>
-                <input type="text" className="form-control fs-5 " placeholder='Search...' />
-                <button1 >Search</button1>
+                <input type="text" className="form-control fs-5 " placeholder='Search...'  ref={searchRef} />
+                <button1  onClick={searchProduct}>Search</button1>
               </div>
             </div>
           </div>
@@ -202,20 +210,23 @@ const Browsestack = () => {
 
       <div className='conatiner-fluid'>
         <div className='row gy-4 justify-content-center'>
-          <div className='col-md-3 ms-5'>
-            <Link to="/Exportstack/vue" style={{ textDecoration: "none" }}>
+        {productList.map((product,name) => { 
+          return <div className='col-md-3 ms-5'>
+            <Link to= {product.link} className='text-decoration-none'>
               <div className="card" >
-                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2023/12/Mantis-free.png" whileHover={{ scale: 1.1 }}
+                <motion.img src={product.image}
+                whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />
                 <div className="card-body">
-                  <h5 className='text' >Vue</h5>
+                  <h5>{product.name}</h5>
                 </div>
               </div>
-            </Link>
+              </Link>
           </div>
+          })};
 
-          <div className='col-md-3 ms-5'>
+          {/* <div className='col-md-3 ms-5'>
             <Link to="/Exportstack/bootstrap" style={{ textDecoration: "none" }}>
               <div className="card " >
                 <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2023/02/Mantis-pro-bootstrap5.png" whileHover={{ scale: 1.1 }}
@@ -239,14 +250,14 @@ const Browsestack = () => {
                 </div>
               </div>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
       <br />
 
 
 
-      <div className='conatiner-fluid d-flex'>
+      {/* <div className='conatiner-fluid d-flex'>
         <div className='row gy-4 justify-content-center'>
           <div className='col-md-3 ms-5'>
             <Link to="/Exportstack/angular" style={{ textDecoration: "none" }}>
@@ -286,7 +297,7 @@ const Browsestack = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
       <br />
       <br />
 
