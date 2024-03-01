@@ -27,7 +27,7 @@ const Home = () => {
 
   const searchProduct = () => {
     const filteredData = productData.filter((product) => {
-      return product.name1.toLowerCase().includes(searchRef.current.value.toLowerCase())
+      return product.name.toLowerCase().includes(searchRef.current.value.toLowerCase())
     });
     setProductList(filteredData);
   }
