@@ -13,7 +13,7 @@ const Navbar = () => {
     if (loggedIn) {
       return (
         <li className='nav-item'>
-          <button onClick={logout} className='btn btn-outline-danger'>Log Out</button>
+          <button1 onClick={logout} className='text'>Log Out</button1>
         </li>
       )
     } else {

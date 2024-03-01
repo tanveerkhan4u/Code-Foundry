@@ -23,7 +23,6 @@ import { useNavigate } from "react-router-dom";
 
   return <AppContext.Provider value={{currentUser, setcurrentUser, loggedIn, setloggedIn, logout}}>
        {children}
-
     </AppContext.Provider>
  }
 

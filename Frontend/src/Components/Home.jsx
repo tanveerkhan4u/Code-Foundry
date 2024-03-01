@@ -34,7 +34,7 @@ const Home = () => {
 
 
 
- 
+
 
   return (
     <div style={{ overflow: 'hidden' }}>
@@ -264,60 +264,60 @@ const Home = () => {
       <br />
       <div className='container-fluid '>
         <div className='row gy-4 '>
-  
-            
-            <div className='col-md-4 '>
 
-              <Link to="/Angulardetail" style={{ textDecoration: "none" }}>
 
-                <div className="card" style={{ maxHeight: "410px" }}>
-                  <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png" whileHover={{ scale: 1.1 }}
+          <div className='col-md-4 '>
+
+            <Link to="/Angulardetail" style={{ textDecoration: "none" }}>
+
+              <div className="card" style={{ maxHeight: "410px" }}>
+                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png" whileHover={{ scale: 1.1 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className="card-img-top mx-auto img-fluid" alt="..." />
+                <div className="card-body">
+                  <p className='fs-6'>Mantis Angular 17 Admin Template <strong className='text fs-5 float-end' style={{ color: "#5B84FA" }}>FREE</strong></p>
+                  <h5 className='text' style={{ color: "grey" }} >Angular<p className='float-end'><IconStar></IconStar> </p><IconShoppingCart></IconShoppingCart></h5>
+                </div>
+              </div>
+            </Link>
+          </div>
+
+
+
+
+
+          {productList.map((product) => {
+            return <div className='col-md-4'>
+              <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
+                <div className="card mb-3 py-2 px-2 p-2 h-100">
+                  <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Empire-Bootstrap-4-Admin-Template.webp" whileHover={{ scale: 1.1 }}
                     onHoverStart={e => { }}
                     onHoverEnd={e => { }} className="card-img-top mx-auto img-fluid" alt="..." />
-                  <div className="card-body">
-                    <p className='fs-6'>Mantis Angular 17 Admin Template <strong className='text fs-5 float-end' style={{ color: "#5B84FA" }}>FREE</strong></p>
-                    <h5 className='text' style={{ color: "grey" }} >Angular<p className='float-end'><IconStar></IconStar> </p><IconShoppingCart></IconShoppingCart></h5>
+                  <div className="card-body  mb-3 py-2 px-2">
+                    <h5 className='text' >Bootstrap</h5>
                   </div>
                 </div>
               </Link>
             </div>
-          
-
-
-
-
-{productList.map((product) => {
-         return <div className='col-md-4'>
-            <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
-              <div className="card mb-3 py-2 px-2 p-2 h-100">
-                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Empire-Bootstrap-4-Admin-Template.webp" whileHover={{ scale: 1.1 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }} className="card-img-top mx-auto img-fluid" alt="..." />
-                <div className="card-body  mb-3 py-2 px-2">
-                  <h5 className='text' >Bootstrap</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
           })};
           {productList.map((product) => {
-         return <div className='col-md-4'>
-            <Link to="/Vuedetail" style={{ textDecoration: "none" }}>
-              <div className="card mb-3 py-2 px-2 h-100">
-                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-vue.png" whileHover={{ scale: 1.1 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />
-                <div className="card-body mb-3 py-2 px-2">
-                  <h5 className='text' >Vue</h5>
+            return <div className='col-md-4'>
+              <Link to="/Vuedetail" style={{ textDecoration: "none" }}>
+                <div className="card mb-3 py-2 px-2 h-100">
+                  <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-vue.png" whileHover={{ scale: 1.1 }}
+                    onHoverStart={e => { }}
+                    onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />
+                  <div className="card-body mb-3 py-2 px-2">
+                    <h5 className='text' >Vue</h5>
+                  </div>
                 </div>
-              </div>
-            </Link>
-          </div>
-           })};
+              </Link>
+            </div>
+          })};
         </div>
 
       </div>
-    
+
       <br /><br />
       <div className='container-fluid'>
         <h2 className='text' style={{ marginLeft: "40px" }}>Featured <strong className='text-primary'>Products</strong></h2><br />
