@@ -25,6 +25,7 @@ import Nativescript from './Components/Nativescript';
 import Footer from './Components/Footer';
 import Contact from './Components/Contact';
 import Feedback from './Components/Feedback';
+import { AppProvider} from './AppContext';
 
 
 
@@ -43,6 +44,7 @@ function App() {
         
           <SnackbarProvider maxSnack={3} anchorOrigin={{ vertical: 'top', horizontal: 'center' }} iconVariant={{ success: '✔ 🎉😍', error: '👀', }}>
             <BrowserRouter>
+            <AppProvider>
               <Navbar></Navbar>
               <Routes>
                 <Route path='/Signup' element={<Signup />} />
@@ -67,24 +69,25 @@ function App() {
                 <Route path='/Footer' element={<Footer />} />
                 <Route path='/Contact' element={<Contact />} />
                 <Route path='/Feedback' element={<Feedback/>} />
-            
-
               </Routes>
-
              <Footer></Footer>
-
-
-
-
-
+             </AppProvider>
             </BrowserRouter>
           </SnackbarProvider>
-      
-
       </div>
-
     </>
   )
 }
 
 export default App
+      
+            
+
+
+
+
+
+
+
+
+

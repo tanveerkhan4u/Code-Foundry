@@ -1,7 +1,7 @@
 import { useFormik } from 'formik';
 import React, { useState } from 'react';
 import * as Yup from 'yup';
-
+import useAppContext from '../AppContext';
 import { jwtDecode } from "jwt-decode";
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import { GoogleLogin } from '@react-oauth/google';
@@ -18,10 +18,12 @@ const SignupSchema = Yup.object().shape({
 
 const Login = () => {
 
-
-
-
   const navigate = useNavigate();
+
+  const { setloggedIn } = useAppContext();
+
+
+
 
   const Loginform = useFormik({
     initialValues: {
@@ -48,7 +50,7 @@ const Login = () => {
         const data = await res.json();
 
         sessionStorage.setItem('user', JSON.stringify(data));
-
+        setloggedIn(true);
         resetForm();
         navigate('/Home');
 
