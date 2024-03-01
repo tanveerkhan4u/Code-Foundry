@@ -42,16 +42,18 @@ router.get('/getbyid/:id', (req, res) => {
 });
 
 router.get('/getbyemail/:email', (req, res) => {
-console.log(req.params.email);
 
-Model.findOne({email: req.params.email})
-.then((result) => {
-  res.json(result)
-}).catch((err) => {
-  res.status(500).json(err);
+  Model.findOne({ email: req.params.email })
+      .then((result) => {
+          if(result){
+              res.json(result);
+          }else{
+              res.status(400).json({message:'User Not Found'});
+          }
+      }).catch((err) => {
+          res.status(500).json(err)
+      });
 });
-});
-
 router.put('/update/:id', (req, res) => {
   Model.findByIdAndUpdate(req.params.id, req.body, {new : true})
   .then((result) => {

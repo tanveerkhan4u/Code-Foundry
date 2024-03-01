@@ -31,9 +31,13 @@ const zipFolder = (structure, zipName, projectName) => {
   const destDir = path.join(rootDir, 'generatedStacks' , projectName);
 
   try {
-    structure.forEach((fileData) => {
+    for(let fileData of structure){
+      console.log(fileData.dirname, fileData.filename);
       zip.file(path.join(destDir, fileData.dirname, fileData.filename), fileData.content);
-    });
+      console.log('create zip');
+    }
+    // structure.forEach((fileData) => {
+    // });
   
     const files = structure.map(fileData => fileData.filename);
     const myzipfolder = zip.folder("files");

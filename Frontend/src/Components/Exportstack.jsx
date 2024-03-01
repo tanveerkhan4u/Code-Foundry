@@ -11,6 +11,9 @@ import dependencyData from './depedency';
 const Exportstack = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+  const [selDependencies, setSelDependencies] = useState([]);
+
+
   const [name, setname] = useState();
   console.log(name);
 
@@ -26,7 +29,13 @@ const Exportstack = () => {
         <ul>
           {dependencyData.map(entry => <div className='d-flex align-items-start '>
             <label className="checkbox-container">
-              <input type="checkbox" />
+              <input type="checkbox" checked={selDependencies.includes(entry.name)} onChange={(e) => {
+                if (e.target.checked) {
+                  setSelDependencies([...selDependencies, entry.name]);
+                } else {
+                  setSelDependencies(selDependencies.filter(dep => dep !== entry.name));
+                }
+              }} />
               <span className="checkmark" />
             </label>
             <li>
@@ -80,7 +89,7 @@ const Exportstack = () => {
 
 
   return (
-    <div className='container-fluid mt-2' style={{backgroundColor:"#dbedff"}}>
+    <div className='container-fluid  p-0' style={{backgroundColor:"#dbedff"}}>
       {/* <button onClick={() => {setSidebarOpen(!sidebarOpen)}}>
         <IconMenu2 color='red' size={30}/>
       </button> */}
@@ -102,7 +111,7 @@ const Exportstack = () => {
 
           
 
-          <button onClick={generateStack} className=' w-100 py-2 mt-3 fs-5'>Export Stack</button> 
+          <button onClick={generateStack} className=' py-2 mt-3 fs-5 w-100'>Export Stack</button> 
         </div>
 
         {/* <div className="col-md-6">

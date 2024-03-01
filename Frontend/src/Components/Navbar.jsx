@@ -15,7 +15,7 @@ const Navbar = () => {
 
     <div>
       <nav 
-      className="navbar  navbar-expand-lg shadow p-0 bg-body-secondary">
+      className="navbar  navbar-expand-lg  p-0" style={{backgroundColor:"#dbedff"}}>
   <div className="container-fluid">
     <NavLink to="/Home">
     <a className="navbar-brand" href="#">

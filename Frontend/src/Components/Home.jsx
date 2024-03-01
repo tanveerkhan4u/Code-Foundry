@@ -1,20 +1,40 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Typewriter, Cursor } from 'react-simple-typewriter'
-import { IconStar , IconShoppingCart} from '@tabler/icons-react'
-
-
-
+import { IconStar, IconShoppingCart } from '@tabler/icons-react'
+import productData from './dummydata';
 import { Pagination, Autoplay } from 'swiper/modules';
+
 
 
 const Home = () => {
 
+  const [productList, setProductList] = useState(productData);
 
+  const searchRef = useRef(null);
+
+
+  // const name = ['REACT', 'BOOTSTRAP', 'VUE', 'ANGULAR', 'NESTJS', 'EXPRESS.JS', 'SVELTE', 'EMBER', 'NEXT.JS', 'SOLID', 'GRAPHQL', 'NATIVESCRIPT'];
+  // const [selName, setSelName] = useState([]);
+
+
+
+
+
+  const searchProduct = () => {
+    const filteredData = productData.filter((product) => {
+      return product.name1.toLowerCase().includes(searchRef.current.value.toLowerCase())
+    });
+    setProductList(filteredData);
+  }
+
+
+
+ 
 
   return (
     <div style={{ overflow: 'hidden' }}>
@@ -47,19 +67,12 @@ const Home = () => {
           <div className='row'>
             <div className='col-md-7 mx-auto'>
               <div className='input-group mt-2'>
-                <input type="text" className="form-control fs-5" style={{border:"1px solid black"}} placeholder='Search...' />
-                <button className=" btn-53 p-2" >
-                <div className="original" >Search</div>
-                  <div className="letters">
-                    <span>S</span>
-                    <span>e</span>
-                    <span>a</span>
-                    <span>r</span>
-                    <span>c</span>
-                    <span>h</span>
-                  </div>
-                </button>
-              
+                <input type="text" className="form-control fs-5" placeholder='Search...' ref={searchRef} />
+                <button1 onClick={searchProduct} className=" p-2" >
+                  <div className="original" >Search</div>
+
+                </button1>
+
               </div>
             </div>
           </div>
@@ -95,7 +108,7 @@ const Home = () => {
                 <motion.div whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 px-2 shadow' style={{ height: "220px" }}>
-                  <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/boostrap-logo.jpg.webp'  alt='' />
+                  <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/boostrap-logo.jpg.webp' alt='' />
                   <h4 className='text-center' style={{ marginTop: "20px" }}>Bootstrap</h4>
                 </motion.div>
               </Link>
@@ -131,7 +144,7 @@ const Home = () => {
                 <motion.div whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 px-2 shadow ' style={{ height: "220px" }} >
-                  <img className='mx-auto img-fluid ' src='https://masteringjs.io/assets/images/vue/vue.jpg' style={{ width: "100px",marginTop:"-20px" }} alt='' />
+                  <img className='mx-auto img-fluid ' src='https://masteringjs.io/assets/images/vue/vue.jpg' style={{ width: "100px", marginTop: "-20px" }} alt='' />
                   <h4 className='text-center mt-2'>Vue</h4>
                 </motion.div>
               </Link>
@@ -143,7 +156,7 @@ const Home = () => {
                 <motion.div whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 shadow' style={{ height: "220px" }}>
-                  <img className='mx-auto img-fluid' src='https://static-00.iconduck.com/assets.00/nestjs-icon-2048x2040-3rrvcej8.png' style={{ width: "80px", height:"80px" ,marginTop:"-5px" }} alt='' />
+                  <img className='mx-auto img-fluid' src='https://static-00.iconduck.com/assets.00/nestjs-icon-2048x2040-3rrvcej8.png' style={{ width: "80px", height: "80px", marginTop: "-5px" }} alt='' />
                   <h4 className='text-center mt-3'>NestJS</h4>
                 </motion.div>
               </Link>
@@ -155,7 +168,7 @@ const Home = () => {
                 <motion.div whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 shadow' style={{ height: "220px" }}>
-                  <img className='mx-auto img-fluid' src='https://w7.pngwing.com/pngs/598/9/png-transparent-svelte-hd-logo-thumbnail.png' style={{ width: "80px", height:"80px" }} alt='' />
+                  <img className='mx-auto img-fluid' src='https://w7.pngwing.com/pngs/598/9/png-transparent-svelte-hd-logo-thumbnail.png' style={{ width: "80px", height: "80px" }} alt='' />
                   <h4 className='text-center mt-2'>Svelte</h4>
                 </motion.div>
               </Link>
@@ -167,7 +180,7 @@ const Home = () => {
                 <motion.div whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 shadow' style={{ height: "220px" }}>
-                  <img className='mx-auto img-fluid' src='https://emberjs.com/images/brand/ember-tomster-lockup-4c.svg' style={{ width: "100px",height:"100px", marginTop:"-20px" }} alt='' />
+                  <img className='mx-auto img-fluid' src='https://emberjs.com/images/brand/ember-tomster-lockup-4c.svg' style={{ width: "100px", height: "100px", marginTop: "-20px" }} alt='' />
                   <h4 className='text-center mt-2'>Ember</h4>
                 </motion.div>
               </Link>
@@ -179,7 +192,7 @@ const Home = () => {
                 <motion.div whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 shadow' style={{ height: "220px" }}>
-                  <img className='mx-auto img-fluid' src='https://miro.medium.com/v2/resize:fit:650/1*Hva7hcsFWulFUPhrEWui1A.jpeg' style={{ width: "150px", height:"100px",marginTop:"-15px" }} alt='' />
+                  <img className='mx-auto img-fluid' src='https://miro.medium.com/v2/resize:fit:650/1*Hva7hcsFWulFUPhrEWui1A.jpeg' style={{ width: "150px", height: "100px", marginTop: "-15px" }} alt='' />
                   <h4 className='text-center'>Next.JS</h4>
                 </motion.div>
               </Link>
@@ -191,7 +204,7 @@ const Home = () => {
                 <motion.div whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 shadow' style={{ height: "220px" }}>
-                  <img className='mx-auto img-fluid' src='https://avatars.githubusercontent.com/u/79226042?s=280&v=4' style={{ width: "100px", height:"100px", marginTop:"-15px" }} alt='' />
+                  <img className='mx-auto img-fluid' src='https://avatars.githubusercontent.com/u/79226042?s=280&v=4' style={{ width: "100px", height: "100px", marginTop: "-15px" }} alt='' />
                   <h4 className='text-center' style={{ marginTop: "-2px" }}>Solid</h4>
                 </motion.div>
               </Link>
@@ -203,7 +216,7 @@ const Home = () => {
                 <motion.div whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 shadow' style={{ height: "220px" }}>
-                  <img className='mx-auto img-fluid' src='https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png' style={{ width: "80px", height:"80px",marginTop:"-10px" }} alt='' />
+                  <img className='mx-auto img-fluid' src='https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png' style={{ width: "80px", height: "80px", marginTop: "-10px" }} alt='' />
                   <h4 className='text-center mt-2'>Express.js</h4>
                 </motion.div>
               </Link>
@@ -215,7 +228,7 @@ const Home = () => {
                 <motion.div whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 shadow' style={{ height: "220px" }}>
-                  <img className='mx-auto img-fluid' src='https://cdn.iconscout.com/icon/free/png-256/free-graphql-3521468-2944912.png' style={{ width: "80px", height:"80px", marginTop:"-10px" }} alt='' />
+                  <img className='mx-auto img-fluid' src='https://cdn.iconscout.com/icon/free/png-256/free-graphql-3521468-2944912.png' style={{ width: "80px", height: "80px", marginTop: "-10px" }} alt='' />
                   <h4 className='text-center mt-2'>GraphQL</h4>
                 </motion.div>
               </Link>
@@ -227,7 +240,7 @@ const Home = () => {
                 <motion.div whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-2 py-5 shadow' style={{ height: "220px" }}>
-                  <img className='mx-auto img-fluid' src='https://seeklogo.com/images/N/nativescript-logo-309BDE68D3-seeklogo.com.png' style={{ width: "80px", height:"80px", marginTop:"-10px" }} alt='' />
+                  <img className='mx-auto img-fluid' src='https://seeklogo.com/images/N/nativescript-logo-309BDE68D3-seeklogo.com.png' style={{ width: "80px", height: "80px", marginTop: "-10px" }} alt='' />
                   <h4 className='text-center mt-1'>Nativescript</h4>
                 </motion.div>
               </Link>
@@ -251,27 +264,30 @@ const Home = () => {
       <br />
       <div className='container-fluid '>
         <div className='row gy-4 '>
-          <div className='col-md-4 '>
-            <Link to="/Angulardetail" style={{ textDecoration: "none" }}>
+  
+            
+            <div className='col-md-4 '>
 
-              <div className="card" style={{maxHeight:"410px"}}>
-                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png" whileHover={{ scale: 1.1 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }} className="card-img-top mx-auto img-fluid" alt="..." />
-                <div className="card-body">
-                  <p className='fs-6'>Mantis Angular 17 Admin Template <strong className='text fs-5 float-end'style={{color:"#5B84FA"}}>FREE</strong></p>
-                  <h5 className='text' style={{color:"grey"}} >Angular<p className='float-end'><IconStar></IconStar> </p><IconShoppingCart></IconShoppingCart></h5>
-          
-                  
-              
+              <Link to="/Angulardetail" style={{ textDecoration: "none" }}>
+
+                <div className="card" style={{ maxHeight: "410px" }}>
+                  <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png" whileHover={{ scale: 1.1 }}
+                    onHoverStart={e => { }}
+                    onHoverEnd={e => { }} className="card-img-top mx-auto img-fluid" alt="..." />
+                  <div className="card-body">
+                    <p className='fs-6'>Mantis Angular 17 Admin Template <strong className='text fs-5 float-end' style={{ color: "#5B84FA" }}>FREE</strong></p>
+                    <h5 className='text' style={{ color: "grey" }} >Angular<p className='float-end'><IconStar></IconStar> </p><IconShoppingCart></IconShoppingCart></h5>
+                  </div>
                 </div>
-              </div>
-            </Link>
-          </div>
-                
+              </Link>
+            </div>
           
 
-          <div className='col-md-4'>
+
+
+
+{productList.map((product) => {
+         return <div className='col-md-4'>
             <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
               <div className="card mb-3 py-2 px-2 p-2 h-100">
                 <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Empire-Bootstrap-4-Admin-Template.webp" whileHover={{ scale: 1.1 }}
@@ -283,7 +299,9 @@ const Home = () => {
               </div>
             </Link>
           </div>
-          <div className='col-md-4'>
+          })};
+          {productList.map((product) => {
+         return <div className='col-md-4'>
             <Link to="/Vuedetail" style={{ textDecoration: "none" }}>
               <div className="card mb-3 py-2 px-2 h-100">
                 <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-vue.png" whileHover={{ scale: 1.1 }}
@@ -295,8 +313,11 @@ const Home = () => {
               </div>
             </Link>
           </div>
+           })};
         </div>
+
       </div>
+    
       <br /><br />
       <div className='container-fluid'>
         <h2 className='text' style={{ marginLeft: "40px" }}>Featured <strong className='text-primary'>Products</strong></h2><br />
