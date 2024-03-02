@@ -21,7 +21,7 @@ const productData = [
   },
   {
     name : 'NESTJS',
-    image : 'https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357',
+    image : 'https://cdn.dribbble.com/users/2562056/screenshots/6230816/uikits.net_-_dashboard_freebies_02_4x.png?resize=768x576&vertical=center',
     link : '/Exportstack/nestJS'
   },
   {
@@ -39,16 +39,19 @@ const productData = [
   },
   {
     name : 'NEXT.JS',
-    image : '',
+    image : 'https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357',
   },
   {
     name : 'SOLID',
+    image : 'https://colorlib.com/wp/wp-content/uploads/sites/2/concept-free-admin-dashboard-panel.jpg',
   },
   {
     name : 'GRAPHQL',
+    image : 'https://i.pinimg.com/originals/30/a7/12/30a71279cc7e849146715efecc3862d0.jpg',
   },
   {
     name : 'NATIVESCRIPT',
+    image: 'https://img.freepik.com/free-vector/dashboard-user-panel-template_52683-29382.jpg',
   },
 ];
 
