@@ -35,9 +35,11 @@ const productData = [
   },
   {
     name : 'EMBER',
+    image : 'https://raw.githubusercontent.com/huxinghai1988/ember-adminlte-theme/master/preview.png',
   },
   {
     name : 'NEXT.JS',
+    image : '',
   },
   {
     name : 'SOLID',
