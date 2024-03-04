@@ -26,7 +26,7 @@ import Footer from './Components/Footer';
 import Contact from './Components/Contact';
 import Feedback from './Components/Feedback';
 import { AppProvider} from './AppContext';
-// import Card from './Components/Card';
+import Card from './Components/Card';
 
 
 
@@ -71,7 +71,7 @@ function App() {
                 <Route path='/Footer' element={<Footer />} />
                 <Route path='/Contact' element={<Contact />} />
                 <Route path='/Feedback' element={<Feedback/>} />
-                {/* <Route path='/Card' element={<Card/>} /> */}
+                <Route path='/Card' element={<Card/>} />
                 
               </Routes>
              <Footer></Footer>

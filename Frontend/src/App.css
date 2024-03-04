@@ -462,7 +462,10 @@ button {
     transform: translateY(10px);
     transition: 100ms;
   }
+  /* login google button css */
   
-  
-  
+  .google{
+    margin-top: -50px;
+    /* margin-bottom: 50px; */
+  }
   

@@ -121,8 +121,9 @@ const Login = () => {
 
               <br /><br /><br />
               <form onSubmit={Loginform.handleSubmit}>
-                <div className='container d-flex'>
-                  <div className='google'>
+                <div className='container  d-flex'>
+                 
+                  <button2 className='google'>
                     <GoogleOAuthProvider clientId="933596296606-mqbgnqrpol73pu5lr8pl06p1taahd745.apps.googleusercontent.com">
                       <GoogleLogin
                         onSuccess={credentialResponse => {
@@ -135,18 +136,21 @@ const Login = () => {
                         }}
                       />
                     </GoogleOAuthProvider>
+                  </button2>
                   </div>
-                  <button className='btn btn-outline-primary shadow' onClick={(e) => loginWithRedirect()} style={{ marginTop: "-70px", marginLeft: "20px", width: "250px", height: "60px" }}><i class="fa-brands fa-linkedin"></i> &nbsp; Sign in With LinkedIn</button>
-                </div>
-                <h3 className='text-center' style={{ color: "grey", marginTop: "-30px" }}>OR</h3><br />
-                <p className='text-center' style={{ fontSize: "25px" }}>Log into Your Account</p>
+          
+          
+                  
+                
+                <h3 className='text-center' style={{ color: "grey"}}>OR</h3><br />
+                <p className='text-center fs-5'>Log into Your Account</p>
 
-                <label htmlFor="" style={{ fontSize: "20px" }}>Email </label>
+                {/* <label htmlFor="" >Email </label> */}
                 <span className='ms-4 fs-6 text-danger'>{Loginform.errors.email}</span>
-                <input type="text" className='form-control mb-4' id='email' onChange={Loginform.handleChange} value={Loginform.values.email} />
-                <label htmlFor="" style={{ fontSize: "20px" }}>Password</label>
+                <input type="text" className='form-control mb-4 fs-5' id='email' onChange={Loginform.handleChange} value={Loginform.values.email} />
+                {/* <label htmlFor="" style={{ fontSize: "20px" }}>Password</label> */}
                 <span className='ms-4 fs-6 text-danger'>{Loginform.errors.password}</span>
-                <input type="password" className='form-control mb-4 ' id='password' onChange={Loginform.handleChange} value={Loginform.values.password} />
+                <input type="password" className='form-control mb-4 fs-5 ' id='password' onChange={Loginform.handleChange} value={Loginform.values.password} />
 
                 <br />
 
@@ -168,6 +172,7 @@ const Login = () => {
                 {/* <button className='btn btn-outline-primary w-100' type='submit' onClick="Isremember me">Log In</button> */}
 
                 <p className='text-center' style={{ marginTop: "20px" }}>Don't have an account? <a href='/Signup'>Sign Up</a></p>
+            
 
                 <br />
               </form>
