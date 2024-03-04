@@ -32,26 +32,32 @@ const productData = [
   {
     name : 'SVELTE',
     image : 'https://www.creative-tim.com/blog/content/images/wordpress/2020/09/svelte-admin-dashboard.jpg',
+    link : '/Exportstack/svelte'
   },
   {
     name : 'EMBER',
     image : 'https://raw.githubusercontent.com/huxinghai1988/ember-adminlte-theme/master/preview.png',
+    link : '/Exportstack/ember'
   },
   {
     name : 'NEXT.JS',
     image : 'https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357',
+    link : '/Exportstack/next.js'
   },
   {
     name : 'SOLID',
     image : 'https://colorlib.com/wp/wp-content/uploads/sites/2/concept-free-admin-dashboard-panel.jpg',
+    link : '/Exportstack/solid'
   },
   {
     name : 'GRAPHQL',
     image : 'https://i.pinimg.com/originals/30/a7/12/30a71279cc7e849146715efecc3862d0.jpg',
+    link : '/Exportstack/graphql'
   },
   {
     name : 'NATIVESCRIPT',
     image: 'https://img.freepik.com/free-vector/dashboard-user-panel-template_52683-29382.jpg',
+    link : '/Exportstack/NativeScript'
   },
 ];
 
