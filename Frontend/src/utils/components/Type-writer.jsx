@@ -115,7 +115,7 @@ export const TypewriterEffectSmooth = ({ words, className, cursorClassName }) =>
   };
 
   return (
-    <div className={cn("flex  flex-row", className)}>
+    <div className={cn("flex", className)}>
       <motion.div
         className="overflow-hidden "
         initial={{

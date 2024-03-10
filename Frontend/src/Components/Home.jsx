@@ -13,16 +13,16 @@ import { TypewriterEffectSmooth } from '../utils/components/Type-writer';
 
 const words = [
   {
-    text: "Build",
+    text: "React",
   },
   {
-    text: "awesome",
+    text: "Angular",
   },
   {
-    text: "apps",
+    text: "Bootstrap",
   },
   {
-    text: "with",
+    text: "Vue",
   },
   {
     text: "Aceternity.",
