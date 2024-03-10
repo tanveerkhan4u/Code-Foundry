@@ -11,24 +11,38 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import Card from './Card';
 import { TypewriterEffectSmooth } from '../utils/components/Type-writer';
 
-const words = [
-  {
-    text: "React",
-  },
-  {
-    text: "Angular",
-  },
-  {
-    text: "Bootstrap",
-  },
-  {
-    text: "Vue",
-  },
-  {
-    text: "Aceternity.",
-    className: "text-blue-500 dark:text-blue-500 text-center",
-  },
-];
+
+
+// export function TypewriterEffectSmoothDemo() {
+  const words = [
+    {
+      text: "Build",
+    },
+    {
+      text: "awesome",
+    },
+    {
+      text: "apps",
+    },
+    {
+      text: "with",
+    },
+    {
+      text: "Aceternity.",
+      className: "text-blue-500 dark:text-blue-500",
+    },
+  ];
+  
+      
+  
+
+  
+// }
+
+
+
+
+
 
 
 
@@ -37,39 +51,44 @@ const words = [
 
 
 const Home = () => {
+  
   // const [productList, setProductList] = useState(productData);
-
+  
   const searchRef = useRef(null);
+  
+  
+  
 
 
   // const name = ['REACT', 'BOOTSTRAP', 'VUE', 'ANGULAR', 'NESTJS', 'EXPRESS.JS', 'SVELTE', 'EMBER', 'NEXT.JS', 'SOLID', 'GRAPHQL', 'NATIVESCRIPT'];
   //  const [selName, setSelName] = useState([]);
-
-
-
-
-
   const searchProduct = () => {
     const filteredData = productData.filter((product) => {
       return product.name.toLowerCase().includes(searchRef.current.value.toLowerCase())
     });
     setProductList(filteredData);
   }
-
-
-
-
-
   return (
     <div style={{ overflow: 'hidden' }}>
       <header className='text-dark w-100' style={{ backgroundColor: "#dbedff" }}>
         <div className='container-fluid py-5'>
           <h1 className='text-center mt-2'>
+          <TypewriterEffectSmooth words={words} />
+          </h1>
+
           
 
-            <TypewriterEffectSmooth words={words} />
-            
-          </h1>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -280,7 +299,7 @@ const Home = () => {
       <div className='container-fluid '>
         <div className='row gy-4 '>
 
-          <div className='col-md-4'>
+        <div className='col-md-4'>
             <Card />
           </div>
 
