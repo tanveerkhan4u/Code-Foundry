@@ -44,7 +44,7 @@ const Exportstack = () => {
             </li>
           </div>
           )}
-          <button className='btn btn-primary fs-5 w-100'>Add</button>
+          <button className='btn btn-primary fs-5 w-100'>Add Depedencies</button>
         </ul>
       </div>
     </div>
@@ -99,7 +99,7 @@ const Exportstack = () => {
 
 
         <div className='col-md-6'>
-          <h2 className='text-center p-3' style={{ backgroundColor: "lightblue" }}> myForm</h2>
+          <h2 className='text-center p-3' style={{ backgroundColor: "#dbedff" }}> myForm</h2>
           <h5 className='text-white text-center p-3' style={{ backgroundColor: "grey" }}>Standard</h5>
           <div>
           </div>

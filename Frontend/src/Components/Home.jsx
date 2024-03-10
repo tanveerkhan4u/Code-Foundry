@@ -4,15 +4,39 @@ import { motion } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Typewriter, Cursor } from 'react-simple-typewriter'
+// import { Typewriter, Cursor } from 'react-simple-typewriter'
 import { IconStar, IconShoppingCart } from '@tabler/icons-react'
 
 import { Pagination, Autoplay } from 'swiper/modules';
+import Card from './Card';
+import { TypewriterEffectSmooth } from '../utils/components/Type-writer';
+
+const words = [
+  {
+    text: "Build",
+  },
+  {
+    text: "awesome",
+  },
+  {
+    text: "apps",
+  },
+  {
+    text: "with",
+  },
+  {
+    text: "Aceternity.",
+    className: "text-blue-500 dark:text-blue-500",
+  },
+];
+
+
+
+
 
 
 
 const Home = () => {
-
   // const [productList, setProductList] = useState(productData);
 
   const searchRef = useRef(null);
@@ -42,17 +66,8 @@ const Home = () => {
         <div className='container-fluid py-5'>
           <h1 className='text-center mt-2'>
             Trending {' '}
-            <span style={{ color: '#5B84FA' }}>
-              <Typewriter
-                words={['Bootstrap', 'Angular', 'Vue', 'React', 'Svelte', 'Ember', 'Next.js', 'Solid', 'Express.js', 'GraphQL', 'Nativescript', 'NestJS']}
-                loop={500}
-                cursor cursorColor='black'
-                cursorStyle='|'
-                typeSpeed={200}
-                deleteSpeed={50}
-                delaySpeed={1500}
-              />
-            </span>
+
+            <TypewriterEffectSmooth words={words} />
             Templates
           </h1>
 
@@ -265,6 +280,9 @@ const Home = () => {
       <div className='container-fluid '>
         <div className='row gy-4 '>
 
+          <div className='col-md-4'>
+            <Card />
+          </div>
 
           <div className='col-md-4 '>
 
@@ -286,33 +304,33 @@ const Home = () => {
 
 
 
-    
-        <div className='col-md-4'>
-              <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
-                <div className="card mb-3 py-2 px-2 p-2 h-100">
-                  <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Empire-Bootstrap-4-Admin-Template.webp" whileHover={{ scale: 1.1 }}
-                    onHoverStart={e => { }}
-                    onHoverEnd={e => { }} className="card-img-top mx-auto img-fluid" alt="..." />
-                  <div className="card-body  mb-3 py-2 px-2">
-                    <h5 className='text' >Bootstrap</h5>
-                  </div>
-                </div>
-              </Link>
-            </div>
-          
+
           <div className='col-md-4'>
-              <Link to="/Vuedetail" style={{ textDecoration: "none" }}>
-                <div className="card mb-3 py-2 px-2 h-100">
-                  <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-vue.png" whileHover={{ scale: 1.1 }}
-                    onHoverStart={e => { }}
-                    onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />
-                  <div className="card-body mb-3 py-2 px-2">
-                    <h5 className='text' >Vue</h5>
-                  </div>
+            <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
+              <div className="card mb-3 py-2 px-2 p-2 h-100">
+                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Empire-Bootstrap-4-Admin-Template.webp" whileHover={{ scale: 1.1 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className="card-img-top mx-auto img-fluid" alt="..." />
+                <div className="card-body  mb-3 py-2 px-2">
+                  <h5 className='text' >Bootstrap</h5>
                 </div>
-              </Link>
-            </div>
-        
+              </div>
+            </Link>
+          </div>
+
+          <div className='col-md-4'>
+            <Link to="/Vuedetail" style={{ textDecoration: "none" }}>
+              <div className="card mb-3 py-2 px-2 h-100">
+                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-vue.png" whileHover={{ scale: 1.1 }}
+                  onHoverStart={e => { }}
+                  onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />
+                <div className="card-body mb-3 py-2 px-2">
+                  <h5 className='text' >Vue</h5>
+                </div>
+              </div>
+            </Link>
+          </div>
+
         </div>
 
       </div>
@@ -572,7 +590,17 @@ const Home = () => {
 export default Home
 
 
-
+{/* <span style={{ color: '#5B84FA' }}>
+              <Typewriter
+                words={['Bootstrap', 'Angular', 'Vue', 'React', 'Svelte', 'Ember', 'Next.js', 'Solid', 'Express.js', 'GraphQL', 'Nativescript', 'NestJS']}
+                loop={500}
+                cursor cursorColor='black'
+                cursorStyle='|'
+                typeSpeed={200}
+                deleteSpeed={50}
+                delaySpeed={1500}
+              />
+            </span> */}
 
 
 

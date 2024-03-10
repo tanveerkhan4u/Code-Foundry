@@ -15,7 +15,7 @@ export const CardContainer = ({
   className,
   containerClassName,
 }) => {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef(null);
   const [isMouseEntered, setIsMouseEntered] = useState(false);
 
   const handleMouseMove = (e) => {
@@ -96,7 +96,7 @@ export const CardItem = ({
   rotateZ = 0,
   ...rest
 }) => {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef(null);
   const [isMouseEntered] = useMouseEnter();
 
   useEffect(() => {
