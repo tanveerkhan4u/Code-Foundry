@@ -26,7 +26,7 @@ const words = [
   },
   {
     text: "Aceternity.",
-    className: "text-blue-500 dark:text-blue-500",
+    className: "text-blue-500 dark:text-blue-500 text-center",
   },
 ];
 
@@ -65,10 +65,10 @@ const Home = () => {
       <header className='text-dark w-100' style={{ backgroundColor: "#dbedff" }}>
         <div className='container-fluid py-5'>
           <h1 className='text-center mt-2'>
-            Trending {' '}
+          
 
             <TypewriterEffectSmooth words={words} />
-            Templates
+            
           </h1>
 
 

@@ -115,14 +115,14 @@ export const TypewriterEffectSmooth = ({ words, className, cursorClassName }) =>
   };
 
   return (
-    <div className={cn("flex space-x-1 my-6", className)}>
+    <div className={cn("flex  flex-row", className)}>
       <motion.div
-        className="overflow-hidden pb-2"
+        className="overflow-hidden "
         initial={{
           width: "0%",
         }}
         whileInView={{
-          width: "fit-content",
+          width: "100%",
         }}
         transition={{
           duration: 2,
