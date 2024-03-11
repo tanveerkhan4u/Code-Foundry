@@ -1,7 +1,7 @@
 
 import React from "react";
-import { Label } from "../utils/components/ui/Label";
 import { Input } from "../utils/components/ui/Input";
+import Label  from "../utils/components/ui/Label";
 import { cn } from "../utils/cn";
 
 import {
@@ -10,7 +10,7 @@ import {
   IconBrandOnlyfans,
 } from "@tabler/icons-react";
 
-export function SignupFormDemo() {
+const  SignupFormDemo=()=> {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted");
@@ -119,3 +119,5 @@ const LabelInputContainer = ({
     </div>
   );
 };
+
+export default SignupFormDemo;

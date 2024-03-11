@@ -11,54 +11,30 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import Card from './Card';
 import { TypewriterEffectSmooth } from '../utils/components/Type-writer';
 
-
-
-// export function TypewriterEffectSmoothDemo() {
-  const words = [
-    {
-      text: "Build",
-    },
-    {
-      text: "awesome",
-    },
-    {
-      text: "apps",
-    },
-    {
-      text: "with",
-    },
-    {
-      text: "Aceternity.",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-  ];
-  
-      
-  
-
-  
-// }
-
-
-
-
-
-
-
-
-
-
-
+const words = [
+  {
+    text: "Build",
+  },
+  {
+    text: "awesome",
+  },
+  {
+    text: "apps",
+  },
+  {
+    text: "with",
+  },
+  {
+    text: "Aceternity.",
+    className: "text-blue-500 dark:text-blue-500",
+  },
+];
 
 const Home = () => {
-  
-  // const [productList, setProductList] = useState(productData);
-  
-  const searchRef = useRef(null);
-  
-  
-  
 
+  // const [productList, setProductList] = useState(productData);
+
+  const searchRef = useRef(null);
 
   // const name = ['REACT', 'BOOTSTRAP', 'VUE', 'ANGULAR', 'NESTJS', 'EXPRESS.JS', 'SVELTE', 'EMBER', 'NEXT.JS', 'SOLID', 'GRAPHQL', 'NATIVESCRIPT'];
   //  const [selName, setSelName] = useState([]);
@@ -73,29 +49,8 @@ const Home = () => {
       <header className='text-dark w-100' style={{ backgroundColor: "#dbedff" }}>
         <div className='container-fluid py-5'>
           <h1 className='text-center mt-2'>
-          <TypewriterEffectSmooth words={words} />
+            <TypewriterEffectSmooth words={words} />
           </h1>
-
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           <p className='text-center mt-4' style={{ color: "grey" }}>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
 
           <div className='row'>
@@ -299,7 +254,7 @@ const Home = () => {
       <div className='container-fluid '>
         <div className='row gy-4 '>
 
-        <div className='col-md-4'>
+          <div className='col-md-4'>
             <Card />
           </div>
 
