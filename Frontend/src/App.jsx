@@ -27,6 +27,7 @@ import Contact from './Components/Contact';
 import Feedback from './Components/Feedback';
 import { AppProvider} from './AppContext';
 import Card from './Components/Card';
+import Log from './Components/Log';
 
 
 
@@ -72,6 +73,7 @@ function App() {
                 <Route path='/Contact' element={<Contact />} />
                 <Route path='/Feedback' element={<Feedback/>} />
                 <Route path='/Card' element={<Card/>} />
+                <Route path='/Log' element={<Log/>} />
                 
               </Routes>
              <Footer></Footer>
