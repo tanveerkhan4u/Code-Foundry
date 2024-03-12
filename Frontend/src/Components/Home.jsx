@@ -311,12 +311,12 @@ const Home = () => {
 
       </div>
 
-      <br /><br />
+      
       <div className='container-fluid'>
-        <h2 className='text' style={{ marginLeft: "40px" }}>Featured <strong className='text-primary'>Products</strong></h2><br />
-        <p className='text fs-5' style={{ marginLeft: "40px", color: "grey" }}>Checkout our featured products having top review and love by customers!</p>
+        <h2 className='text ml-10 text-4xl -mt-8'>Featured <strong className='text-primary'>Products</strong></h2><br />
+        <p className='text ml-10 text-gray-500 text-xl mb-10'>Checkout our featured products having top review and love by customers!</p>
       </div>
-      <br />
+      
 
       <div className="container-fluid">
         <div className="row gy-4">
