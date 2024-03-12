@@ -48,7 +48,7 @@ const Home = () => {
     <div style={{ overflow: 'hidden' }}>
       <header className='text-dark w-100' style={{ backgroundColor: "#dbedff" }}>
         <div className='container-fluid py-5'>
-          <h1 className='text-center mt-2'>
+          <h1 className='text-center mb-4'>
             <TypewriterEffectSmooth words={words} />
           </h1>
           <p className='text-center text-gray-500 text-lg'>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
@@ -75,7 +75,7 @@ const Home = () => {
       <br /><br />
 
       <div className='container'>
-        <h3 className='text-center'>We create custom for the application using the following technology</h3>
+        <h3 className='text-center  text-gray-500 text-2xl mb-4'>We create custom for the application using the following technology</h3>
       </div>
 
 
