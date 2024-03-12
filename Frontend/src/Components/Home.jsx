@@ -448,26 +448,56 @@ const Home = () => {
 
       <div className='container '>
         <div className="row">
-        <h3 className=' text-3xl ml-5 font-medium mb-4'>
-          Agencies<strong className='text-primary'> Trusted us</strong></h3>
+          <h3 className=' text-3xl ml-5 font-medium mb-4'>
+            Agencies<strong className='text-primary'> Trusted us</strong></h3>
           <p className='text  text-gray-500  text-xl ml-4 mb-4'>We have been trusted by top companies around the world!</p>
-        
+        </div>
+      </div>
 
       <div className="container ">
+        <Swiper slidesPerView={5}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Pagination, Autoplay]}
+          className="mySwiper">
           <div className='myimg '>
-            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-totalstudio-5.svg' alt=''></img>
-            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-montecito-4.svg' alt=''></img>
+            <SwiperSlide>
+              <motion.img whileHover={{ scale: 1.3 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} src='https://codedthemes.com/wp-content/uploads/2022/05/client-totalstudio-5.svg' alt=''></motion.img>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-montecito-4.svg' alt=''></img>
+            </SwiperSlide>
             <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-eagames.svg' alt=''></img>
-            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-haswent-2.svg' alt=''></img>
-            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-crystal-1.svg' alt=''></img>
-            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-vodafone.svg' alt=''></img>
-            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-slingshot.svg' alt=''></img>
-            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-haxter-3.svg' alt=''></img>
+            <SwiperSlide>
+              <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-haswent-2.svg' alt=''></img>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-crystal-1.svg' alt=''></img>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-vodafone.svg' alt=''></img>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-slingshot.svg' alt=''></img>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-haxter-3.svg' alt=''></img>
+            </SwiperSlide>
           </div>
-          </div>
-  
-        </div>
-      </div><br />
+          <br /><br />
+        </Swiper>
+      </div>
+      <br />
+
+
 
       <div className='row gy-2'>
         <div className='container-fluid '>
