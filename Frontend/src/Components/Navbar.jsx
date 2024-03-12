@@ -87,18 +87,18 @@ const Navbar = () => {
                 >
                   Browse Stack
                 </NavLink>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                <NavLink
+                  to="/Contact"
+                  className=" hover:bg-blue-700 hover:text-dark rounded-md px-3 py-2 text-sm fs-5 mt-4"
                 >
-                  Projects
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  Contact Us
+                </NavLink>
+                <NavLink
+                  to="/Feedback"
+                  className="hover:bg-blue-700 hover:text-dark rounded-md px-3 py-2 text-sm fs-5 mt-4"
                 >
-                  Calendar
-                </a>
+                  Feedback
+                </NavLink>
               </div>
             </div>
           </div>
