@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import productData from './dummydata';
+import Card from './Card';
 
 
 import { Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
@@ -212,7 +213,7 @@ const Browsestack = () => {
         <div className='row gy-4 justify-content-center'>
         {productList.map((product,name) => { 
           return <div className='col-md-3 ms-5'>
-            <Link to= {product.link} className='text-decoration-none'>
+            { <Link to= {product.link} className='text-decoration-none'>
               <div className="card" >
                 <motion.img src={product.image}
                 whileHover={{ scale: 1.1 }}
@@ -222,9 +223,10 @@ const Browsestack = () => {
                   <h5>{product.name}</h5>
                 </div>
               </div>
-              </Link>
+              </Link> }
           </div>
           })};
+          
 
           {/* <div className='col-md-3 ms-5'>
             <Link to="/Exportstack/bootstrap" style={{ textDecoration: "none" }}>
