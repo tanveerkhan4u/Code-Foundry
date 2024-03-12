@@ -473,23 +473,37 @@ const Home = () => {
                 onHoverEnd={e => { }} src='https://codedthemes.com/wp-content/uploads/2022/05/client-totalstudio-5.svg' alt=''></motion.img>
             </SwiperSlide>
             <SwiperSlide>
-              <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-montecito-4.svg' alt=''></img>
+              <motion.img whileHover={{ scale: 1.3 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} src='https://codedthemes.com/wp-content/uploads/2022/05/client-montecito-4.svg' alt=''></motion.img>
             </SwiperSlide>
-            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-eagames.svg' alt=''></img>
+            <motion.img whileHover={{ scale: 1.3 }}
+              onHoverStart={e => { }}
+              onHoverEnd={e => { }} src='https://codedthemes.com/wp-content/uploads/2022/05/client-eagames.svg' alt=''></motion.img>
             <SwiperSlide>
-              <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-haswent-2.svg' alt=''></img>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-crystal-1.svg' alt=''></img>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-vodafone.svg' alt=''></img>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-slingshot.svg' alt=''></img>
+              <motion.img whileHover={{ scale: 1.3 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} src='https://codedthemes.com/wp-content/uploads/2022/05/client-haswent-2.svg' alt=''></motion.img>
             </SwiperSlide>
             <SwiperSlide>
-              <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-haxter-3.svg' alt=''></img>
+              <motion.img whileHover={{ scale: 1.3 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} src='https://codedthemes.com/wp-content/uploads/2022/05/client-crystal-1.svg' alt=''></motion.img>
+            </SwiperSlide>
+            <SwiperSlide>
+              <motion.img whileHover={{ scale: 1.3 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} src='https://codedthemes.com/wp-content/uploads/2022/05/client-vodafone.svg' alt=''></motion.img>
+            </SwiperSlide>
+            <SwiperSlide>
+              <motion.img whileHover={{ scale: 1.3 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} src='https://codedthemes.com/wp-content/uploads/2022/05/client-slingshot.svg' alt=''></motion.img>
+            </SwiperSlide>
+            <SwiperSlide>
+              <motion.img whileHover={{ scale: 1.3 }}
+                onHoverStart={e => { }}
+                onHoverEnd={e => { }} src='https://codedthemes.com/wp-content/uploads/2022/05/client-haxter-3.svg' alt=''></motion.img>
             </SwiperSlide>
           </div>
           <br /><br />
