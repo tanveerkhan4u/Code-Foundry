@@ -239,9 +239,9 @@ const Home = () => {
         </Swiper>
       </div>
       <br /><br />
-      <div className='container bg-body-secondary'>
+      <div className='container bg-body-secondary h-32'>
         <marquee behavior="scroll" direction="left" scrollamount="15">
-          <h1 className='text-center'>FRONT-END FRAMEWORKS</h1>
+          <h1 className='text-center p-5 text-3xl'>FRONT-END FRAMEWORKS</h1>
         </marquee>
       </div>
       <br /><br />
