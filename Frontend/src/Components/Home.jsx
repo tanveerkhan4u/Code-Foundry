@@ -249,7 +249,7 @@ const Home = () => {
         <h2 className='text ml-10 text-4xl'>Best Selling <strong className='text-primary'>Products</strong></h2><br />
         <p className='text ml-10 text-gray-500 text-xl'>Explore our best-selling templates of all time!</p>
       </div>
-      <br />
+      
 
       <div className='container-fluid '>
         <div className='row gy-4 '>
