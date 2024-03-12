@@ -48,7 +48,7 @@ const Home = () => {
     <div style={{ overflow: 'hidden' }}>
       <header className='text-dark w-100' style={{ backgroundColor: "#dbedff" }}>
         <div className='container-fluid py-5'>
-          <h1 className='text-center mb-4'>
+          <h1 className='text-center mb-4 -mt-8'>
             <TypewriterEffectSmooth words={words} />
           </h1>
           <p className='text-center text-gray-500 text-lg'>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
@@ -252,7 +252,7 @@ const Home = () => {
       
 
       <div className='container-fluid '>
-        <div className='row gy-4 '>
+        <div className='row'>
 
           <div className='col-md-4'>
             <Card />
@@ -281,7 +281,8 @@ const Home = () => {
 
 
           <div className='col-md-4'>
-            <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
+            <Card/>
+            {/* <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
               <div className="card mb-3 py-2 px-2 p-2">
                 <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Empire-Bootstrap-4-Admin-Template.webp" whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
@@ -290,10 +291,10 @@ const Home = () => {
                   <h5 className='text' >Bootstrap</h5>
                 </div>
               </div>
-            </Link>
+            </Link> */}
           </div>
 
-          <div className='col-md-4'>
+          {/* <div className='col-md-4'>
             <Link to="/Vuedetail" style={{ textDecoration: "none" }}>
               <div className="card mb-3 py-2 px-2 h-100">
                 <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-vue.png" whileHover={{ scale: 1.1 }}
@@ -304,7 +305,7 @@ const Home = () => {
                 </div>
               </div>
             </Link>
-          </div>
+          </div> */}
 
         </div>
 
