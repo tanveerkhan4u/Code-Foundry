@@ -360,15 +360,15 @@ const Home = () => {
         </div>
       </div>
       <br /><br />
-      <div className='container bg-body-secondary h-32'>
+      <div className='container bg-body-secondary h-32 mb-5'>
         <marquee behavior="scroll" direction="left" scrollamount="15">
           <h1 className='text-center p-5 text-4xl  font-semibold'>BACK-END FRAMEWORKS</h1>
         </marquee>
       </div>
-      <br /><br />
+      
       <div className='container-fluid'>
-        <h2 className='text' style={{ marginLeft: "40px" }}>New <strong className='text-primary'>Products</strong></h2><br />
-        <p className='text fs-5' style={{ marginLeft: "40px", color: "grey" }}>These are the new babies in the collection. Check them out as they will be mature soon!</p>
+        <h2 className='text ml-10 text-4xl -mt-8'>New <strong className='text-primary'>Products</strong></h2><br />
+        <p className='text ml-10 text-gray-500 text-xl'>These are the new babies in the collection. Check them out as they will be mature soon!</p>
       </div>
       <br />
       <div className='container-fluid'>
