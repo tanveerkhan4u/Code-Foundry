@@ -11,8 +11,8 @@ const Navbar = () => {
 
   return (
     <div><nav className="bg-800" style={{ backgroundColor: "#dbedff" }}>
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div className="relative flex items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
             <button
@@ -66,24 +66,24 @@ const Navbar = () => {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
               <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                alt="Your Company"
+                className="h-20 w-auto"
+                src="https://th.bing.com/th/id/OIG2..qpctzdoHBeFrDp_BRbR?pid=ImgGn"
+                alt="CodeFoundry"
               />
             </div>
             <div className="hidden sm:ml-6 sm:block">
-              <div className="flex space-x-4">
-                {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
+              <div className="flex space-x-4 ">
+
                 <NavLink
                   to="/Home"
-                  className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
-                  aria-current="page"
+                  className="bg-blue-700 text-dark rounded-md px-3 py-2 text-sm fs-5 mt-4 "
+
                 >
                   Home
                 </NavLink>
                 <NavLink
                   to="/Browsestack"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  className=" hover:bg-blue-700 hover:text-dark rounded-md px-3 py-2 text-sm fs-5 mt-4"
                 >
                   Browse Stack
                 </NavLink>
@@ -126,25 +126,25 @@ const Navbar = () => {
             </button6>
             {/* Profile dropdown */}
             <div className="relative ml-3">
-            
-                <button6
-                  type="button"
-                  className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                  id="user-menu-button"
-                  aria-expanded="false"
-                  aria-haspopup="true"
-                >
-                 
 
-                    {/* <span className="absolute -inset-1.5" /> */}
-                    {/* <span className="sr-only">Open user menu</span> */}
-                    
-                </button6>
-              
-              
-  
-              
-          
+              <button6
+                type="button"
+                className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                id="user-menu-button"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+
+
+                {/* <span className="absolute -inset-1.5" /> */}
+                {/* <span className="sr-only">Open user menu</span> */}
+
+              </button6>
+
+
+
+
+
             </div>
           </div>
         </div>
