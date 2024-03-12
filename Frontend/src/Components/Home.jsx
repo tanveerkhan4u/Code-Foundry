@@ -249,7 +249,7 @@ const Home = () => {
         <h2 className='text ml-10 text-4xl'>Best Selling <strong className='text-primary'>Products</strong></h2><br />
         <p className='text ml-10 text-gray-500 text-xl'>Explore our best-selling templates of all time!</p>
       </div>
-      
+
 
       <div className='container-fluid '>
         <div className='row'>
@@ -259,7 +259,7 @@ const Home = () => {
           </div>
 
           <div className='col-md-4 '>
-            <Card/>
+            <Card />
 
             {/* <Link to="/Angulardetail" style={{ textDecoration: "none" }}>
 
@@ -281,7 +281,7 @@ const Home = () => {
 
 
           <div className='col-md-4'>
-            <Card/>
+            <Card />
             {/* <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
               <div className="card mb-3 py-2 px-2 p-2">
                 <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Empire-Bootstrap-4-Admin-Template.webp" whileHover={{ scale: 1.1 }}
@@ -311,12 +311,12 @@ const Home = () => {
 
       </div>
 
-      
+
       <div className='container-fluid'>
         <h2 className='text ml-10 text-4xl -mt-8'>Featured <strong className='text-primary'>Products</strong></h2><br />
         <p className='text ml-10 text-gray-500 text-xl mb-10'>Checkout our featured products having top review and love by customers!</p>
       </div>
-      
+
 
       <div className="container-fluid">
         <div className="row gy-4">
@@ -365,7 +365,7 @@ const Home = () => {
           <h1 className='text-center p-5 text-4xl  font-semibold'>BACK-END FRAMEWORKS</h1>
         </marquee>
       </div>
-      
+
       <div className='container-fluid'>
         <h2 className='text ml-10 text-4xl -mt-8'>New <strong className='text-primary'>Products</strong></h2><br />
         <p className='text ml-10 text-gray-500 text-xl'>These are the new babies in the collection. Check them out as they will be mature soon!</p>
@@ -428,7 +428,7 @@ const Home = () => {
           <h1 className='text-center p-5 text-4xl  font-semibold'>MOBILE APPLICATION</h1>
         </marquee>
       </div>
-      
+
       <div className='container-fluid'>
         <div className='row gy-4'>
           <div className=' col-md-4 '>
@@ -446,24 +446,27 @@ const Home = () => {
         </div>
       </div><br /><br />
 
-      <div className='container d-flex'>
-        <h3 className='d- flex col-4' style={{ marginLeft: "10px" }}>
-          Agencies<strong className='text-primary'> Trusted us</strong><br /><br />
-          <p className='text' style={{ fontSize: "18px", color: "grey" }}>We have been trusted by top companies around the world!</p>
-        </h3>
+      <div className='container '>
+        <div className="row">
+        <h3 className=' text-3xl ml-5 font-medium mb-4'>
+          Agencies<strong className='text-primary'> Trusted us</strong></h3>
+          <p className='text  text-gray-500  text-xl ml-4'>We have been trusted by top companies around the world!</p>
+        
 
         <marquee behavior="scroll" direction="left" scrollamount="15">
           <div className='myimg '>
-            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-totalstudio-5.svg' alt=''></img>&nbsp;&nbsp;
-            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-montecito-4.svg' alt=''></img>&nbsp;&nbsp;
-            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-eagames.svg' alt=''></img>&nbsp;&nbsp;
-            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-haswent-2.svg' alt=''></img>&nbsp;&nbsp;
-            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-crystal-1.svg' alt=''></img>&nbsp;&nbsp;
-            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-vodafone.svg' alt=''></img>&nbsp;&nbsp;
-            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-slingshot.svg' alt=''></img>&nbsp;&nbsp;
-            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-haxter-3.svg' alt=''></img>&nbsp;&nbsp;
+            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-totalstudio-5.svg' alt=''></img>
+            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-montecito-4.svg' alt=''></img>
+            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-eagames.svg' alt=''></img>
+            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-haswent-2.svg' alt=''></img>
+            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-crystal-1.svg' alt=''></img>
+            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-vodafone.svg' alt=''></img>
+            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-slingshot.svg' alt=''></img>
+            <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-haxter-3.svg' alt=''></img>
           </div>
         </marquee>
+  
+        </div>
       </div><br />
 
       <div className='row gy-2'>
