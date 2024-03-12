@@ -454,7 +454,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="container ">
+      <div className="container  mb-4 mt-2">
         <Swiper slidesPerView={5}
           spaceBetween={30}
           pagination={{
@@ -509,7 +509,7 @@ const Home = () => {
           <br /><br />
         </Swiper>
       </div>
-      <br />
+      
 
 
 
