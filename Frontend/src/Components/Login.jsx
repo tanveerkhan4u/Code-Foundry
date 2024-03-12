@@ -7,7 +7,9 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 import { GoogleLogin } from '@react-oauth/google';
 import { enqueueSnackbar } from 'notistack';
 import { useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
+import Log from './Log';
+import Card from './Card';
 
 
 
@@ -109,7 +111,7 @@ const Login = () => {
 
   return (
     <>
-      <div className='col-6  d-flex loimg' style={{ backgroundColor: "#dbedff", maxHeight: "540px" }}>
+      <div className='col-6 d-flex loimg' style={{ backgroundColor: "#dbedff", maxHeight: "540px" }}>
 
         <motion.img animate={{ x: -50, }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='img-fluid mx-auto mb-5 px-5  ' alt='' />
 
@@ -118,8 +120,9 @@ const Login = () => {
             <div className="container-fluid">
 
 
-
               <br /><br /><br />
+
+
               <form onSubmit={Loginform.handleSubmit}>
                 <div className='container  d-flex'>
                  
@@ -183,6 +186,10 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <div className="col-md-6">
+        <Log />
+      </div>
+      
     </>
   )
 }

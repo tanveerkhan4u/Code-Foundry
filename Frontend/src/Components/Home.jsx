@@ -259,8 +259,9 @@ const Home = () => {
           </div>
 
           <div className='col-md-4 '>
+            <Card/>
 
-            <Link to="/Angulardetail" style={{ textDecoration: "none" }}>
+            {/* <Link to="/Angulardetail" style={{ textDecoration: "none" }}>
 
               <div className="card" style={{ maxHeight: "410px" }}>
                 <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png" whileHover={{ scale: 1.1 }}
@@ -271,7 +272,7 @@ const Home = () => {
                   <h5 className='text' style={{ color: "grey" }} >Angular<p className='float-end'><IconStar></IconStar> </p><IconShoppingCart></IconShoppingCart></h5>
                 </div>
               </div>
-            </Link>
+            </Link> */}
           </div>
 
 
@@ -281,7 +282,7 @@ const Home = () => {
 
           <div className='col-md-4'>
             <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
-              <div className="card mb-3 py-2 px-2 p-2 h-100">
+              <div className="card mb-3 py-2 px-2 p-2">
                 <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Empire-Bootstrap-4-Admin-Template.webp" whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className="card-img-top mx-auto img-fluid" alt="..." />
