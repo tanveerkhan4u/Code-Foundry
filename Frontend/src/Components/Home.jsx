@@ -244,13 +244,13 @@ const Home = () => {
           <h1 className='text-center p-5 text-3xl'>FRONT-END FRAMEWORKS</h1>
         </marquee>
       </div>
-      <br /><br />
+      <br />
       <div className='container-fluid'>
-        <h2 className='text' style={{ marginLeft: "40px" }}>Best Selling <strong className='text-primary'>Products</strong></h2><br />
-        <p className='text' style={{ marginLeft: "40px", color: "grey" }}>Explore our best-selling templates of all time!</p>
-
+        <h2 className='text ml-10 text-4xl'>Best Selling <strong className='text-primary'>Products</strong></h2><br />
+        <p className='text ml-10 text-gray-500 text-xl'>Explore our best-selling templates of all time!</p>
       </div>
       <br />
+
       <div className='container-fluid '>
         <div className='row gy-4 '>
 
