@@ -423,12 +423,12 @@ const Home = () => {
           </div>
         </div>
       </div><br /><br />
-      <div className='container bg-body-secondary'>
+      <div className='container bg-body-secondary h-32 mb-5'>
         <marquee behavior="scroll" direction="left" scrollamount="15">
-          <h1 className='text-center'>MOBILE APPLICATION</h1>
+          <h1 className='text-center p-5 text-4xl  font-semibold'>MOBILE APPLICATION</h1>
         </marquee>
       </div>
-      <br /><br />
+      
       <div className='container-fluid'>
         <div className='row gy-4'>
           <div className=' col-md-4 '>
