@@ -68,7 +68,7 @@ const Home = () => {
 
 
           <div className='text-center'>
-            <img className='text-center img-fluid' src='https://codedthemes.com/wp-content/uploads/2022/03/main-banner-bottom-img-1.png' alt=''></img>
+            <img className='text-center img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/03/main-banner-bottom-img-1.png' alt=''></img>
           </div>
         </div>
       </header>
