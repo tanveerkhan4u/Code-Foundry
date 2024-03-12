@@ -450,7 +450,7 @@ const Home = () => {
         <div className="row">
         <h3 className=' text-3xl ml-5 font-medium mb-4'>
           Agencies<strong className='text-primary'> Trusted us</strong></h3>
-          <p className='text  text-gray-500  text-xl ml-4'>We have been trusted by top companies around the world!</p>
+          <p className='text  text-gray-500  text-xl ml-4 mb-4'>We have been trusted by top companies around the world!</p>
         
 
       <div className="container ">
