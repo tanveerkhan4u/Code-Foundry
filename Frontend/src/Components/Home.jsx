@@ -523,9 +523,9 @@ const Home = () => {
       </div>
       <br /><br />
       <div className='row'>
-        <div className='col-4 ' style={{ marginLeft: "70px" }}>
-          <h2 className='text'>Why <strong className='text-primary'>CodeFoundry?</strong></h2><br />
-          <p className='text' style={{ color: "grey" }}>CodeFoundry servicing the web industry since 2020 and gaining trust and support from a large client base.</p>
+        <div className='col-4  ml-12'>
+          <h2 className='text text-4xl'>Why <strong className='text-primary'>CodeFoundry?</strong></h2><br />
+          <p className='text  text-gray-500 text-xl'>CodeFoundry servicing the web industry since 2020 and gaining trust and support from a large client base.</p>
         </div>
       </div>
       <br /><br />
