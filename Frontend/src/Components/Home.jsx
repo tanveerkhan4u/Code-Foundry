@@ -453,7 +453,7 @@ const Home = () => {
           <p className='text  text-gray-500  text-xl ml-4'>We have been trusted by top companies around the world!</p>
         
 
-        <marquee behavior="scroll" direction="left" scrollamount="15">
+      <div className="container ">
           <div className='myimg '>
             <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-totalstudio-5.svg' alt=''></img>
             <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-montecito-4.svg' alt=''></img>
@@ -464,7 +464,7 @@ const Home = () => {
             <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-slingshot.svg' alt=''></img>
             <img src='https://codedthemes.com/wp-content/uploads/2022/05/client-haxter-3.svg' alt=''></img>
           </div>
-        </marquee>
+          </div>
   
         </div>
       </div><br />
