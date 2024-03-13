@@ -584,13 +584,6 @@ const Home = () => {
   <div className="grid">
 <Movingcard/>
   </div>
-         
-
-
-
-
- 
-
       <div className='row '>
         <div className='col-md-12'>
           <h2 className='text-center text-4xl mt-3' >Our <strong className='text-primary'>Partners</strong></h2>
@@ -619,6 +612,13 @@ const Home = () => {
   )
 }
 export default Home
+         
+
+
+
+
+ 
+
 
 
 {/* <span style={{ color: '#5B84FA' }}>

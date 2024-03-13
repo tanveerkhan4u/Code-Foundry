@@ -78,7 +78,7 @@ const Navbar = () => {
 
                 <NavLink
                   to="/Home"
-                  className="bg-blue-700 text-dark rounded-md px-3 py-2 text-sm fs-5 mt-4 "
+                  className="bg-blue-700 text-white rounded-md px-3 py-2 text-sm fs-5 mt-4 "
 
                 >
                   Home
