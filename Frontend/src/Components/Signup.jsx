@@ -104,7 +104,7 @@ const Signup = () => {
 
 
   return (
-  <div className="container">
+  <div className="grid  bg-[#dbedff]">
     <Log/>
   </div>
     )

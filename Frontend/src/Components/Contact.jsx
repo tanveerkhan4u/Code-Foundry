@@ -95,19 +95,10 @@ const Contact = () => {
                 defaultValue={""}
               />
             </div>
-            <button className='btn-53 mt-4 w-100 p-2 fs-5' type='submit'>
-            <div className="original" >SUBMIT</div>
-                  <div className="letters">
-                    <span>S</span>
-                    <span>U</span>
-                    <span>B</span>
-                    <span>M</span>
-                    <span>I</span>
-                    <span>T</span>
-                  </div>
+            <button1  className='w-full mt-5 text-center text-xl ' type='submit'>
+              SUBMIT
               
-              
-              </button><br/><br/>
+              </button1><br/><br/>
           </form>
         </div>
             </div>
