@@ -98,7 +98,7 @@ const Home = () => {
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 px-2 shadow-2xl' style={{ height: "220px" }}>
                   <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/boostrap-logo.jpg.webp' alt='' />
-                  <h4 className='text-center' style={{ marginTop: "20px" }}>Bootstrap</h4>
+                  <h4 className='text-center text-xl' style={{ marginTop: "20px" }}>Bootstrap</h4>
                 </motion.div>
               </Link>
             </div>
@@ -110,7 +110,7 @@ const Home = () => {
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 px-2 shadow-2xl' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://codedthemes.com/wp-content/uploads/2022/04/angular-logo.jpg.webp' alt='' />
-                  <h4 className='text-center' style={{ marginTop: "20px" }}>Angular</h4>
+                  <h4 className='text-center text-xl' style={{ marginTop: "20px" }}>Angular</h4>
                 </motion.div>
               </Link>
             </div>
@@ -122,7 +122,7 @@ const Home = () => {
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 px-2 shadow-2xl' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://codedthemes.com/wp-content/uploads/2022/04/react-logo.jpg.webp' alt='' />
-                  <h4 className='text-center mt-4' style={{ marginTop: "20px" }}>React</h4>
+                  <h4 className='text-center mt-4 text-xl' style={{ marginTop: "20px" }}>React</h4>
                 </motion.div>
               </Link>
             </div>
@@ -134,7 +134,7 @@ const Home = () => {
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 px-2 shadow-2xl ' style={{ height: "220px" }} >
                   <img className='mx-auto img-fluid ' src='https://masteringjs.io/assets/images/vue/vue.jpg' style={{ width: "100px", marginTop: "-20px" }} alt='' />
-                  <h4 className='text-center mt-2'>Vue</h4>
+                  <h4 className='text-center mt-2 text-xl'>Vue</h4>
                 </motion.div>
               </Link>
             </div>
@@ -146,7 +146,7 @@ const Home = () => {
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 shadow-2xl' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://static-00.iconduck.com/assets.00/nestjs-icon-2048x2040-3rrvcej8.png' style={{ width: "80px", height: "80px", marginTop: "-5px" }} alt='' />
-                  <h4 className='text-center mt-3'>NestJS</h4>
+                  <h4 className='text-center mt-3  text-xl'>NestJS</h4>
                 </motion.div>
               </Link>
             </div>
@@ -158,7 +158,7 @@ const Home = () => {
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 shadow-2xl' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://w7.pngwing.com/pngs/598/9/png-transparent-svelte-hd-logo-thumbnail.png' style={{ width: "80px", height: "80px" }} alt='' />
-                  <h4 className='text-center mt-2'>Svelte</h4>
+                  <h4 className='text-center mt-2 text-xl'>Svelte</h4>
                 </motion.div>
               </Link>
             </div>
@@ -170,7 +170,7 @@ const Home = () => {
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 shadow-2xl' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://emberjs.com/images/brand/ember-tomster-lockup-4c.svg' style={{ width: "100px", height: "100px", marginTop: "-20px" }} alt='' />
-                  <h4 className='text-center mt-2'>Ember</h4>
+                  <h4 className='text-center mt-2 text-xl'>Ember</h4>
                 </motion.div>
               </Link>
             </div>
@@ -182,7 +182,7 @@ const Home = () => {
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 shadow-2xl' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://miro.medium.com/v2/resize:fit:650/1*Hva7hcsFWulFUPhrEWui1A.jpeg' style={{ width: "150px", height: "100px", marginTop: "-15px" }} alt='' />
-                  <h4 className='text-center'>Next.JS</h4>
+                  <h4 className='text-center text-xl'>Next.JS</h4>
                 </motion.div>
               </Link>
             </div>
@@ -194,7 +194,7 @@ const Home = () => {
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 shadow-2xl' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://avatars.githubusercontent.com/u/79226042?s=280&v=4' style={{ width: "100px", height: "100px", marginTop: "-15px" }} alt='' />
-                  <h4 className='text-center' style={{ marginTop: "-2px" }}>Solid</h4>
+                  <h4 className='text-center text-xl' style={{ marginTop: "-2px" }}>Solid</h4>
                 </motion.div>
               </Link>
             </div>
@@ -206,7 +206,7 @@ const Home = () => {
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 shadow-2xl' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png' style={{ width: "80px", height: "80px", marginTop: "-10px" }} alt='' />
-                  <h4 className='text-center mt-2'>Express.js</h4>
+                  <h4 className='text-center mt-2 text-xl'>Express.js</h4>
                 </motion.div>
               </Link>
             </div>
@@ -218,7 +218,7 @@ const Home = () => {
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-3 py-5 shadow-2xl' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://cdn.iconscout.com/icon/free/png-256/free-graphql-3521468-2944912.png' style={{ width: "80px", height: "80px", marginTop: "-10px" }} alt='' />
-                  <h4 className='text-center mt-2'>GraphQL</h4>
+                  <h4 className='text-center mt-2 text-xl'>GraphQL</h4>
                 </motion.div>
               </Link>
             </div>
@@ -230,7 +230,7 @@ const Home = () => {
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className='card mb-2 py-5 shadow-2xl' style={{ height: "220px" }}>
                   <img className='mx-auto img-fluid' src='https://seeklogo.com/images/N/nativescript-logo-309BDE68D3-seeklogo.com.png' style={{ width: "80px", height: "80px", marginTop: "-10px" }} alt='' />
-                  <h4 className='text-center mt-1'>Nativescript</h4>
+                  <h4 className='text-center mt-1  text-xl'>Nativescript</h4>
                 </motion.div>
               </Link>
             </div>
