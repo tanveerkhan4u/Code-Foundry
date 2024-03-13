@@ -589,7 +589,7 @@ const Home = () => {
 
       <div className='row '>
         <div className='col-md-12'>
-          <h2 className='text-center' >Our <strong className='text-primary'>Partners</strong></h2>
+          <h2 className='text-center text-4xl mt-3' >Our <strong className='text-primary'>Partners</strong></h2>
         </div>
       </div>
       <br />
