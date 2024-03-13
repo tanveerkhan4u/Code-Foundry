@@ -544,9 +544,9 @@ const Home = () => {
                </motion.div>
               <motion.div whileHover={{ scale: 1.2 }}
                  onHoverStart={e => { }}
-                 onHoverEnd={e => { }} className='card col-md-3  shadow'>
+                 onHoverEnd={e => { }} className='card col-md-3  shadow-2xl'>
                  <img className='img-fluid mx-auto ' src='https://codedthemes.com/wp-content/uploads/2022/04/Freemium-Model-icon-1.png.webp' style={{ marginLeft: "40px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
-                 <h4 className='text-center' style={{ marginTop: "20px" }}>Freemium Model</h4><br />
+                 <h4 className='text-center text-2xl mt-3'>Freemium Model</h4><br />
            <p className='text-center px-3 mb-5' style={{ color: "grey" }}>Our belief on open-source led us to provide a free versions of most products</p>
              </motion.div>
              </div>
