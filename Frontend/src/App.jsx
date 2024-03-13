@@ -29,6 +29,7 @@ import { AppProvider} from './AppContext';
 import Card from './Components/Card';
 import Log from './Components/Log';
 import Movingcard from './Components/Movingcard';
+import Wavy from './Components/Wavy';
 
 
 
@@ -78,6 +79,7 @@ function App() {
                 <Route path='/Card' element={<Card/>} />
                 <Route path='/Log' element={<Log/>} />
                 <Route path='/Movingcard' element={<Movingcard/>} />
+                <Route path='/Wavy' element={<Wavy/>} />
                 
                 
               </Routes>
