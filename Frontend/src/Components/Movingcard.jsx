@@ -4,7 +4,7 @@ import { InfiniteMovingCards } from "../utils/components/ui/Infinitemovingcards"
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="h-[20rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden mt-5">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
@@ -44,7 +44,7 @@ const testimonials = [
     quote:
       "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
     name: "Herman Melville",
-    title: "Moby-Dick",
+    title: "Moby",
   },
 ];
 
