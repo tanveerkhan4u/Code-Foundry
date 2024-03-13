@@ -31,14 +31,14 @@ const Browsestack = () => {
       <header className='text-dark' style={{ backgroundColor: "#dbedff" }}>
         <div className='container py-5'>
           <div className='row'>
-            <div className='col-md-6'>
-              <motion.h2 initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='text' style={{ marginTop: "50px" }}>Templates</motion.h2>&nbsp;
-              <motion.p initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='text'>Explore developer friendly Admin Dashboard Templates & UI Kits!</motion.p>&nbsp;
+            <div className='col-md-6 mt-5'>
+              <motion.h2 initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='text text-4xl font-semibold ml-5 '>Templates</motion.h2>&nbsp;
+              <motion.p initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} className='text text-gray-500 ml-5 text-xl'>Explore developer friendly Admin Dashboard Templates & UI Kits!</motion.p>&nbsp;
               <motion.div initial={{ x: 50 }} animate={{ x: 0 }} transition={{ ease: "easeOut", duration: 1 }} >
               <div className='row'>
             <div className='col '>
               <div className='input-group '>
-                <input type="text" className="form-control fs-5 " placeholder='Search...'  ref={searchRef} />
+                <input type="text " className="form-control fs-5 ml-5 " placeholder='Search...'  ref={searchRef} />
                 <button1  onClick={searchProduct}>Search</button1>
               </div>
             </div>
@@ -49,7 +49,7 @@ const Browsestack = () => {
               </motion.div>
             </div>
 
-            <div className='col-md-6 my-2 broimg'>
+            <div className='col-md-6 my-2 broimg mt-4 sm:mt-8 md:mt-12 lg:mt-16'>
               <motion.img animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/06/Templates-banner.svg' className='img-fluid mx-auto' alt=''></motion.img>
             </div>
           </div>
