@@ -557,23 +557,23 @@ const Home = () => {
             <div className='row gy-4 justify-content-between justify-content-between'>
                <motion.div whileHover={{ scale: 1.2 }}
                  onHoverStart={e => { }}
-                 onHoverEnd={e => { }} className=' card col-md-3  shadow '>
+                 onHoverEnd={e => { }} className=' card col-md-3  shadow-2xl '>
                  <img className='img-fluid mx-auto ' src='https://codedthemes.com/wp-content/uploads/2022/04/Documentation-icon-1.png' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
-                 <h4 className='text-center' style={{ marginTop: "20px" }}>Documentation</h4><br />
+                 <h4 className='text-center text-2xl mt-3'>Documentation</h4><br />
                  <p className='text-center mb-5 mx-auto' style={{ color: "grey" }}>Detailed step by step documentation helper file for each template. </p>
                </motion.div>
                <motion.div whileHover={{ scale: 1.2 }}
                  onHoverStart={e => { }}
-                 onHoverEnd={e => { }} className='card col-md-3  shadow '>
+                 onHoverEnd={e => { }} className='card col-md-3  shadow-2xl '>
                  <img className='img-fluid mx-auto  ' src='https://codedthemes.com/wp-content/uploads/2022/04/Free-updates-icon-1.png' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
-                 <h4 className='text-center mt-3' >Free Updates</h4><br />
+                 <h4 className='text-center mt-3 text-2xl' >Free Updates</h4><br />
                  <p className='text-center mb-5 mx-auto' style={{ color: "grey" }}>Free updates help to keep your project always up to Date</p>
                </motion.div>
               <motion.div whileHover={{ scale: 1.2 }}
                  onHoverStart={e => { }}
-                 onHoverEnd={e => { }} className='card col-md-3  shadow'>
+                 onHoverEnd={e => { }} className='card col-md-3  shadow-2xl'>
                  <img className='img-fluid mx-auto ' src='https://codedthemes.com/wp-content/uploads/2022/04/Support-icon-1.png' style={{ marginLeft: "40px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
-                 <h4 className='text-center' style={{ marginTop: "20px" }}>Support</h4><br />
+                 <h4 className='text-center text-2xl mt-3' >Support</h4><br />
            <p className='text-center px-3 mb-5' style={{ color: "grey" }}>Support via chat & ticket to resolve your any technical query</p>
              </motion.div>
              </div>
