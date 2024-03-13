@@ -9,6 +9,7 @@ import { IconStar, IconShoppingCart } from '@tabler/icons-react'
 
 import { Pagination, Autoplay } from 'swiper/modules';
 import Card from './Card';
+import Movingcard from './Movingcard';
 import { TypewriterEffectSmooth } from '../utils/components/Type-writer';
 
 const words = [
@@ -25,7 +26,7 @@ const words = [
     text: "with",
   },
   {
-    text: "Aceternity.",
+    text: "Aceternity",
     className: "text-blue-500 dark:text-blue-500",
   },
 ];
@@ -578,8 +579,11 @@ const Home = () => {
              </motion.div>
              </div>
            </div>
-          <br /><br />
+          
   
+  <div className="grid">
+<Movingcard/>
+  </div>
          
 
 
