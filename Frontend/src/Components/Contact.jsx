@@ -50,11 +50,11 @@ const Contact = () => {
         <div className='row'>
     
             <div className='col-md-6' style={{backgroundColor:"#dbedff" , maxHeight: "540px" }}>
-              <motion.h1 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text mt-5 ms-5 '><strong className='text-primary'>Contact</strong> Us</motion.h1>&nbsp;
+              <motion.h1 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text mt-5 ms-5 text-4xl'><strong className='text-primary'>Contact</strong> Us</motion.h1>&nbsp;
               <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text ms-5   cont'>Just send us your questions or concerns, We will give you the help you need.
               </motion.p>
               
-              <motion.img animate={{ x: -20, y: -20 }} transition={{ ease: "easeOut", duration: 2 }} className='img-fluid mx-auto cont' src='https://codedthemes.com/wp-content/uploads/2022/04/contact-us-banner-img.png.webp' alt=''></motion.img>
+              <motion.img animate={{ x: -20, y: -20 }} transition={{ ease: "easeOut", duration: 2 }} className='img-fluid mx-auto mt-5' src='https://codedthemes.com/wp-content/uploads/2022/04/contact-us-banner-img.png.webp' alt=''></motion.img>
           
 
               
