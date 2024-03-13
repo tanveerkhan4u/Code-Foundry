@@ -532,14 +532,14 @@ const Home = () => {
                  onHoverStart={e => { }}
                  onHoverEnd={e => { }} className=' card col-md-3  shadow-2xl '>
                  <img className='img-fluid mx-auto ' src='https://codedthemes.com/wp-content/uploads/2022/04/Flexible-code-icon-1.png.webp' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
-                 <h4 className='text-center text-2xl'>Flexible Code</h4><br />
+                 <h4 className='text-center mt-3 text-2xl'>Flexible Code</h4><br />
                  <p className='text-center mb-5 mx-auto' style={{ color: "grey" }}>Easy to start your project with our easy to use code standard.</p>
                </motion.div>
                <motion.div whileHover={{ scale: 1.2 }}
                  onHoverStart={e => { }}
-                 onHoverEnd={e => { }} className='card col-md-3  shadow '>
+                 onHoverEnd={e => { }} className='card col-md-3  shadow-2xl '>
                  <img className='img-fluid mx-auto  ' src='https://codedthemes.com/wp-content/uploads/2022/05/quality.svg' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
-                 <h4 className='text-center mt-3' >Quality First</h4><br />
+                 <h4 className='text-center mt-3 text-2xl' >Quality First</h4><br />
                  <p className='text-center mb-5 mx-auto' style={{ color: "grey" }}>We believe in quality designs and code instead of quantity</p>
                </motion.div>
               <motion.div whileHover={{ scale: 1.2 }}
