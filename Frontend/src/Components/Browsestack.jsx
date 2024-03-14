@@ -215,7 +215,7 @@ const Browsestack = () => {
           return <div className='col-md-3 ms-5'>
             { <Link to= {product.link} className='text-decoration-none'>
               <div className="card" >
-                <motion.img src={product.image}
+                <img src={product.image}
                 whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
                   onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />

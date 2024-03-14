@@ -77,7 +77,6 @@ const Home = () => {
 
 
 
-
       <br /><br />
 
       <div className='container'>
