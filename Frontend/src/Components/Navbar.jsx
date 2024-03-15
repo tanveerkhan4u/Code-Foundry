@@ -78,26 +78,26 @@ const Navbar = () => {
 
                 <NavLink
                   to="/Home"
-                  className="bg-blue-700 text-white rounded-md px-3 py-2 text-sm fs-5 mt-4 "
+                  className="bg-blue-500 text-white rounded-md px-3 py-2 text-sm fs-5 mt-4 "
 
                 >
                   Home
                 </NavLink>
                 <NavLink
                   to="/Browsestack"
-                  className=" hover:bg-blue-700 hover:text-dark rounded-md px-3 py-2 text-sm fs-5 mt-4"
+                  className=" hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
                 >
                   Browse Stack
                 </NavLink>
                 <NavLink
                   to="/Contact"
-                  className=" hover:bg-blue-700 hover:text-dark rounded-md px-3 py-2 text-sm fs-5 mt-4"
+                  className=" hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
                 >
                   Contact Us
                 </NavLink>
                 <NavLink
                   to="/Feedback"
-                  className="hover:bg-blue-700 hover:text-dark rounded-md px-3 py-2 text-sm fs-5 mt-4"
+                  className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
                 >
                   Feedback
                 </NavLink>
