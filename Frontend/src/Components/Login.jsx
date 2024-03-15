@@ -8,8 +8,7 @@ import { GoogleLogin } from '@react-oauth/google';
 import { enqueueSnackbar } from 'notistack';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import Log from './Log';
-import Card from './Card';
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -171,12 +170,12 @@ const Login = () => {
     </div>
     <p className="text-center text-gray-600">
       Don't have an account?
-      <a
-        href="#"
-        className="whitespace-nowrap font-semibold text-gray-900 hover:underline"
+      <NavLink
+        to="/Signup"
+        className="whitespace-nowrap font-semibold text-gray-900 hover:underline ml-4"
       >
         Sign up
-      </a>
+      </NavLink>
     </p>
   </div>
   {/* /Login */}
