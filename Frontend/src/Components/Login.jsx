@@ -110,26 +110,33 @@ const Login = () => {
 
   return (
     <>
+    <form onSubmit={Loginform.handleSubmit}>
     <div className='flex mx-auto md:flex-row  flex-col bg-[#dbedff]'>
+      
       <div className='basis-1/2 mb-5 '>
         <motion.img  animate={{ x: 50, y: -10 }} transition={{ ease: "easeOut", duration: 2 }}  src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='mt-5 mx-auto loimg' alt='' />
       </div>
       <div  className="flex h-screen w-screen items-center -mt-10">
+      
   {/* Login */}
+  
   <div className="relative flex w-96 flex-col space-y-5 rounded-lg border bg-white px-4 py-10 shadow-2xl sm:mx-auto">
     <div className="-z-10 absolute top-4 left-1/2 h-full w-5/6 -translate-x-1/2 rounded-lg  sm:-right-10 sm:top-auto sm:left-auto sm:w-full sm:translate-x-0" />
     <div className="mx-auto mb-2 space-y-3">
       <h1 className="text-center text-3xl font-bold text-gray-700">Sign in</h1>
       <p className="text-gray-500">Sign in to access your account</p>
     </div>
+    
     <div>
       <div className="relative mt-2 w-full">
+      
         <input
           type="text"
           id="email"
-          defaultValue="email@gmail.com"
+          defaultValue=""
           className="border-1 peer block w-full appearance-none rounded-lg border border-gray-300 bg-transparent px-2.5 pt-4 pb-2.5 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
           placeholder=" "
+          onChange={Loginform.handleChange} value={Loginform.values.email}
         />
         <label
           htmlFor="email"
@@ -138,15 +145,17 @@ const Login = () => {
           {" "}
           Enter Your Email{" "}
         </label>
+        <span className=' text-danger'>{Loginform.touched.email && Loginform.errors.email}</span>
       </div>
     </div>
     <div>
       <div className="relative mt-2 w-full">
         <input
-          type="text"
+          type="password"
           id="password"
           className="border-1 peer block w-full appearance-none rounded-lg border border-gray-300 bg-transparent px-2.5 pt-4 pb-2.5 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-          placeholder=" "
+          placeholder=" ••••••••"
+          onChange={Loginform.handleChange} value={Loginform.values.password}
         />
         <label
           htmlFor="password"
@@ -155,10 +164,11 @@ const Login = () => {
           {" "}
           Enter Your Password
         </label>
+        <span className=' text-danger'>{Loginform.touched.password && Loginform.errors.password}</span>
       </div>
     </div>
     <div className="flex w-full items-center">
-      <button className="shrink-0 inline-block w-36 rounded-lg bg-blue-600 py-3 font-bold text-white">
+      <button  type='submit' className="shrink-0 inline-block w-36 rounded-lg bg-blue-600 py-3 font-bold text-white">
         Login
       </button>
       <a
@@ -168,6 +178,7 @@ const Login = () => {
         Forgot your password?
       </a>
     </div>
+    
     <p className="text-center text-gray-600">
       Don't have an account?
       <NavLink
@@ -177,11 +188,15 @@ const Login = () => {
         Sign up
       </NavLink>
     </p>
+    
   </div>
+  
   {/* /Login */}
+  
 </div>
 
       </div> 
+      </form>
       
     </>
   )
