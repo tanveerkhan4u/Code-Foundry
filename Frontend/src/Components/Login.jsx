@@ -111,84 +111,14 @@ const Login = () => {
 
   return (
     <>
-      <div className='col-6 d-flex loimg' style={{ backgroundColor: "#dbedff", maxHeight: "540px" }}>
-
-        <motion.img animate={{ x: -50, }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='img-fluid mx-auto mb-5 px-5  ' alt='' />
-
-        <div className='container-fluid' style={{ marginLeft: "30px" }}>
-          <div className=' py-2'>
-            <div className="container-fluid">
-
-
-              <br /><br /><br />
-
-
-              <form onSubmit={Loginform.handleSubmit}>
-                <div className='container  d-flex'>
-                 
-                  <button2 className='google'>
-                    <GoogleOAuthProvider clientId="933596296606-mqbgnqrpol73pu5lr8pl06p1taahd745.apps.googleusercontent.com">
-                      <GoogleLogin
-                        onSuccess={credentialResponse => {
-                          const decoded = jwtDecode(credentialResponse.credential);
-                          console.log(decoded);
-                          googleSignup(decoded);
-                        }}
-                        onError={() => {
-                          console.log('Login Failed');
-                        }}
-                      />
-                    </GoogleOAuthProvider>
-                  </button2>
-                  </div>
-          
-          
-                  
-                
-                <h3 className='text-center' style={{ color: "grey"}}>OR</h3><br />
-                <p className='text-center fs-5'>Log into Your Account</p>
-
-                {/* <label htmlFor="" >Email </label> */}
-                <span className='ms-4 fs-6 text-danger'>{Loginform.errors.email}</span>
-                <input type="text" className='form-control mb-4 fs-5' id='email' onChange={Loginform.handleChange} value={Loginform.values.email} />
-                {/* <label htmlFor="" style={{ fontSize: "20px" }}>Password</label> */}
-                <span className='ms-4 fs-6 text-danger'>{Loginform.errors.password}</span>
-                <input type="password" className='form-control mb-4 fs-5 ' id='password' onChange={Loginform.handleChange} value={Loginform.values.password} />
-
-                <br />
-
-                <input type='Checkbox' value='IsRemember me' className='mb-3' id='rememberme'></input>
-                <label htmlFor='' style={{ marginTop: "-20px", marginLeft: "10px" }}> Remember me</label>
-
-                <button className="btn-53 w-100 p-2" type='submit' onClick="Isremember me">
-                  <div className="original" >Login</div>
-                  <div className="letters">
-                    <span>L</span>
-                    <span>o</span>
-                    <span>g</span>
-                    <span>i</span>
-                    <span>n</span>
-                  </div>
-                </button>
-
-
-                {/* <button className='btn btn-outline-primary w-100' type='submit' onClick="Isremember me">Log In</button> */}
-
-                <p className='text-center' style={{ marginTop: "20px" }}>Don't have an account? <a href='/Signup'>Sign Up</a></p>
-            
-
-                <br />
-              </form>
-            </div>
-            <div className="col-md-9">
-
-            </div>
-          </div>
-        </div>
+    <div className='w-full flex mx-auto md:flex-row  flex-col'>
+      <div className='basis-1/2 mb-5'>
+        <img src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='mx-auto' alt='' />
       </div>
-      <div className="col-md-6">
-        <Log />
+      <div className='basis-1/2 px-5'>
+        <h1>uivbsjkcbdhwksdgbvikb</h1>
       </div>
+      </div> 
       
     </>
   )
@@ -211,6 +141,23 @@ export default Login;
 
 
 
+{/* <div className='container  d-flex'>
+                 
+<button2 className='google'>
+  <GoogleOAuthProvider clientId="933596296606-mqbgnqrpol73pu5lr8pl06p1taahd745.apps.googleusercontent.com">
+    <GoogleLogin
+      onSuccess={credentialResponse => {
+        const decoded = jwtDecode(credentialResponse.credential);
+        console.log(decoded);
+        googleSignup(decoded);
+      }}
+      onError={() => {
+        console.log('Login Failed');
+      }}
+    />
+  </GoogleOAuthProvider>
+</button2>
+</div> */}
 
 
 
