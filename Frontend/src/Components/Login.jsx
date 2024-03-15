@@ -114,10 +114,10 @@ const Login = () => {
       <div className='basis-1/2 mb-5 '>
         <motion.img  animate={{ x: 50, y: -10 }} transition={{ ease: "easeOut", duration: 2 }}  src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='mt-5 mx-auto loimg' alt='' />
       </div>
-      <div className="flex h-screen w-screen items-center -mt-10">
+      <div  className="flex h-screen w-screen items-center -mt-10">
   {/* Login */}
   <div className="relative flex w-96 flex-col space-y-5 rounded-lg border bg-white px-4 py-10 shadow-2xl sm:mx-auto">
-    <div className="-z-10 absolute top-4 left-1/2 h-full w-5/6 -translate-x-1/2 rounded-lg bg-blue-500 sm:-right-10 sm:top-auto sm:left-auto sm:w-full sm:translate-x-0" />
+    <div className="-z-10 absolute top-4 left-1/2 h-full w-5/6 -translate-x-1/2 rounded-lg  sm:-right-10 sm:top-auto sm:left-auto sm:w-full sm:translate-x-0" />
     <div className="mx-auto mb-2 space-y-3">
       <h1 className="text-center text-3xl font-bold text-gray-700">Sign in</h1>
       <p className="text-gray-500">Sign in to access your account</p>
