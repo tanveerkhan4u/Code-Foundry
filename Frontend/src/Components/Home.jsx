@@ -16,38 +16,38 @@ import WavyBackground from '../utils/components/ui/Wavybackground';
 
 const cardsData = [
   {
-    name: 'Angular', 
-    image: 'https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png', 
+    name: 'Angular',
+    image: 'https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png',
     link: '/Angulardetail'
   },
   {
-    name : 'Bootstrap',
+    name: 'Bootstrap',
     image: 'https://codedthemes.com/wp-content/uploads/edd/2023/02/Mantis-pro-bootstrap5.png',
-    link : '/Bootstrapdetail'
+    link: '/Bootstrapdetail'
   },
   {
-    name : 'React',
-    image : 'https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-React-Admin-Template.webp',
-    link : '/Reactdetail'
+    name: 'React',
+    image: 'https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-React-Admin-Template.webp',
+    link: '/Reactdetail'
   },
 ]
 
-const tanData =[
+const tanData = [
   {
-   name : 'svelte',
-   image : 'https://www.creative-tim.com/blog/content/images/wordpress/2020/09/svelte-admin-dashboard.jpg',
-   link : '/Sveltedetail'
-},
-{
-  name :'solid',
-  image : 'https://colorlib.com/wp/wp-content/uploads/sites/2/concept-free-admin-dashboard-panel.jpg',
-  link : '/Solid'
-},
-{
-  name : 'next.js',
-  image : 'https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357z',
-  link : '/Nextdetail',
-},
+    name: 'Svelte',
+    image: 'https://www.creative-tim.com/blog/content/images/wordpress/2020/09/svelte-admin-dashboard.jpg',
+    link: '/Sveltedetail'
+  },
+  {
+    name: 'Solid',
+    image: 'https://colorlib.com/wp/wp-content/uploads/sites/2/concept-free-admin-dashboard-panel.jpg',
+    link: '/Solid'
+  },
+  {
+    name: 'Next.js',
+    image: 'https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357z',
+    link: '/Nextdetail',
+  },
 ]
 
 const words = [
@@ -304,8 +304,8 @@ const Home = () => {
           {
             cardsData.map(data => (
               <div className='col-md-4'>
-                <Link  to= {data.link} className='text-decoration-none'>
-                <Card product={data} />
+                <Link to={data.link} className='text-decoration-none'>
+                  <Card product={data} />
                 </Link>
               </div>
             ))
@@ -316,22 +316,22 @@ const Home = () => {
         <h2 className='text ml-10 text-4xl -mt-8'>Featured <strong className='text-primary'>Products</strong></h2><br />
         <p className='text ml-10 text-gray-500 text-xl mb-10'>Checkout our featured products having top review and love by customers!</p>
       </div>
-<div className="container-fluid">
-<div className='row'>
-  {
-    tanData.map(data => (
-      <div className='col-md-4'>
-        <Link to= {data.link} className='text-decoration-none'>
-          <Card product={data} />
-        </Link>
-      </div>
-    ))
-  }
-</div>
-  
-</div>
+      <div className="container-fluid  -mt-8">
+        <div className='row'>
+          {
+            tanData.map(data => (
+              <div className='col-md-4'>
+                <Link to={data.link} className='text-decoration-none'>
+                  <Card product={data} />
+                </Link>
+              </div>
+            ))
+          }
+        </div>
 
-          
+      </div>
+
+
 
 
 
