@@ -298,8 +298,6 @@ const Home = () => {
         <h2 className='text ml-10 text-4xl'>Best Selling <strong className='text-primary'>Products</strong></h2><br />
         <p className='text ml-10 text-gray-500 text-xl'>Explore our best-selling templates of all time!</p>
       </div>
-
-
       <div className='container-fluid '>
         <div className='row'>
           {
@@ -331,28 +329,21 @@ const Home = () => {
         </div>
 
       </div>
-
-
-
-
-
-
-
-
-      
-      
       <div className='container bg-body-secondary h-32 mb-5'>
         <marquee behavior="scroll" direction="left" scrollamount="15">
           <h1 className='text-center p-5 text-4xl  font-semibold'>BACK-END FRAMEWORKS</h1>
         </marquee>
       </div>
-
       <div className='container-fluid'>
         <h2 className='text ml-10 text-4xl -mt-8'>New <strong className='text-primary'>Products</strong></h2><br />
         <p className='text ml-10 text-gray-500 text-xl'>These are the new babies in the collection. Check them out as they will be mature soon!</p>
       </div>
       <br />
-      <div className='container-fluid'>
+
+
+
+
+      {/* <div className='container-fluid'>
         <div className='row gy-4'>
           <div className='col-md-4'>
             <Link to="/Express" style={{ textDecoration: "none" }}>
@@ -366,7 +357,7 @@ const Home = () => {
               </div>
             </Link>
           </div>
-          {/* <motion.div whileHover={{ scale: 1.1 }}
+           <motion.div whileHover={{ scale: 1.1 }}
             onHoverStart={e => { }}
             onHoverEnd={e => { }} className='col-md-4'>
             <Link to="/Express" style={{ textDecoration: "none" }}>
@@ -377,7 +368,7 @@ const Home = () => {
                 </div>
               </div>
             </Link>
-          </motion.div> */}
+          </motion.div> 
           <div className='col-md-4'>
             <Link to="/Express" style={{ textDecoration: "none" }}>
               <div className="card ">
@@ -390,20 +381,18 @@ const Home = () => {
               </div>
             </Link>
           </div>
-          <div className='col-md-4 '>
-            <Link to="/Express" style={{ textDecoration: "none" }}>
-              <div className="card  " >
-                <motion.img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" whileHover={{ scale: 1.1 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }} alt="..." />
-                <div className="card-body mb-2 py-2 px-2 ">
-                  <h5 className='text' >React.js</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
         </div>
-      </div><br /><br />
+      </div><br /><br /> */}
+
+
+
+
+
+
+      
+      
+
+          
       <div className='container bg-body-secondary h-32 mb-5'>
         <marquee behavior="scroll" direction="left" scrollamount="15">
           <h1 className='text-center p-5 text-4xl  font-semibold'>MOBILE APPLICATION</h1>
