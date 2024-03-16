@@ -13,6 +13,7 @@ import { Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
 const Browsestack = () => {
 
   const [productList, setProductList] = useState(productData);
+  
 
   const searchRef = useRef(null);
   
@@ -214,15 +215,7 @@ const Browsestack = () => {
         {productList.map((product,name) => { 
           return <div className='col-md-3 ms-5'>
             { <Link to= {product.link} className='text-decoration-none'>
-              <div className="card" >
-                <img src={product.image}
-                whileHover={{ scale: 1.1 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />
-                <div className="card-body">
-                  <h5>{product.name}</h5>
-                </div>
-              </div>
+              <Card product={product} />
               </Link> }
           </div>
           })};

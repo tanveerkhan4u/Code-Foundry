@@ -12,6 +12,25 @@ import Card from './Card';
 import Movingcard from './Movingcard';
 import Wavy from './Wavy';
 import { TypewriterEffectSmooth } from '../utils/components/Type-writer';
+import WavyBackground from '../utils/components/ui/Wavybackground';
+
+const cardsData = [
+  {
+    name: 'Angular', 
+    image: 'https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png', 
+    link: '/Angulardetail'
+  },
+  {
+    name : 'Bootstrap',
+    image: 'https://codedthemes.com/wp-content/uploads/edd/2023/02/Mantis-pro-bootstrap5.png',
+    link : '/Bootstrapdetail'
+  },
+  {
+    name : 'React',
+    image : 'https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-React-Admin-Template.webp',
+    link : '/Reactdetail'
+  },
+]
 
 const words = [
   {
@@ -48,11 +67,17 @@ const Home = () => {
   }
   return (
     <div style={{ overflow: 'hidden' }}>
+      <WavyBackground className="max-w-4xl mx-auto pb-40">
+        <h1 className='text-center mb-4 -mt-8'>
+          <TypewriterEffectSmooth words={words} />
+        </h1>
+        <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
+          Leverage the power of canvas to create a beautiful hero section
+        </p>
+      </WavyBackground>
       <header className='text-dark w-100' style={{ backgroundColor: "#dbedff" }}>
         <div className='container-fluid py-5'>
-          <h1 className='text-center mb-4 -mt-8'>
-            <TypewriterEffectSmooth words={words} />
-          </h1>
+
           <p className='text-center text-gray-500 text-lg'>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
 
           <div className='row'>
@@ -69,7 +94,7 @@ const Home = () => {
           </div>
           <div className='text-center'>
             <img className='text-center img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/03/main-banner-bottom-img-1.png' alt=''></img>
-          </div> 
+          </div>
 
         </div>
       </header>
@@ -258,60 +283,17 @@ const Home = () => {
 
       <div className='container-fluid '>
         <div className='row'>
-
-          <div className='col-md-4'>
-            <Card />
-          </div>
-
-          <div className='col-md-4 '>
-            <Card />
-
-            {/* <Link to="/Angulardetail" style={{ textDecoration: "none" }}>
-
-              <div className="card" style={{ maxHeight: "410px" }}>
-                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png" whileHover={{ scale: 1.1 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }} className="card-img-top mx-auto img-fluid" alt="..." />
-                <div className="card-body">
-                  <p className='fs-6'>Mantis Angular 17 Admin Template <strong className='text fs-5 float-end' style={{ color: "#5B84FA" }}>FREE</strong></p>
-                  <h5 className='text' style={{ color: "grey" }} >Angular<p className='float-end'><IconStar></IconStar> </p><IconShoppingCart></IconShoppingCart></h5>
-                </div>
+          {
+            cardsData.map(data => (
+              <div className='col-md-4'>
+                <Link  to= {data.link} className='text-decoration-none'>
+                <Card product={data} />
+                </Link>
               </div>
-            </Link> */}
-          </div>
+            ))
+          }
 
-
-
-
-
-
-          <div className='col-md-4'>
-            <Card />
-            {/* <Link to="/Bootstrapdetail" style={{ textDecoration: "none" }}>
-              <div className="card mb-3 py-2 px-2 p-2">
-                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Empire-Bootstrap-4-Admin-Template.webp" whileHover={{ scale: 1.1 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }} className="card-img-top mx-auto img-fluid" alt="..." />
-                <div className="card-body  mb-3 py-2 px-2">
-                  <h5 className='text' >Bootstrap</h5>
-                </div>
-              </div>
-            </Link> */}
-          </div>
-
-          {/* <div className='col-md-4'>
-            <Link to="/Vuedetail" style={{ textDecoration: "none" }}>
-              <div className="card mb-3 py-2 px-2 h-100">
-                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-vue.png" whileHover={{ scale: 1.1 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />
-                <div className="card-body mb-3 py-2 px-2">
-                  <h5 className='text' >Vue</h5>
-                </div>
-              </div>
-            </Link>
-          </div> */}
-
+          
         </div>
 
       </div>
@@ -514,7 +496,7 @@ const Home = () => {
           <br /><br />
         </Swiper>
       </div>
-      
+
       <div className='row gy-2'>
         <div className='container-fluid '>
           <div className='col-md-4'>

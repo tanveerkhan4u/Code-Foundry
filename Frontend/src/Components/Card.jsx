@@ -2,7 +2,8 @@
 import React from 'react'
 import { CardBody, CardContainer, CardItem } from "../utils/components/ui/3d-card";
 
-export function Card({}) {
+function Card({product}) {
+  console.log(product);
   return (
     <CardContainer className="inter-var w-full -mt-7">
       
@@ -11,7 +12,7 @@ export function Card({}) {
           translateZ="50"
           className="text-xl font-bold text-neutral-600 dark:text-white"
         >
-          Make things float in air
+          {product.name}
         </CardItem>
         <CardItem
           as="p"
@@ -22,7 +23,7 @@ export function Card({}) {
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
           <img
-            src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png"
+            src={product.image}
             height="1000"
             width="1000"
             className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
