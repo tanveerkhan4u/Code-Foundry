@@ -32,6 +32,24 @@ const cardsData = [
   },
 ]
 
+const tanData =[
+  {
+   name : 'svelte',
+   image : 'https://www.creative-tim.com/blog/content/images/wordpress/2020/09/svelte-admin-dashboard.jpg',
+   link : '/Sveltedetail'
+},
+{
+  name :'solid',
+  image : 'https://colorlib.com/wp/wp-content/uploads/sites/2/concept-free-admin-dashboard-panel.jpg',
+  link : '/Solid'
+},
+{
+  name : 'next.js',
+  image : 'https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357z',
+  link : '/Nextdetail',
+},
+]
+
 const words = [
   {
     text: "Build",
@@ -67,17 +85,17 @@ const Home = () => {
   }
   return (
     <div style={{ overflow: 'hidden' }}>
-      <WavyBackground className="max-w-4xl mx-auto pb-40">
+      {/* <WavyBackground className="max-w-4xl mx-auto pb-40">
         <h1 className='text-center mb-4 -mt-8'>
-          <TypewriterEffectSmooth words={words} />
         </h1>
         <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
           Leverage the power of canvas to create a beautiful hero section
         </p>
-      </WavyBackground>
+      </WavyBackground> */}
       <header className='text-dark w-100' style={{ backgroundColor: "#dbedff" }}>
         <div className='container-fluid py-5'>
 
+          <TypewriterEffectSmooth words={words} />
           <p className='text-center text-gray-500 text-lg'>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
 
           <div className='row'>
@@ -294,18 +312,33 @@ const Home = () => {
           }
         </div>
       </div>
+      <div className='container-fluid'>
+        <h2 className='text ml-10 text-4xl -mt-8'>Featured <strong className='text-primary'>Products</strong></h2><br />
+        <p className='text ml-10 text-gray-500 text-xl mb-10'>Checkout our featured products having top review and love by customers!</p>
+      </div>
+<div className="container-fluid">
+<div className='row'>
+  {
+    tanData.map(data => (
+      <div className='col-md-4'>
+        <Link to= {data.link} className='text-decoration-none'>
+          <Card product={data} />
+        </Link>
+      </div>
+    ))
+  }
+</div>
+  
+</div>
 
           
 
 
 
-      <div className='container-fluid'>
-        <h2 className='text ml-10 text-4xl -mt-8'>Featured <strong className='text-primary'>Products</strong></h2><br />
-        <p className='text ml-10 text-gray-500 text-xl mb-10'>Checkout our featured products having top review and love by customers!</p>
-      </div>
 
 
-      <div className="container-fluid">
+
+      {/* <div className="container-fluid">
         <div className="row gy-4">
           <div className='col-md-4'>
             <Link to="/Sveltedetail" style={{ textDecoration: "none" }}>
@@ -345,7 +378,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
       <br /><br />
       <div className='container bg-body-secondary h-32 mb-5'>
         <marquee behavior="scroll" direction="left" scrollamount="15">
