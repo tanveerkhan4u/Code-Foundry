@@ -213,7 +213,7 @@ const Browsestack = () => {
       <div className='conatiner-fluid'>
         <div className='row gy-4 justify-content-center'>
         {productList.map((product,name) => { 
-          return <div className='col-md-3 ms-5'>
+          return <div className='col-md-4'>
             { <Link to= {product.link} className='text-decoration-none'>
               <Card product={product} />
               </Link> }
