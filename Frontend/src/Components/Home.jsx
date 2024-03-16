@@ -339,48 +339,8 @@ const Home = () => {
 
 
 
-      {/* <div className="container-fluid">
-        <div className="row gy-4">
-          <div className='col-md-4'>
-            <Link to="/Sveltedetail" style={{ textDecoration: "none" }}>
-              <div className="card mb-3 py-2 px-2 h-100">
-                <motion.img src="https://www.creative-tim.com/blog/content/images/wordpress/2020/09/svelte-admin-dashboard.jpg" className="card-img-top img-fluid mx-auto" whileHover={{ scale: 1.1 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }} alt="..." />
-                <div className="card-body mb-3 py-2 px-2">
-                  <h5 className='text' >Svelte</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
-          <div className='col-md-4'>
-            <Link to="/Solid" style={{ textDecoration: "none" }}>
-              <div className="card mb-3 py-2 px-2 h-100">
-                <motion.img src="https://colorlib.com/wp/wp-content/uploads/sites/2/concept-free-admin-dashboard-panel.jpg" className="card-img-top img-fluid mx-auto" whileHover={{ scale: 1.1 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }} alt="..." />
-                <div className="card-body mb-3 py-2 px-2">
-                  <h5 className='text' >Solid</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className='col-md-4'>
-            <Link to="/Nextdetail" style={{ textDecoration: "none" }}>
-              <div className="card mb-3 py-2 px-2 h-100">
-                <motion.img src="https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg?1597319357" className="card-img-top img-fluid mx-auto" whileHover={{ scale: 1.1 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }} alt="..." />
-                <div className="card-body mb-3 py-2 px-2">
-                  <h5 className='text' >Next.Js</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </div> */}
-      <br /><br />
+      
+      
       <div className='container bg-body-secondary h-32 mb-5'>
         <marquee behavior="scroll" direction="left" scrollamount="15">
           <h1 className='text-center p-5 text-4xl  font-semibold'>BACK-END FRAMEWORKS</h1>
