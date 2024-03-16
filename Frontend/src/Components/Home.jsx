@@ -135,15 +135,15 @@ const Home = () => {
 
         </div>
       </header>
-
-
-
-
       <br /><br />
-
       <div className='container'>
         <h3 className='text-center  text-gray-500 text-2xl mb-4'>We create custom for the application using the following technology</h3>
       </div>
+
+
+
+
+
 
 
       <div className='logo'>
@@ -369,20 +369,6 @@ const Home = () => {
         }
       </div>
      </div>
-
-
-
-
-  
-
-
-
-
-
-      
-      
-
-          
       <div className='container bg-body-secondary h-32 mb-5'>
         <marquee behavior="scroll" direction="left" scrollamount="15">
           <h1 className='text-center p-5 text-4xl  font-semibold'>MOBILE APPLICATION</h1>
@@ -539,8 +525,6 @@ const Home = () => {
           </motion.div>
         </div>
       </div>
-
-
       <div className="grid">
         <Movingcard />
       </div>
@@ -576,6 +560,22 @@ export default Home
 
 
 
+  
+
+
+
+
+
+      
+      
+
+          
+
+
+
+
+
+
 
 
 
@@ -595,59 +595,6 @@ export default Home
 
 
 
-//   <div className='container '>
-//   <div className='row gy-4 justify-content-between justify-content-between'>
-//     <motion.div whileHover={{ scale: 1.2 }}
-//       onHoverStart={e => { }}
-//       onHoverEnd={e => { }} className=' card col-md-3  shadow '>
-//       <img className='img-fluid mx-auto ' src='https://codedthemes.com/wp-content/uploads/2022/04/Flexible-code-icon-1.png.webp' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
-//       <h4 className='text-center' style={{ marginTop: "20px" }}>Flexible Code</h4><br />
-//       <p className='text-center mb-5 mx-auto' style={{ color: "grey" }}>Easy to start your project with our easy to use code standard.</p>
-//     </motion.div>
-//     <motion.div whileHover={{ scale: 1.2 }}
-//       onHoverStart={e => { }}
-//       onHoverEnd={e => { }} className='card col-md-3  shadow '>
-//       <img className='img-fluid mx-auto  ' src='https://codedthemes.com/wp-content/uploads/2022/05/quality.svg' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
-//       <h4 className='text-center mt-3' >Quality First</h4><br />
-//       <p className='text-center mb-5 mx-auto' style={{ color: "grey" }}>We believe in quality designs and code instead of quantity</p>
-//     </motion.div>
-//     <motion.div whileHover={{ scale: 1.2 }}
-//       onHoverStart={e => { }}
-//       onHoverEnd={e => { }} className='card col-md-3  shadow'>
-//       <img className='img-fluid mx-auto ' src='https://codedthemes.com/wp-content/uploads/2022/04/Freemium-Model-icon-1.png.webp' style={{ marginLeft: "40px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
-//       <h4 className='text-center' style={{ marginTop: "20px" }}>Freemium Model</h4><br />
-//       <p className='text-center px-3 mb-5' style={{ color: "grey" }}>Our belief on open-source led us to provide a free versions of most products</p>
-//     </motion.div>
-//   </div>
-// </div>
-// <br /><br />
-// <div className='container'>
-//   <div className='row gy-4 justify-content-between justify-content-between'>
-//     <motion.div whileHover={{ scale: 1.2 }}
-//       onHoverStart={e => { }}
-//       onHoverEnd={e => { }} className='card shadow col-md-3'>
-//       <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/Documentation-icon-1.png' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
-//       <h4 className='text-center' style={{ marginTop: "20px" }}>Documentation</h4><br />
-//       <p className='text-center px-3' style={{ marginTop: "-20px", color: "grey" }}>Detailed step by step documentation helper file for each template</p>
-//     </motion.div>
-//     <motion.div whileHover={{ scale: 1.2 }}
-//       onHoverStart={e => { }}
-//       onHoverEnd={e => { }} className='card shadow col-md-3'>
-//       <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/Free-updates-icon-1.png' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
-//       <h4 className='text-center' style={{ marginTop: "20px" }}>Free Updates</h4><br />
-//       <p className='text-center px-3' style={{ marginTop: "-20px", color: "grey" }}>Free updates help to keep your project always up to Date</p>
-//     </motion.div>
-//     <motion.div whileHover={{ scale: 1.2 }}
-//       onHoverStart={e => { }}
-//       onHoverEnd={e => { }} className='card shadow col-md-3'>
-//       <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/Support-icon-1.png' style={{ marginLeft: "180px", height: "40px", width: "40px", marginTop: "20px" }} alt='' />
-//       <h4 className='text-center' style={{ marginTop: "20px" }}>Support</h4><br />
-//       <p className='text-center px-3' style={{ marginTop: "-20px", color: "grey" }}>Support via chat & ticket to resolve your any technical query</p>
-//     </motion.div>
-
-//   </div>
-// </div>
-// <br /><br />
 
 
 
