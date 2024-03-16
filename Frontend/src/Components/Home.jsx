@@ -50,6 +50,24 @@ const tanData = [
   },
 ]
 
+const newData = [
+  {
+    name : 'Express.js',
+    image : 'https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg',
+    link : '/Express',
+  },
+  {
+    name : 'Nest.js',
+    image :'https://cdn.dribbble.com/users/2562056/screenshots/6230816/uikits.net_-_dashboard_freebies_02_4x.png?resize=768x576&vertical=center',
+    link : '/Nest',
+  },
+  {
+    name : 'GraphQL',
+    image :'https://i.pinimg.com/originals/30/a7/12/30a71279cc7e849146715efecc3862d0.jpg',
+    link : '/Graphql',
+  },
+]
+
 
 const words = [
   {
@@ -327,7 +345,6 @@ const Home = () => {
             ))
           }
         </div>
-
       </div>
       <div className='container bg-body-secondary h-32 mb-5'>
         <marquee behavior="scroll" direction="left" scrollamount="15">
@@ -339,51 +356,24 @@ const Home = () => {
         <p className='text ml-10 text-gray-500 text-xl'>These are the new babies in the collection. Check them out as they will be mature soon!</p>
       </div>
       <br />
+     <div className="container-fluid  -mt-8">
+      <div className="row">
+        {
+          newData.map(data => (
+            <div className='col-md-4'>
+              <Link to={data.link} className='text-decoration-none'>
+                <Card product={data} />
+              </Link>
+            </div>
+          ))  
+        }
+      </div>
+     </div>
 
 
 
 
-      {/* <div className='container-fluid'>
-        <div className='row gy-4'>
-          <div className='col-md-4'>
-            <Link to="/Express" style={{ textDecoration: "none" }}>
-              <div className="card ">
-                <motion.img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" whileHover={{ scale: 1.1 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }} alt="..." />
-                <div className="card-body mb-2 py-2 px-2">
-                  <h5 className='text' >Express.js</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
-           <motion.div whileHover={{ scale: 1.1 }}
-            onHoverStart={e => { }}
-            onHoverEnd={e => { }} className='col-md-4'>
-            <Link to="/Express" style={{ textDecoration: "none" }}>
-              <div className="card ">
-                <img src="https://user-images.githubusercontent.com/7660346/180629352-f92216e3-7cf4-4fba-92fa-089dd96b4478.png" className="card-img-top img-fluid mx-auto" style={{ height: "335px", objectFit: "cover" }} alt="..." />
-                <div className="card-body">
-                  <h5 className='text' >Next.js</h5>
-                </div>
-              </div>
-            </Link>
-          </motion.div> 
-          <div className='col-md-4'>
-            <Link to="/Express" style={{ textDecoration: "none" }}>
-              <div className="card ">
-                <motion.img src="https://adminlte.io/wp-content/uploads/2021/06/minible-nodejs-dashboard-template.jpg" className="card-img-top img-fluid mx-auto" whileHover={{ scale: 1.1 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }} alt="..." />
-                <div className="card-body mb-2 py-2 px-2">
-                  <h5 className='text' >Node.js</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </div><br /><br /> */}
-
+  
 
 
 
