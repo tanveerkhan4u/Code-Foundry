@@ -183,7 +183,7 @@ const Login = () => {
                 </GoogleOAuthProvider>
               </div>
               <div className="flex w-full items-center">
-                <button type='submit' className="shrink-0 inline-block w-36 rounded-lg bg-blue-600 py-3 font-bold text-white">
+                <button type='submit' className="shrink-0 inline-block w-36 rounded-lg bg-[#6366F1] py-2 font-bold text-white text-xl">
                   Login
                 </button>
                 <a
