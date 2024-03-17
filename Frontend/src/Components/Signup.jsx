@@ -105,8 +105,7 @@ const Signup = () => {
 
   return (
     <>
-      <Log />
-
+   
     </>
     
     )
