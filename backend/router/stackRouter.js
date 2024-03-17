@@ -25,7 +25,6 @@ router.post('/generate', (req, res) => {
   res.send('request received!');
 });
 
-
 module.exports = router;
 
 

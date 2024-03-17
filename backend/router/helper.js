@@ -29,18 +29,18 @@ const zipFolder = (structure, zipName, projectName) => {
 
   const rootDir = path.dirname(require.main.filename);
   const destDir = path.join(rootDir, 'generatedStacks' , projectName);
-
+  console.log(destDir);
   try {
     for(let fileData of structure){
-      console.log(fileData.dirname, fileData.filename);
+      console.log(path.join(destDir, fileData.dirname, fileData.filename));
       zip.file(path.join(destDir, fileData.dirname, fileData.filename), fileData.content);
       console.log('create zip');
     }
     // structure.forEach((fileData) => {
     // });
   
-    const files = structure.map(fileData => fileData.filename);
-    const myzipfolder = zip.folder("files");
+    const files = structure.map(fileData => path.join( 'generatedStacks' , projectName, fileData.dirname, fileData.filename));
+    const myzipfolder = zip.folder("stackFiles");
   
     for (const image of files) {
       const imageData = fs.readFileSync(image);
@@ -57,7 +57,6 @@ const zipFolder = (structure, zipName, projectName) => {
     console.error(err)
   }
 }
-
 
 module.exports = { createFile, createFolder, zipFolder };
 
