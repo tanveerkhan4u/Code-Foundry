@@ -104,16 +104,16 @@ const Home = () => {
   }
   return (
     <div style={{ overflow: 'hidden' }}>
-      <WavyBackground className="max-w-4xl mx-auto pb-40">
+      {/* <WavyBackground className="max-w-4xl mx-auto pb-40">
         <h1 className='text-center mb-4 -mt-8'>
-          <TypewriterEffectSmooth words={words} />
         </h1>
         <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
-          Leverage the power of canvas to create a beautiful hero section
+        Leverage the power of canvas to create a beautiful hero section
         </p>
-      </WavyBackground>
+      </WavyBackground> */}
       <header className='text-dark w-100' style={{ backgroundColor: "#dbedff" }}>
         <div className='container-fluid py-5'>
+      <TypewriterEffectSmooth words={words} />
 
           <p className='text-center text-gray-500 text-lg'>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
 
