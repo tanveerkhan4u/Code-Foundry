@@ -104,53 +104,55 @@ const Signup = () => {
 
 
   return (
-    <div className="grid  bg-[#dbedff]">
+    <>
       <Log />
-    </div>
-  )
-}
 
-export default Signup;
+    </>
+    
+    )
+  }
+  
+  export default Signup;
+  
+  {/* // <div className='vh-100' style={{backgroundColor:"#dbedff"}}>
+  
+  //   <div className='col-md-4 mx-auto py-5'>
+  //     <div className='card'>
+  //       <div className='card-body p-4'>
+  //         <form onSubmit={SignupForm.handleSubmit}>
+  //           <h2 className='text-center'>Sign up</h2>
+  //           <hr />
+  //           <label htmlFor="">Name</label>
+  //           <span className='ms-4 fs-6 text-danger'>{SignupForm.touched.name && SignupForm.errors.name}</span>
+  //           <input type="text" className='form-control mb-4' id="name" onChange={SignupForm.handleChange} value={SignupForm.values.name} />
+  //           <label htmlFor="">Email Address</label>
+  //           <span className='ms-4 fs-6 text-danger'>{SignupForm.touched.email && SignupForm.errors.email}</span>
+  //           <input type="text" className='form-control mb-4' id="email" onChange={SignupForm.handleChange} value={SignupForm.values.email} />
+  //           <label htmlFor="">Password</label>
+  //           <span className='ms-4 fs-6 text-danger'>{SignupForm.touched.password && SignupForm.errors.password}</span>
+  //           <input type="text" className='form-control mb-4' id="password" onChange={SignupForm.handleChange} value={SignupForm.values.password} />
+  //           <div className='google'>
+  //             <GoogleOAuthProvider clientId="933596296606-mqbgnqrpol73pu5lr8pl06p1taahd745.apps.googleusercontent.com">
+  //               <GoogleLogin
+             type='button'
+                   onSuccess={credentialResponse => {
+                     const decoded = jwtDecode(credentialResponse.credential);
+                     console.log(decoded);
+                     googleSignup(decoded);
+                   }}
+                  onError={() => {
+                     console.log('Login Failed');
+                   }}
+                 />
+               </GoogleOAuthProvider>
+            </div>
+             <button type='submit' className=' btn btn-danger w-100 mt-3 rounded-pill'>Sign up</button>
+           </form>
+         </div>
+       </div>
+     </div>
+   </div> */}
 
-
-// <div className='vh-100' style={{backgroundColor:"#dbedff"}}>
-
-//   <div className='col-md-4 mx-auto py-5'>
-//     <div className='card'>
-//       <div className='card-body p-4'>
-//         <form onSubmit={SignupForm.handleSubmit}>
-//           <h2 className='text-center'>Sign up</h2>
-//           <hr />
-//           <label htmlFor="">Name</label>
-//           <span className='ms-4 fs-6 text-danger'>{SignupForm.touched.name && SignupForm.errors.name}</span>
-//           <input type="text" className='form-control mb-4' id="name" onChange={SignupForm.handleChange} value={SignupForm.values.name} />
-//           <label htmlFor="">Email Address</label>
-//           <span className='ms-4 fs-6 text-danger'>{SignupForm.touched.email && SignupForm.errors.email}</span>
-//           <input type="text" className='form-control mb-4' id="email" onChange={SignupForm.handleChange} value={SignupForm.values.email} />
-//           <label htmlFor="">Password</label>
-//           <span className='ms-4 fs-6 text-danger'>{SignupForm.touched.password && SignupForm.errors.password}</span>
-//           <input type="text" className='form-control mb-4' id="password" onChange={SignupForm.handleChange} value={SignupForm.values.password} />
-//           <div className='google'>
-//             <GoogleOAuthProvider clientId="933596296606-mqbgnqrpol73pu5lr8pl06p1taahd745.apps.googleusercontent.com">
-//               <GoogleLogin
-//               type='button'
-//                 onSuccess={credentialResponse => {
-//                   const decoded = jwtDecode(credentialResponse.credential);
-//                   console.log(decoded);
-//                   googleSignup(decoded);
-//                 }}
-//                 onError={() => {
-//                   console.log('Login Failed');
-//                 }}
-//               />
-//             </GoogleOAuthProvider>
-//           </div>
-//           <button type='submit' className=' btn btn-danger w-100 mt-3 rounded-pill'>Sign up</button>
-//         </form>
-//       </div>
-//     </div>
-//   </div>
-// </div>
 
 
 
