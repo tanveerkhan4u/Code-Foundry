@@ -120,7 +120,9 @@ const Signup = () => {
                   <h1 className="text-xl text-center font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                     Sign up to your account
                   </h1>
+
                   <form onSubmit={SignupForm.handleSubmit}>
+                  
                     <div>
                       <label
                         htmlFor="name"
@@ -204,6 +206,21 @@ const Signup = () => {
                     <button type='submit' className="shrink-0 inline-block w-full rounded-lg bg-[#6366F1] py-2 font-medium text-white text-md mt-2">
                       Create an Account
                     </button>
+                    <button className='google mt-3 '>
+                      <GoogleOAuthProvider clientId="933596296606-mqbgnqrpol73pu5lr8pl06p1taahd745.apps.googleusercontent.com">
+                        <GoogleLogin
+                          type='button'
+                          onSuccess={credentialResponse => {
+                            const decoded = jwtDecode(credentialResponse.credential);
+                            console.log(decoded);
+                            googleSignup(decoded);
+                          }}
+                          onError={() => {
+                            console.log('Login Failed');
+                          }}
+                        />
+                      </GoogleOAuthProvider>
+                    </button>
                     <p className="text-lg font-light text-gray-500 dark:text-gray-400 mt-3">
                       Already have an account ?{" "}
                       <NavLink
@@ -213,6 +230,7 @@ const Signup = () => {
                         Login here
                       </NavLink>
                     </p>
+                   
                   </form>
                 </div>
               </div>
