@@ -109,11 +109,11 @@ const Signup = () => {
     <>
    <div className="flex mx-auto md:flex-row  flex-col min-h-screen  bg-[#dbedff]">
     <div className='basis-1/2'>
-      <img src='https://i0.wp.com/stackdigi.com/storage/2020/04/logo-design.png?w=351&ssl=1'  className='mx-auto mt-5 '  alt=''/>
+      <motion.img  animate={{ x: 100, y: 20 }} transition={{ ease: "easeOut", duration: 2 }} src='https://i0.wp.com/stackdigi.com/storage/2020/04/logo-design.png?w=351&ssl=1'  className='mx-auto mt-5 soimg'  alt=''/>
     </div>
     <div className='basis-1/2'>
     <section className=" dark:bg-gray-900 ">
-  <div className="flex flex-col   px-6 py-8 mx-auto md:h-screen lg:py-0 mt-4 ">
+  <motion.div animate={{ x: -50, y: 20 }} transition={{ ease: "easeOut", duration: 2 }}  className="flex flex-col   px-6 py-8 mx-auto md:h-screen lg:py-0 mt-4  simg ">
    
     <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
       <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -212,7 +212,7 @@ const Signup = () => {
         </form>
       </div>
     </div>
-  </div>
+  </motion.div>
 </section>
 
     </div>

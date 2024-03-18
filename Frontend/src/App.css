@@ -137,6 +137,14 @@ padding: 0 30px;
       padding-right: 100px;
     
     } 
+    .soimg{
+      display: inline !important;
+      padding-right: 150px;
+    }
+    .simg{
+      display: inline !important;
+      padding-left: 100px;
+    }
     .reactimg{
       padding-right: 100px;
     }
