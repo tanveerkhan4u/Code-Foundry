@@ -113,7 +113,7 @@ const Signup = () => {
         </div>
         <div className='basis-1/2'>
           <section className=" dark:bg-gray-900 ">
-            <motion.div animate={{ x: -50, y: 20 }} transition={{ ease: "easeOut", duration: 2 }} className="flex flex-col   px-6 py-8 mx-auto md:h-screen lg:py-0   simg ">
+            <motion.div animate={{ x: -50, y: 20 }} transition={{ ease: "easeOut", duration: 2 }} className="flex flex-col   px-6 py-8 mx-auto md:h-screen lg:py-0 -mt-3  simg ">
 
               <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                 <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -221,7 +221,7 @@ const Signup = () => {
                         />
                       </GoogleOAuthProvider>
                     </button>
-                    <p className="text-lg font-light text-gray-500 dark:text-gray-400 mt-3">
+                    <p className="text-lg font-light text-gray-500 dark:text-gray-400 ">
                       Already have an account ?{" "}
                       <NavLink
                         to="/Login"
