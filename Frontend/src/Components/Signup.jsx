@@ -128,13 +128,15 @@ const Signup = () => {
                       >
                         Your Name
                       </label>
+                      <span className=' text-danger'>{SignupForm.touched.name && SignupForm.errors.name}</span>
                       <input
                         type="text"
-                        name="email"
-                        id="email"
+                        name="name"
+                        id="name"
                         className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-md rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-3"
                         placeholder="Enter Your Name"
                         required=""
+                        onChange={SignupForm.handleChange} value={SignupForm.values.name}
                       />
                     </div>
                     <div>
@@ -144,6 +146,7 @@ const Signup = () => {
                       >
                         Your Email
                       </label>
+                      <span className=' text-danger'>{SignupForm.touched.email && SignupForm.errors.email}</span>
                       <input
                         type="text"
                         name="email"
@@ -151,6 +154,7 @@ const Signup = () => {
                         className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-md rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-3"
                         placeholder="Enter Your Email"
                         required=""
+                        onChange={SignupForm.handleChange} value={SignupForm.values.email}
                       />
                     </div>
                     <div>
@@ -160,6 +164,7 @@ const Signup = () => {
                       >
                         Password
                       </label>
+                      <span className=' text-danger'>{SignupForm.touched.password && SignupForm.errors.password}</span>
                       <input
                         type="password"
                         name="password"
@@ -167,6 +172,7 @@ const Signup = () => {
                         placeholder="••••••••"
                         className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-md rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required=""
+                        onChange={SignupForm.handleChange} value={SignupForm.values.password}
                       />
                     </div>
 
@@ -195,8 +201,8 @@ const Signup = () => {
                         </label>
                       </div>
                     </div>
-                    <button type='submit' className="shrink-0 inline-block w-full rounded-lg bg-[#6366F1] py-2 font-bold text-white text-md mt-2">
-                      Sign Up
+                    <button type='submit' className="shrink-0 inline-block w-full rounded-lg bg-[#6366F1] py-2 font-medium text-white text-md mt-2">
+                      Create an Account
                     </button>
                     <p className="text-lg font-light text-gray-500 dark:text-gray-400 mt-3">
                       Already have an account ?{" "}
