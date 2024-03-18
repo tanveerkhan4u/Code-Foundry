@@ -7,6 +7,8 @@ import { jwtDecode } from "jwt-decode";
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import { GoogleLogin } from '@react-oauth/google';
 import useAppContext from '../AppContext';
+import { motion } from 'framer-motion';
+import { NavLink } from 'react-router-dom'
 
 
 
