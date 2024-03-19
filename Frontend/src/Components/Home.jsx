@@ -104,7 +104,7 @@ const Home = () => {
     setProductList(filteredData);
   }
   return (
-    <div style={{ overflow: 'hidden' }}  className='bg-[#dbedff]'>
+    <div style={{ overflow: 'hidden' }} >
       {/* <WavyBackground className="max-w-4xl mx-auto pb-40">
         <h1 className='text-center mb-4 -mt-8'>
         </h1>
@@ -112,7 +112,7 @@ const Home = () => {
         Leverage the power of canvas to create a beautiful hero section
         </p>
       </WavyBackground> */}
-      <header className='text-dark w-100  ' >
+      <header className='text-dark w-100  bg-[#dbedff]'>
         <div className='container-fluid py-5'>
       <TypewriterEffectSmooth words={words} />
 

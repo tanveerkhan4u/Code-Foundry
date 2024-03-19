@@ -20,21 +20,24 @@ const Navbar = () => {
       )
     } else {
       return <>
-        <Link
-          to="/Login"
-          className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
-        >
-          Login
-        </Link>
-
-        <Link
-          to="/Signup"
-          className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
-        >
-          Signup
-        </Link>
-
-
+        <div className="flex ">
+          <li>
+            <Link
+              to="/Login"
+              className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
+            >
+              Login
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/Signup"
+              className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
+            >
+              Signup
+            </Link>
+          </li>
+        </div>
       </>
     }
   }
@@ -201,7 +204,7 @@ const Navbar = () => {
       <ul>
 
         {showLoginOptions()}
-        </ul>
+      </ul>
     </nav>
     </div>
   )
