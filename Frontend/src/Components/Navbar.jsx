@@ -1,11 +1,44 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import useAppContext from '../AppContext'
 
 
 
 
 
 const Navbar = () => {
+
+
+  const { loggedIn, logout } = useAppContext();
+
+  const showLoginOptions = () => {
+    if (loggedIn) {
+      return (
+        <li className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4">
+          <button onClick={logout} className='text'>Logout</button>
+        </li>
+      )
+    } else {
+      return <>
+      <NavLink
+        to="/Login"
+        className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
+      >
+        Login
+      </NavLink>
+
+      <NavLink
+        to="/Signup"
+        className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
+      >
+        Signup
+      </NavLink>
+
+
+      </>
+    }
+  }
+
 
 
 
@@ -66,11 +99,11 @@ const Navbar = () => {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
               <NavLink to="/Home">
-              <img
-                className="h-20 w-auto"
-                src="https://th.bing.com/th/id/OIG2..qpctzdoHBeFrDp_BRbR?pid=ImgGn"
-                alt="CodeFoundry"
-              />
+                <img
+                  className="h-20 w-auto"
+                  src="https://th.bing.com/th/id/OIG2..qpctzdoHBeFrDp_BRbR?pid=ImgGn"
+                  alt="CodeFoundry"
+                />
               </NavLink>
             </div>
             <div className="hidden sm:ml-6 sm:block">
@@ -101,11 +134,14 @@ const Navbar = () => {
                 >
                   Feedback
                 </NavLink>
+
+
+
               </div>
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          
+
             {/* Profile dropdown */}
             <div className="relative ml-3">
 
@@ -134,11 +170,11 @@ const Navbar = () => {
       {/* Mobile menu, show/hide based on menu state. */}
       <div className="sm:hidden" id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">
-          
+
           <NavLink
             to="/Home"
             className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
-            
+
           >
             Home
           </NavLink>
@@ -162,6 +198,9 @@ const Navbar = () => {
           </NavLink>
         </div>
       </div>
+      <ul className=' '>
+        {showLoginOptions()}
+      </ul>
     </nav>
     </div>
   )
