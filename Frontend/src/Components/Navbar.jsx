@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import useAppContext from '../AppContext'
 
 
@@ -14,25 +14,25 @@ const Navbar = () => {
   const showLoginOptions = () => {
     if (loggedIn) {
       return (
-        <li className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4">
-          <button onClick={logout} className='text'>Logout</button>
+        <li className=" hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm  w-24 ml-5 mt-4 ">
+          <button onClick={logout} className='text-xl '>Logout</button>
         </li>
       )
     } else {
       return <>
-      <NavLink
-        to="/Login"
-        className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
-      >
-        Login
-      </NavLink>
+        <Link
+          to="/Login"
+          className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
+        >
+          Login
+        </Link>
 
-      <NavLink
-        to="/Signup"
-        className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
-      >
-        Signup
-      </NavLink>
+        <Link
+          to="/Signup"
+          className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
+        >
+          Signup
+        </Link>
 
 
       </>
@@ -198,9 +198,10 @@ const Navbar = () => {
           </NavLink>
         </div>
       </div>
-      <ul className=' '>
+      <ul>
+
         {showLoginOptions()}
-      </ul>
+        </ul>
     </nav>
     </div>
   )
