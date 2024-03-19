@@ -111,11 +111,11 @@ const Home = () => {
         Leverage the power of canvas to create a beautiful hero section
         </p>
       </WavyBackground> */}
-      <header className='text-dark w-100' style={{ backgroundColor: "#dbedff" }}>
+      <header className='text-dark w-100  ' style={{ backgroundColor: "#dbedff" }}>
         <div className='container-fluid py-5'>
       <TypewriterEffectSmooth words={words} />
 
-          <p className='text-center text-gray-500 text-lg'>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
+          <p className='text-center text-gray-500 text-lg '>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
 
           <div className='row'>
             <div className='col-md-7 mx-auto'>
