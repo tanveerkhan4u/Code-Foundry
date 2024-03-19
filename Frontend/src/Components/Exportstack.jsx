@@ -89,16 +89,16 @@ const Exportstack = () => {
 
 
   return (
-    <div className='container-fluid  p-0' style={{backgroundColor:"#dbedff"}}>
+    <div className='flex  p-0' style={{backgroundColor:"#dbedff"}}>
       {/* <button onClick={() => {setSidebarOpen(!sidebarOpen)}}>
         <IconMenu2 color='red' size={30}/>
       </button> */}
 
-      <div className='row '>
 
 
 
-        <div className='col-md-6'>
+      <div className='flex mx-auto md:flex-row  flex-col min-h-screen'>
+        <div className='basis-1/2'>
           <h2 className='text-center p-3' style={{ backgroundColor: "#dbedff" }}> myForm</h2>
           <h5 className='text-white text-center p-3' style={{ backgroundColor: "grey" }}>Standard</h5>
           <div>
@@ -108,95 +108,64 @@ const Exportstack = () => {
               displayStackFiles()
             )
           }
-
-          
-
           <button onClick={generateStack} className=' py-2 mt-3 fs-5 w-100'>Export Stack</button> 
         </div>
 
-        {/* <div className="col-md-6">
-          {displayDependency()}
-        </div> */}
+          
 
 
-        <div className="accordion col-md-6" id="accordionExample">
-  <div className="accordion-item">
-    <h2 className="accordion-header">
-      <button30
-        className="accordion-button"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseOne"
-        aria-expanded="true"
-        aria-controls="collapseOne"
-      >
-        Depedencies
-      </button30>
-    </h2>
-    <div
-      id="collapseOne"
-      className="accordion-collapse collapse show"
-      data-bs-parent="#accordionExample"
-    >
-      <div className="accordion-body ">
+        
+
+        <div className='basis-1/2'>
       <div className="dpedency">
           {displayDependency()}
         </div>
-      </div>
-    </div>
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {/* <div className="col-md-6" style={{ float: 'right', position: 'relative' }}>
-          <h3>vebkjasbckja</h3>
-        </div> */}
-
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
 
 
 
@@ -228,9 +197,3 @@ export default Exportstack;
 
 
 
-<div className="col-md-9">
-  <div className="card">
-    <div className="card-header">Depedencies</div>
-    <h4></h4>
-  </div>
-</div> 

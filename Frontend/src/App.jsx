@@ -39,6 +39,7 @@ import Wavy from './Components/Wavy';
 
 
 
+
 function App() {
 
 
@@ -80,6 +81,7 @@ function App() {
                 <Route path='/Log' element={<Log/>} />
                 <Route path='/Movingcard' element={<Movingcard/>} />
                 <Route path='/Wavy' element={<Wavy/>} />
+               
                 
                 
               </Routes>

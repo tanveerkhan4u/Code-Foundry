@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState , useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -13,6 +13,7 @@ import Movingcard from './Movingcard';
 import Wavy from './Wavy';
 import { TypewriterEffectSmooth } from '../utils/components/Type-writer';
 import WavyBackground from '../utils/components/ui/Wavybackground';
+
 
 const cardsData = [
   {
@@ -103,7 +104,7 @@ const Home = () => {
     setProductList(filteredData);
   }
   return (
-    <div style={{ overflow: 'hidden' }}>
+    <div style={{ overflow: 'hidden' }}  className='bg-[#dbedff]'>
       {/* <WavyBackground className="max-w-4xl mx-auto pb-40">
         <h1 className='text-center mb-4 -mt-8'>
         </h1>
@@ -111,7 +112,7 @@ const Home = () => {
         Leverage the power of canvas to create a beautiful hero section
         </p>
       </WavyBackground> */}
-      <header className='text-dark w-100  ' style={{ backgroundColor: "#dbedff" }}>
+      <header className='text-dark w-100  ' >
         <div className='container-fluid py-5'>
       <TypewriterEffectSmooth words={words} />
 
