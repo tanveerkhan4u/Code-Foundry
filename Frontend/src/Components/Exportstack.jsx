@@ -89,7 +89,7 @@ const Exportstack = () => {
 
 
   return (
-    <div className='flex  p-0' style={{backgroundColor:"#dbedff"}}>
+    <div className='flex  p-0  bg-[#dbedff]'>
       {/* <button onClick={() => {setSidebarOpen(!sidebarOpen)}}>
         <IconMenu2 color='red' size={30}/>
       </button> */}
@@ -99,7 +99,7 @@ const Exportstack = () => {
 
       <div className='flex mx-auto md:flex-row  flex-col min-h-screen'>
         <div className='basis-1/2'>
-          <h2 className='text-center p-3' style={{ backgroundColor: "#dbedff" }}> myForm</h2>
+          <h2 className='text-center p-3' > myForm</h2>
           <h5 className='text-white text-center p-3' style={{ backgroundColor: "grey" }}>Standard</h5>
           <div>
           </div>
@@ -108,7 +108,7 @@ const Exportstack = () => {
               displayStackFiles()
             )
           }
-          <button onClick={generateStack} className=' py-2 mt-3 fs-5 w-100'>Export Stack</button> 
+          <button onClick={generateStack} className=' py-2 mt-3 fs-5 w-full btn btn-primary'>Export Stack</button> 
         </div>
 
           
@@ -117,6 +117,8 @@ const Exportstack = () => {
         
 
         <div className='basis-1/2'>
+
+
       <div className="dpedency">
           {displayDependency()}
         </div>
@@ -126,6 +128,11 @@ const Exportstack = () => {
 
 
 
+    </div>
+  )
+}
+
+export default Exportstack;
 
 
 
@@ -184,16 +191,11 @@ const Exportstack = () => {
           <a id="contact" className="menu-item " href="/contact" style={{ marginLeft: "30px", fontSize: "25px", marginBottom: "10px", textDecoration: "none", color: "grey" }}><i class="fa-solid fa-book-open"></i>&nbsp;Reading List</a>
 
           <a className="menu-item--small" href="" style={{ marginLeft: "30px", fontSize: "25px", marginBottom: "10px", textDecoration: "none", color: "grey" }}>Settings</a>
-        </Menu> */}<br /><br />
+        </Menu> */}
 
 
 
-    </div>
 
-  )
-}
-
-export default Exportstack;
 
 
 
