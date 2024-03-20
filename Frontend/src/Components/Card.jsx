@@ -1,6 +1,7 @@
 
 import React from 'react'
 import { CardBody, CardContainer, CardItem } from "../utils/components/ui/3d-card";
+import { Link } from 'react-router-dom';
 
 function Card({product}) {
   console.log(product);
@@ -38,6 +39,7 @@ function Card({product}) {
           >
             Try now →
           </CardItem>
+          <Link to="/Signup">
           <CardItem
             translateZ={20}
             as="button"
@@ -45,6 +47,7 @@ function Card({product}) {
           >
             Sign up
           </CardItem>
+          </Link>
         </div>
       </CardBody>
     </CardContainer>
