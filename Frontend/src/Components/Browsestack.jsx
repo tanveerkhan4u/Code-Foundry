@@ -211,88 +211,27 @@ const Browsestack = () => {
 
 
       <div className='conatiner-fluid'>
-        <div className='row gy-4 justify-content-center'>
+        <div className='row '>
         {productList.map((product,name) => { 
-          return <div className='col-md-4'>
+          return <div className='col-md-4 py-5'>
             { <Link to= {product.link} className='text-decoration-none'>
-              <Card product={product} />
+              <Card product={product} description={product.description} 
+              />
               </Link> }
           </div>
           })};
+              
+           
           
 
-          {/* <div className='col-md-3 ms-5'>
-            <Link to="/Exportstack/bootstrap" style={{ textDecoration: "none" }}>
-              <div className="card " >
-                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2023/02/Mantis-pro-bootstrap5.png" whileHover={{ scale: 1.1 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />
-                <div className="card-body">
-                  <h5 className='text' >Bootstrap</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className='col-md-3 ms-5'>
-            <Link to="/Exportstack/react" style={{ textDecoration: "none" }}>
-              <div className="card " >
-                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-React-Admin-Template.webp" whileHover={{ scale: 1.1 }}
-                  onHoverStart={e => { }}
-                  onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />
-                <div className="card-body">
-                  <h5 className='text' >React</h5>
-                </div>
-              </div>
-            </Link>
-          </div> */}
+         
         </div>
       </div>
       <br />
 
 
 
-      {/* <div className='conatiner-fluid d-flex'>
-        <div className='row gy-4 justify-content-center'>
-          <div className='col-md-3 ms-5'>
-            <Link to="/Exportstack/angular" style={{ textDecoration: "none" }}>
-              <div className="card" >
-                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2023/08/Mantis-Angular-16-Free-Admin-Template.png"  whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />
-                <div className="card-body">
-                  <h5 className='text' >Angular</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
-          <div className='col-md-3 ms-5'>
-            <Link to="/Exportstack/django" style={{ textDecoration: "none" }}>
-              <div className="card " >
-                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/09/Berry-bootstrap-django.png"  whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }} className="card-img-top img-fluid mx-auto" alt="..." />
-                <div className="card-body">
-                  <h5 className='text' >Django</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className='col-md-3 ms-5'>
-            <Link to="/Exportstack/laravel" style={{ textDecoration: "none" }}>
-              <div className="card">
-                <motion.img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-Laravel-Admin-Dashboard.webp"  whileHover={{ scale: 1.1 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }}className="card-img-top img-fluid mx-auto" alt="..." />
-                <div className="card-body">
-                  <h5 className='text' >Laravel</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </div> */}
+      
       <br />
       <br />
 
