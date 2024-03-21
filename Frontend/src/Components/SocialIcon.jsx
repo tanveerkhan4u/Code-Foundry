@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 
 const SocialIcon = ({ Icons }) => {
@@ -11,7 +12,7 @@ const SocialIcon = ({ Icons }) => {
         rounded-[12px] bg-gray-700 mx-1.5 text-2xl hover:text-gray-100 hover:bg-teal-500
         duration-300 "
         >
-          <ion-icon name={icon.name}></ion-icon>
+         <ion-icon name={icon.name}></ion-icon>
         </span>
       ))}
     </div>
