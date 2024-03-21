@@ -51,7 +51,7 @@ const Feedback = () => {
         <p className='text-center text-muted mt-4 fs-5'>Please provide your feedback so that we can continue to improve our service.
         </p><br />
         <form onSubmit={FeedbackForm.handleSubmit}>
-          <div className='form-group mt-4 col-md-4 mx-auto'>
+          <div className='form-group mt-4 col-md-4 mx-auto '>
 
           <Rating
         onClick={r => setRating(r)}
@@ -76,7 +76,7 @@ const Feedback = () => {
             <label htmlFor="Message"></label>
             <span className='ms-4 fs-6 text-danger'>{FeedbackForm.errors.message}</span>
             <textarea id="message" className='form-control form-control-lg  shadow  mt-4'  placeholder='Your Message' onChange={FeedbackForm.handleChange} value={FeedbackForm.values.message} /><br />
-            <button className='btn btn-primary shadow w-100' type='submit'>Submit</button>
+            <button type="submit" class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-xl w-full px-5 py-2.5 text-center me-2 mb-2 mt-4">Submit</button>
           </div>
         </form>
         <br />
