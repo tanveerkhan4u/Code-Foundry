@@ -95,15 +95,17 @@ const Contact = () => {
                 defaultValue={""}
               />
             </div>
-            <button1  className='w-full mt-5 text-center text-xl  shadow-2xl' type='submit'>
+            {/* <button  className='w-full mt-5 text-center text-xl  shadow-2xl' type='submit'>
               SUBMIT
+              </button> */}
+              <button type="submit" className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2 mt-5 w-full">SUBMIT</button>
+             \ <br/><br/>
               
-              </button1><br/><br/>
+
           </form>
         </div>
             </div>
           
-           
               
               
         
