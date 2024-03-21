@@ -33,4 +33,6 @@ export const Icons = [
   { name: "logo-github", link: "#" },
   { name: "logo-linkedin", link: "#" },
   { name: "logo-instagram", link: "#" },
+  { name: "logo-discord", link: "#" },
+  { name: "logo-youtube", link: "#" },
 ];
