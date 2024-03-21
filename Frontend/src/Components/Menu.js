@@ -1,9 +1,9 @@
 export const PopularCategories = [
-  {name: 'React Templates', link: '#'},
-  {name: 'Vue Templates', link: '#'},
-  {name: 'Angular Templates', link: '#'},
-  {name: 'Bootstrap Templates', link: '#'},
-  {name: 'Express.js Templates', link: '#'},
+  {name: 'React Templates', link: '/Reactdetail'},
+  {name: 'Vue Templates', link: '/Vuedetail'},
+  {name: 'Angular Templates', link: '/Angulardetail'},
+  {name: 'Bootstrap Templates', link: '/Bootstrapdetail'},
+  {name: 'Express.js Templates', link: '/Express'},
 ];
 
 export const Legal = [
@@ -13,7 +13,7 @@ export const Legal = [
 ];
 
 export const Company = [
-  {name: 'Contact Us', link: '#'},
+  {name: 'Contact Us', link: '/Contact'},
   {name: 'About', link: '#'},
   {name: 'Blog', link: '#'},
   {name: 'Hire Us', link: '#'},
