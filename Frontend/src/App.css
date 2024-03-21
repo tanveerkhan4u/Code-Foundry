@@ -1,6 +1,3 @@
-/* footer css starts */
-
-
 /* media screen css starts */
 
 @media screen  and (min-width: 100px) and (max-width: 800px){
@@ -136,6 +133,11 @@
       margin-top: 20px;
       margin-left: -50px;
     } 
+    .contact{
+      padding-right: 100px;
+      margin-top: 20px;
+      margin-left: -50px;
+    }
     
   }
 
