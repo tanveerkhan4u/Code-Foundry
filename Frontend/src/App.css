@@ -1,8 +1,10 @@
 /* media screen css starts */
 
 @media screen  and (min-width: 100px) and (max-width: 800px){
-  .template{
-    display: inline !important;
+  .reactemp{
+    padding-right: 100px;
+      margin-top: 20px;
+      margin-left: 10px;
   }
   .bootstrap{
     display: inline !important;

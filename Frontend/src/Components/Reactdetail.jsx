@@ -6,11 +6,11 @@ const Reactdetail = () => {
   return (
     <div >
 
-      <header className= 'row d-flex background' style={{ backgroundColor: "#dbedff" }}>
+      <header className= 'row background' style={{ backgroundColor: "#dbedff" }}>
 
-        <div className='col-md-6'>
-          <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text mt-5' ><strong className='text-primary'>React </strong> Admin Template</motion.h2>&nbsp;
-          <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text template' >Are you looking for a React Admin Template, For your next project? You are at the right place. We are one of the Best Admin Dashboard makers in the market. Our team develops the<strong className='text' style={{ color: "grey" }}> most advanced, highly customizable </strong> React Template. All our Admin Dashboards are fully responsive and tested on all retina devices. With  <strong className='text' style={{ color: "grey" }}> clean, bug-free and well comment code.</strong></motion.p>&nbsp;
+        <div className='col-md-6 reactemp'>
+          <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text-3xl mt-5' ><strong className='text-primary'>React </strong> Admin Template</motion.h2>&nbsp;
+          <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text ' >Are you looking for a React Admin Template, For your next project? You are at the right place. We are one of the Best Admin Dashboard makers in the market. Our team develops the<strong className='text' style={{ color: "grey" }}> most advanced, highly customizable </strong> React Template. All our Admin Dashboards are fully responsive and tested on all retina devices. With  <strong className='text' style={{ color: "grey" }}> clean, bug-free and well comment code.</strong></motion.p>&nbsp;
           <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} >
           <div className='row'>
             <div className='col-md-9 '>
@@ -70,7 +70,7 @@ const Reactdetail = () => {
       <br />
       <br />
       <div className='container-fluid'>
-        <h2 className='text' style={{ marginLeft: "50px" }}>React Admin Templates</h2><br />
+        <h2 className='text' >React Admin Templates</h2><br />
         <p className='text' style={{ marginLeft: "50px" }}>Well, <strong> React </strong> is a free and open-source front-end JavaScript library for building UI. React dashboard Template are collection of web pages developed with <strong> HTML, CSS, and JavaScript.</strong><br /><br />
 
           Our admin dashboard are built with <strong> Next.js and MUI  </strong>to provide the best developer experience with all the features you need for production. A ready template makes your developing task easy because you don’t wait for the designer to design for you. We develop <strong>responsive and fully customized  </strong>admin templates that will help you to create responsive web apps in no time.<br /><br />
