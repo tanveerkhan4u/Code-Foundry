@@ -1,13 +1,20 @@
 import React from 'react'
 
-const Item = () => {
+const Item = ({Links, title}) => {
   return (
-    <ul className='grid-rows-1 text-center'>
-      <li>some text</li>
-      <li>some text</li>
-      <li>some text</li>
-      <li>some text</li>
-      
+    <ul>
+      <h1 className='mb-3 text-xl font-semibold'>{title}</h1>
+      {Links.map((link) => (
+        <li key={link.name}>
+          <a
+            className="text-gray-400 hover:text-teal-400 duration-300
+          text-md cursor-pointer leading-6  "
+            href={link.link}
+          >
+            {link.name}
+          </a>
+        </li>
+      ))}
     </ul>
   )
 }
