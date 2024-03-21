@@ -28,11 +28,11 @@ export const Support = [
 ];
 
 export const Icons = [
-  { name: "logo-facebook", link: "#" },
-  { name: "logo-twitter", link: "#" },
-  { name: "logo-github", link: '#' },
-  { name: "logo-linkedin", link: "#" },
-  { name: "logo-instagram", link: "#" },
-  { name: "logo-discord", link: "#" },
-  { name: "logo-youtube", link: "#" },
+  { name: "logo-facebook", link: "https://www.facebook.com/" },
+  { name: "logo-twitter", link: "https://twitter.com/" },
+  { name: "logo-github", link: 'https://github.com/' },
+  { name: "logo-linkedin", link: "https://www.linkedin.com/" },
+  { name: "logo-instagram", link: "https://www.instagram.com/" },
+  { name: "logo-discord", link: "https://discord.com/" },
+  { name: "logo-youtube", link: "https://www.youtube.com/" },
 ];
