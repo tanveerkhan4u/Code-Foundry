@@ -95,7 +95,7 @@ const Contact = () => {
                 defaultValue={""}
               />
             </div>
-            <button1  className='w-full mt-5 text-center text-xl ' type='submit'>
+            <button1  className='w-full mt-5 text-center text-xl  shadow-2xl' type='submit'>
               SUBMIT
               
               </button1><br/><br/>
