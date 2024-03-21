@@ -8,10 +8,10 @@ const Item = ({Links, title}) => {
         <li key={link.name}>
           <a
             className="text-gray-400 hover:text-white duration-300
-          text-lg cursor-pointer leading-6  "
+          text-md cursor-pointer leading-loose "
             href={link.link}
           >
-            {link.name}
+            {link.name} 
           </a>
         </li>
       ))}

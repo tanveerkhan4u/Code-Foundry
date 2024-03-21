@@ -1,6 +1,6 @@
 import React from 'react'
 import Item from './Item'
-import { PopularCategories, Legal, Company,Support} from './Menu'
+import { PopularCategories, Legal, Company, Support} from './Menu'
 
 
 const Itemscontainer = () => {
