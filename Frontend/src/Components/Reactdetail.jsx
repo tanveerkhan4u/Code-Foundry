@@ -1,25 +1,50 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import Card from './Card';
+
+
+
+const reactData = [
+  {
+    name: 'React',
+    image: 'https://codedthemes.com/wp-content/uploads/edd/2022/05/Materially-Free-Reactjs-Admin-Template.webp',
+    link: '/Exportstack/react',
+    description : 'Mantis MUI React Dashboard Template'
+  },
+  {
+    name: 'React',
+    image: 'https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-React-Admin-Template.webp',
+    link: '/Exportstack/react',
+    description : 'Berry MUI React Dashboard Template'
+  },
+  {
+    name: 'React',
+    image: 'https://codedthemes.com/wp-content/uploads/edd/2022/05/Gradient-Able-Reactjs-Admin-Dashboard.webp',
+    link: '/Exportstack/react',
+    description : 'Materially ReactJS Admin Dashboard'
+  },
+];
+
 
 const Reactdetail = () => {
   return (
     <div >
 
-      <header className= 'flex mx-auto md:flex-row flex-col min-lg-screen   bg-[#dbedff] '>
+      <header className='flex mx-auto md:flex-row flex-col min-lg-screen   bg-[#dbedff] '>
 
         <div className='basis-1/2  reactemp mt-5'>
           <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text-3xl ' ><strong className='text-primary'>React </strong> Admin Template</motion.h2>&nbsp;
           <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text-gray-500 text-md ' >Are you looking for a React Admin Template, For your next project? You are at the right place. We are one of the Best Admin Dashboard makers in the market. Our team develops the<strong className='text'> most advanced, highly customizable </strong> React Template. All our Admin Dashboards are fully responsive and tested on all retina devices. With  <strong className='text' style={{ color: "grey" }}> clean, bug-free and well comment code.</strong></motion.p>&nbsp;
           <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} >
-          <div className='row'>
-            <div className='col-md-9 mt-4'>
-              <div className='input-group'>
-                <input type="text" className="form-control fs-5" placeholder='Search...' />
-                <button1 >Search</button1>
+            <div className='row'>
+              <div className='col-md-9 mt-4'>
+                <div className='input-group'>
+                  <input type="text" className="form-control fs-5" placeholder='Search...' />
+                  <button1 >Search</button1>
+                </div>
               </div>
             </div>
-          </div>
           </motion.div>
         </div>
         <div className='basis-1/2 reactimg '>
@@ -29,46 +54,22 @@ const Reactdetail = () => {
       <br />
       <br />
       <div className='container'>
-        <div className='row gy-4 justify-content-between'>
-          <div className='col-md-4'>
-            <Link to="/Exportstack/react" style={{ textDecoration: "none" }}>
-              <div className="card">
-                <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Materially-Free-Reactjs-Admin-Template.webp" className="card-img-top img-fluid mx-auto" alt="..." />
-                <div className="card-body">
-                  <h5 className='text' >React</h5>
-                </div>
+        <div className='row '>
+          {
+            reactData.map(data => (
+              <div className="col-md-4 ">
+
+                <Link to={data.link} className='text-decoration-none'>
+                  <Card product={data}  />
+                </Link>
+
               </div>
-            </Link>
-          </div>
-          <div className='col-md-4 '>
-            <Link to="/Exportstack/react" style={{ textDecoration: "none" }}>
-              <div className="card" >
-                <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Datta-Able-React-Admin-Template.webp" className="card-img-top img-fluid mx-auto" alt="..." />
-                <div className="card-body">
-                  <h5 className='text' >React</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
-          <div className='col-md-4'>
-            <Link to="/Exportstack/react" style={{ textDecoration: "none" }}>
-              <div className="card">
-                <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Gradient-Able-Reactjs-Admin-Dashboard.webp" className="card-img-top img-fluid mx-auto" alt="..." />
-                <div className="card-body">
-                  <h5 className='text' >React</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
+            ))
+          }
         </div>
       </div>
       <br />
       <br />
-    
-           
-
-
-
       <div className='container-fluid'>
         <h2 className='text-3xl font-semibold ml-8' >React Admin Templates</h2><br />
         <p className='text ml-8'>Well, <strong> React </strong> is a free and open-source front-end JavaScript library for building UI. React dashboard Template are collection of web pages developed with <strong> HTML, CSS, and JavaScript.</strong><br /><br />
@@ -114,6 +115,11 @@ const Reactdetail = () => {
   )
 }
 export default Reactdetail;
+
+
+
+
+
 
 
 
