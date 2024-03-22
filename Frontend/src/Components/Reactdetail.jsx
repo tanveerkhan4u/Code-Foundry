@@ -6,9 +6,9 @@ const Reactdetail = () => {
   return (
     <div >
 
-      <header className= 'row background' style={{ backgroundColor: "#dbedff" }}>
+      <header className= 'row  bg-[#dbedff] '>
 
-        <div className='col-md-6 reactemp'>
+        <div className='col-md-6 reactemp '>
           <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text-3xl mt-5' ><strong className='text-primary'>React </strong> Admin Template</motion.h2>&nbsp;
           <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text ' >Are you looking for a React Admin Template, For your next project? You are at the right place. We are one of the Best Admin Dashboard makers in the market. Our team develops the<strong className='text' style={{ color: "grey" }}> most advanced, highly customizable </strong> React Template. All our Admin Dashboards are fully responsive and tested on all retina devices. With  <strong className='text' style={{ color: "grey" }}> clean, bug-free and well comment code.</strong></motion.p>&nbsp;
           <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} >
