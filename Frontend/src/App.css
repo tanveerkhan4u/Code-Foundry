@@ -2,9 +2,9 @@
 
 @media screen  and (min-width: 100px) and (max-width: 800px){
   .reactemp{
-    padding-right: 100px;
+    padding-right: 70px;
       margin-top: 20px;
-      margin-left: 10px;
+      
   }
   .bootstrap{
     display: inline !important;
@@ -90,6 +90,7 @@
     }
     .reactimg{
       padding-right: 100px;
+    margin-top: 50px;
     }
     .angularsearch{
       padding-right: 100px;

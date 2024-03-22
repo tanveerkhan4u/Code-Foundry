@@ -6,10 +6,10 @@ const Reactdetail = () => {
   return (
     <div >
 
-      <header className= 'row  bg-[#dbedff] '>
+      <header className= 'flex mx-auto md:flex-row py-5 flex-col min-lg-screen container-fluid  bg-[#dbedff] '>
 
-        <div className='col-md-6 reactemp '>
-          <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text-3xl mt-5' ><strong className='text-primary'>React </strong> Admin Template</motion.h2>&nbsp;
+        <div className='basis-1/2 reactemp '>
+          <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text-3xl ' ><strong className='text-primary'>React </strong> Admin Template</motion.h2>&nbsp;
           <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text ' >Are you looking for a React Admin Template, For your next project? You are at the right place. We are one of the Best Admin Dashboard makers in the market. Our team develops the<strong className='text' style={{ color: "grey" }}> most advanced, highly customizable </strong> React Template. All our Admin Dashboards are fully responsive and tested on all retina devices. With  <strong className='text' style={{ color: "grey" }}> clean, bug-free and well comment code.</strong></motion.p>&nbsp;
           <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} >
           <div className='row'>
@@ -26,8 +26,8 @@ const Reactdetail = () => {
 
 
 
-        <div className='col-md-6 reactimg'>
-          <motion.img animate={{ x: 50, y: -40 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/React-Banner.svg' className='w-100 mx-auto' alt=''></motion.img>
+        <div className='basis-1/2 reactimg '>
+          <motion.img animate={{ x: 50, y: -40 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/React-Banner.svg' className='w-100 mx-auto ' alt=''></motion.img>
         </div>
       </header>
     
