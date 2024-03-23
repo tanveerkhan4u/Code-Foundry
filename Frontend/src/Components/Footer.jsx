@@ -3,7 +3,7 @@ import Itemscontainer from './Itemscontainer'
 import SocialIcon from './SocialIcon'
 import { Icons } from './Menu'
 import { NavLink } from 'react-router-dom'
-
+  
 const Footer = () => {
   return (<footer className="bg-gray-900 text-white">
     <div className='md:flex  md: justify-between md:items-center sm: px-12 px-4 bg-[#0E145A] py-7'>

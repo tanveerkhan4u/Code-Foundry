@@ -14,30 +14,26 @@ const Navbar = () => {
   const showLoginOptions = () => {
     if (loggedIn) {
       return (
-        <li className=" hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm  w-24 ml-5 mt-4 ">
-          <button onClick={logout} className='text-xl '>Logout</button>
-        </li>
+        <button onClick={logout} className="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 py-2 text-sm fs-5 mt-4">Logout</button>
       )
     } else {
       return <>
-        <div className="flex ">
-          <li>
-            <Link
-              to="/Login"
-              className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
-            >
-              Login
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/Signup"
-              className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
-            >
-              Signup
-            </Link>
-          </li>
-        </div>
+
+        <NavLink
+          to="/Login"
+          className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
+        >
+          Login
+        </NavLink>
+
+
+        <NavLink
+          to="/Signup"
+          className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
+        >
+          Signup
+        </NavLink>
+
       </>
     }
   }
@@ -114,14 +110,13 @@ const Navbar = () => {
 
                 <NavLink
                   to="/Home"
-                  className="bg-blue-500 text-white rounded-md px-3 py-2 text-sm fs-5 mt-4 "
-
+                  className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4 "
                 >
                   Home
                 </NavLink>
                 <NavLink
                   to="/Browsestack"
-                  className=" hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
+                  className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
                 >
                   Browse Stack
                 </NavLink>
@@ -138,6 +133,7 @@ const Navbar = () => {
                   Feedback
                 </NavLink>
 
+                {showLoginOptions()}
 
 
               </div>
@@ -203,7 +199,7 @@ const Navbar = () => {
       </div>
       <ul>
 
-        {showLoginOptions()}
+
       </ul>
     </nav>
     </div>
