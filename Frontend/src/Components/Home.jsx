@@ -105,22 +105,16 @@ const Home = () => {
   }
   return (
     <div style={{ overflow: 'hidden' }} >
-      {/* <WavyBackground className="max-w-4xl mx-auto pb-40">
+      <WavyBackground className="max-w-4xl mx-auto pb-40">
         <h1 className='text-center mb-4 -mt-8'>
-        </h1>
-        <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
-        Leverage the power of canvas to create a beautiful hero section
-        </p>
-      </WavyBackground> */}
-      <header className='text-dark w-100  bg-[#dbedff]'>
-        <div className='container-fluid py-5'>
       <TypewriterEffectSmooth words={words} />
-
-          <p className='text-center text-gray-500 text-lg '>Explore our curated collection of free and premium admin dashboard template for your next project!</p>
-
+        </h1>
+        <p className="text-base md:text-lg mt-4  font-normal inter-var text-center text-dark-500 mt-3 ">
+        Explore our curated collection of free and premium admin dashboard template for your next project!
+        </p>
           <div className='row'>
-            <div className='col-md-7 mx-auto'>
-              <div className='input-group mt-2'>
+            <div className='col-md-9 mx-auto'>
+              <div className='input-group mt-5'>
                 <input type="text" className="form-control fs-5" placeholder='Search...' ref={searchRef} />
                 <button1 onClick={searchProduct} className=" p-2" >
                   <div className="original" >Search</div>
@@ -130,12 +124,18 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className='text-center'>
-            <img className='text-center img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/03/main-banner-bottom-img-1.png' alt=''></img>
-          </div>
+      </WavyBackground>
+      {/* <header className='text-dark w-100  bg-[#dbedff]'>
+        <div className='container-fluid py-5'> */}
 
-        </div>
-      </header>
+          {/* <p className='text-center text-gray-500 text-lg '>Explore our curated collection of free and premium admin dashboard template for your next project!</p> */}
+
+          {/* <div className='text-center'>
+            <img className='text-center img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/03/main-banner-bottom-img-1.png' alt=''></img>
+          </div> */}
+
+        {/* </div>
+      </header> */}
       <br /><br />
       <div className='container'>
         <h3 className='text-center  text-gray-500 text-2xl mb-4'>We create custom for the application using the following technology</h3>
