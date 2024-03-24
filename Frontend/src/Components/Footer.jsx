@@ -3,6 +3,7 @@ import Itemscontainer from './Itemscontainer'
 import SocialIcon from './SocialIcon'
 import { Icons } from './Menu'
 import { NavLink } from 'react-router-dom'
+
   
 const Footer = () => {
   return (<footer className="bg-gray-900 text-white">

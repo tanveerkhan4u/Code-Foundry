@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import useAppContext from '../AppContext'
-
-
+import download from './images/download.png'
 
 
 
@@ -97,13 +96,13 @@ const Navbar = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <NavLink to="/Home">
+              <Link to="/Home">
                 <img
                   className="h-20 w-auto"
-                  src="https://th.bing.com/th/id/OIG2..qpctzdoHBeFrDp_BRbR?pid=ImgGn"
+                  src={download}
                   alt="CodeFoundry"
                 />
-              </NavLink>
+              </Link>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4 ">
