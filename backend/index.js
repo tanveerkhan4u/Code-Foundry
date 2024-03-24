@@ -24,5 +24,7 @@ app.use('/stack', StackRouter);
 app.use('/contact', ContactRouter);
 app.use('/feedback', FeedbackRouter);
 
+app.use(express.static('./zipFiles'));
+
 
 app.listen(port, () => { console.log('server started!!'); });

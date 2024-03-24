@@ -12,10 +12,10 @@ const Exportstack = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const [selDependencies, setSelDependencies] = useState([]);
+  const [downloadUrl, setDownloadUrl] = useState('');
 
 
   const [name, setname] = useState();
-  console.log(name);
 
 
   // const { depname } = useParams();
@@ -59,7 +59,6 @@ const Exportstack = () => {
 
   const { stackname } = useParams();
   const selStack = stackData.find(stack => stack.name === stackname);
-  console.log(selStack.structure);
   const displayStackFiles = () => {
     return <div className='card '>
       <div className='card-header'>
@@ -78,13 +77,20 @@ const Exportstack = () => {
   const generateStack = async () => {
     const res = await fetch('http://localhost:5000/stack/generate', {
       method: 'POST',
-      body: JSON.stringify(selStack),
+      body: JSON.stringify({selStack : selStack, projectName: name, dependencies : [] }),
       headers: {
         'Content-Type': 'application/json'
       }
     });
 
     console.log(res.status);
+    const data = await res.json();
+    console.log(data);
+    setDownloadUrl('http://localhost:5000/'+data.zipFilename);
+  }
+
+  const downloadFileFromUrl = () => {
+     
   }
 
 
@@ -99,7 +105,8 @@ const Exportstack = () => {
 
       <div className='flex mx-auto md:flex-row  flex-col min-h-screen'>
         <div className='basis-1/2'>
-          <h2 className='text-center p-3' > myForm</h2>
+          <h2 className='text-center p-3'> myForm</h2>
+          <input type="text" className='w-full p-2' placeholder='Enter Stack Name' onChange={(e) => setname(e.target.value)} />
           <h5 className='text-white text-center p-3' style={{ backgroundColor: "grey" }}>Standard</h5>
           <div>
           </div>
@@ -109,6 +116,11 @@ const Exportstack = () => {
             )
           }
           <button onClick={generateStack} className=' py-2 mt-3 fs-5 w-full btn btn-primary'>Export Stack</button> 
+          {
+            downloadUrl !== '' && (
+              <a target='_blank' href={downloadUrl} className=' py-2 mt-3 fs-5 w-full btn btn-primary'>Download Stack</a>
+            )
+          }
         </div>
 
           

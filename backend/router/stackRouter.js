@@ -4,7 +4,7 @@ const path = require('path');
 
 const router = express.Router();
 
-const createStackFiles = (structure, projectName) => { 
+const createStackFiles = (structure, projectName, cb) => { 
   const rootDir = path.dirname(require.main.filename);
   const destDir = path.join(rootDir, 'generatedStacks' , projectName);
   console.log(destDir);
@@ -13,16 +13,19 @@ const createStackFiles = (structure, projectName) => {
     createFolder(path.join(destDir, fileData.dirname));
     createFile(path.join(destDir,fileData.dirname, fileData.filename), fileData.content);
   });
-
-  zipFolder(structure, path.join(destDir, `${projectName}.zip`), projectName);
+  // createFolder(path.join(rootDir, 'zipFiles', projectName));
+  zipFolder(structure, path.join(path.join(rootDir, 'zipFiles'), `${projectName}.zip`), projectName, cb);
 }
 
 router.post('/generate', (req, res) => {
-  const {name, structure} = req.body;
-  const projectName = 'myproject';
+  const {projectName, selStack} = req.body;
+  
+  const {structure, name} = selStack;
+
   console.log(structure);
-  createStackFiles(structure, projectName);
-  res.send('request received!');
+  createStackFiles(structure, projectName, (zipFilename) => {
+    res.status(200).json({zipFilename});
+  });
 });
 
 module.exports = router;

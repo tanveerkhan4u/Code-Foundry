@@ -25,7 +25,7 @@ const createFolder = (name) => {
 
 }
 
-const zipFolder = (structure, zipName, projectName) => {
+const zipFolder = (structure, zipName, projectName, cb) => {
 
   const rootDir = path.dirname(require.main.filename);
   const destDir = path.join(rootDir, 'generatedStacks' , projectName);
@@ -51,6 +51,7 @@ const zipFolder = (structure, zipName, projectName) => {
       .pipe(fs.createWriteStream(zipName))
       .on('finish', function () {
         console.log(`Zip written to ${zipName}`);
+        cb(projectName+'.zip')
       });
   
   } catch (err) {
