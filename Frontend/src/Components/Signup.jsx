@@ -107,7 +107,7 @@ const Signup = () => {
 
   return (
     <>
-      <div className="flex mx-auto md:flex-row  flex-col min-h-screen  bg-[#dbedff]">
+      <div className="flex mx-auto md:flex-row  flex-col min-h-screen  bg-[#dbedff]" style={{ overflow: 'hidden' }}>
         <div className='basis-1/2'>
           <motion.img animate={{ x: 100, y: 20 }} transition={{ ease: "easeOut", duration: 2 }} src='https://i0.wp.com/stackdigi.com/storage/2020/04/logo-design.png?w=351&ssl=1' className='mx-auto mt-5 soimg' alt='' />
         </div>

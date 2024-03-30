@@ -83,9 +83,9 @@ const Browsestack = () => {
                 slidesPerView: 5,
                 spaceBetween: 30
               },
-
-
             }}
+
+
 
             autoplay={{
               delay: 2500,
