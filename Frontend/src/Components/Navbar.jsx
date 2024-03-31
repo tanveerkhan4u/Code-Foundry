@@ -165,7 +165,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
       {/* Mobile menu, show/hide based on menu state. */}
+      
       <div className="sm:hidden" id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">
 
@@ -206,6 +208,7 @@ const Navbar = () => {
           >
             Signup
           </NavLink>
+          
         </div>
       </div>
       <ul>
