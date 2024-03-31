@@ -111,10 +111,10 @@ const Login = () => {
   return (
     <>
       <form onSubmit={Loginform.handleSubmit}>
-        <div className='flex mx-auto md:flex-row  flex-col bg-[#dbedff]'>
+        <div className='flex mx-auto md:flex-row  max-h-screen flex-col bg-[#dbedff]'>
 
           <div className='basis-1/2 mb-5 '>
-            <motion.img animate={{ x: 50, y: -10 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='mt-5 mx-auto loimg' alt='' />
+            <motion.img animate={{ x: 100, y: -10 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='mt-5 mx-auto loimg' alt='' />
           </div>
           <div className="flex h-screen w-screen items-center -mt-10">
 
