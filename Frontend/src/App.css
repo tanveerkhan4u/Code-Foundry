@@ -1,6 +1,6 @@
 /* media screen css starts */
 
-@media screen  and (min-width: 100px) and (max-width: 800px){
+@media screen  and (min-width: 100px) and (max-width: 1000px){
   .reactemp{
     padding-right: 70px;
       margin-top: 20px;
@@ -83,10 +83,15 @@
     .soimg{
       display: inline !important;
       padding-right: 150px;
+      
+  
+      
+      
     }
     .simg{
       display: inline !important;
       padding-left: 100px;
+      
     }
     .reactimg{
       padding-right: 100px;
@@ -144,7 +149,8 @@
     
   }
 
-  
+ /* CSS for tablet devices */
+
 
   
 
