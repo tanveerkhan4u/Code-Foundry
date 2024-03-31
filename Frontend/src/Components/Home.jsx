@@ -106,7 +106,7 @@ const Home = () => {
   return (
     <div style={{ overflow: 'hidden' }} >
       <WavyBackground className="max-w-4xl mx-auto pb-40">
-        <h1 className='text-center mb-4 -mt-8'>
+        <h1 className='text-center mb-4 -mt-8 '>
       <TypewriterEffectSmooth words={words} />
         </h1>
         <p className="text-base md:text-lg mt-4  font-normal inter-var text-center text-dark-500 mt-3 ">
