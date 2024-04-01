@@ -68,15 +68,12 @@
     .native{
       display: inline !important;
     }
-    .loimg{
-      display: inline !important;
-      
-    }
+    
     .cont{
       padding-right: 100px;
     }
       
-     .broimg{
+     .broimg {
       padding-right: 100px;
     
     } 
@@ -149,7 +146,7 @@
     
   }
 
- /* CSS for tablet devices */
+ 
 
 
   
