@@ -80,11 +80,14 @@
     .soimg{
       display: inline !important;
       padding-right: 150px;
+    }
+    .loimg{
+      padding-right: 100px;
+    }
       
   
       
       
-    }
     .simg{
       display: inline !important;
       padding-left: 100px;
@@ -147,7 +150,6 @@
   }
 
  
-
 
   
 

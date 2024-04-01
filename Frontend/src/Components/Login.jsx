@@ -109,12 +109,12 @@ const Login = () => {
 
 
   return (
-    <>
+    <div style={{overflow:"hidden"}}>
       <form onSubmit={Loginform.handleSubmit}>
         <div className='flex mx-auto md:flex-row   flex-col bg-[#dbedff]'>
 
-          <div className='basis-1/2 mb-5 loimg'>
-            <motion.img animate={{ x: 100, y: -10 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='mt-5 mx-auto ' alt='' />
+          <div className='basis-1/2 mb-5 '>
+            <motion.img animate={{ x: 100, y: -10 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/sign-in-left-img-1.png.webp' className='mt-5 mx-auto loimg' alt='' />
           </div>
           <div className="flex h-screen w-screen items-center -mt-10">
 
@@ -213,7 +213,7 @@ const Login = () => {
         </div>
       </form>
 
-    </>
+    </div>
   )
 }
 
