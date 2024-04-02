@@ -45,7 +45,7 @@ const Feedback = () => {
         <p className='text-center text-muted mt-4 fs-5'>Please provide your feedback so that we can continue to improve our service.
         </p><br />
         <form onSubmit={FeedbackForm.handleSubmit}>
-          <div className='form-group mt-4 col-md-4 mx-auto '>
+          <div className='form-group -mt-8 col-md-4 mx-auto '>
 
           
             <label htmlFor="Name"></label>
