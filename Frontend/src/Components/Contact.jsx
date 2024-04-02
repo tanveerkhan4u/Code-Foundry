@@ -25,7 +25,7 @@ const Contact = () => {
     onSubmit: async (values, { setSubmitting, resetForm }) => {
       console.log(values);
       setSubmitting(true);
-      const res = await fetch('http://localhost:5000/contact/add', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/contact/add`, {
         method: 'POST',
         body: JSON.stringify(values),
         headers: {
@@ -50,11 +50,11 @@ const Contact = () => {
         <div className='row'>
     
             <div className='col-md-6' style={{backgroundColor:"#dbedff" , maxHeight: "540px" }}>
-              <motion.h1 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text mt-5 ms-5 text-4xl'><strong className='text-primary'>Contact</strong> Us</motion.h1>&nbsp;
-              <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text ms-5   cont'>Just send us your questions or concerns, We will give you the help you need.
+              <motion.h1 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text mt-5 ms-3 text-4xl'><strong className='text-primary'>Contact</strong> Us</motion.h1>&nbsp;
+              <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text ms-3  cont'>Just send us your questions or concerns,<br/> We will give you the help you need.
               </motion.p>
               
-              <motion.img animate={{ x: -20, y: -20 }} transition={{ ease: "easeOut", duration: 2 }} className='img-fluid mx-auto mt-5' src='https://codedthemes.com/wp-content/uploads/2022/04/contact-us-banner-img.png.webp' alt=''></motion.img>
+              <motion.img animate={{ x: -30, y: -20 }} transition={{ ease: "easeOut", duration: 2 }} className='img-fluid mx-auto mt-5' src='https://codedthemes.com/wp-content/uploads/2022/04/contact-us-banner-img.png.webp' alt=''></motion.img>
           
 
               
@@ -99,7 +99,7 @@ const Contact = () => {
               SUBMIT
               </button> */}
               <button type="submit" className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2 mt-5 w-full">SUBMIT</button>
-             \ <br/><br/>
+              <br/><br/>
               
 
           </form>

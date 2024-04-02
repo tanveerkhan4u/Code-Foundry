@@ -2,19 +2,13 @@ import React, { useState } from 'react'
 import { useFormik } from 'formik';
 import { enqueueSnackbar } from 'notistack';
 import { useNavigate } from 'react-router-dom';
-import { Rating } from 'react-simple-star-rating'
-import {IconMoodHappy, IconMoodHappyFilled} from '@tabler/icons-react';
-
 
 
 
 
 const Feedback = () => {
   
-  const [rating, setRating] = useState(0);
-
-  const [onPointerMove, setonPointerMove] = useState(0);
-
+  
   const FeedbackForm = useFormik({
 
     initialValues: {
@@ -27,7 +21,7 @@ const Feedback = () => {
     onSubmit: async (values, { setSubmitting, resetForm }) => {
       console.log(values);
       setSubmitting(true);
-      const res = await fetch('http://localhost:5000/feedback/add', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/feedback/add`, {
         method: 'POST',
         body: JSON.stringify(values),
         headers: {
@@ -53,20 +47,7 @@ const Feedback = () => {
         <form onSubmit={FeedbackForm.handleSubmit}>
           <div className='form-group mt-4 col-md-4 mx-auto '>
 
-          <Rating
-        onClick={r => setRating(r)}
-        iconsCount={10}
-        initialValue={10}
-        fillIcon={<IconMoodHappyFilled size={30} strokeWidth={1} color="#ffcc00" />}
-        emptyIcon={<IconMoodHappy size={30} strokeWidth={1} color="#ffcc00" />}
-        
-        onPointerMove={onPointerMove => setonPointerMove(onPointerMove)}
-      
-        
-        // onPointerEnter={onPointerEnter}
-        // onPointerLeave={onPointerLeave}
-        /* Available Props */
-      />
+          
             <label htmlFor="Name"></label>
             <span className='ms-4 fs-6 text-danger'>{FeedbackForm.errors.name}</span>
             <input type="text" className='form-control form-control-lg shadow mt-4' placeholder='Your Name' id='name' onChange={FeedbackForm.handleChange} value={FeedbackForm.values.name} />
