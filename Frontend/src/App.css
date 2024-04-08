@@ -66,10 +66,11 @@
 
   .next {
     display: inline !important;
+    margin-right: 60px;
   }
 
   .nextimage {
-    padding-right: 70px;
+    padding-right: 100px;
     margin-bottom: 20px;
   }
 

@@ -6,14 +6,14 @@ const Nextdetail = () => {
   return (
     <div>
 
-      <header className='row  d-flex' style={{ backgroundColor: "#dbedff" }}>
-        <div className='col-md-6  py-5' style={{ height: "450px" }}>
-          <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text'><strong className='text-primary'>NEXT.JS </strong> Admin template</motion.h2>&nbsp;
-          <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text next' style={{color: "grey" }}>Next.js is an open-source web development framework created by the private company Vercel providing React-based web applications with server-side rendering and static website generation.</motion.p>&nbsp;
+      <header className='flex mx-auto md:flex-row flex-col min-lg-screen   bg-[#dbedff]'>
+        <div className='basis-1/2 mt-5 next'>
+          <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text-3xl'><strong className='text-primary'>NEXT.JS </strong> Admin template</motion.h2>&nbsp;
+          <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text-gray-500 text-md ' >Next.js is an open-source web development framework created by the private company Vercel providing React-based web applications with server-side rendering and static website generation.</motion.p>&nbsp;
 
           <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} >
           <div className='row'>
-            <div className='col-md-9 nextsearch'>
+            <div className='col-md-9 '>
               <div className='input-group'>
                 <input type="text" className="form-control fs-5" placeholder='Search...' />
                 <button1 >Search</button1>
@@ -22,8 +22,8 @@ const Nextdetail = () => {
           </div>
           </motion.div>
         </div>
-      <div className='col-md-4 mt-5 mx-auto nextimage'>
-        <motion.img animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} src='https://images.prismic.io/turing/652ec31afbd9a45bcec81965_Top_Features_in_Next_js_13_7f9a32190f.webp?auto=format,compress' className='img-fluid mx-auto' alt=''></motion.img>
+      <div className= 'basis-1/2 mt-5  nextimage mb-5'>
+        <motion.img animate={{ x: 70 }} transition={{ ease: "easeOut", duration: 2 }} src='https://images.prismic.io/turing/652ec31afbd9a45bcec81965_Top_Features_in_Next_js_13_7f9a32190f.webp?auto=format,compress' className='img-fluid w-96 h-70' alt=''></motion.img>
       </div>
       </header>
       <br />
