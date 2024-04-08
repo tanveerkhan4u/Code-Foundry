@@ -6,11 +6,12 @@
       margin-top: 20px;
       
   }
-  
-  .bootstrap{
-    display: inline !important;
+  .bootemp{
+    padding-right: 70px;
+    margin-top: 20px;
   }
-  .angular{
+  
+    .angular{
     display: inline !important;
   }
   .vue{
@@ -93,6 +94,10 @@
     .reactimg{
       padding-right: 100px;
     margin-top: 50px;
+    }
+    .booimg{
+      padding-right: 50px;
+      margin-top: 50px;
     }
     .angularsearch{
       padding-right: 100px;
