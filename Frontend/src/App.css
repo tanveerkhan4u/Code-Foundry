@@ -61,14 +61,14 @@
     padding-right: 100px;
   }
 
-.solidimg {
-    
+  .solidimg {
+
     width: 300px !important;
     height: 200px !important;
   }
-  
 
-  
+
+
 
 
 
@@ -93,13 +93,12 @@
   }
 
   .expressimg {
-    padding-right: 100px;
-    margin-bottom: 20px;
+    width: 330px !important;
+    height: 200px !important;
+    margin-top: -30px;
   }
 
-  .express {
-    display: inline !important;
-  }
+
 
   .nativeimg {
     padding-right: 170px;
@@ -153,6 +152,9 @@
 
   }
 
+  .exptemp {
+    margin-right: 70px;
+  }
 
 
   .nextsearch {
@@ -170,11 +172,6 @@
     margin-top: 20px;
   }
 
-  .exsearch {
-    padding-right: 100px;
-    margin-top: 50px;
-    margin-left: -50px;
-  }
 
   .nativesearch {
     padding-right: 100px;

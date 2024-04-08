@@ -31,7 +31,7 @@ const Reactdetail = () => {
   return (
     <div >
 
-      <header className='flex mx-auto md:flex-row flex-col min-lg-screen   bg-[#dbedff] '>
+      <header className='flex mx-auto md:flex-row flex-col min-lg-screen bg-[#dbedff]'>
 
         <div className='basis-1/2  reactemp mt-5'>
           <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text-3xl ' ><strong className='text-primary'>React </strong> Admin Template</motion.h2>&nbsp;
