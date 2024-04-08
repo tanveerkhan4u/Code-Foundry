@@ -1,12 +1,13 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom' 
+import { Link } from 'react-router-dom'
+import Card from './Card'; 
 
 const Vuedetail = () => {
   return (
     <div>
-      <header className='row  d-flex' style={{ backgroundColor: "#dbedff" }}>
-        <div className='col-md-6 py-5' >
+      <header className='flex mx-auto md:flex-row flex-col min-lg-screen   bg-[#dbedff] '>
+        <div className='basis-1/2 ' >
           <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text '><strong className='text-primary'>Vue </strong> Admin Template</motion.h2>&nbsp;
           <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text vue' style={{color:"grey" }}>Are you looking for a Vue Admin Template, For your next project? You are at the right place. We are one of the Best Admin Dashboard makers in the market. Our team develops the<strong className='text' style={{ color: "grey" }}> most advanced, highly customizable </strong> Vuejs Template. All our Admin Dashboards are fully responsive and tested on all retina devices. With  <strong className='text' style={{ color: "grey" }}> clean, bug-free and well comment code.</strong></motion.p>&nbsp;
           <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} >
@@ -20,7 +21,7 @@ const Vuedetail = () => {
           </div>
           </motion.div>
         </div>
-      <div className='col-md-6 vue image'>
+      <div className='basis-1/2 vue image'>
         <motion.img animate={{ x: 20, y: -40 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/11/vue-banner.svg' className='img-fluid mx-auto' alt=''></motion.img>
       </div>
       </header>
