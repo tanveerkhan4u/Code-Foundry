@@ -29,11 +29,16 @@
    margin-right: 40px;
   }
   .lion{
-    padding-right: 70px;
+  
+    margin-top: 40px;
+    width: 80%;
+    /* height: 40%; */
   }
-    .nest{
-      display: inline !important;
-    }
+   .nestemp{
+    display: inline !important;
+    padding-right: 50px;
+    margin-top: 20px;
+   }
     .svelte{
       display: inline !important;
     }
@@ -131,7 +136,7 @@
       margin-left: -50px;
     }
     .nestsearch{
-      padding-right: 100px;
+      padding-right: 20px;
       margin-top: 20px;
     }
     .exsearch{
