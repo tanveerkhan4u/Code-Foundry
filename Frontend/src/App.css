@@ -58,11 +58,19 @@
 
   .solid {
     display: inline !important;
+    padding-right: 100px;
   }
 
-  .solidimage {
-    padding-right: 110px;
+.solidimg {
+    
+    width: 300px !important;
+    height: 200px !important;
   }
+  
+
+  
+
+
 
   .next {
     display: inline !important;
@@ -133,10 +141,11 @@
     padding-right: 50px;
     margin-top: 50px;
   }
-.sveimg{
-  padding-right: 50px;
-  margin-bottom: 20px;
-}
+
+  .sveimg {
+    padding-right: 50px;
+    margin-bottom: 20px;
+  }
 
 
   .svesearch {
@@ -144,11 +153,7 @@
 
   }
 
- 
-  .solidsearch {
-    padding-right: 100px;
-    margin-top: 50px;
-  }
+
 
   .nextsearch {
     padding-right: 100px;
