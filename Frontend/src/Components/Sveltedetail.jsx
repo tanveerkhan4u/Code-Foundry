@@ -7,14 +7,14 @@ import { Link } from 'react-router-dom'
 const Uikitdetail = () => {
   return (
     <div>
-      <header className='row  d-flex' style={{ backgroundColor: "#dbedff" }}>
-        <div className='col-md-6 py-5'>
-          <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text'><strong className='text-primary'>Svelte</strong></motion.h2>&nbsp;
-          <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text svelte' style={{color: "grey" }}>Build a Website and landing page with a powerful Svelte by CodedFoundry.com. CodeFoundry Svelte helps you to create a modern design and useful elements with the help of Advance Template.
+      <header className='flex mx-auto md:flex-row flex-col min-lg-screen   bg-[#dbedff] '>
+        <div className='basis-1/2 mt-5  svesearch'>
+          <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text-3xl'><strong className='text-primary'>Svelte</strong></motion.h2>&nbsp;
+          <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text-gray-500 text-md'>Build a Website and landing page with a powerful Svelte by CodedFoundry.com. CodeFoundry Svelte helps you to create a modern design and useful elements with the help of Advance Template.
           </motion.p>&nbsp;
           <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} >
           <div className='row'>
-            <div className='col-md-9 svesearch'>
+            <div className='col-md-9 '>
               <div className='input-group'>
                 <input type="text" className="form-control fs-5" placeholder='Search...' />
                 <button1 >Search</button1>
@@ -25,7 +25,7 @@ const Uikitdetail = () => {
         </div>
 
 
-      <div className='col-md-5'>
+      <div className='basis-1/2'>
         <motion.img animate={{ x: 50, }} transition={{ ease: "easeOut", duration: 2 }} src='https://cdn.hashnode.com/res/hashnode/image/upload/v1619358925225/50e2XssdE.png' className='img-fluid mx-auto' alt=''></motion.img>
       </div>
       </header>
