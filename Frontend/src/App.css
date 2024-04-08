@@ -1,172 +1,201 @@
 /* media screen css starts */
 
-@media screen  and (min-width: 100px) and (max-width: 1000px){
-  .reactemp{
+@media screen and (min-width: 100px) and (max-width: 1000px) {
+  .reactemp {
     padding-right: 70px;
-      margin-top: 20px;
-      
+    margin-top: 20px;
+
   }
-  .bootemp{
+
+  .bootemp {
     padding-right: 70px;
     margin-top: 20px;
   }
-  
-    .angutemp{
-      padding-right: 70px;
-      margin-top: 20px;
-    }
-    .anguimg{
-  margin-right: 70px;
+
+  .angutemp {
+    padding-right: 70px;
+    margin-top: 20px;
+  }
+
+  .anguimg {
+    margin-right: 70px;
     margin-top: 60px;
-    margin-bottom:  -80px;
-    }
-  .vue{
+    margin-bottom: -80px;
+  }
+
+  .vue {
     padding-right: 70px;
   }
-  .vueimage{
+
+  .vueimage {
     display: inline !important;
     margin-top: 40px;
-   margin-right: 40px;
+    margin-right: 40px;
   }
-  .lion{
-  
+
+  .lion {
+
     margin-top: 40px;
     width: 80%;
-    
+
   }
-   .nestemp{
+
+  .nestemp {
     display: inline !important;
     padding-right: 50px;
     margin-top: 20px;
-   }
-    .svelte{
-      display: inline !important;
-    }
-    .ember{
-      display: inline !important;
-    }
-    .tiger{
-      padding-right: 100px;
-    }
-    .solid{
-      display: inline !important;
-    }
-    .solidimage{
-      padding-right: 110px;
-    }
-    .next{
-      display: inline !important;
-    }
-    .nextimage{
-      padding-right: 70px;
-      margin-bottom: 20px;
-    }
-    .graph{
-      display: inline !important;
-    }
-    .graphimage{
-      padding-right: 160px;
-      margin-bottom: 20px;
-      
-    }
-    .expressimg{
-      padding-right: 100px;
-      margin-bottom: 20px;
-    }
-    .express{
-      display: inline !important;
-    }
-    .nativeimg{
-      padding-right: 170px;
-      margin-bottom: 20px;
-    }
-    .native{
-      display: inline !important;
-    }
-    
-    .cont{
-      padding-right: 100px;
-    }
-      
-     .broimg {
-      padding-right: 100px;
-    
-    } 
-    .soimg{
-      display: inline !important;
-      padding-right: 150px;
-    }
-    
-      
-      
-    .simg{
-      display: inline !important;
-      padding-left: 100px;
-      
-    }
-    .reactimg{
-      padding-right: 100px;
-    margin-top: 50px;
-    }
-    .booimg{
-      padding-right: 50px;
-      margin-top: 50px;
-    }
-    
-   
-    
-    .svesearch{
-      padding-right: 70px;
-    
-    }
-    .embersearch{
-      padding-right: 150px;
-      margin-top: 50px; 
-    }
-    .solidsearch{
-      padding-right: 100px;
-      margin-top: 50px;
-    }
-    .nextsearch{
-      padding-right: 100px;
-    }
-    .qlsearch{
-      padding-right: 100px;
-      margin-top: 50px;
-      margin-left: -50px;
-    }
-    .nestsearch{
-      padding-right: 20px;
-      margin-top: 20px;
-    }
-    .exsearch{
-      padding-right: 100px;
-      margin-top: 50px;
-      margin-left: -50px;
-    }
-    .nativesearch{
-      padding-right: 100px;
-      margin-top: 20px;
-      margin-left: -50px;
-    } 
-    .contact{
-      padding-right: 100px;
-      margin-top: 20px;
-      margin-left: -50px;
-    }
-    
   }
 
- 
-@media screen and (min-width: 1000px) and (max-width: 1920px){
-.loimg{
-  width: 100%;
-  margin-top: 200px;
-}
-}
-  
+  .ember {
+    display: inline !important;
+  }
 
-  /* ui verse checkbox css start from exportstack files */
+  .tiger {
+    padding-right: 100px;
+  }
+
+  .solid {
+    display: inline !important;
+  }
+
+  .solidimage {
+    padding-right: 110px;
+  }
+
+  .next {
+    display: inline !important;
+  }
+
+  .nextimage {
+    padding-right: 70px;
+    margin-bottom: 20px;
+  }
+
+  .graph {
+    display: inline !important;
+  }
+
+  .graphimage {
+    padding-right: 160px;
+    margin-bottom: 20px;
+
+  }
+
+  .expressimg {
+    padding-right: 100px;
+    margin-bottom: 20px;
+  }
+
+  .express {
+    display: inline !important;
+  }
+
+  .nativeimg {
+    padding-right: 170px;
+    margin-bottom: 20px;
+  }
+
+  .native {
+    display: inline !important;
+  }
+
+  .cont {
+    padding-right: 100px;
+  }
+
+  .broimg {
+    padding-right: 100px;
+
+  }
+
+  .soimg {
+    display: inline !important;
+    padding-right: 150px;
+  }
+
+
+
+  .simg {
+    display: inline !important;
+    padding-left: 100px;
+
+  }
+
+  .reactimg {
+    padding-right: 100px;
+    margin-top: 50px;
+  }
+
+  .booimg {
+    padding-right: 50px;
+    margin-top: 50px;
+  }
+.sveimg{
+  padding-right: 50px;
+  margin-bottom: 20px;
+}
+
+
+  .svesearch {
+    padding-right: 70px;
+
+  }
+
+  .embersearch {
+    padding-right: 150px;
+    margin-top: 50px;
+  }
+
+  .solidsearch {
+    padding-right: 100px;
+    margin-top: 50px;
+  }
+
+  .nextsearch {
+    padding-right: 100px;
+  }
+
+  .qlsearch {
+    padding-right: 100px;
+    margin-top: 50px;
+    margin-left: -50px;
+  }
+
+  .nestsearch {
+    padding-right: 20px;
+    margin-top: 20px;
+  }
+
+  .exsearch {
+    padding-right: 100px;
+    margin-top: 50px;
+    margin-left: -50px;
+  }
+
+  .nativesearch {
+    padding-right: 100px;
+    margin-top: 20px;
+    margin-left: -50px;
+  }
+
+  .contact {
+    padding-right: 100px;
+    margin-top: 20px;
+    margin-left: -50px;
+  }
+
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1920px) {
+  .loimg {
+    width: 100%;
+    margin-top: 200px;
+  }
+}
+
+
+/* ui verse checkbox css start from exportstack files */
 
 /* Hide the default checkbox */
 .checkbox-container input {
@@ -178,13 +207,14 @@
 /* Create a custom checkbox container */
 .checkbox-container {
   position: relative;
-  display: inline-block ;
-  font-size: 18px; /* Make the checkbox slightly bigger */
+  display: inline-block;
+  font-size: 18px;
+  /* Make the checkbox slightly bigger */
   margin-bottom: 12px;
   cursor: pointer;
-margin-inline-end: 40px;
-margin-top: 8px;
-  
+  margin-inline-end: 40px;
+  margin-top: 8px;
+
 }
 
 /* Style the checkmark */
@@ -192,16 +222,22 @@ margin-top: 8px;
   position: absolute;
   top: 0;
   left: 0;
-  height: 20px; /* Make the checkbox slightly bigger */
-  width: 20px; /* Make the checkbox slightly bigger */
-  border: 2px solid #2196f3; /* Default color for the box */
-  border-radius: 6px; /* Round the corners */
-  background-color: #2196f3; /* Default color for the box */
-  transition: all 0.3s ease; /* Add smooth transition */
+  height: 20px;
+  /* Make the checkbox slightly bigger */
+  width: 20px;
+  /* Make the checkbox slightly bigger */
+  border: 2px solid #2196f3;
+  /* Default color for the box */
+  border-radius: 6px;
+  /* Round the corners */
+  background-color: #2196f3;
+  /* Default color for the box */
+  transition: all 0.3s ease;
+  /* Add smooth transition */
 }
 
 /* Show the checkmark when checkbox is checked */
-.checkbox-container input:checked ~ .checkmark:after {
+.checkbox-container input:checked~.checkmark:after {
   display: block;
   animation: checkboxExpand 0.3s ease forwards;
 }
@@ -211,13 +247,20 @@ margin-top: 8px;
   content: "";
   position: absolute;
   display: none;
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%) rotate(45deg) scale(0); /* Center and hide initially, then scale to appear */
-  width: 8px; /* Adjust size */
-  height: 15px; /* Adjust size */
-  border: solid #fff; /* Change color of the tick to white */
-  border-width: 0 3px 3px 0; /* Adjust thickness and direction */
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%) rotate(45deg) scale(0);
+  /* Center and hide initially, then scale to appear */
+  width: 8px;
+  /* Adjust size */
+  height: 15px;
+  /* Adjust size */
+  border: solid #fff;
+  /* Change color of the tick to white */
+  border-width: 0 3px 3px 0;
+  /* Adjust thickness and direction */
 }
 
 /* On hover, add a lighter blue background color */
@@ -226,14 +269,16 @@ margin-top: 8px;
 }
 
 /* When the checkbox is checked, add a black background */
-.checkbox-container input:checked ~ .checkmark {
+.checkbox-container input:checked~.checkmark {
   background-color: #000;
-  border-color: #000; /* Change border color */
+  border-color: #000;
+  /* Change border color */
 }
 
 /* When the checkbox is checked, change the tick color to blue */
-.checkbox-container input:checked ~ .checkmark:after {
-  border-color: #dbedff; /* Change tick color to blue */
+.checkbox-container input:checked~.checkmark:after {
+  border-color: #dbedff;
+  /* Change tick color to blue */
 }
 
 /* Keyframes for expanding animation */
@@ -241,10 +286,12 @@ margin-top: 8px;
   0% {
     transform: translate(-50%, -50%) rotate(45deg) scale(0);
   }
+
   100% {
     transform: translate(-50%, -50%) rotate(45deg) scale(1);
   }
 }
+
 /* close checkbox css */
 
 /* button css start from login page */
@@ -411,46 +458,47 @@ margin-top: 8px;
   font-size: 18px;
   transition: all 0.3s ease-in;
  } */
-  
-  /* button1 for browsestack ka saare card ke pages ke liye hai */
 
-  button1 {
-    padding: 17px 15px;
-    /* border-radius: 50px; */
-    cursor: pointer;
-    border: 0;
-    background-color: white;
-    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-    letter-spacing: 1.5px;
-    /* text-transform: lowercase; */
-    font-size: 15px;
-    transition: all 0.5s ease;
-    
-  }
-  
-  button1:hover {
-    letter-spacing: 3px;
-    background-color: hsl(261deg 80% 48%);
-    color: hsl(0, 0%, 100%);
-    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
-  }
-  
-  button1:active {
-    letter-spacing: 3px;
-    background-color: hsl(261deg 80% 48%);
-    color: hsl(0, 0%, 100%);
-    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
-    transform: translateY(10px);
-    transition: 100ms;
-  }
-  /* login google button css */
-  
-  .google{
-    margin-top: -50px;
-    /* margin-bottom: 50px; */
-  }
+/* button1 for browsestack ka saare card ke pages ke liye hai */
 
-  .active{
-    background-color: blue;
-    color: white;
-  }
+button1 {
+  padding: 17px 15px;
+  /* border-radius: 50px; */
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  /* text-transform: lowercase; */
+  font-size: 15px;
+  transition: all 0.5s ease;
+
+}
+
+button1:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+button1:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+/* login google button css */
+
+.google {
+  margin-top: -50px;
+  /* margin-bottom: 50px; */
+}
+
+.active {
+  background-color: blue;
+  color: white;
+}
