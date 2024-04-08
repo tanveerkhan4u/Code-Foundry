@@ -67,25 +67,25 @@ const Angulardetail = () => {
           }
         </div>
       </div>
-      <br />
-      <br />
+      
+      
       <div className='container-fluid'>
-        <h2 className='text' style={{ marginLeft: "50px" }}>Angular Admin Templates</h2><br />
-        <p className='text' style={{ marginLeft: "50px" }}>Built a successful web application with an angular dashboard template. <strong>Angular</strong> is a full-fledged MVC framework, for creating a high-performance back-end panel. It is based on the typescript, which is more compact and error-free as well as its structure application and it provides a ready-to-use solution for every problem. Angular dashboard comes with striking UI Components, forms, pages, and application that makes it easy to create a website.<br /><br />
+        <h2 className='text-3xl font-semibold ml-8' >Angular Admin Templates</h2><br />
+        <p className='text ml-8' >Built a successful web application with an angular dashboard template. <strong>Angular</strong> is a full-fledged MVC framework, for creating a high-performance back-end panel. It is based on the typescript, which is more compact and error-free as well as its structure application and it provides a ready-to-use solution for every problem. Angular dashboard comes with striking UI Components, forms, pages, and application that makes it easy to create a website.<br /><br />
 
           These pre-built pages work with the web application to handle backend tasks such as tracking and managing users, website content, products, orders, bookings, appointments, and performance, etc. Angular admin dashboard delivers a bunch of <strong>responsive, customizable,</strong> and<strong> reusable components,</strong> so it helps to create a <strong>modern, good-looking, and responsive web apps.</strong></p>
       </div>
       <br />
       <div className='container-fluid'>
-        <h2 className='text' style={{ marginLeft: "50px" }}>What does it Include?</h2><br />
-        <p className='text' style={{ marginLeft: "50px" }}> The template comes with <strong> well-written documentation </strong> that guides every step from installation to run. Furthermore, every template also includes a starter kit that will help you start your project rather than removing unnecessary stuff.<br /><br />
+        <h2 className='text-3xl ml-8 font-semibold'>What does it Include?</h2><br />
+        <p className='text ml-8'> The template comes with <strong> well-written documentation </strong> that guides every step from installation to run. Furthermore, every template also includes a starter kit that will help you start your project rather than removing unnecessary stuff.<br /><br />
 
           If you are still confused then you may try our <strong> Free angular admin template, </strong> so you can check our code quality. After that, you move to the premium ones which include more features that are necessary for your new project.</p>
       </div>
       <br />
-      <div className='container-fluid'>
-        <h3 className='text' style={{ marginLeft: "50px" }}>Some of our Features:</h3><br />
-        <div className='container bg-light bg-gradient' style={{ marginLeft: "50px" }}>
+      <div className='container'>
+        <h3 className='text-2xl font-semibold '>Some of our Features:</h3><br />
+        <div className='container bg-light bg-gradient mb-4' >
           <ul className='text'>
             <li className='text' style={{ marginBottom: "10px", fontSize: "20px" }}> Figma Dashboard pages</li>
 
@@ -106,105 +106,105 @@ const Angulardetail = () => {
           </ul>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
   )
 }
 
 export default Angulardetail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
