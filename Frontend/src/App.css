@@ -48,10 +48,12 @@
 
   .ember {
     display: inline !important;
+    margin-right: 70px;
   }
 
   .tiger {
     padding-right: 100px;
+    margin-top: 10px;
   }
 
   .solid {
@@ -141,11 +143,7 @@
 
   }
 
-  .embersearch {
-    padding-right: 150px;
-    margin-top: 50px;
-  }
-
+ 
   .solidsearch {
     padding-right: 100px;
     margin-top: 50px;
