@@ -1,64 +1,70 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom' 
+import { Link } from 'react-router-dom'
+import Card from './Card';
+
+const anguData = [
+  {
+    name: 'Angular',
+    image: 'https://codedthemes.com/wp-content/uploads/edd/2022/05/Angular-Mega-Bundle.webp',
+    link: '/Exportstack/angular',
+    description : 'Mantis MUI Angular Dashboard Template'
+  },
+  {
+    name: 'Angular',
+    image: 'https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png',
+    link: '/Exportstack/angular',
+    description : 'Berry MUI Angular Dashboard Template'
+  },
+  {
+    name: 'Angular',
+    image: 'https://codedthemes.com/wp-content/uploads/edd/2023/02/Mantis-Angular-15-Admin-Template.webp',
+    link: '/Exportstack/angular',
+    description : 'Materially Angular Admin Dashboard'
+  },
+];
+
+
+
 
 
 const Angulardetail = () => {
   return (
     <div>
-      <header className='row d-flex ' style={{ backgroundColor: "#dbedff" }}>
-        <div className='col-md-6 py-5' >
-          <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text'><strong className='text-primary'>Angular </strong> Admin Template</motion.h2>&nbsp;
-          <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text angular' style={{color:"grey" }}>Are you looking for a Angular Admin Template, For your next project? You are at the right place. We are one of the Best Admin Dashboard makers in the market. Our team develops the<strong className='text' style={{ color: "grey" }}> most advanced, highly customizable </strong> Angular Template. All our Admin Dashboards are fully responsive and tested on all retina devices. With  <strong className='text' style={{ color: "grey" }}> clean, bug-free and well comment code.</strong></motion.p>&nbsp;
+      <header className='flex mx-auto md:flex-row flex-col min-lg-screen   bg-[#dbedff]'>
+        <div className='basis-1/2 mt-5 angutemp' >
+          <motion.h2 animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text-3xl'><strong className='text-primary'>Angular </strong> Admin Template</motion.h2>&nbsp;
+          <motion.p animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} className='text-gray-500 text-md '>Are you looking for a Angular Admin Template, For your next project? You are at the right place. We are one of the Best Admin Dashboard makers in the market. Our team develops the<strong className='text' style={{ color: "grey" }}> most advanced, highly customizable </strong> Angular Template. All our Admin Dashboards are fully responsive and tested on all retina devices. With  <strong className='text' style={{ color: "grey" }}> clean, bug-free and well comment code.</strong></motion.p>&nbsp;
           <motion.div animate={{ x: 50 }} transition={{ ease: "easeOut", duration: 2 }} >
-          <div className='row'>
-            <div className='col-md-9 mt-3 angularsearch'>
-              <div className='input-group'>
-                <input type="text" className="form-control fs-5" placeholder='Search...' />
-                <button1 >Search</button1>
+            <div className='row'>
+              <div className='col-md-9 mt-4'>
+                <div className='input-group'>
+                  <input type="text" className="form-control fs-5" placeholder='Search...' />
+                  <button1 >Search</button1>
+                </div>
               </div>
             </div>
-          </div>
           </motion.div>
         </div>
-      <div className='col-md-6'>
-        <motion.img animate={{ x: 50, y: -40 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/Anular-Banner.svg' className='w-100 mx-auto'  alt=''></motion.img>
-      </div>
+        <div className='basis-1/2 anguimg'>
+          <motion.img animate={{ x: 50, y: -100 }} transition={{ ease: "easeOut", duration: 2 }} src='https://codedthemes.com/wp-content/uploads/2022/04/Anular-Banner.svg' className='w-100 mx-auto' alt=''></motion.img>
+        </div>
       </header>
       <br />
       <br />
-      <div className='conatiner-fluid'>
-        <div className="row gy-4 justify-content-between">
-          <div className="col-md-4">
-      <Link to="/Exportstack/angular" style={{textDecoration:"none"}}>
-        <div className="card">
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2022/05/Angular-Mega-Bundle.webp" className="card-img-top img-fluid mx-auto" alt="..." />
-          <div className="card-body">
-            <h5 className='text' >Angular</h5>
-          </div>
-        </div>
-        </Link>
-        </div>
-        <div className="col-md-4">
-        <Link to="/Exportstack/angular" style={{textDecoration:"none"}}>
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2022/11/Berry-Angular.png" className="card-img-top img-fluid mx-auto " alt="..." />
-        <div className="card">
-          <div className="card-body">
-            <h5 className='text' >Angular</h5>
-          </div>
-        </div>
-        </Link>
-        </div>
-        <div className="col-md-4">
-        <Link to="/Exportstack/angular" style={{textDecoration:"none"}}>
-        <div className="card">
-          <img src="https://codedthemes.com/wp-content/uploads/edd/2023/02/Mantis-Angular-15-Admin-Template.webp" className="card-img-top img-fluid mx-auto" alt="..." />
-          <div className="card-body">
-            <h5 className='text' >Angular</h5>
-          </div>
-        </div>
-        </Link>
-        </div>
+      <div className='container'>
+        <div className='row '>
+          {
+            anguData.map(data => (
+              <div className="col-md-4 ">
+
+                <Link to={data.link} className='text-decoration-none'>
+                  <Card product={data}  />
+                </Link>
+
+              </div>
+            ))
+          }
         </div>
       </div>
       <br />

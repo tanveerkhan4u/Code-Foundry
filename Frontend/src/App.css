@@ -11,9 +11,15 @@
     margin-top: 20px;
   }
   
-    .angular{
-    display: inline !important;
-  }
+    .angutemp{
+      padding-right: 70px;
+      margin-top: 20px;
+    }
+    .anguimg{
+  margin-right: 70px;
+    margin-top: 60px;
+    margin-bottom:  -80px;
+    }
   .vue{
     display: inline !important;
   }
@@ -99,13 +105,8 @@
       padding-right: 50px;
       margin-top: 50px;
     }
-    .angularsearch{
-      padding-right: 100px;
-      
-    }
-    .bootsearch{
-      padding-right: 100px;
-    }
+    
+   
     .vuesearch{
       padding-right: 100px;
     }
