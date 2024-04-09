@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
     <div>
       
-        <nav className="w-full sticky top-0  bg-[#dbedff] ">
+        <nav className="w-screen sticky top-0  bg-[#dbedff] lg:w-screen md:w-screen">
           <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
