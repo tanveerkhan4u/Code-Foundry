@@ -81,14 +81,19 @@
     padding-right: 100px;
     margin-bottom: 20px;
   }
+.graphtemp{
+  padding-right: 70px;
+  margin-top: 20px;
+}
 
   .graph {
     display: inline !important;
-  }
-
+    padding-right: 100px;
+}
+  
   .graphimage {
-    padding-right: 160px;
-    margin-bottom: 20px;
+    width: 300px !important;
+    height: 200px !important;
 
   }
 
