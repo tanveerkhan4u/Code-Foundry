@@ -103,16 +103,17 @@
     margin-top: -30px;
   }
 
+.native{
+  padding-right: 70px;
+}
+.nativeimg{
+  width: 300px !important;
+    height: 300px !important;
+    margin-top: -50px;
+}
 
-
-  .nativeimg {
-    padding-right: 170px;
-    margin-bottom: 20px;
-  }
-
-  .native {
-    display: inline !important;
-  }
+  
+  
 
   .cont {
     padding-right: 100px;
@@ -178,12 +179,7 @@
   }
 
 
-  .nativesearch {
-    padding-right: 100px;
-    margin-top: 20px;
-    margin-left: -50px;
-  }
-
+  
   .contact {
     padding-right: 100px;
     margin-top: 20px;
