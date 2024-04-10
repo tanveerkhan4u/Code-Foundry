@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
     <div>
       
-        <nav className="w-screen sticky top-0  bg-[#dbedff] lg:w-screen md:w-screen">
+        <nav className="w-screen   bg-[#dbedff] lg:w-screen md:w-screen">
           <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -170,7 +170,7 @@ const Navbar = () => {
 
           {/* Mobile menu, show/hide based on menu state. */}
 
-          <div className="sm:hidden" id="mobile-menu">
+          <div className="sm:hidden " id="mobile-menu">
             <div className="space-y-1 px-2 pb-3 pt-2">
 
               <NavLink
