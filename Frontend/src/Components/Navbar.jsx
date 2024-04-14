@@ -44,7 +44,7 @@ const Navbar = () => {
 
 
 
-  return ( 
+  return (
     <div>
 
 
@@ -115,31 +115,78 @@ const Navbar = () => {
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4 ">
-
-                
-              {/* mega menu starts */}
-              
-              <div className='group'>
-                   <button className='text-blue-400 hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4'>Home</button>
-                   <div className='hidden group-hover:flex flex-col absolute left-0 p-10 w-50 bg-white z-20 text-black duration-300'>
-                    <div className='grid grid-cols-2 md:grid-cols-4 gap-5'>
-                    
-
-                    </div>
-                   </div>
-
-              </div>
-
-              
-              {/* mega menu end */}
                   <NavLink
-                    to="/Browsestack"
+                    to="/Home"
 
                     className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
                   >
-                    Browse Stack
-                    
+                    Home
+
                   </NavLink>
+
+                  {/* mega menu starts */}
+
+                  <div className='group '>
+                    <Link to="/Browsestack">
+                      <button className=' hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4 '>Browse Stack</button>
+                    </Link>
+                    <div className='hidden group-hover:flex flex-col absolute center-0 p-9 w-50 mt-3 bg-white z-20 text-black duration-300 shadow-3xl rounded-lg '>
+                      <div className='grid grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 '>
+                        <div className='flex flex-col md:flex-col '>
+                          <h3 className='mb-4 text-2xl text-dark font-semibold'>Frontend Framewroks</h3>
+                          <Link to="/Reactdetail" className=' hover:text-gray-500 flex text-lg '>
+                            <img src="https://codedthemes.com/wp-content/uploads/2022/04/react-logo.jpg.webp" className='h-10 w-auto -ml-5 -mt-1 mb-2 mr-2' alt="" />
+                            React</Link>
+                          <Link to="/Bootstrapdetail" className=' hover:text-gray-500 flex text-lg'>
+                            <img src="https://codedthemes.com/wp-content/uploads/2022/04/boostrap-logo.jpg.webp" className='h-10 w-auto -ml-5 -mt-1 mb-2 mr-3' alt="" />
+
+                            Bootstrap</Link>
+                          <Link to="/Angulardetail" className=' hover:text-gray-500 flex text-lg'>
+
+                            <img src="https://codedthemes.com/wp-content/uploads/2022/04/angular-logo.jpg.webp" className='h-10 w-auto -ml-5 -mt-1 mb-2 mr-3' alt="" />
+                            Angular</Link>
+                          <Link to="/Vuedetail" className=' hover:text-gray-500 flex text-lg'>
+                            <img src="https://masteringjs.io/assets/images/vue/vue.jpg" className='h-10 w-auto -ml-5 -mt-1 mb-2 mr-3' alt="" />
+
+                            Vue</Link>
+                          <Link to="/Emberdetail" className=' hover:text-gray-500 flex text-lg'>
+
+                            <img src="https://emberjs.com/images/brand/ember-tomster-lockup-4c.svg" className='h-10 w-auto -ml-5 -mt-1 mb-2 mr-3' alt="" />
+                            Ember
+                          </Link>
+                        </div>
+                        <div className='flex flex-col md:flex-col '>
+                          <h3 className='mb-4 text-2xl text-dark font-semibold'>Backend Framewroks</h3>
+                          <Link to="/Express" className=' hover:text-gray-500 flex text-lg '>
+                            <img src="https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png" className='h-10 w-auto -ml-5 -mt-1 mb-2 mr-2' alt="" />
+                            Express.js</Link>
+                          <Link to="/Nest" className=' hover:text-gray-500 flex text-lg'>
+                            <img src="https://static-00.iconduck.com/assets.00/nestjs-icon-2048x2040-3rrvcej8.png" className='h-10 w-auto -ml-5 -mt-1 mb-2 mr-3' alt="" />
+
+                            Nest.js</Link>
+                          <Link to="/Graphql" className=' hover:text-gray-500 flex text-lg'>
+
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-graphql-3521468-2944912.png" className='h-10 w-auto -ml-5 -mt-1 mb-2 mr-3' alt="" />
+                            GraphQL</Link>
+                          
+                        </div>
+                        <div className='flex flex-col md:flex-col '>
+                          <h3 className='mb-4 text-2xl text-dark font-semibold  '>Mobile Applications</h3>
+                          <Link to="/Nativescript" className=' hover:text-gray-500 flex text-lg '>
+                            <img src="https://seeklogo.com/images/N/nativescript-logo-309BDE68D3-seeklogo.com.png" className='h-10 w-auto -ml-5 -mt-1 mb-2 mr-2' alt="" />
+                            NativeScript</Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* mega menu end */}
+                          
+                          
+                       
+
+
+
+
                   <NavLink
                     to="/Contact"
                     className=" hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
@@ -206,7 +253,7 @@ const Navbar = () => {
                   className="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
                 >
                   Browse Stack
-                  
+
                 </NavLink>
                 <NavLink
                   to="/Contact"
