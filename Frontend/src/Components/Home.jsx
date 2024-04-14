@@ -84,7 +84,7 @@ const words = [
     text: "with",
   },
   {
-    text: "Aceternity",
+    text: "CodeFoundry",
     className: "text-blue-500 dark:text-blue-500",
   },
 ];
