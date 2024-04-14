@@ -44,11 +44,11 @@ const Navbar = () => {
 
 
 
-  return (
+  return ( 
     <div>
 
 
-      <nav className=" w-screen  bg-[#dbedff] lg:w-screen md:w-screen">
+      <nav className="fixed top-0 left-0  z-[10] w-screen  bg-[#dbedff] lg:w-screen md:w-screen">
 
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between">
@@ -229,6 +229,9 @@ const Navbar = () => {
 
         </ul>
       </nav>
+      <div className='mt-20 '>
+
+      </div>
 
     </div>
 
