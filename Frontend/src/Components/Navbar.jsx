@@ -7,8 +7,12 @@ import download from './images/download.png'
 
 const Navbar = () => {
 
+  const [click, setClick] = useState(false);
+  const handleclick = () => setClick(!click);
+
 
   const { loggedIn, logout } = useAppContext();
+
 
   const showLoginOptions = () => {
     if (loggedIn) {
@@ -43,8 +47,9 @@ const Navbar = () => {
   return (
     <div>
 
-      <nav className="fixed top-0 left-0 right-0 zINDEX w-screen  bg-[#dbedff] lg:w-screen md:w-screen">
-       
+
+      <nav className=" w-screen  bg-[#dbedff] lg:w-screen md:w-screen">
+
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -54,6 +59,7 @@ const Navbar = () => {
                 className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
+                onClick={handleclick}
               >
                 <span className="absolute -inset-0.5" />
                 <span className="sr-only">Open main menu</span>
@@ -171,61 +177,62 @@ const Navbar = () => {
 
         {/* Mobile menu, show/hide based on menu state. */}
 
-        <div className="sm:hidden " id="mobile-menu">
-          <div className="space-y-1 px-2 pb-3 pt-2">
+        {click && (
+          <div>
+            <div className="sm:hidden " id="mobile-menu">
+              <div className="space-y-1 px-2 pb-3 pt-2">
 
-            <NavLink
-              to="/Home"
-              className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                <NavLink
+                  to="/Home"
+                  className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
 
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="/Browsestack"
-              className="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-            >
-              Browse Stack
-            </NavLink>
-            <NavLink
-              to="/Contact"
-              className="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-            >
-              Contact Us
-            </NavLink>
-            <NavLink
-              to="/Feedback"
-              className="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-            >
-              Feedback
-            </NavLink>
-            <NavLink
-              to="/Login"
-              className="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-            >
-              Login
-            </NavLink>
-            <NavLink
-              to="/Signup"
-              className="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-            >
-              Signup
-            </NavLink>
+                >
+                  Home
+                </NavLink>
+                <NavLink
+                  to="/Browsestack"
+                  className="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                >
+                  Browse Stack
+                </NavLink>
+                <NavLink
+                  to="/Contact"
+                  className="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                >
+                  Contact Us
+                </NavLink>
+                <NavLink
+                  to="/Feedback"
+                  className="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                >
+                  Feedback
+                </NavLink>
+                <NavLink
+                  to="/Login"
+                  className="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                >
+                  Login
+                </NavLink>
+                <NavLink
+                  to="/Signup"
+                  className="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                >
+                  Signup
+                </NavLink>
 
+              </div>
+            </div>
           </div>
-        </div>
+        )}
         <ul>
 
 
         </ul>
       </nav>
-      <div>
-        <div className="mt-20"></div>
-        
-      </div>
+
     </div>
 
   )
 }
 
-export default Navbar
+export default Navbar;

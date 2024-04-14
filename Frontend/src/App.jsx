@@ -30,6 +30,7 @@ import Card from './Components/Card';
 import Log from './Components/Log';
 import Movingcard from './Components/Movingcard';
 import Wavy from './Components/Wavy';
+import Tai from './Components/Tai';
 
 
 
@@ -81,6 +82,7 @@ function App() {
                 <Route path='/Log' element={<Log/>} />
                 <Route path='/Movingcard' element={<Movingcard/>} />
                 <Route path='/Wavy' element={<Wavy/>} />
+                <Route path='/Tai' element={<Tai/>} />
                
                 
                 
