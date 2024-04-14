@@ -179,7 +179,7 @@ const Navbar = () => {
 
         {click && (
           <div>
-            <div className="sm:hidden " id="mobile-menu">
+            <div className="sm:hidden bg-white" id="mobile-menu">
               <div className="space-y-1 px-2 pb-3 pt-2">
 
                 <NavLink
