@@ -121,7 +121,7 @@ const Navbar = () => {
               
               <div className='group'>
                    <button className='text-blue-400 hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4'>Home</button>
-                   <div className='hidden group-hover:flex flex-col absolute left-0 p-10 w-full bg-white z-20 text-black duration-300'>
+                   <div className='hidden group-hover:flex flex-col absolute left-0 p-10 w-50 bg-white z-20 text-black duration-300'>
                     <div className='grid grid-cols-2 md:grid-cols-4 gap-5'>
                     
 
