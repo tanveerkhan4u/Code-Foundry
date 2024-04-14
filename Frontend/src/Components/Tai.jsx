@@ -35,13 +35,8 @@ const Navbar = () => {
                   <div className="sm:hidden " id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2">
 
-            <NavLink
-              to="/Home"
-              className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
-
-            >
-              Home
-            </NavLink>
+            
+           
             <NavLink
               to="/Browsestack"
               className="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium"

@@ -116,17 +116,29 @@ const Navbar = () => {
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4 ">
 
-                  <NavLink
-                    to="/Home"
-                    className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4 "
-                  >
-                    Home
-                  </NavLink>
+                
+              {/* mega menu starts */}
+              
+              <div className='group'>
+                   <button className='text-blue-400 hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4'>Home</button>
+                   <div className='hidden group-hover:flex flex-col absolute left-0 p-10 w-full bg-white z-20 text-black duration-300'>
+                    <div className='grid grid-cols-2 md:grid-cols-4 gap-5'>
+                    
+
+                    </div>
+                   </div>
+
+              </div>
+
+              
+              {/* mega menu end */}
                   <NavLink
                     to="/Browsestack"
+
                     className="hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm fs-5 mt-4"
                   >
                     Browse Stack
+                    
                   </NavLink>
                   <NavLink
                     to="/Contact"
@@ -194,6 +206,7 @@ const Navbar = () => {
                   className="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
                 >
                   Browse Stack
+                  
                 </NavLink>
                 <NavLink
                   to="/Contact"
