@@ -11,7 +11,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import Card from './Card';
 import Movingcard from './Movingcard';
 import Wavy from './Wavy';
-import { TypewriterEffectSmooth } from '../utils/components/Type-writer';
+import { TypewriterEffect, TypewriterEffectSmooth } from '../utils/components/Type-writer';
 import WavyBackground from '../utils/components/ui/Wavybackground';
 
 

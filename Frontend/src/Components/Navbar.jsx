@@ -48,7 +48,7 @@ const Navbar = () => {
     <div>
 
 
-      <nav className="fixed top-0 left-0  z-[10] w-screen  bg-[#dbedff] lg:w-screen md:w-screen">
+      <nav className="fixed top-0 left-0  z-[20] w-screen  bg-[#dbedff] lg:w-screen md:w-screen">
 
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between">
