@@ -157,7 +157,7 @@ const Navbar = () => {
                         </div>
                         <div className='flex flex-col md:flex-col '>
                           <h3 className='mb-4 text-2xl text-dark font-semibold'>Backend Framewroks</h3>
-                          <Link to="/Express" className=' hover:text-gray-500 flex text-lg '>
+                          <Link to="/Express" className='hover:text-gray-500 flex text-lg '>
                             <img src="https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png" className='h-10 w-auto -ml-5 -mt-1 mb-2 mr-2' alt="" />
                             Express.js</Link>
                           <Link to="/Nest" className=' hover:text-gray-500 flex text-lg'>

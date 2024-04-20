@@ -70,30 +70,44 @@ const newData = [
 ]
 
 
-const words = [
-  {
-    text: "Build",
-  },
-  {
-    text: "awesome",
-  },
-  {
-    text: "apps",
-  },
-  {
-    text: "with",
-  },
-  {
-    text: "CodeFoundry",
-    className: "text-blue-500 dark:text-blue-500",
-  },
-];
-
 const Home = () => {
 
   // const [productList, setProductList] = useState(productData);
 
   const searchRef = useRef(null);
+  const wordsToDisplay = ['Bootstrap', 'Angular', 'Vue', 'React', 'Svelte', 'Ember', 'Next.js', 'Solid', 'Express.js', 'GraphQL', 'Nativescript', 'NestJS'];
+  const [words, setWords] = useState(
+    [
+      {
+        text: "Build",
+      },
+      {
+        text: "awesome",
+      },
+      {
+        text: "apps",
+      },
+      {
+        text: "with",
+      },
+      {
+        text: "CodeFoundry",
+        className: "text-blue-500 dark:text-blue-500",
+      },
+    ]
+  )
+
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+
+  useEffect(() => {
+    // const interval = setInterval(() => {
+    //   setCurrentWordIndex((prevIndex) => (prevIndex + 1) % wordsToDisplay.length);
+    // }, 2000); // Update every 2 seconds
+
+    // return () => clearInterval(interval); // Clean up on component unmount
+
+  }, [])
+  
 
   // const name = ['REACT', 'BOOTSTRAP', 'VUE', 'ANGULAR', 'NESTJS', 'EXPRESS.JS', 'SVELTE', 'EMBER', 'NEXT.JS', 'SOLID', 'GRAPHQL', 'NATIVESCRIPT'];
   //  const [selName, setSelName] = useState([]);

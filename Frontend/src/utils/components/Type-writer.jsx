@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { cn } from "../cn";
 
 export const TypewriterEffect = ({ words, className, cursorClassName }) => {
+  console.log(words);
   const wordsArray = words.map((word) => {
     return {
       ...word,
@@ -86,12 +87,16 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
 };
 
 export const TypewriterEffectSmooth = ({ words, className, cursorClassName }) => {
+  console.log(words);
   const wordsArray = words.map((word) => {
     return {
       ...word,
       text: word.text.split(""),
     };
   });
+  
+  console.log(wordsArray);
+
   const renderWords = () => {
     return (
       <div>
