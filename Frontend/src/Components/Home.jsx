@@ -4,14 +4,14 @@ import { motion } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-// import { Typewriter, Cursor } from 'react-simple-typewriter'
-import { IconStar, IconShoppingCart } from '@tabler/icons-react'
 
+import { IconStar, IconShoppingCart } from '@tabler/icons-react'
+import { ReactTyped } from "react-typed";
 import { Pagination, Autoplay } from 'swiper/modules';
 import Card from './Card';
 import Movingcard from './Movingcard';
 import Wavy from './Wavy';
-import { TypewriterEffect, TypewriterEffectSmooth } from '../utils/components/Type-writer';
+
 import WavyBackground from '../utils/components/ui/Wavybackground';
 
 
@@ -69,44 +69,39 @@ const newData = [
   },
 ]
 
+const stringsToRender = [
+  'Bootstrap', 'React', 'Angular', 'vue', 'Svelte', 'Ember', 'Next.js', 'Solid', 'Express.js', 'GraphQL', 'Nativescript', 'NestJS',
+];
 
 const Home = () => {
 
   // const [productList, setProductList] = useState(productData);
 
   const searchRef = useRef(null);
-  const wordsToDisplay = ['Bootstrap', 'Angular', 'Vue', 'React', 'Svelte', 'Ember', 'Next.js', 'Solid', 'Express.js', 'GraphQL', 'Nativescript', 'NestJS'];
-  const [words, setWords] = useState(
-    [
-      {
-        text: "Build",
-      },
-      {
-        text: "awesome",
-      },
-      {
-        text: "apps",
-      },
-      {
-        text: "with",
-      },
-      {
-        text: "CodeFoundry",
-        className: "text-blue-500 dark:text-blue-500",
-      },
-    ]
-  )
+  
+  // const [words, setWords] = useState(
+  //   [
+  //     {
+  //       text: "Build",
+  //     },
+  //     {
+  //       text: "awesome",
+  //     },
+  //     {
+  //       text: "apps",
+  //     },
+  //     {
+  //       text: "with",
+  //     },
+  //     {
+  //       text: "CodeFoundry",
+  //       className: "text-blue-500 dark:text-blue-500",
+  //     },
+  //   ]
+  // )
 
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
-  useEffect(() => {
-    // const interval = setInterval(() => {
-    //   setCurrentWordIndex((prevIndex) => (prevIndex + 1) % wordsToDisplay.length);
-    // }, 2000); // Update every 2 seconds
 
-    // return () => clearInterval(interval); // Clean up on component unmount
-
-  }, [])
   
 
   // const name = ['REACT', 'BOOTSTRAP', 'VUE', 'ANGULAR', 'NESTJS', 'EXPRESS.JS', 'SVELTE', 'EMBER', 'NEXT.JS', 'SOLID', 'GRAPHQL', 'NATIVESCRIPT'];
@@ -120,8 +115,11 @@ const Home = () => {
   return (
     <div style={{ overflow: 'hidden' }} >
       <WavyBackground className="max-w-4xl mx-auto pb-40">
-        <h1 className='text-center mb-4 -mt-8 '>
-      <TypewriterEffectSmooth words={words} />
+        <h1 className='text-center mb-4 -mt-8 text-4xl'>
+          Trending  {' '}
+          <ReactTyped  strings={stringsToRender}/>
+          Templates
+    
         </h1>
         <p className="text-base md:text-lg mt-4  font-normal inter-var text-center text-dark-500 mt-3 ">
         Explore our curated collection of free and premium admin dashboard template for your next project!
