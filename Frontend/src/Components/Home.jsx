@@ -75,7 +75,7 @@ const stringsToRender = [
 
 const Home = () => {
 
-  // const [productList, setProductList] = useState(productData);
+  
 
   const searchRef = useRef(null);
   
@@ -115,7 +115,7 @@ const Home = () => {
   return (
     <div style={{ overflow: 'hidden' }} >
       <WavyBackground className="max-w-4xl mx-auto pb-40">
-        <h1 className='text-center mb-4 -mt-8 text-5xl font-semibold'>
+        <h1 className='text-center mb-4 -mt-8 text-5xl font-semibold '>
           Trending  {' '}
           <ReactTyped  strings={stringsToRender} typeSpeed={80}  backSpeed={50} color="#5B84FA" className="text-primary" loop />
       
