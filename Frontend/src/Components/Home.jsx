@@ -138,18 +138,7 @@ const Home = () => {
             </div>
           </div>
       </WavyBackground>
-      {/* <header className='text-dark w-100  bg-[#dbedff]'>
-        <div className='container-fluid py-5'> */}
-
-          {/* <p className='text-center text-gray-500 text-lg '>Explore our curated collection of free and premium admin dashboard template for your next project!</p> */}
-
-          {/* <div className='text-center'>
-            <img className='text-center img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/03/main-banner-bottom-img-1.png' alt=''></img>
-          </div> */}
-
-        {/* </div>
-      </header> */}
-      <br /><br />
+      <br/>
       <div className='container'>
         <h3 className='text-center  text-gray-500 text-2xl mb-4'>We create custom for the application using the following technology</h3>
       </div>
