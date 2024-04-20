@@ -5,9 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    
     "build": "vite build",
-    
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -24,7 +22,6 @@
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3",
-    "react-simple-typewriter": "^5.0.1",
     "simplex-noise": "^4.0.1",
     "swiper": "^11.0.6",
     "tailwind-merge": "^2.2.1",
