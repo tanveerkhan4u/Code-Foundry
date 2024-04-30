@@ -238,8 +238,8 @@ const Navbar = () => {
 
         {click && (
           <div>
-            <div className="sm:hidden bg-white" id="mobile-menu">
-              <div className="space-y-1 px-2 pb-3 pt-2">
+            <div className="sm:hidden bg-transparent border border-white  rounded hover:bg-white hover:text-black shadow-lg" id="mobile-menu">
+              <div className="space-y-1 px-2 pb-3 pt-2 text-center ">
 
                 <NavLink
                   to="/Home"
