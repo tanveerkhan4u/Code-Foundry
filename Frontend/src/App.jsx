@@ -1,7 +1,7 @@
 
 import React from 'react'
 import './App.css'
-import { BrowserRouter, Link, Route, Routes, NavLink, } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Routes, NavLink, Navigate, } from 'react-router-dom';
 import Signup from './Components/Signup';
 import Navbar from './Components/Navbar';
 import Login from './Components/Login';
@@ -31,21 +31,7 @@ import Log from './Components/Log';
 import Movingcard from './Components/Movingcard';
 import Wavy from './Components/Wavy';
 
-
-
-
-
-
-
-
-
-
-
 function App() {
-
-
-
-
 
   return (
     <>
@@ -56,6 +42,7 @@ function App() {
             <AppProvider>
               <Navbar></Navbar>
               <Routes>
+                <Route path='/' element={<Navigate to="/Home" />} />
                 <Route path='/Signup' element={<Signup />} />
                 <Route path='/Home' element={<Home />} />
                 <Route path='/Navbar' element={<Navbar />} />
