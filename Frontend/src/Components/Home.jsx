@@ -123,7 +123,7 @@ const Home = () => {
     
         </h1>
         <p className="text-base md:text-lg mt-4  font-normal inter-var text-center text-dark-500 mt-3 ">
-        Explore our curated collection of free and premium admin dashboard template for your next project!
+        Explore our curated collection of free and premium admin dashboard template for your next project
         </p>
           <div className='row'>
             <div className='col-md-9 mx-auto'>
