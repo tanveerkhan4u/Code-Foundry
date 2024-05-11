@@ -86,7 +86,7 @@ const Exportstack = () => {
     console.log(res.status);
     const data = await res.json();
     console.log(data);
-    setDownloadUrl('http://localhost:5000/'+data.zipFilename);
+    setDownloadUrl(`${import.meta.env.VITE_API_URL}`+data.zipFilename);
   }
 
   const downloadFileFromUrl = () => {
