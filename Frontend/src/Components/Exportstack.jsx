@@ -75,7 +75,7 @@ const Exportstack = () => {
 
 
   const generateStack = async () => {
-    const res = await fetch('http://localhost:5000/stack/generate', {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/stack/generate`, {
       method: 'POST',
       body: JSON.stringify({selStack : selStack, projectName: name, dependencies : [] }),
       headers: {
