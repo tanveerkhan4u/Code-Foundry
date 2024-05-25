@@ -181,7 +181,7 @@ const Home = () => {
               <Link to="/Bootstrapdetail" className='col-2 ' style={{ marginLeft: "75px", textDecoration: "none" }}>
                 <motion.div whileHover={{ scale: 1.1 }}
                   onHoverStart={e => { }}
-                  onHoverEnd={e => { }} className='card mb-3 py-5 px-2 shadow-2xl' style={{ height: "220px" }}>
+                  onHoverEnd={e => { }} className='card mb-3 py-5 px-2 shadow-2xl p-4' style={{ height: "220px" }}>
                   <img className='img-fluid mx-auto' src='https://codedthemes.com/wp-content/uploads/2022/04/boostrap-logo.jpg.webp' alt='' />
                   <h4 className='text-center text-xl' style={{ marginTop: "20px" }}>Bootstrap</h4>
                 </motion.div>
